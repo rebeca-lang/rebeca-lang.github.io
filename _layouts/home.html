@@ -1,0 +1,124 @@
+---
+layout: default
+---
+
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center orange-text">{{ site.title }}</h1>
+      <div class="row center">
+				<h3 class="header col s12 light">an actor-based language with formal foundation</h3>
+      </div>
+      <div class="row">
+				{{ content}}
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">dashboard</i></h2>
+            <h5 class="center">Actors and Components</h5>
+
+            <p class="light">
+							<em>Rebeca</em> uses actor-based concepts for the specification of reactive systems and their communications.
+							It introduces components as an additional structure for verification purposes.
+						</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
+            <h5 class="center">Formal Semantics</h5>
+
+						<p class="light">
+							<em>Rebeca</em> provides a formal semantics for the model and components, comprising their states,
+							communications, state transitions, and the knowledge of accessible interfaces.
+						</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">playlist_add_check</i></h2>
+            <h5 class="center">Model Checker</h5>
+
+						<p class="light">
+						  <em>Rebeca</em> models can be directly model checked using <em>RMC</em>.
+						  Translating Rebeca models into target languages of existing model checkers is also supported,
+							making it possible to model check open, distributed systems using your favorite model checker.
+						</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">filter_list</i></h2>
+            <h5 class="center">Abstraction</h5>
+
+						<p class="light">
+							<em>Rebeca</em> uses different abstraction techniques,
+							which preserve a set of behavioral specification in temporal logic,
+							and reduce the state space of a model,
+							making it more suitable for model checking techniques.
+						</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">done_all</i></h2>
+            <h5 class="center">Compositional Verification</h5>
+
+						<p class="light">
+						  Soundness of abstraction techniques is established by proving a weak simulation relation between the constructs.
+							This enables the <em>Rebeca Model Checker</em> to apply a compositional verification approach,
+							using the specified abstraction techniques.
+						</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">lock_open</i></h2>
+            <h5 class="center">Open Source</h5>
+
+						<p class="light">
+						</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+      
+    </div>
+    <div style="background: #ddd">
+    <div class="container last-post">
+    <section>
+        <h5>Latest Post</h5>
+        <ul class="collection">
+        {% for post in site.posts %}
+        <li class="collection-item avatar">
+          {% assign date_format = site.minima.date_format | default: "%m/%d" %}
+          <div class="date-post">{{ post.date | date: date_format }}</div>
+          <span class="title"><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></span>
+          <p>
+             {{ post.content | truncatewords: 10 }}
+          </p>
+          <a href="{{ post.url | relative_url }}" class="secondary-content"><i class="material-icons">navigate_next</i></a>
+        </li>
+        {% endfor %}
+        </ul>  
+    </section>
+    </div>
+</div>
+
+  </div>

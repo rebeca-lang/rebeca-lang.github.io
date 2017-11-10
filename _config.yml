@@ -1,3 +1,11 @@
-theme: jekyll-theme-minimal
 title: Rebeca Modeling Language
+author: Rebeca Research Group
+email: m.j.izadi@gmail.com
 description: Welcome to the Homepage of Rebeca Formal Modeling Language
+
+github_username:  rebeca-lang
+
+sass:
+    style: compressed
+
+
