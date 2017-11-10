@@ -1,5 +1,6 @@
 ---
 layout: page
+title: About
 
 ---
 
@@ -22,11 +23,36 @@ and a finite set of object instances that run in parallel.
 Properties can be specified in temporal logic.
 Different approaches are proposed for verifying correctness of these properties.
 
----
+#### Members
+<div class="row">
+	<div class="col s12 m6">
+		<div class="icon-block">
+			<h2 class="center light-blue-text"><i class="material-icons">person</i></h2>
+			<a href="http://www.ru.is/faculty/marjan/"><h5 class="center">Marjan Sirjani</h5></a>
+			<p class="light">
+				Associate Professor,
+				School of Computer Science,
+				Reykjavik University
+			</p>
+			<p class="light">
+				<i class="material-icons">email</i> marjan "at" ru.is
+			</p>
+		</div>
+	</div>
 
-The word "rebec" is also the name of a bowed string musical instrument,
-developed from the Persian instrument, the rabab.
+	<div class="col s12 m6">
+		<div class="icon-block">
+			<h2 class="center light-blue-text"><i class="material-icons">person</i></h2>
+			<a href="http://ece.ut.ac.ir/facultymembers/rkhosravi/"><h5 class="center">Ramtin Khosravi</h5></a>
+			<p class="light">
+				Assistant Professor,
+				School of Electrical and Computer Engineering,
+				University of Tehran
+			</p>
+			<p class="light">
+				<i class="material-icons">email</i> rkhosravi "at" ut.ac.ir
+			</p>
+		</div>
+	</div>
+</div>
 
-Like all good medieval things, the rebec's origins can be traced to the Middle East.
-Around the middle to the end of the ninth century AD, there are several discussions of
-an instrument called a rabab in Persia ... rebec
