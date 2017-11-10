@@ -50,7 +50,7 @@ Different approaches are proposed for verifying correctness of these properties.
 				University of Tehran
 			</p>
 			<p class="light">
-				<i class="material-icons">email</i> rkhosravi "at" ut.ac.ir
+				<i class="material-icons">email</i> r.khosravi "at" ut.ac.ir
 			</p>
 		</div>
 	</div>
