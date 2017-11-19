@@ -25,7 +25,7 @@ Different approaches are proposed for verifying correctness of these properties.
 
 #### Members
 <div class="row">
-	<div class="col s12 m6">
+	<div class="col s12 m4">
 		<div class="icon-block">
 			<h2 class="center light-blue-text"><i class="material-icons">person</i></h2>
 			<a href="http://www.ru.is/faculty/marjan/"><h5 class="center">Marjan Sirjani</h5></a>
@@ -40,7 +40,7 @@ Different approaches are proposed for verifying correctness of these properties.
 		</div>
 	</div>
 
-	<div class="col s12 m6">
+	<div class="col s12 m4">
 		<div class="icon-block">
 			<h2 class="center light-blue-text"><i class="material-icons">person</i></h2>
 			<a href="http://ramtung.ir"><h5 class="center">Ramtin Khosravi</h5></a>
@@ -54,10 +54,7 @@ Different approaches are proposed for verifying correctness of these properties.
 			</p>
 		</div>
 	</div>
-</div>
-
-<div class="row">
-	<div class="col s12 m6">
+	<div class="col s12 m4">
 		<div class="icon-block">
 			<h2 class="center light-blue-text"><i class="material-icons">person</i></h2>
 			<a href="http://fghassemi.adhoc.ir"><h5 class="center">Fatemeh Ghassemi</h5></a>
@@ -70,9 +67,11 @@ Different approaches are proposed for verifying correctness of these properties.
 				<i class="material-icons">email</i> fghassemi "at" ut.ac.ir
 			</p>
 		</div>
-	</div>
+	</div>	
+</div>
 
-	<div class="col s12 m6">
+<div class="row">
+	<div class="col s12 m4">
 		<div class="icon-block">
 			<h2 class="center light-blue-text"><i class="material-icons">person</i></h2>
 			<a href=""><h5 class="center">Ehsan Khamespanah</h5></a>
@@ -86,10 +85,7 @@ Different approaches are proposed for verifying correctness of these properties.
 			</p>
 		</div>
 	</div>
-</div>
-
-<div class="row">
-	<div class="col s12 m6">
+	<div class="col s12 m4">
 		<div class="icon-block">
 			<h2 class="center light-blue-text"><i class="material-icons">person</i></h2>
 			<a href=""><h5 class="center">Ali Jafari</h5></a>
@@ -104,7 +100,7 @@ Different approaches are proposed for verifying correctness of these properties.
 		</div>
 	</div>
 
-	<div class="col s12 m6">
+	<div class="col s12 m4">
 		<div class="icon-block">
 			<h2 class="center light-blue-text"><i class="material-icons">person</i></h2>
 			<a href=""><h5 class="center">Zeynab Sharifi</h5></a>
@@ -123,7 +119,7 @@ Different approaches are proposed for verifying correctness of these properties.
 #### Alumni
 
 <div class="row">
-	<div class="col s12 m6">
+	<div class="col s12 m4">
 		<div class="icon-block">
 			<h2 class="center light-blue-text"><i class="material-icons">person</i></h2>
 			<a href=""><h5 class="center">Amin Shali</h5></a>
@@ -133,7 +129,7 @@ Different approaches are proposed for verifying correctness of these properties.
 		</div>
 	</div>
 
-	<div class="col s12 m6">
+	<div class="col s12 m4">
 		<div class="icon-block">
 			<h2 class="center light-blue-text"><i class="material-icons">person</i></h2>
 			<a href=""><h5 class="center">Hossein Hojjat</h5></a>
@@ -142,10 +138,7 @@ Different approaches are proposed for verifying correctness of these properties.
 			</p>
 		</div>
 	</div>
-</div>
-
-<div class="row">
-	<div class="col s12 m6">
+	<div class="col s12 m4">
 		<div class="icon-block">
 			<h2 class="center light-blue-text"><i class="material-icons">person</i></h2>
 			<a href=""><h5 class="center">Mohammad Mahdi Jaghoori</h5></a>
@@ -154,8 +147,10 @@ Different approaches are proposed for verifying correctness of these properties.
 			</p>
 		</div>
 	</div>
+</div>
 
-	<div class="col s12 m6">
+<div class="row">
+	<div class="col s12 m4">
 		<div class="icon-block">
 			<h2 class="center light-blue-text"><i class="material-icons">person</i></h2>
 			<a href=""><h5 class="center">Hamideh Sabouri</h5></a>
@@ -164,10 +159,7 @@ Different approaches are proposed for verifying correctness of these properties.
 			</p>
 		</div>
 	</div>
-</div>
-
-<div class="row">
-	<div class="col s12 m6">
+	<div class="col s12 m4">
 		<div class="icon-block">
 			<h2 class="center light-blue-text"><i class="material-icons">person</i></h2>
 			<a href="http://emjay.ir"><h5 class="center">Mohammad-Javad Izadi</h5></a>
@@ -177,7 +169,7 @@ Different approaches are proposed for verifying correctness of these properties.
 		</div>
 	</div>
 
-	<div class="col s12 m6">
+	<div class="col s12 m4">
 		<div class="icon-block">
 			<h2 class="center light-blue-text"><i class="material-icons">person</i></h2>
 			<a href=""><h5 class="center">Zeynab Sabahi Kaviani</h5></a>
@@ -189,7 +181,7 @@ Different approaches are proposed for verifying correctness of these properties.
 </div>
 
 <div class="row">
-	<div class="col s12 m6">
+	<div class="col s12 m4">
 		<div class="icon-block">
 			<h2 class="center light-blue-text"><i class="material-icons">person</i></h2>
 			<a href=""><h5 class="center">Mahsa Varshosaz</h5></a>
@@ -199,7 +191,7 @@ Different approaches are proposed for verifying correctness of these properties.
 		</div>
 	</div>
 
-	<div class="col s12 m6">
+	<div class="col s12 m4">
 		<div class="icon-block">
 			<h2 class="center light-blue-text"><i class="material-icons">person</i></h2>
 			<a href="brynjar.is"><h5 class="center">Brynjar Magnusson</h5></a>
@@ -208,10 +200,7 @@ Different approaches are proposed for verifying correctness of these properties.
 			</p>
 		</div>
 	</div>
-</div>
-
-<div class="row">
-	<div class="col s12 m6">
+	<div class="col s12 m4">
 		<div class="icon-block">
 			<h2 class="center light-blue-text"><i class="material-icons">person</i></h2>
 			<a href=""><h5 class="center">Haukur Kristinsson</h5></a>
@@ -220,8 +209,10 @@ Different approaches are proposed for verifying correctness of these properties.
 			</p>
 		</div>
 	</div>
+</div>
 
-	<div class="col s12 m6">
+<div class="row">
+	<div class="col s12 m4">
 		<div class="icon-block">
 			<h2 class="center light-blue-text"><i class="material-icons">person</i></h2>
 			<a href=""><h5 class="center">Ala Harirchi</h5></a>
@@ -230,10 +221,7 @@ Different approaches are proposed for verifying correctness of these properties.
 			</p>
 		</div>
 	</div>
-</div>
-
-<div class="row">
-	<div class="col s12 m6">
+	<div class="col s12 m4">
 		<div class="icon-block">
 			<h2 class="center light-blue-text"><i class="material-icons">person</i></h2>
 			<a href=""><h5 class="center">Niloofar Razavi</h5></a>
@@ -243,7 +231,7 @@ Different approaches are proposed for verifying correctness of these properties.
 		</div>
 	</div>
 
-	<div class="col s12 m6">
+	<div class="col s12 m4">
 		<div class="icon-block">
 			<h2 class="center light-blue-text"><i class="material-icons">person</i></h2>
 			<a href=""><h5 class="center">Razieh Behjati</h5></a>
@@ -255,7 +243,7 @@ Different approaches are proposed for verifying correctness of these properties.
 </div>
 
 <div class="row">
-	<div class="col s12 m6">
+	<div class="col s12 m4">
 		<div class="icon-block">
 			<h2 class="center light-blue-text"><i class="material-icons">person</i></h2>
 			<a href=""><h5 class="center">Hamed Iravanchi</h5></a>
@@ -265,7 +253,7 @@ Different approaches are proposed for verifying correctness of these properties.
 		</div>
 	</div>
 
-	<div class="col s12 m6">
+	<div class="col s12 m4">
 		<div class="icon-block">
 			<h2 class="center light-blue-text"><i class="material-icons">person</i></h2>
 			<a href=""><h5 class="center">Niusha Hakimipour</h5></a>

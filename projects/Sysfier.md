@@ -6,7 +6,7 @@ permalink: /allprojects/Sysfier
 ---
 
 #### Description
-The goal of Sysfier is to develop an integrated environment for modeling and verifying SystemC designs by formalizing SystemC semantics and providing model checking tools. The tool [[Tools/Afra]] is developed to integrate Sytra, Modere and SyMon in addition to Rebeca and SystemC modeling environments. Afra gets SystemC models and LTL or CTL properties from the designer, and verifies the models. If a property is not satisfied, a counter- example is displayed. For verifying SystemC models, Afra translates SystemC codes to Rebeca using Sytra. It then utilizes the Rebeca verification tool set to verify the given properties. Where applicable, reduction techniques are used to tackle the state explosion problem.
+The goal of Sysfier is to develop an integrated environment for modeling and verifying SystemC designs by formalizing SystemC semantics and providing model checking tools. The tool Afra is developed to integrate Sytra, Modere and SyMon in addition to Rebeca and SystemC modeling environments. Afra gets SystemC models and LTL or CTL properties from the designer, and verifies the models. If a property is not satisfied, a counter-example is displayed. For verifying SystemC models, Afra translates SystemC codes to Rebeca using Sytra. It then utilizes the Rebeca verification tool set to verify the given properties. Where applicable, reduction techniques are used to tackle the state explosion problem.
 
 #### Tools
 * Integrated Development and Analysis Environment [Afra](/alltools/Afra).

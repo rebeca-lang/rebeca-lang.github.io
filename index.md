@@ -7,4 +7,4 @@ designed in an effort to bridge the gap between formal verification approaches a
 It can be considered as a reference model for concurrent computation,
 based on an operational interpretation of the actor model.
 It is also a platform for developing object-based concurrent systems in practice.
-[Learn More](about)
+[Learn More](Rebeca)
