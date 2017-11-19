@@ -34,10 +34,11 @@ The following case studies are also developed which include TCTL property specif
 * Ramtin Khosravi
 * Javad Izadi
 * Zeynab Sabahi-Kaviani
-* Matteo Cimini
-* Anna Ingólfsdóttir
 * Arni Hermann Reynisson
 * Steinar Hugi Sigurdarson
+* Luca Aceto
+* Anna Ingólfsdóttir
+* Matteo Cimini
 * Ali Jafari
 * Brynjar Magnusson
 * Haukur Kristinsson

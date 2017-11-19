@@ -171,3 +171,6 @@ title: Publications
 
 #### 2002
 * Marjan Sirjani, Ali Movaghar: Simulation in Rebeca. PDPTA 2002: 923-926 [ [bib] ](http://dblp.uni-trier.de/rec/bibtex/conf/pdpta/SirjaniM02)
+
+#### 2001
+* Marjan Sirjani, Ali Movaghar, MohammadReza Mousavi: Compositional Verification of an Object-Based Model for Reactive Systems. AVoCS 2001
