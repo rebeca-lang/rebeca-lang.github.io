@@ -22,9 +22,9 @@ The actor model serves as the model@runtime in the core of the knowledge-base of
 #### Contributers
 * Marjan Sirjani
 * Ehsan Khamespanah
+* Ali Jafari
 * Edward A. Lee
 * Narges Khakpour
-* Ali Jafari
 
 #### Related Publications
 - Maryam Bagheri, Ehsan Khamespanah, Marjan Sirjani, Ali Movaghar, Edward A. Lee: Runtime Compositional Analysis of Track-based Traffic Control Systems, CRTS, 2016 [ [pdf] ](/assets/papers/2016/RuntimeCompositionalAnalysisofTTCS.pdf)
