@@ -28,7 +28,7 @@ The TMDP-MA tool is developed to convert the TMDP of the model to the input lang
 #### Contributers
 * Ali Jafari
 * Ehsan Khamespanah
-* Marjan Sirjani
+**<u>Marjan Sirjani (Principal Investigator)</u>**
 * Holger Hermanns
 
 #### Related Publications

@@ -27,10 +27,10 @@ Carrier Sense Multiple Access (CDMA) protocol with timing specification: [ [zip]
 
 #### Contributers
 * Zeynab Sabahi-Kaviani
-* Ramtin Khosravi
-* Peter Csaba Ölveczky
+* **<u>Ramtin Khosravi (Principal Investigator)</u>**
+* **<u>Peter Csaba Ölveczky (Principal Investigator)</u>**
+* **<u>Marjan Sirjani (Principal Investigator)</u>**
 * Ehsan Khamespanah
-* Marjan Sirjani
 
 #### Related Publications
 * Zeynab Sabahi-Kaviani, Ramtin Khosravi, Peter Csaba Ölveczky, Ehsan Khamespanah, Marjan Sirjani: Formal semantics and efficient analysis of Timed Rebeca in Real-Time Maude, Science of Computer Programming, 2015 [ [bib] ](http://dblp.uni-trier.de/rec/bibtex/journals/scp/Sabahi-KavianiK15)

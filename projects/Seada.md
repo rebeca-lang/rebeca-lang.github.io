@@ -7,6 +7,7 @@ permalink: /allprojects/Seada
 
 #### Description
 In SEADA, we will propose a framework for self-adaptive systems with a component-based architecture built in Ptolemy II that forms the feedback loop. Our models@runtime will be coded in an extension of Probabilistic Timed Rebeca (with dynamic features). Supporting tools for customized run- time formal verification of these models will be developed. Our focus will be on safety assurance while addressing uncertainty and responsiveness of the applications. SEADA will benefit from using Ptolemy in various ways. Ptolemy gives us the support for modeling cyber-physical systems; hence interaction with the physical world can be done smoothly. Furthermore, connecting Ptolemy actors and Rebeca actors can be done in a natural way, so, keeping the model@runtime up-to-date using Ptolemy event queues takes the least effort. The distinctive feature of SEADA is its actor-based flavor which will reflect in the design of the components of the architecture, the models in the knowledge-base, and in the V&V and formal verification techniques. In developing SEADA models we focus on the air traffic control and flight network applications. These applications are safety critical, and highly sensitive to changes that can occur in the system and the environment.
+
 <!--
 In SEADA we will use Ptolemy to represent the architecture, and extensions of Rebeca for modeling and verification. Ptolemy is a modeling and simulation tool for cyber-physical systems where the components are actors and the communication and coordination of actors are captured in a director which represents the Model of Computation. Rebeca is an actor-based modeling language with formal verification support. In SEADA, we will propose a framework for self-adaptive systems with a component-based architecture built in Ptolemy II. Our models@runtime will be coded in an extension of Probabilistic Timed Rebeca (with dynamic features), and supporting tools for customized run-time formal verification of these models will be developed. SEADA architecture in Ptolemy II forms the feedback loop and consists of four components of Monitor, Analyze, Plan, and Execute, together with a Knowledge-base, similar to the MAPE-K architecture. A Model of Computation for self-adaptive systems will be designed in Ptolemy. The distinctive feature of SEADA is its actor-based flavor which will reflect in the design of the components of the architecture, the models in the knowledge-base, and in the V&V and formal verification techniques. Ptolemy gives us the much-needed support to model and evaluate the system in a more abstract level, and the means to connect to the physical world, while Rebeca gives us the formal verification support for the model@runtime to assure safety concerns.\\
 Ptolemy components in SEADA call the external tools to verify models@runtime and check the safety in order to react accordingly. Before sending any command to the system for reconfiguration or change, they will check the safety of new configurations.\\
@@ -20,7 +21,7 @@ The actor model serves as the model@runtime in the core of the knowledge-base of
 * An example of ATC model: [ [zip] ](http://rebeca.cs.ru.is/files/ATC.zip)
 
 #### Contributers
-* Marjan Sirjani
+* **<u>Marjan Sirjani (Principal Investigator)</u>**
 * Ehsan Khamespanah
 * Ali Jafari
 * Edward A. Lee

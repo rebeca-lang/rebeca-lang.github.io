@@ -34,7 +34,7 @@ The conceptual organization and architecture of ToolTRain can be reused in other
 * Jacopo de Berardinis
 * Giorgio Forcina
 * Ali Jafari
-* Marjan Sirjani
+* **<u>Marjan Sirjani (Principal Investigator)</u>**
 * Ehsan Khamespanah
 
 #### Related Publications

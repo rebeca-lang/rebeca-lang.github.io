@@ -17,7 +17,7 @@ wRebeca is an actor-based modeling language, an extension of Rebeca, proposed fo
 * [The flooding protocol](https://github.com/b-yousefi/wRebeca/tree/master/Example)
 
 #### Contributers
-* Fatemeh Ghassemi
+* **<u>Fatemeh Ghassemi (Principal Investigator)</u>**
 * Behnaz Yousefi
 
 #### Related Publications

@@ -28,7 +28,7 @@ The goal of Sysfier is to develop an integrated environment for modeling and ver
 * Amin Shali
 * Hossein Hojjat
 * Ehsan Khamespanah
-* Marjan Sirjani
+* **<u>Marjan Sirjani (Principal Investigator)</u>**
 * Ramtin Khosravi
 
 #### Related Publications

@@ -29,8 +29,8 @@ The following case studies are also developed which include TCTL property specif
 * Hadoop Yarn Schedule: [ [zip] ](/assets/projects/TARO/case-studies/yarn-prop.zip)
 
 #### Contributers
+* **<u>Marjan Sirjani (Principal Investigator)</u>**
 * Ehsan Khamespanah
-* Marjan Sirjani
 * Ramtin Khosravi
 * Javad Izadi
 * Zeynab Sabahi-Kaviani
