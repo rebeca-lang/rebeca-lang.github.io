@@ -40,6 +40,7 @@ To illustrate how models can be developed in Rebeca family language, we provided
 	    Ticket Service System (TCTL) <a href="{{ "/assets/projects/TARO/case-studies/ticket-service-prop.zip" | relative_url }}">[zip]</a><br/>
 	    WSAN Applications (TCTL) <a href="{{ "/assets/projects/TARO/case-studies/tinyos-prop.zip" | relative_url }}">[zip]</a><br/>
 	    Hadoop Yarn Schedule (TCTL) <a href="{{ "/assets/projects/TARO/case-studies/yarn-prop.zip" | relative_url }}">[zip]</a><br/>
+	    Autonomous Vehicles <a href="{{ "/assets/projects/TARO/case-studies/AutonomousVehicles.rebeca" | relative_url }}">[Rebeca model]</a><br/>
 	</p>
   </div>
 </div>

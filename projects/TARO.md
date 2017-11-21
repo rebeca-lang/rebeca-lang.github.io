@@ -21,6 +21,7 @@ In TARO (Timed Asynchronous Reactive Objects in Distributed Systems) project, we
 * Sensor Network: [ [Rebeca model] ](/assets/projects/TARO/case-studies/sensornetwork.rebeca)
 * Carrier Sense Multiple Access (CDMA) protocol with timing specification: [ [Rebeca model] ](/assets/projects/TARO/case-studies/tcsma.rebeca)
 * [Ticket Service System](/allprojects/TAROExamples/TicketService)
+* Autonomous Vehicles: [ [Rebeca model] ](/assets/projects/TARO/case-studies/AutonomousVehicles.rebeca)
 
 The following case studies are also developed which include TCTL property specifications.
 * ASPIN Network on Chip: [ [zip] ](/assets/projects/TARO/case-studies/noc-prop.zip)

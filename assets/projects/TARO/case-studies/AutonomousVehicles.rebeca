@@ -1,0 +1,517 @@
+env int RESENDING_PERIOD = 25;
+env int NORMAL_SPEED = 15;
+env int REDUCED_SPEED = 7;
+env int SAFE_DISTANCE = 20;  // segments has 1000 meters length and each sub-segment has 200 meteres length
+env int SEGMENT_LENGTH = 200;
+env int LOADING_TIME_PC = 60;
+env int LOADING_TIME_WL = 60;
+env int UNLOADING_TIME_SC = 30;
+env int CHARGING_TIME_C1 = 60;
+env int CHARGING_TIME_C2 = 60;
+env int LEAVING_PERIOD = 13;
+env int NUMBER_VEHICLES = 4;
+
+//************* E1:WL, E2:Crusher, E3:SC, E4:DP ***********
+
+reactiveclass CrossController (10){		// to control when S4 passes S3
+	knownrebecs
+	{
+	}
+	statevars
+	{
+		boolean crossIsFree;
+	}
+	CrossController()
+	{ 
+		crossIsFree= true;
+	}
+	msgsrv giveCrossPermission(int vehicleId){
+		if(crossIsFree){
+			crossIsFree = false;
+			((Segment)sender).getCrossPermission(vehicleId);
+		}
+		else ((Segment)sender).crossNotAvailable(vehicleId);
+	}
+	msgsrv freeCross(int vehicleId){
+		crossIsFree = true;	
+	}
+}
+
+reactiveclass PrimaryCrusher (14) {
+	knownrebecs
+	{
+		Segment firstSubSegPcToSc;
+	}
+	statevars
+	{
+		boolean isLoading;
+	}
+	PrimaryCrusher()
+	{ 
+		isLoading= false;
+	}
+	msgsrv givePermisionForVehicle(int vehicleId){
+	 	if (isLoading == false){
+			isLoading = true;
+			((Segment)sender).getPermision(vehicleId);
+		}
+		else 
+			((Segment)sender).segmentNotFree(vehicleId);
+	}	
+	msgsrv vehicleEntered(int vehicleId){
+		delay(LOADING_TIME_PC);
+		self.startSendingToNext(vehicleId);
+	}
+	msgsrv startSendingToNext(int vehicleId){
+		firstSubSegPcToSc.givePermisionForVehicle(vehicleId,-1);
+	}
+	msgsrv getPermision (int vehicleId){
+		isLoading= false;
+		((Segment)sender).vehicleEntered(vehicleId);
+	}
+	msgsrv segmentNotFree (int vehicleId){
+		self.startSendingToNext(vehicleId) after(RESENDING_PERIOD);
+	}
+}
+
+reactiveclass SecondaryCrusher (14) {
+	knownrebecs
+	{
+		Segment firstSubSegScToPrepoint;
+	}
+	statevars
+	{
+		boolean isUnloading;
+	}
+	SecondaryCrusher()
+	{ 
+		isUnloading= false;
+	}
+	msgsrv givePermisionForVehicle(int vehicleId){
+	 	if (isUnloading == false){
+			isUnloading = true;
+			((Segment)sender).getPermision(vehicleId);
+		}
+		else 
+			((Segment)sender).segmentNotFree(vehicleId);
+	}	
+	msgsrv vehicleEntered(int vehicleId){
+		delay(UNLOADING_TIME_SC);
+		self.startSendingToNext(vehicleId);
+	}
+	msgsrv startSendingToNext(int vehicleId){
+		firstSubSegScToPrepoint.givePermisionForVehicle(vehicleId,-1);
+	}
+	msgsrv getPermision (int vehicleId){
+		isUnloading= false;
+		((Segment)sender).vehicleEntered(vehicleId);
+	}
+	msgsrv segmentNotFree (int vehicleId){
+		self.startSendingToNext(vehicleId) after(RESENDING_PERIOD);
+	}
+}
+
+reactiveclass PrePoint (14) { 			// the point at the end of S7
+	knownrebecs
+	{
+		Segment firstSubSegPreToE1;
+		Segment firstSubSegPreToE2;
+	}
+	statevars
+	{
+		boolean isBusy;
+		boolean toE1;
+		int count;
+	}
+	PrePoint()
+	{ 
+		isBusy= false;
+		toE1 = true;
+		count=0;
+	}
+	msgsrv givePermisionForVehicle(int vehicleId){
+	 	if (isBusy == false){
+			isBusy = true;
+			((Segment)sender).getPermision(vehicleId);
+		}
+		else 
+			((Segment)sender).segmentNotFree(vehicleId);
+	}	
+	msgsrv vehicleEntered(int vehicleId){
+		self.startSendingToNext(vehicleId);
+	}
+	msgsrv startSendingToNext(int vehicleId){
+		if(toE1)
+			firstSubSegPreToE1.givePermisionForVehicle(vehicleId,-1);
+	}
+	msgsrv getPermision (int vehicleId){
+		isBusy= false;
+		((Segment)sender).vehicleEntered(vehicleId);
+	}
+	msgsrv segmentNotFree (int vehicleId){
+		if(toE1){
+			toE1 = false;
+			firstSubSegPreToE2.givePermisionForVehicle(vehicleId, -1);	
+		}
+		else 
+		{
+			toE1 = true;
+			self.startSendingToNext(vehicleId) after(RESENDING_PERIOD);
+		}
+	}
+}
+
+reactiveclass DecisionStation (14) {
+	knownrebecs
+	{
+		Segment firstSubSegDsToPc;
+	}
+	statevars
+	{	
+		boolean vehicle1Reached;
+		boolean vehicle2Reached;
+		boolean vehicle3Reached;
+		boolean vehicle4Reached;
+		boolean vehicle5Reached;
+		boolean vehicle6Reached;
+		boolean vehicle7Reached;
+		boolean vehicle8Reached;
+	}
+	DecisionStation()
+	{ 
+		self.leaveParkingSlots();
+	}
+	msgsrv leaveParkingSlots(){
+		
+		startSendingToNext(1) after(1);
+		
+		if(NUMBER_VEHICLES == 2 || NUMBER_VEHICLES == 3  || NUMBER_VEHICLES == 4 
+		|| NUMBER_VEHICLES == 5 || NUMBER_VEHICLES == 6 || NUMBER_VEHICLES == 7 || NUMBER_VEHICLES == 8)
+			startSendingToNext(2) after(4);
+			
+		if(NUMBER_VEHICLES == 3  || NUMBER_VEHICLES == 4 || NUMBER_VEHICLES == 5 
+		|| NUMBER_VEHICLES == 6 || NUMBER_VEHICLES == 7 || NUMBER_VEHICLES == 8)
+			startSendingToNext(3) after(6);
+			
+		if(NUMBER_VEHICLES == 4 || NUMBER_VEHICLES == 5 || NUMBER_VEHICLES == 6 
+		|| NUMBER_VEHICLES == 7 || NUMBER_VEHICLES == 8)
+			startSendingToNext(4) after(9);
+			
+ 		if(NUMBER_VEHICLES == 5 || NUMBER_VEHICLES == 6 || NUMBER_VEHICLES == 7
+		|| NUMBER_VEHICLES == 8)
+			startSendingToNext(5) after(12);
+			
+		if(NUMBER_VEHICLES == 6 || NUMBER_VEHICLES == 7 || NUMBER_VEHICLES == 8)
+			startSendingToNext(6) after(15);
+			
+		if(NUMBER_VEHICLES == 7 || NUMBER_VEHICLES == 8)
+			startSendingToNext(7) after(19);
+		
+		if(NUMBER_VEHICLES == 8)
+			startSendingToNext(8) after(26);
+	}
+	msgsrv getPermision(int vehicleId){
+		((Segment)sender).vehicleEntered(vehicleId);
+	}
+	msgsrv segmentNotFree(int vehicleId, int segmentDes){
+		startSendingToNext(vehicleId) after (RESENDING_PERIOD);
+	}
+	msgsrv startSendingToNext(int vehicleId){
+		firstSubSegDsToPc.givePermisionForVehicle(vehicleId,1);
+	}
+	msgsrv givePermisionForVehicle(int vehicleId){
+		((Segment)sender).getPermision(vehicleId);
+	}
+	msgsrv vehicleEntered(int vehicleId){
+		//startSendingToNext(vehicleId) after(LEAVING_PERIOD);
+		if(vehicleId == 1)
+			vehicle1Reached = true;
+		else if(vehicleId == 2)
+			vehicle2Reached = true;
+		else if(vehicleId == 3)
+			vehicle3Reached = true;
+		else if(vehicleId == 4)
+			vehicle4Reached = true;
+		else if(vehicleId == 5)
+			vehicle5Reached = true;
+		else if(vehicleId == 6)
+			vehicle6Reached = true;
+		else if(vehicleId == 7)
+			vehicle7Reached = true;
+		else if(vehicleId == 8)
+			vehicle8Reached = true;
+		
+		//if(NUMBER_VEHICLES == 4)
+		//		assertion(false);
+		// when all vehicles travelled once the model checking stops by puting 'assertion(false)'
+		if(NUMBER_VEHICLES == 1){
+			if(vehicle1Reached == true)
+				assertion(false);
+		}
+		else if(NUMBER_VEHICLES == 2){
+			if(vehicle1Reached == true && vehicle2Reached == true) 
+				assertion(false);
+		}
+		else if(NUMBER_VEHICLES == 3){
+			if(vehicle1Reached == true && vehicle2Reached == true && vehicle3Reached == true) 
+				assertion(false);
+		}
+		else if(NUMBER_VEHICLES == 4){
+			if(vehicle1Reached == true && vehicle2Reached == true && vehicle3Reached == true 
+			&& vehicle4Reached == true) 
+				assertion(false);
+		}		
+		else if(NUMBER_VEHICLES == 5){
+			if(vehicle1Reached == true && vehicle2Reached == true && vehicle3Reached == true 
+			&& vehicle4Reached == true && vehicle5Reached == true) 
+				assertion(false);
+		}		
+		else if(NUMBER_VEHICLES == 6){
+			if(vehicle1Reached == true && vehicle2Reached == true && vehicle3Reached == true 
+			&& vehicle4Reached == true && vehicle5Reached == true && vehicle6Reached == true)
+				assertion(false);
+		}		
+		else if(NUMBER_VEHICLES == 7){
+			if(vehicle1Reached == true && vehicle2Reached == true && vehicle3Reached == true 
+			&& vehicle4Reached == true && vehicle5Reached == true && vehicle6Reached == true 
+			&& vehicle7Reached == true)
+				assertion(false);
+		}
+		else if(NUMBER_VEHICLES == 8){
+			if(vehicle1Reached == true && vehicle2Reached == true && vehicle3Reached == true 
+			&& vehicle4Reached == true && vehicle5Reached == true && vehicle6Reached == true 
+			&& vehicle7Reached == true && vehicle8Reached == true)
+				assertion(false);
+		}
+	}
+	msgsrv loop (){
+		self.loop() after(5000);
+	}
+}
+
+reactiveclass WheelLoader (14) {
+	knownrebecs
+	{
+		Segment firstSubSegWlToSc;
+	}
+	statevars
+	{
+		boolean isLoading;
+	}
+	WheelLoader()
+	{ 
+		isLoading = false;
+	}
+	msgsrv givePermisionForVehicle(int vehicleId){
+	 	if (isLoading == false){
+			isLoading = true;
+			((Segment)sender).getPermision(vehicleId);
+		}
+		else 
+			((Segment)sender).segmentNotFree(vehicleId);
+	}	
+	msgsrv vehicleEntered(int vehicleId){
+		delay(LOADING_TIME_WL);
+		self.startSendingToNext(vehicleId);
+	}
+	msgsrv startSendingToNext(int vehicleId){
+		firstSubSegWlToSc.givePermisionForVehicle(vehicleId,-1);
+	}
+	msgsrv getPermision (int vehicleId){
+		isLoading= false;
+		((Segment)sender).vehicleEntered(vehicleId);
+	}
+	msgsrv segmentNotFree (int vehicleId){
+		self.startSendingToNext(vehicleId) after(RESENDING_PERIOD);
+	}
+}
+
+reactiveclass Segment(14) {
+	knownrebecs
+	{
+		
+	}
+	statevars
+	{
+		boolean isFree;
+		boolean stoppedVehicle;
+		int vehicleSpeed;			// speed of the current vehicle
+		int segmentLength;
+		
+		Segment nextSegment;
+		DecisionStation decisionS;
+		PrimaryCrusher primaryC;
+		SecondaryCrusher secondaryC;
+		WheelLoader wheelL;
+		PrePoint prePoint;
+		CrossController crossCtrl;
+		Segment segRequestingCross;
+	}
+	Segment(Segment nextS, WheelLoader wl, PrimaryCrusher pc, SecondaryCrusher sc, 
+				DecisionStation ds, PrePoint preCs, CrossController ctrl, int speed, int segLength)
+	{ 
+		nextSegment = nextS;
+		decisionS = ds;
+		primaryC = pc;
+		secondaryC = sc;
+		wheelL = wl;
+		prePoint = preCs;	
+		crossCtrl = ctrl;
+		segRequestingCross = null;
+		segmentLength = segLength;
+		
+		vehicleSpeed = speed;
+		isFree = true;
+		stoppedVehicle =false;
+	}
+	msgsrv givePermisionForVehicle(int vehicleId, int segmentDes){
+		if (isFree)
+		{
+			isFree=false;
+			if(crossCtrl == null){
+				if(sender instanceof Segment)
+					((Segment)sender).getPermision(vehicleId);
+				else if(sender instanceof DecisionStation)
+					((DecisionStation)sender).getPermision(vehicleId);
+				else if(sender instanceof PrimaryCrusher)
+					((PrimaryCrusher)sender).getPermision(vehicleId);
+				else if(sender instanceof WheelLoader)
+					((WheelLoader)sender).getPermision(vehicleId);
+				else if(sender instanceof SecondaryCrusher)
+					((SecondaryCrusher)sender).getPermision(vehicleId);
+				else if(sender instanceof PrePoint)
+					((PrePoint)sender).getPermision(vehicleId);
+			}
+			else {
+				segRequestingCross = ((Segment)sender);
+				crossCtrl.giveCrossPermission(vehicleId);
+			}
+		}
+		else{
+			if(sender instanceof Segment)
+				((Segment)sender).segmentNotFree(vehicleId);
+			else if(sender instanceof DecisionStation)
+				((DecisionStation)sender).segmentNotFree(vehicleId, segmentDes);
+			else if(sender instanceof PrimaryCrusher)
+				((PrimaryCrusher)sender).segmentNotFree(vehicleId);
+			else if(sender instanceof WheelLoader)
+				((WheelLoader)sender).segmentNotFree(vehicleId);
+			else if(sender instanceof SecondaryCrusher)
+				((SecondaryCrusher)sender).segmentNotFree(vehicleId);
+			else if(sender instanceof PrePoint)
+				((PrePoint)sender).segmentNotFree(vehicleId);
+		}
+	
+	}
+	msgsrv getCrossPermission(int vehicleId){
+		((Segment)segRequestingCross).getPermision(vehicleId);
+	}
+	msgsrv vehicleEntered (int vehicleId){	// moving of vehicle inside the segment should be modeled
+		delay((segmentLength-SAFE_DISTANCE)/vehicleSpeed);
+		self.startSendingToNext(vehicleId);
+	}
+	msgsrv crossNotAvailable(int vehicleId){
+		isFree = true;
+		((Segment)segRequestingCross).segmentNotFree(vehicleId);
+	}
+	msgsrv startSendingToNext(int vehicleId){
+		if(nextSegment != null)
+			nextSegment.givePermisionForVehicle(vehicleId,-1);
+		else if(primaryC != null)
+			primaryC.givePermisionForVehicle(vehicleId);
+		else if(wheelL != null)
+			wheelL.givePermisionForVehicle(vehicleId);
+		else if(secondaryC != null)
+			secondaryC.givePermisionForVehicle(vehicleId);
+		else if(decisionS != null)
+			decisionS.givePermisionForVehicle(vehicleId);
+		else if(prePoint != null)
+			prePoint.givePermisionForVehicle(vehicleId);
+			
+	}
+	msgsrv getPermision (int vehicleId){
+		stoppedVehicle = false;
+		delay(SAFE_DISTANCE/vehicleSpeed);
+		isFree = true;
+		if(crossCtrl != null){
+			segRequestingCross = null;
+			crossCtrl.freeCross(vehicleId);
+		}
+		if(sender instanceof Segment)
+			((Segment)sender).vehicleEntered(vehicleId);
+		else if(sender instanceof DecisionStation)
+			((DecisionStation)sender).vehicleEntered(vehicleId);
+		else if(sender instanceof PrimaryCrusher)
+			((PrimaryCrusher)sender).vehicleEntered(vehicleId);
+		else if(sender instanceof WheelLoader)
+			((WheelLoader)sender).vehicleEntered(vehicleId);
+		else if(sender instanceof SecondaryCrusher)
+			((SecondaryCrusher)sender).vehicleEntered(vehicleId);
+		else if(sender instanceof PrePoint)
+			((PrePoint)sender).vehicleEntered(vehicleId);
+	}
+	msgsrv segmentNotFree(int vehicleId){
+		stoppedVehicle = true;
+		self.startSendingToNext(vehicleId) after(RESENDING_PERIOD);
+	}
+}
+
+
+main{
+	//************* E1:WL, E2:PC, E3:SC, E4:DP ***********
+	PrimaryCrusher pc(subSeg1E2ToS2):();
+	SecondaryCrusher sc(subSeg1E3ToE4):();
+	WheelLoader wl(subSeg1E1ToS2):();
+	DecisionStation ds(subSeg1S4ToPre):();
+	CrossController controller():();
+	PrePoint prePoint(subSeg1S5ToE1,subSeg1S6ToE2):();
+	// ():(segment,E1,E2,E3,E4,prepoint,controller)
+	
+	//################ S1 ##################
+	Segment subSeg1E2ToS2():(subSeg2E2ToS2,null,null,null,null,null,null,REDUCED_SPEED,SEGMENT_LENGTH); 
+	Segment subSeg2E2ToS2():(subSeg3E2ToS2,null,null,null,null,null,null,REDUCED_SPEED,SEGMENT_LENGTH);
+	Segment subSeg3E2ToS2():(subSeg4E2ToS2,null,null,null,null,null,null,REDUCED_SPEED,SEGMENT_LENGTH);
+	Segment subSeg4E2ToS2():(subSeg5E2ToS2,null,null,null,null,null,null,REDUCED_SPEED,SEGMENT_LENGTH);
+	Segment subSeg5E2ToS2():(subSeg1S2ToE3,null,null,null,null,null,null,REDUCED_SPEED,SEGMENT_LENGTH); 
+	
+	//##################### S7 ##############
+	Segment subSeg1E1ToS2():(subSeg2E1ToS2,null,null,null,null,null,null,REDUCED_SPEED,SEGMENT_LENGTH);
+	Segment subSeg2E1ToS2():(subSeg3E1ToS2,null,null,null,null,null,controller,REDUCED_SPEED,SEGMENT_LENGTH);
+	Segment subSeg3E1ToS2():(subSeg4E1ToS2,null,null,null,null,null,null,REDUCED_SPEED,SEGMENT_LENGTH);
+	Segment subSeg4E1ToS2():(subSeg5E1ToS2,null,null,null,null,null,null,REDUCED_SPEED,SEGMENT_LENGTH);
+	Segment subSeg5E1ToS2():(subSeg1S2ToE3,null,null,null,null,null,null,REDUCED_SPEED,SEGMENT_LENGTH);
+	
+	//################## S2 ################
+	Segment subSeg1S2ToE3():(subSeg2S2ToE3,null,null,null,null,null,null,NORMAL_SPEED,SEGMENT_LENGTH);
+	Segment subSeg2S2ToE3():(subSeg3S2ToE3,null,null,null,null,null,null,NORMAL_SPEED,SEGMENT_LENGTH);
+	Segment subSeg3S2ToE3():(subSeg4S2ToE3,null,null,null,null,null,null,NORMAL_SPEED,SEGMENT_LENGTH);
+	Segment subSeg4S2ToE3():(subSeg5S2ToE3,null,null,null,null,null,null,NORMAL_SPEED,SEGMENT_LENGTH);
+	Segment subSeg5S2ToE3():(null,null,null,sc,null,null,null,NORMAL_SPEED,SEGMENT_LENGTH);
+	
+	//################## S3 #############
+	Segment subSeg1E3ToE4():(subSeg2E3ToE4,null,null,null,null,null,null,NORMAL_SPEED,SEGMENT_LENGTH);
+	Segment subSeg2E3ToE4():(subSeg3E3ToE4,null,null,null,null,null,null,NORMAL_SPEED,SEGMENT_LENGTH);
+	Segment subSeg3E3ToE4():(subSeg4E3ToE4,null,null,null,null,null,null,NORMAL_SPEED,SEGMENT_LENGTH);
+	Segment subSeg4E3ToE4():(subSeg5E3ToE4,null,null,null,null,null,null,NORMAL_SPEED,SEGMENT_LENGTH);
+	Segment subSeg5E3ToE4():(null,null,null,null,ds,null,null,NORMAL_SPEED,SEGMENT_LENGTH);
+	
+	//################## S6 #############
+	Segment subSeg1S6ToE2():(subSeg2S6ToE2,null,null,null,null,null,null,REDUCED_SPEED,SEGMENT_LENGTH);
+	Segment subSeg2S6ToE2():(subSeg3S6ToE2,null,null,null,null,null,null,REDUCED_SPEED,SEGMENT_LENGTH);
+	Segment subSeg3S6ToE2():(subSeg4S6ToE2,null,null,null,null,null,controller,REDUCED_SPEED,SEGMENT_LENGTH);
+	Segment subSeg4S6ToE2():(subSeg5S6ToE2,null,null,null,null,null,null,REDUCED_SPEED,SEGMENT_LENGTH);
+	Segment subSeg5S6ToE2():(null,null,pc,null,null,null,null,REDUCED_SPEED,SEGMENT_LENGTH);
+	
+	//################## S5 #############
+	Segment subSeg1S5ToE1():(subSeg2S5ToE1,null,null,null,null,null,null,REDUCED_SPEED,SEGMENT_LENGTH);
+	Segment subSeg2S5ToE1():(subSeg3S5ToE1,null,null,null,null,null,null,REDUCED_SPEED,SEGMENT_LENGTH);
+	Segment subSeg3S5ToE1():(null,wl,null,null,null,null,null,REDUCED_SPEED,SEGMENT_LENGTH);
+	
+	//################## S4 #############
+	Segment subSeg1S4ToPre():(subSeg2S4ToPre,null,null,null,null,null,null,NORMAL_SPEED,SEGMENT_LENGTH);
+	Segment subSeg2S4ToPre():(subSeg3S4ToPre,null,null,null,null,null,null,NORMAL_SPEED,SEGMENT_LENGTH);
+	Segment subSeg3S4ToPre():(subSeg4S4ToPre,null,null,null,null,null,null,NORMAL_SPEED,SEGMENT_LENGTH);
+	Segment subSeg4S4ToPre():(subSeg5S4ToPre,null,null,null,null,null,null,NORMAL_SPEED,SEGMENT_LENGTH);
+	Segment subSeg5S4ToPre():(null,null,null,null,null,prePoint,null,NORMAL_SPEED,SEGMENT_LENGTH);
+	
+}
