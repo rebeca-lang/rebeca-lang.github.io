@@ -21,14 +21,14 @@ The goal of Sysfier is to develop an integrated environment for modeling and ver
 * [Producer Consumer](/allprojects/SysfierExamples/ProducerConsumer)
 * [Spanning Tree Protocol](/allprojects/SysfierExamples/SpanningTreeProtocol)
 
-#### Contributers
+#### Project Members
+* **<u>Marjan Sirjani (Principal Investigator)</u>**
 * Niloofar Razavi
 * Hamideh Sabouri
 * Raziyeh Behjati
 * Amin Shali
 * Hossein Hojjat
 * Ehsan Khamespanah
-* **<u>Marjan Sirjani (Principal Investigator)</u>**
 * Ramtin Khosravi
 
 #### Related Publications

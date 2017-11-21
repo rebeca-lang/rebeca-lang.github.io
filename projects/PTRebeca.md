@@ -25,10 +25,10 @@ The TMDP-MA tool is developed to convert the TMDP of the model to the input lang
 * [Probabilistic Ticket Service](/allprojects/PTRebecaExamples/ProbabilisticTicketService)
 * [Fault Tolerant NoC 4x4](/allprojects/PTRebecaExamples/FaultTolerantNoC4x4)
 
-#### Contributers
+#### Project Members
+**<u>Marjan Sirjani (Principal Investigator)</u>**
 * Ali Jafari
 * Ehsan Khamespanah
-**<u>Marjan Sirjani (Principal Investigator)</u>**
 * Holger Hermanns
 
 #### Related Publications

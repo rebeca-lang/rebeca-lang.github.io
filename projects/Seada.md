@@ -20,7 +20,7 @@ The actor model serves as the model@runtime in the core of the knowledge-base of
 * The demo of our model@runtime for railway systems: [ [movie] ](http://rebeca.cs.ru.is/files/Movies/SEADA/TCS1.mov).
 * An example of ATC model: [ [zip] ](http://rebeca.cs.ru.is/files/ATC.zip)
 
-#### Contributers
+#### Project Members
 * **<u>Marjan Sirjani (Principal Investigator)</u>**
 * Ehsan Khamespanah
 * Ali Jafari

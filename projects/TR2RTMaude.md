@@ -25,11 +25,11 @@ The desired properties of the system are following:
 Carrier Sense Multiple Access (CDMA) protocol with timing specification: [ [zip] ](/assets/projects/TR2RTMaude/case-studies/tcsma-rtmaude.zip)
 * Other case studies including Timed Rebeca models and their corresponsing Realtime Maude models: [ [zip] ](http://rebeca.cs.ru.is/files/Case Studies.zip)
 
-#### Contributers
-* Zeynab Sabahi-Kaviani
+#### Project Members
 * **<u>Ramtin Khosravi (Principal Investigator)</u>**
 * **<u>Peter Csaba Ölveczky (Principal Investigator)</u>**
 * **<u>Marjan Sirjani (Principal Investigator)</u>**
+* Zeynab Sabahi-Kaviani
 * Ehsan Khamespanah
 
 #### Related Publications

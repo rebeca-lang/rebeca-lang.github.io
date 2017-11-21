@@ -29,12 +29,12 @@ The conceptual organization and architecture of ToolTRain can be reused in other
 - The runnable model: [ [Rebeca model] ](/assets/projects/tangramob/case-studies/model-smi1.rebeca)
 
 
-#### Contributers
+#### Project Members
+* **<u>Marjan Sirjani (Principal Investigator)</u>**
 * Carlo Castagnari
 * Jacopo de Berardinis
 * Giorgio Forcina
 * Ali Jafari
-* **<u>Marjan Sirjani (Principal Investigator)</u>**
 * Ehsan Khamespanah
 
 #### Related Publications
