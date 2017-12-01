@@ -26,7 +26,7 @@ The TMDP-MA tool is developed to convert the TMDP of the model to the input lang
 * [Fault Tolerant NoC 4x4](/allprojects/PTRebecaExamples/FaultTolerantNoC4x4)
 
 #### Project Members
-**<u>Marjan Sirjani (Principal Investigator)</u>**
+* **<u>Marjan Sirjani (Principal Investigator)</u>**
 * Ali Jafari
 * Ehsan Khamespanah
 * Holger Hermanns

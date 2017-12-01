@@ -11,9 +11,9 @@ title: Publications
 
 - Pouria Mellati, Ehsan Khamespanah, Ramtin Khosravi: LeeTL: LTL with quantifications over model objects, SPIN, 2017 [ [pdf] ](/assets/papers/2017/LeeTL.pdf) [ [bib] ](http://dblp.uni-trier.de/rec/bibtex/conf/spin/MellatiKK17)
 
-- Ehsan Khamespanah, Kirill Mechitov, Marjan Sirjani, Gul Agha: Modeling and Analyzing Real-Time Wireless Sensor and Actuator Networks Using Actors and Model Checking, Submitted to Software Tools for Technology Transfer, 2017  [ [pdf] ](/assets/papers/2017/Modeling-and-Analyzing-Real-Time-Wireless-Sensor-and-Actuator-Networks-Using-Actors-and-Model-Checking.pdf)
+- Ehsan Khamespanah, Kirill Mechitov, Marjan Sirjani, Gul Agha: Modeling and Analyzing Real-Time Wireless Sensor and Actuator Networks Using Actors and Model Checking, Software Tools for Technology Transfer, 2017  [ [pdf] ](/assets/papers/2017/Modeling-and-Analyzing-Real-Time-Wireless-Sensor-and-Actuator-Networks-Using-Actors-and-Model-Checking.pdf)
 
-- Ehsan Khamespanah, Ramtin Khosravi, Marjan Sirjani: An Efficient TCTL Model Checking Algorithm and A Reduction Technique for Verification of Timed Actor Models, Submitted to Science of Computer Programming, 2017  [ [pdf] ](/assets/papers/2017/Efficient-TCTL.pdf)
+- Ehsan Khamespanah, Ramtin Khosravi, Marjan Sirjani: An Efficient TCTL Model Checking Algorithm and A Reduction Technique for Verification of Timed Actor Models, Science of Computer Programming, 2017  [ [pdf] ](/assets/papers/2017/Efficient-TCTL.pdf)
 
 #### 2016
 - Maryam Bagheri, Ehsan Khamespanah, Marjan Sirjani, Ali Movaghar, Edward A. Lee: Runtime Compositional Analysis of Track-based Traffic Control Systems, CRTS, 2016 [ [pdf] ](/assets/papers/2016/RuntimeCompositionalAnalysisofTTCS.pdf)
@@ -144,7 +144,7 @@ title: Publications
 
 * Mohammad Mahdi Jaghoori, Ali Movaghar, Marjan Sirjani: Modere: the model-checking engine of Rebeca. SAC 2006: 1810-1815  [ [pdf] ](http://www.researchgate.net/publication/221000684_Modere_the_model-checking_engine_of_Rebeca/file/9fcfd5059a40c727a1.pdf?ev=pub_ext_doc_dl&docViewer=true) [ [bib] ](http://dblp.uni-trier.de/rec/bibtex/conf/sac/JaghooriMS06)
 
-* Fatemeh Alavizadeh, Marjan Sirjani: Using UML to Develop Verifiable Reactive Systems. Software Engineering Research and Practice 2006: 554-561 [ [pdf] ](https://docs.google.com/viewer?a=v&q=cache:GVil_qvw1CgJ:citeseerx.ist.psu.edu/viewdoc/download%3Fdoi%3D10.1.1.87.905%26rep%3Drep1%26type%3Dpdf+Marjan+Using+UML+to+Develop+Verifiable+Reactive+Systems.+Software+Engineering+Research+and+Practice+pdf&hl=en&gl=uk&pid=bl&srcid=ADGEESgWV1QVnXoPyehyy7xZq0EC_kqbq2KA2Gnh6kZW4TODdgjShiBSAwiF23bzSDMYcNk0gTGHxnvt2vYu_1KMIgeH6Zhyyj2M5jsZcN9OAJECObMPcgxmWNW9YHYCUKaVRTN4133N&sig=AHIEtbRw7TCWhi99Ak8DEkGDKTRZPz5T4A) [ [bib] ](http://dblp.uni-trier.de/rec/bibtex/conf/serp/AlavizadehS06)
+* Fatemeh Alavizadeh, Marjan Sirjani: Using UML to Develop Verifiable Reactive Systems. Software Engineering Research and Practice 2006: 554-561 [ [pdf] ](/assets/papers/2006/Using-UML-to-Develop-Verifiable-Reactive-Systems.pdf) [ [bib] ](http://dblp.uni-trier.de/rec/bibtex/conf/serp/AlavizadehS06)
 
 * Hossein Hojjat, Hootan Nakhost, Marjan Sirjani: Formal Verification of the IEEE 802.1D Spanning Tree Protocol Using Extended Rebeca. Electr. Notes Theor. Comput. Sci. 159: 139-154 (2006) [ [bib] ](http://dblp.uni-trier.de/rec/bibtex/journals/entcs/HojjatNS06)
 
