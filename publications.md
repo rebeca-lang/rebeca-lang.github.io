@@ -5,7 +5,9 @@ title: Publications
 ---
 
 #### 2017
-- Frank de Boer, Vlad Serbanescu, Reiner Hahnle, Ludovic Henrio, Justine Rochas, Crystal Chang Din, Einar Broch Johnsen, Marjan Sirjani, Ehsan Khamespanah, Kiko Fernandez-Reyes, Albert Mingkun Yang: A Survey of Active Object Languages, ACM Computing Surveys, 2017 
+- Marjan Sirjani: Power is Overrated, Go for Friendliness! Expressiveness, Faithfulness and Usability in Modeling - The Actor Experience, Proceedings of Edward A. Lee Festschrift, Principles of Modeling, [ [pdf] ](/assets/papers/2017/Friendliness.pdf)
+
+- Frank de Boer, Vlad Serbanescu, Reiner Hahnle, Ludovic Henrio, Justine Rochas, Crystal Chang Din, Einar Broch Johnsen, Marjan Sirjani, Ehsan Khamespanah, Kiko Fernandez-Reyes, Albert Mingkun Yang: A Survey of Active Object Languages, ACM Computing Surveys, 2017 [ [bib] ](http://dblp.uni-trier.de/rec/bibtex/journals/csur/BoerSHHRDJSKFY17)
 
 - Carlo Castagnari, Jacopo de Berardinis, Giorgio Forcina, Ali Jafari, Marjan Sirjani: Lightweight Preprocessing for Agent-Based Simulation of Smart Mobility Initiatives, FOCLASA, 2017  [ [pdf] ](/assets/papers/2017/LightweightPreprocessingForAgent-BasedSimulationOfSmartMobilityInitiatives.pdf)
 
