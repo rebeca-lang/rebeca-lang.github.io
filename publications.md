@@ -5,6 +5,8 @@ title: Publications
 ---
 
 #### 2017
+- Behnaz Yousefi, Fatemeh Ghassemi, and Ramtin Khosravi: Modeling and Efficient Verification of Wireless Ad hoc Networks, volume 29, Issue 6, pp 1051–1086, Formal Aspects of Computing, 2017 [ [bib] ](http://dblp.uni-trier.de/rec/bibtex/journals/fac/YousefiGK17)
+
 - Marjan Sirjani: Power is Overrated, Go for Friendliness! Expressiveness, Faithfulness and Usability in Modeling - The Actor Experience, Proceedings of Edward A. Lee Festschrift, Principles of Modeling, 2017 [ [pdf] ](/assets/papers/2017/Friendliness.pdf)
 
 - Frank de Boer, Vlad Serbanescu, Reiner Hahnle, Ludovic Henrio, Justine Rochas, Crystal Chang Din, Einar Broch Johnsen, Marjan Sirjani, Ehsan Khamespanah, Kiko Fernandez-Reyes, Albert Mingkun Yang: A Survey of Active Object Languages, ACM Computing Surveys, 2017 [ [bib] ](http://dblp.uni-trier.de/rec/bibtex/journals/csur/BoerSHHRDJSKFY17)
