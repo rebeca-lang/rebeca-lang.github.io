@@ -38,6 +38,6 @@ The conceptual organization and architecture of ToolTRain can be reused in other
 * Ehsan Khamespanah
 
 #### Related Publications
-- Carlo Castagnari, Jacopo de Berardinis, Giorgio Forcina, Ali Jafari, Marjan Sirjani: Lightweight Preprocessing for Agent-Based Simulation of Smart Mobility Initiatives, FOCLASA, 2017  [ [pdf] ](/assets/papers/2017/LightweightPreprocessingForAgent-BasedSimulationOfSmartMobilityInitiatives.pdf) [ [tech. report] ](/assets/projects/Tangramob/reports/tech-report.pdf)
+- Carlo Castagnari, Jacopo de Berardinis, Giorgio Forcina, Ali Jafari, Marjan Sirjani: Lightweight Preprocessing for Agent-Based Simulation of Smart Mobility Initiatives, FOCLASA, 2017  [ [pdf] ](/assets/papers/2017/LightweightPreprocessingForAgent-BasedSimulationOfSmartMobilityInitiatives.pdf) [ [report] ](/assets/projects/Tangramob/reports/tech-report.pdf) [ [model] ](/assets/projects/tangramob/case-studies/model-smi1.rebeca)
 
 
