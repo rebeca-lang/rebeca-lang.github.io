@@ -133,7 +133,7 @@ title: Publications
 
 * Niloofar Razavi, Marjan Sirjani: Compositional Semantics of System-Level Designs Written in SystemC. FSEN 2007: 113-128  [ [pdf] ](https://mailserver.di.unipi.it/ricerca/proceedings/FSEN/8.pdf) [ [bib] ](http://dblp.uni-trier.de/rec/bibtex/conf/fsen/RazaviS07)
 
-* Fatemeh Alavizadeh, Alireza Hashemi Nekoo, Marjan Sirjani: ReUML: a UML Profile for Modeling and Verification of Reactive Systems. ICSEA 2007: 50 [ [pdf] ](http://www-vs.informatik.uni-ulm.de/DE/intra/bib/2007/ICSEA07/data/050%20ReUML_%20a%20UML%20Profile.pdf) [ [bib] ](http://dblp.uni-trier.de/rec/bibtex/conf/icsea/AlavizadehNS07)
+* Fatemeh Alavizadeh, Alireza Hashemi Nekoo, Marjan Sirjani: ReUML: a UML Profile for Modeling and Verification of Reactive Systems. ICSEA 2007: 50 [ [pdf] ](/assets/papers/2007/ReUML.pdf) [ [bib] ](http://dblp.uni-trier.de/rec/bibtex/conf/icsea/AlavizadehNS07)
 
 * Mohammad Reza Kakoee, Hamid Shojaei, Hassan Ghasemzadeh, Marjan Sirjani, Zainalabedin Navabi: A New Approach for Design and Verification of Transaction Level Models. ISCAS 2007: 3760-3763
 
