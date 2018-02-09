@@ -1,7 +1,8 @@
 ---
 layout: page
 title: Publications
-redirect_from: /wiki
+redirect_from: "/wiki/pmwiki.php/Rebeca/Publications"
+
 ---
 
 #### 2017

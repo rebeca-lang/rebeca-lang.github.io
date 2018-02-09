@@ -9,4 +9,4 @@ sass:
     style: compressed
 
 plugins:
-  - jeykyll-redirect-from
+  - jekyll-redirect-from
