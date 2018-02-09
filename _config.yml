@@ -8,5 +8,5 @@ github_username:  rebeca-lang
 sass:
     style: compressed
 
-
-
+plugins:
+  - jeykyll-redirect-from
