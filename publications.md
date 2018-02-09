@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Publications
-
+redirect_from: /wiki
 ---
 
 #### 2017
