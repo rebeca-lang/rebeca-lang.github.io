@@ -210,7 +210,8 @@ redirect_from: "/wiki/pmwiki.php/Rebeca/Publications"
 * Marjan Sirjani, Mohammad Mahdi Jaghoori, Christel Baier, Farhad Arbab: Compositional Semantics of an Actor-Based Language Using Constraint Automata. COORDINATION 2006: 281-297.\\
 <a class="link link_pdf" href="http://www.inf.tu-dresden.de/content/institutes/thi/algi/publikationen/texte/02_05pdf.pdf">PDF</a> <a class="link link_bibtex" href="http://dblp.uni-trier.de/rec/bibtex/conf/coordination/SirjaniJBA06">BibTeX</a>
 
-* Marjan Sirjani: Rebeca: Theory, Applications, and Tools. FMCO 2006: 102-126.\\<a class="link link_bibtex" href="http://dblp.uni-trier.de/rec/bibtex/conf/fmco/Sirjani06">BibTeX</a>
+* Marjan Sirjani: Rebeca: Theory, Applications, and Tools. FMCO 2006: 102-126.\\
+<a class="link link_bibtex" href="http://dblp.uni-trier.de/rec/bibtex/conf/fmco/Sirjani06">BibTeX</a>
 
 * Mohammad Mahdi Jaghoori, Ali Movaghar, Marjan Sirjani: Modere: the model-checking engine of Rebeca. SAC 2006: 1810-1815.\\
 <a class="link link_pdf" href="http://www.researchgate.net/publication/221000684_Modere_the_model-checking_engine_of_Rebeca/file/9fcfd5059a40c727a1.pdf?ev=pub_ext_doc_dl&docViewer=true">PDF</a> <a class="link link_bibtex" href="http://dblp.uni-trier.de/rec/bibtex/conf/sac/JaghooriMS06">BibTeX</a>
