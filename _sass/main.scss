@@ -69,5 +69,25 @@ p.rss-subscribe {
 nav ul a {
 	font-size: 1.3rem;
 }
-
+a.link {
+    color: #fff;
+    opacity: 0.7;
+    cursor: pointer;
+    padding: 4px 6px;
+    font-size: 9pt;
+    line-height: 18pt;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    background-color: #009933;
+}
+a.link_pdf, a.link_file {
+    background:#7EBBD9;
+}
+a.link_bibtex {
+    background-color: #009933;
+}
+a.link_presentation {
+    background:#E99E25;
+}
 @import "_syntax";
