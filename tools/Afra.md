@@ -16,6 +16,7 @@ A Rebeca family model consists of the definition of _reactive classes_ and the i
 * Version: **3.0.0**
 * Last Updated: **April 5, 2017**
 * Size: **58 MB**
+* Java Version: **1.8**
 * Download: [ [Windows x64] ](https://github.com/rebeca-lang/org.rebecalang.afra/blob/master/org.rebecalang.afra.repository/target/products/org.rebecalang.afra.ideplugins-win32.win32.x86_64.zip?raw=true) [ [Linux x64] ](https://github.com/rebeca-lang/org.rebecalang.afra/blob/master/org.rebecalang.afra.repository/target/products/org.rebecalang.afra.ideplugins-linux.gtk.x86_64.tar.gz?raw=true) [ [Mac OS X] ](https://github.com/rebeca-lang/org.rebecalang.afra/blob/master/org.rebecalang.afra.repository/target/products/org.rebecalang.afra.ideplugins-macosx.cocoa.x86_64.tar.gz?raw=true)
 * Demo: How to work with Afra 3 [ [movie] ](http://rebeca.cs.ru.is/files/Movies/Afra/Afra3.0-Demo.mov)
 
