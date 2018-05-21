@@ -26,7 +26,7 @@ The conceptual organization and architecture of ToolTRain can be reused in other
 
 - An abstract version (pseudo-code) of the Tangramob TRebeca model: [ [Rebeca model] ](/assets/projects/Tangramob/case-studies/TRebeca-pseudocode.rebeca)
 - The source code of an example of Tangramob TRebeca model: [ [Rebeca model] ](/assets/projects/Tangramob/case-studies/TRebeca-example.rebeca)
-- The runnable model: [ [Rebeca model] ](/assets/projects/tangramob/case-studies/model-smi1.rebeca)
+- The runnable model: [ [Rebeca model] ](/assets/projects/Tangramob/case-studies/model-smi1.rebeca)
 
 
 #### Project Members
