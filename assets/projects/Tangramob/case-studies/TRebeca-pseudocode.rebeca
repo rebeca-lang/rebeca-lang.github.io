@@ -1,76 +1,71 @@
-/* Summarizes the mobility behavior of each commuter */
+/* Summarizes the mobility agenda of each commuter */
 env int[numOfCommuter][] commuterAgendaMatrix;
 /* Travel delays for each commuter's trip */
 env int[numOfCommuter][] commuterTravelDelayMatrix;
+/* Service Priority for each commuter */
+env int[numOfCommuter][numOfService] commuterServicePriority;
 /* Tangrhubs adjacency distance matrix */
 env int[numOfTangrhub][numOfTangrhub] tangrhubDistanceMatrix;
+/* Inter-hub trips velocities for each service */
+env int[numOfTangrhub][numOfService] serviceAvgSpeed;
 
 reactiveclass CommuterGenerator(numOfCommuter) {
-   knownrebecs {
-      /* All the configured Tangrhub (n + 1) rebecs */
-      Tangrhub th_0;
-      ...
-      Tangrhub th_n; }
 
-   CommuterGenerator() {
-  	1) init statevars;
-	2) self.fireCommuters(); }
+	knownrebecs {
+		 /* All the configured Tangrhub rebecs */
+		 Tangrhub th_0;
+		 ...
+		 Tangrhub th_n; }
 
-   /* Each commuter is delivered to the closest tangrhub */
-   msgsrv fireCommuters() {
-      foreach commuter in population :
-         1) compute the arrival time to the closest tangrhub (i.e. th_Home):
-            thArrivalTime = comLeaveHomeTime + toTangrhubTime + travelDelay;
-         2) serve the commuter: th_Home.serveCommuter(commuter,true) after(thArrivalTime); }
+	CommuterGenerator() {
+		1- init statevars...
+		2- self.fireCommuters();	}
 
-   /* Keep track of all those commuters who terminated their daily travels.
-      A separated count is also kept for those commuters who encountered a service disruption */
-   msgsrv commuterEndOfTheDay(int commuterID, boolean aborted) {
-      commuterAborts = aborted ? commuterAborts++ : commuterAborts;
-      /* In case all commuters terminated, each Tangrhub is resetted */
-      if (++arrivedCommuters == numOfCommuters) :
-         foreach tangrhub_i in tangrhubs :
-            tangrhub_i.resetTangrhub() after(resetTime); }
+
+	/* Each commuter is delivered to the closest tangrhub */
+  msgsrv fireCommuters() {
+    foreach commuter in commuterMatrix :
+    1) thArrTime: the arrival time to the closest tangrhub (i.e. th_o);
+    2) serve commuters: th_o.serveCommuter(commuter,true) after(thArrTime); }
+
+	/* Keep track of all those commuters who terminated their daily travels and encountered a service disruption */
+ 	msgsrv commuterEndOfTheDay(commuterID, isAborted) {
+		/* In case all commuters terminated, each Tangrhub is resetted */
+		if (all commuters came back home) :
+		   foreach tangrhub_i in tangrhubs :
+		      tangrhub_i.resetTangrhub(); }
+
 }
 
-reactiveClass Tangrhub(numOfCommuter) {
+reactiveclass Tangrhub(numOfCommuter) {
    knownrebecs {
       Tangrhub th_0;
       ...
       Tangrhub th_N;
       CommuterGenerator controller; }
 
-   Tangrhub(String id, int fleetService_0, ..., int fleetService_J, int priorityServ_0, ..., int priorityServ_J) {
+   Tangrhub(...) {
       1) init statevars; }
 
    /* Each commuter asks for a mobility service for a trip */
-   msgsrv serveCommuter(String commuterId, boolean isFirstTrip){
+   msgsrv serveCommuter( commuterId, isFirstTrip){
       if ( no mobility service available ) :
-         numberOfServiceDisruption++;
          controller.commuterEndOfTheDay(commuterId, true);
       else :
-         1) select a service according to the current fleet available and the service priority value;
+         1) select a service according to the current fleet available and the commuter service priority value;
          2) update the fleet of the selected mobility service;
          3) compute the travel statistics for the selected service (times, distances, costs and emissions);
          4) perform the travel by the selected mobility service:
-            th_destination.deliverCommuter(commuterId, selectedService, isFirstTrip) after (travelTimes); }
+            th_d.deliverCommuter(commuterId, selectedService, isFirstTrip) after (travTimes); }
 
    /* The commuter performs the travel from a Tangrhub to the next one */
    msgsrv deliverCommuter(String commuterId, int selectedService, boolean isFirstTrip){
-   /* The fleet of the destination Tangrhub is updated */
-   serviceFleet[selectedService]++;
-   /* Check whether the current trip is the last one */
-   if (isFirstTrip) :
-      self.serveCommuter(commuterId, false) after(timeToReturnBack);
-   else :
-      controller.commuterEndOfTheDay(commuterId, false) after(homeArrivalTime);	}
+       /* The fleet of the destination Tangrhub is updated */
+       serviceFleet[selectedService]++;
+       /* Check whether the current trip is the last one */
+       if (isFirstTrip) :
+          self.serveCommuter(commuterId, false) after(timeToReturnBack);
+       else :
+          controller.commuterEndOfTheDay(commuterId, false) after(homeArrivalTime);	}
 
    msgsrv resetTangrhub() { /* restore the initial configuration of this Tangrhub */ }
-}
-
-   /* Scenario creation: rebecs are instantiated with the given parameters */
-   main {
-      Tangrhub th_0(controller, th_0, ..., th_N):(10, ..., 5, 30, ..., 35);
-      ...
-      Tangrhub th_N(controller, th_0, ..., th_N):(8, ..., 4, 25, ..., 45);
-      CommuterGenerator controller(th_0, ..., sh8):(); }
