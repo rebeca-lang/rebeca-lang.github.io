@@ -28,6 +28,9 @@ The actor model serves as the model@runtime in the core of the knowledge-base of
 * Narges Khakpour
 
 #### Related Publications
+
+- Maryam Bagheri, Marjan Sirjani, Ehsan Khamespanah, Narges Khakpour, Ilge Akkaya, Ali Movaghar and Edward A. Lee: Coordinated Actor Model of Self-adaptive Track-based Traffic Control Systems, Journal of Systems and Software, 2018 [ [pdf] ](/assets/papers/2018/Self-Adaptive-Coordinated-Actors.pdf)
+
 - Maryam Bagheri, Ehsan Khamespanah, Marjan Sirjani, Ali Movaghar, Edward A. Lee: Runtime Compositional Analysis of Track-based Traffic Control Systems, CRTS, 2016 [ [pdf] ](/assets/papers/2016/RuntimeCompositionalAnalysisofTTCS.pdf)
 
 - Maryam Bagheri, Ilge Akkaya, Ehsan Khamespanah, Narges Khakpour, Marjan Sirjani, Ali Movaghar, Edward A. Lee: Coordinated Actors for Reliable Self-Adaptive Systems, FACS, 2016  [ [pdf] ](/assets/papers/2016/CoordinatedActorsforReliableSelfAdaptiveSystems.pdf) [ [bib] ](http://dblp.uni-trier.de/rec/bibtex/conf/facs2/BagheriAKKSML16)

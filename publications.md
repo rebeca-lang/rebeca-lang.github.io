@@ -5,10 +5,14 @@ redirect_from: "/wiki/pmwiki.php/Rebeca/Publications"
 
 ---
 
+#### 2018
+- Maryam Bagheri, Marjan Sirjani, Ehsan Khamespanah, Narges Khakpour, Ilge Akkaya, Ali Movaghar and Edward A. Lee: Coordinated Actor Model of Self-adaptive Track-based Traffic Control Systems, Journal of Systems and Software, 2018. \\
+<a class="link link_pdf" href="/assets/papers/2018/Self-Adaptive-Coordinated-Actors.pdf">PDF</a>
+
+
 #### 2017
 - Behnaz Yousefi, Fatemeh Ghassemi, and Ramtin Khosravi: Modeling and Efficient Verification of Wireless Ad hoc Networks, volume 29, Issue 6, pp 1051–1086, Formal Aspects of Computing, 2017. \\
 <a class="link link_bibtex" href="http://dblp.uni-trier.de/rec/bibtex/journals/fac/YousefiGK17">BibTeX</a>  
-
 
 - Marjan Sirjani: Power is Overrated, Go for Friendliness! Expressiveness, Faithfulness and Usability in Modeling - The Actor Experience, Proceedings of Edward A. Lee Festschrift, Principles of Modeling, 2017. \\
 <a class="link link_pdf" href="/assets/papers/2017/Friendliness.pdf">PDF</a>
