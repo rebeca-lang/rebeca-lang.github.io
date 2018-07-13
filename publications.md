@@ -113,6 +113,9 @@ redirect_from: "/wiki/pmwiki.php/Rebeca/Publications"
 <a class="link link_pdf" href="/assets/papers/2013/Timed-Rebeca-To-Timed-Maude.pdf">PDF</a> <a class="link link_bibtex" href="http://dblp.uni-trier.de/rec/bibtex/conf/ftscs/Sabahi-KavianiKSOK13">BibTeX</a>
 
 #### 2012
+* Narges Khakpour, Saeed Jalili, Marjan Sirjani, Ursula Goltz, Bahareh Abolhasanzadeh: HPobSAM for modeling and analyzing IT Ecosystems - Through a case study,  Journal of Systems and Software 85(12), 2012.\\
+<a class="link link_pdf" href="/assets/papers/2012/HPobSAM.pdf">PDF</a> <a class="link link_bibtex" href="https://dblp.uni-trier.de/rec/bibtex/journals/jss/KhakpourJSGA12">BibTeX</a>
+
 * Steinar Hugi Sigurdarson, Marjan Sirjani, Yngvi Björnsson, Arni Hermann Reynisson: Guided Search for Deadlocks in Actor-Based Models. FACS, 2012.\\
 <a class="link link_bibtex" href="http://dblp.uni-trier.de/rec/bibtex/conf/facs2/SigurdarsonSBR12">BibTeX</a>
 
