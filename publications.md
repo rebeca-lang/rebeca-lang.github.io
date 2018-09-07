@@ -6,9 +6,12 @@ redirect_from: "/wiki/pmwiki.php/Rebeca/Publications"
 ---
 
 #### 2018
+- Ali Jafari, Jayasoorya Jayanthi Surendran Nair, Stephan Baumgart and Marjan Sirjani: Safe and Efficient Fleet Operation for Autonomous Machines: An Actor-based Approach, ACM SAC, 2018. \\
+<a class="link link_pdf" href="/assets/papers/2018/Safe-and-Efficient-Fleet-Operation-for-Autonomous-Machines-An-Actor-based-Approach.pdf">PDF</a>
+<a class="link link_bibtex" href="https://dblp.uni-trier.de/rec/bibtex/conf/sac/JafariNBS18">BibTeX</a>  
+
 - Maryam Bagheri, Marjan Sirjani, Ehsan Khamespanah, Narges Khakpour, Ilge Akkaya, Ali Movaghar and Edward A. Lee: Coordinated Actor Model of Self-adaptive Track-based Traffic Control Systems, Journal of Systems and Software, 2018. \\
 <a class="link link_pdf" href="/assets/papers/2018/Self-Adaptive-Coordinated-Actors.pdf">PDF</a>
-
 
 #### 2017
 - Behnaz Yousefi, Fatemeh Ghassemi, and Ramtin Khosravi: Modeling and Efficient Verification of Wireless Ad hoc Networks, volume 29, Issue 6, pp 1051–1086, Formal Aspects of Computing, 2017. \\
