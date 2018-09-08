@@ -161,7 +161,7 @@ redirect_from: "/wiki/pmwiki.php/Rebeca/Publications"
 <a class="link link_bibtex" href="http://dblp.uni-trier.de/rec/bibtex/journals/tecs/RazaviBSKSS10">BibTeX</a>
 
 * Mohammad Mahdi Jaghoori, Marjan Sirjani, Mohammad Reza Mousavi, Ehsan Khamespanah, Ali Movaghar: Symmetry and partial order reduction techniques in model checking Rebeca. Acta Inf. 47(1): 33-66 (2010).\\
-<a class="link link_pdf" href="http://www.win.tue.nl/~mousavi/sen-r0704.pdf">PDF</a> <a class="link link_bibtex" href="http://dblp.uni-trier.de/rec/bibtex/journals/acta/JaghooriSMKM10">BibTeX</a>
+<a class="link link_pdf" href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.366.5532&rep=rep1&type=pdf">PDF</a> <a class="link link_bibtex" href="http://dblp.uni-trier.de/rec/bibtex/journals/acta/JaghooriSMKM10">BibTeX</a>
 
 * Hamid Reza Shahriari, Mohammad Sadegh Makarem, Marjan Sirjani, Rasool Jalili, Ali Movaghar: Vulnerability analysis of networks to detect multiphase attacks using the actor-based language Rebeca. Computers & Electrical Engineering 36(5): 874-885 (2010).\\
 <a class="link link_bibtex" href="http://dblp.uni-trier.de/rec/bibtex/journals/cee/ShahriariMSJM10">BibTeX</a>
