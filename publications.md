@@ -36,6 +36,9 @@ redirect_from: "/wiki/pmwiki.php/Rebeca/Publications"
 - Ehsan Khamespanah, Ramtin Khosravi, Marjan Sirjani: An Efficient TCTL Model Checking Algorithm and A Reduction Technique for Verification of Timed Actor Models, Science of Computer Programming, 2017.\\
 <a class="link link_pdf" href="/assets/papers/2017/Efficient-TCTL.pdf">PDF</a>
 
+* Jayasoorya Jayanthi Surendran Nair: Modeling AND Analysin Collaborating Heavy Machines, Vasteras, Sweden (2017).\\
+<a class="link link_pdf" href="/assets/theses/MODELLING-AND-ANALYSING-COLLABORATING-HEAVY-MACHINES.pdf">PDF</a>
+
 #### 2016
 - Maryam Bagheri, Ehsan Khamespanah, Marjan Sirjani, Ali Movaghar, Edward A. Lee: Runtime Compositional Analysis of Track-based Traffic Control Systems, CRTS, 2016.\\
 <a class="link link_pdf" href="/assets/papers/2016/RuntimeCompositionalAnalysisofTTCS.pdf">PDF</a>
