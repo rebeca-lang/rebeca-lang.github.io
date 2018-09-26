@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE environment SYSTEM "environment.dtd">
+<environment>
+
+<!-- ====================================================================== -->
+
+	<segments>
+		<!--############### ROW 0 ################ -->
+		<segment id="seg___0_0" N="null" NE="null" E="seg___0_1" ES="seg___1_1" S="seg___1_0" SW="null"      W="null"      WN="null" available="false" x="0" y="0" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___0_1" N="null" NE="null" E="seg___0_2" ES="seg___1_2" S="seg___1_1" SW="seg___1_0" W="seg___0_0" WN="null" available="false" x="0" y="1" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___0_2" N="null" NE="null" E="seg___0_3" ES="seg___1_3" S="seg___1_2" SW="seg___1_1" W="seg___0_1" WN="null" available="false" x="0" y="2" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___0_3" N="null" NE="null" E="seg___0_4" ES="seg___1_4" S="seg___1_3" SW="seg___1_2" W="seg___0_2" WN="null" available="true" x="0" y="3" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___0_4" N="null" NE="null" E="seg___0_5" ES="seg___1_5" S="seg___1_4" SW="seg___1_3" W="seg___0_3" WN="null" available="true" x="0" y="4" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___0_5" N="null" NE="null" E="seg___0_6" ES="seg___1_6" S="seg___1_5" SW="seg___1_4" W="seg___0_4" WN="null" available="true" x="0" y="5" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___0_6" N="null" NE="null" E="seg___0_7" ES="seg___1_7" S="seg___1_6" SW="seg___1_5" W="seg___0_5" WN="null" available="true" x="0" y="6" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___0_7" N="null" NE="null" E="seg___0_8" ES="seg___1_8" S="seg___1_7" SW="seg___1_6" W="seg___0_6" WN="null" available="true" x="0" y="7" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___0_8" N="null" NE="null" E="seg___0_9" ES="seg___1_9" S="seg___1_8" SW="seg___1_7" W="seg___0_7" WN="null" available="false" x="0" y="8" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___0_9" N="null" NE="null" E="null"      ES="null"      S="seg___1_9" SW="seg___1_8" W="seg___0_8" WN="null" available="false" x="0" y="9" capacity="1" length="200" freespeed="6"/>
+
+	  <!--############### ROW 1 ################ -->
+		<segment id="seg___1_0" N="seg___0_0"  NE="seg___0_1"   E="seg___1_1" ES="seg___2_1" S="seg___2_0" SW="null"      W="null"      WN="null"      available="false" x="1" y="0" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___1_1" N="seg___0_1"  NE="seg___0_2"   E="seg___1_2" ES="seg___2_2" S="seg___2_1" SW="seg___2_0" W="seg___1_0" WN="seg___0_0" available="true" x="1" y="1" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___1_2" N="seg___0_2"  NE="seg___0_3"   E="seg___1_3" ES="seg___2_3" S="seg___2_2" SW="seg___2_1" W="seg___1_1" WN="seg___0_1" available="true" x="1" y="2" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___1_3" N="seg___0_3"  NE="seg___0_4"   E="seg___1_4" ES="seg___2_4" S="seg___2_3" SW="seg___2_2" W="seg___1_2" WN="seg___0_2" available="true" x="1" y="3" capacity="5" length="200" freespeed="6"/>
+		<segment id="seg___1_4" N="seg___0_4"  NE="seg___0_5"   E="seg___1_5" ES="seg___2_5" S="seg___2_4" SW="seg___2_3" W="seg___1_3" WN="seg___0_3" available="true" x="1" y="4" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___1_5" N="seg___0_5"  NE="seg___0_6"   E="seg___1_6" ES="seg___2_6" S="seg___2_5" SW="seg___2_4" W="seg___1_4" WN="seg___0_4" available="true" x="1" y="5" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___1_6" N="seg___0_6"  NE="seg___0_7"   E="seg___1_7" ES="seg___2_7" S="seg___2_6" SW="seg___2_5" W="seg___1_5" WN="seg___0_5" available="true" x="1" y="6" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___1_7" N="seg___0_7"  NE="seg___0_8"   E="seg___1_8" ES="seg___2_8" S="seg___2_7" SW="seg___2_6" W="seg___1_6" WN="seg___0_6" available="true" x="1" y="7" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___1_8" N="seg___0_8"  NE="seg___0_9"   E="seg___1_9" ES="seg___2_9" S="seg___2_8" SW="seg___2_7" W="seg___1_7" WN="seg___0_7" available="false" x="1" y="8" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___1_9" N="seg___0_9"  NE="null"        E="null"      ES="null"      S="seg___2_9" SW="seg___2_8" W="seg___1_8" WN="seg___0_8" available="false" x="1" y="9" capacity="1" length="200" freespeed="6"/>
+
+	  <!--############### ROW 2 ################ -->
+		<segment id="seg___2_0" N="seg___1_0"  NE="seg___1_1"   E="seg___2_1" ES="seg___3_1" S="seg___3_0" SW="null"      W="null"      WN="null"      available="false" x="2" y="0" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___2_1" N="seg___1_1"  NE="seg___1_2"   E="seg___2_2" ES="seg___3_2" S="seg___3_1" SW="seg___3_0" W="seg___2_0" WN="seg___1_0" available="true" x="2" y="1" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___2_2" N="seg___1_2"  NE="seg___1_3"   E="seg___2_3" ES="seg___3_3" S="seg___3_2" SW="seg___3_1" W="seg___2_1" WN="seg___1_1" available="true" x="2" y="2" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___2_3" N="seg___1_3"  NE="seg___1_4"   E="seg___2_4" ES="seg___3_4" S="seg___3_3" SW="seg___3_2" W="seg___2_2" WN="seg___1_2" available="true" x="2" y="3" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___2_4" N="seg___1_4"  NE="seg___1_5"   E="seg___2_5" ES="seg___3_5" S="seg___3_4" SW="seg___3_3" W="seg___2_3" WN="seg___1_3" available="true" x="2" y="4" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___2_5" N="seg___1_5"  NE="seg___1_6"   E="seg___2_6" ES="seg___3_6" S="seg___3_5" SW="seg___3_4" W="seg___2_4" WN="seg___1_4" available="true" x="2" y="5" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___2_6" N="seg___1_6"  NE="seg___1_7"   E="seg___2_7" ES="seg___3_7" S="seg___3_6" SW="seg___3_5" W="seg___2_5" WN="seg___1_5" available="true" x="2" y="6" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___2_7" N="seg___1_7"  NE="seg___1_8"   E="seg___2_8" ES="seg___3_8" S="seg___3_7" SW="seg___3_6" W="seg___2_6" WN="seg___1_6" available="true" x="2" y="7" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___2_8" N="seg___1_8"  NE="seg___1_9"   E="seg___2_9" ES="seg___3_9" S="seg___3_8" SW="seg___3_7" W="seg___2_7" WN="seg___1_7" available="false" x="2" y="8" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___2_9" N="seg___1_9"  NE="null"        E="null"      ES="null"      S="seg___3_9" SW="seg___3_8" W="seg___2_8" WN="seg___1_8" available="false" x="2" y="9" capacity="1" length="200" freespeed="6"/>
+
+	  <!--############### ROW 3 ################ -->
+		<segment id="seg___3_0" N="seg___2_0" NE="seg___2_1"   E="seg___3_1" ES="seg___4_1" S="seg___4_0" SW="null"      W="null"      WN="null"     available="false" x="3" y="0" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___3_1" N="seg___2_1" NE="seg___2_2"   E="seg___3_2" ES="seg___4_2" S="seg___4_1" SW="seg___4_0" W="seg___3_0" WN="seg___2_0" available="true" x="3" y="1" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___3_2" N="seg___2_2" NE="seg___2_3"   E="seg___3_3" ES="seg___4_3" S="seg___4_2" SW="seg___4_1" W="seg___3_1" WN="seg___2_1" available="true" x="3" y="2" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___3_3" N="seg___2_3" NE="seg___2_4"   E="seg___3_4" ES="seg___4_4" S="seg___4_3" SW="seg___4_2" W="seg___3_2" WN="seg___2_2" available="true" x="3" y="3" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___3_4" N="seg___2_4" NE="seg___2_5"   E="seg___3_5" ES="seg___4_5" S="seg___4_4" SW="seg___4_3" W="seg___3_3" WN="seg___2_3" available="true" x="3" y="4" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___3_5" N="seg___2_5" NE="seg___2_6"   E="seg___3_6" ES="seg___4_6" S="seg___4_5" SW="seg___4_4" W="seg___3_4" WN="seg___2_4" available="true" x="3" y="5" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___3_6" N="seg___2_6" NE="seg___2_7"   E="seg___3_7" ES="seg___4_7" S="seg___4_6" SW="seg___4_5" W="seg___3_5" WN="seg___2_5" available="true" x="3" y="6" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___3_7" N="seg___2_7" NE="seg___2_8"   E="seg___3_8" ES="seg___4_8" S="seg___4_7" SW="seg___4_6" W="seg___3_6" WN="seg___2_6" available="false" x="3" y="7" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___3_8" N="seg___2_8" NE="seg___2_9"   E="seg___3_9" ES="seg___4_9" S="seg___4_8" SW="seg___4_7" W="seg___3_7" WN="seg___2_7" available="false" x="3" y="8" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___3_9" N="seg___2_9" NE="null"        E="null"      ES="null"     S="seg___4_9" SW="seg___4_8" W="seg___3_8" WN="seg___2_8" available="false" x="3" y="9" capacity="1" length="200" freespeed="6"/>
+
+	  <!--############### ROW 4 ################ -->
+		<segment id="seg___4_0" N="seg___3_0"  NE="seg___3_1"   E="seg___4_1" ES="seg___5_1" S="seg___5_0" SW="null"      W="null"      WN="null"      available="false" x="4" y="0" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___4_1" N="seg___3_1"  NE="seg___3_2"   E="seg___4_2" ES="seg___5_2" S="seg___5_1" SW="seg___5_0" W="seg___4_0" WN="seg___3_0" available="true" x="4" y="1" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___4_2" N="seg___3_2"  NE="seg___3_3"   E="seg___4_3" ES="seg___5_3" S="seg___5_2" SW="seg___5_1" W="seg___4_1" WN="seg___3_1" available="true" x="4" y="2" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___4_3" N="seg___3_3"  NE="seg___3_4"   E="seg___4_4" ES="seg___5_4" S="seg___5_3" SW="seg___5_2" W="seg___4_2" WN="seg___3_2" available="true" x="4" y="3" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___4_4" N="seg___3_4"  NE="seg___3_5"   E="seg___4_5" ES="seg___5_5" S="seg___5_4" SW="seg___5_3" W="seg___4_3" WN="seg___3_3" available="true" x="4" y="4" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___4_5" N="seg___3_5"  NE="seg___3_6"   E="seg___4_6" ES="seg___5_6" S="seg___5_5" SW="seg___5_4" W="seg___4_4" WN="seg___3_4" available="true" x="4" y="5" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___4_6" N="seg___3_6"  NE="seg___3_7"   E="seg___4_7" ES="seg___5_7" S="seg___5_6" SW="seg___5_5" W="seg___4_5" WN="seg___3_5" available="false" x="4" y="6" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___4_7" N="seg___3_7"  NE="seg___3_8"   E="seg___4_8" ES="seg___5_8" S="seg___5_7" SW="seg___5_6" W="seg___4_6" WN="seg___3_6" available="false" x="4" y="7" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___4_8" N="seg___3_8"  NE="seg___3_9"   E="seg___4_9" ES="seg___5_9" S="seg___5_8" SW="seg___5_7" W="seg___4_7" WN="seg___3_7" available="false" x="4" y="8" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___4_9" N="seg___3_9"  NE="null"        E="null"      ES="null"      S="seg___5_9" SW="seg___5_8" W="seg___4_8" WN="seg___3_8" available="false" x="4" y="9" capacity="1" length="200" freespeed="6"/>
+
+	  <!--############### ROW 5 ################ -->
+		<segment id="seg___5_0" N="seg___4_0"  NE="seg___4_1"   E="seg___5_1" ES="seg___6_1" S="seg___6_0" SW="null"      W="null"      WN="null"      available="false" x="5" y="0" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___5_1" N="seg___4_1"  NE="seg___4_2"   E="seg___5_2" ES="seg___6_2" S="seg___6_1" SW="seg___6_0" W="seg___5_0" WN="seg___4_0" available="true" x="5" y="1" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___5_2" N="seg___4_2"  NE="seg___4_3"   E="seg___5_3" ES="seg___6_3" S="seg___6_2" SW="seg___6_1" W="seg___5_1" WN="seg___4_1" available="true" x="5" y="2" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___5_3" N="seg___4_3"  NE="seg___4_4"   E="seg___5_4" ES="seg___6_4" S="seg___6_3" SW="seg___6_2" W="seg___5_2" WN="seg___4_2" available="true" x="5" y="3" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___5_4" N="seg___4_4"  NE="seg___4_5"   E="seg___5_5" ES="seg___6_5" S="seg___6_4" SW="seg___6_3" W="seg___5_3" WN="seg___4_3" available="true" x="5" y="4" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___5_5" N="seg___4_5"  NE="seg___4_6"   E="seg___5_6" ES="seg___6_6" S="seg___6_5" SW="seg___6_4" W="seg___5_4" WN="seg___4_4" available="true" x="5" y="5" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___5_6" N="seg___4_6"  NE="seg___4_7"   E="seg___5_7" ES="seg___6_7" S="seg___6_6" SW="seg___6_5" W="seg___5_5" WN="seg___4_5" available="true" x="5" y="6" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___5_7" N="seg___4_7"  NE="seg___4_8"   E="seg___5_8" ES="seg___6_8" S="seg___6_7" SW="seg___6_6" W="seg___5_6" WN="seg___4_6" available="true" x="5" y="7" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___5_8" N="seg___4_8"  NE="seg___4_9"   E="seg___5_9" ES="seg___6_9" S="seg___6_8" SW="seg___6_7" W="seg___5_7" WN="seg___4_7" available="false" x="5" y="8" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___5_9" N="seg___4_9"  NE="null"        E="null"      ES="null"      S="seg___6_9" SW="seg___6_8" W="seg___5_8" WN="seg___4_8" available="false" x="5" y="9" capacity="1" length="200" freespeed="6"/>
+
+	  <!--############### ROW 6 ################ -->
+		<segment id="seg___6_0" N="seg___5_0"  NE="seg___5_1"   E="seg___6_1" ES="seg___7_1" S="seg___7_0" SW="null"      W="null"      WN="null"      available="false" x="6" y="0" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___6_1" N="seg___5_1"  NE="seg___5_2"   E="seg___6_2" ES="seg___7_2" S="seg___7_1" SW="seg___7_0" W="seg___6_0" WN="seg___5_0" available="true" x="6" y="1" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___6_2" N="seg___5_2"  NE="seg___5_3"   E="seg___6_3" ES="seg___7_3" S="seg___7_2" SW="seg___7_1" W="seg___6_1" WN="seg___5_1" available="true" x="6" y="2" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___6_3" N="seg___5_3"  NE="seg___5_4"   E="seg___6_4" ES="seg___7_4" S="seg___7_3" SW="seg___7_2" W="seg___6_2" WN="seg___5_2" available="true" x="6" y="3" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___6_4" N="seg___5_4"  NE="seg___5_5"   E="seg___6_5" ES="seg___7_5" S="seg___7_4" SW="seg___7_3" W="seg___6_3" WN="seg___5_3" available="true" x="6" y="4" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___6_5" N="seg___5_5"  NE="seg___5_6"   E="seg___6_6" ES="seg___7_6" S="seg___7_5" SW="seg___7_4" W="seg___6_4" WN="seg___5_4" available="true" x="6" y="5" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___6_6" N="seg___5_6"  NE="seg___5_7"   E="seg___6_7" ES="seg___7_7" S="seg___7_6" SW="seg___7_5" W="seg___6_5" WN="seg___5_5" available="true" x="6" y="6" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___6_7" N="seg___5_7"  NE="seg___5_8"   E="seg___6_8" ES="seg___7_8" S="seg___7_7" SW="seg___7_6" W="seg___6_6" WN="seg___5_6" available="true" x="6" y="7" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___6_8" N="seg___5_8"  NE="seg___5_9"   E="seg___6_9" ES="seg___7_9" S="seg___7_8" SW="seg___7_7" W="seg___6_7" WN="seg___5_7" available="false" x="6" y="8" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___6_9" N="seg___5_9"  NE="null"        E="null"      ES="null"      S="seg___7_9" SW="seg___7_8" W="seg___6_8" WN="seg___5_8" available="false" x="6" y="9" capacity="1" length="200" freespeed="6"/>
+
+	  <!--############### ROW 7 ################ -->
+		<segment id="seg___7_0" N="seg___6_0"  NE="seg___6_1"   E="seg___7_1" ES="seg___8_1" S="seg___8_0" SW="null"      W="null"      WN="null"      available="false" x="7" y="0" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___7_1" N="seg___6_1"  NE="seg___6_2"   E="seg___7_2" ES="seg___8_2" S="seg___8_1" SW="seg___8_0" W="seg___7_0" WN="seg___6_0" available="true" x="7" y="1" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___7_2" N="seg___6_2"  NE="seg___6_3"   E="seg___7_3" ES="seg___8_3" S="seg___8_2" SW="seg___8_1" W="seg___7_1" WN="seg___6_1" available="true" x="7" y="2" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___7_3" N="seg___6_3"  NE="seg___6_4"   E="seg___7_4" ES="seg___8_4" S="seg___8_3" SW="seg___8_2" W="seg___7_2" WN="seg___6_2" available="true" x="7" y="3" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___7_4" N="seg___6_4"  NE="seg___6_5"   E="seg___7_5" ES="seg___8_5" S="seg___8_4" SW="seg___8_3" W="seg___7_3" WN="seg___6_3" available="true" x="7" y="4" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___7_5" N="seg___6_5"  NE="seg___6_6"   E="seg___7_6" ES="seg___8_6" S="seg___8_5" SW="seg___8_4" W="seg___7_4" WN="seg___6_4" available="true" x="7" y="5" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___7_6" N="seg___6_6"  NE="seg___6_7"   E="seg___7_7" ES="seg___8_7" S="seg___8_6" SW="seg___8_5" W="seg___7_5" WN="seg___6_5" available="true" x="7" y="6" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___7_7" N="seg___6_7"  NE="seg___6_8"   E="seg___7_8" ES="seg___8_8" S="seg___8_7" SW="seg___8_6" W="seg___7_6" WN="seg___6_6" available="true" x="7" y="7" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___7_8" N="seg___6_8"  NE="seg___6_9"   E="seg___7_9" ES="seg___8_9" S="seg___8_8" SW="seg___8_7" W="seg___7_7" WN="seg___6_7" available="false" x="7" y="8" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___7_9" N="seg___6_9"  NE="null"        E="null"      ES="null"      S="seg___8_9" SW="seg___8_8" W="seg___7_8" WN="seg___6_8" available="false" x="7" y="9" capacity="1" length="200" freespeed="6"/>
+true
+	  <!--############### ROW 8 ################ -->
+		<segment id="seg___8_0" N="seg___7_0"  NE="seg___7_1"   E="seg___8_1" ES="seg___9_1" S="seg___9_0" SW="null"      W="null"      WN="null"      available="false" x="8" y="0" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___8_1" N="seg___7_1"  NE="seg___7_2"   E="seg___8_2" ES="seg___9_2" S="seg___9_1" SW="seg___9_0" W="seg___8_0" WN="seg___7_0" available="true" x="8" y="1" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___8_2" N="seg___7_2"  NE="seg___7_3"   E="seg___8_3" ES="seg___9_3" S="seg___9_2" SW="seg___9_1" W="seg___8_1" WN="seg___7_1" available="true" x="8" y="2" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___8_3" N="seg___7_3"  NE="seg___7_4"   E="seg___8_4" ES="seg___9_4" S="seg___9_3" SW="seg___9_2" W="seg___8_2" WN="seg___7_2" available="true" x="8" y="3" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___8_4" N="seg___7_4"  NE="seg___7_5"   E="seg___8_5" ES="seg___9_5" S="seg___9_4" SW="seg___9_3" W="seg___8_3" WN="seg___7_3" available="true" x="8" y="4" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___8_5" N="seg___7_5"  NE="seg___7_6"   E="seg___8_6" ES="seg___9_6" S="seg___9_5" SW="seg___9_4" W="seg___8_4" WN="seg___7_4" available="true" x="8" y="5" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___8_6" N="seg___7_6"  NE="seg___7_7"   E="seg___8_7" ES="seg___9_7" S="seg___9_6" SW="seg___9_5" W="seg___8_5" WN="seg___7_5" available="true" x="8" y="6" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___8_7" N="seg___7_7"  NE="seg___7_8"   E="seg___8_8" ES="seg___9_8" S="seg___9_7" SW="seg___9_6" W="seg___8_6" WN="seg___7_6" available="true" x="8" y="7" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___8_8" N="seg___7_8"  NE="seg___7_9"   E="seg___8_9" ES="seg___9_9" S="seg___9_8" SW="seg___9_7" W="seg___8_7" WN="seg___7_7" available="false" x="8" y="8" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___8_9" N="seg___7_9"  NE="null"        E="null"      ES="null"      S="seg___9_9" SW="seg___9_8" W="seg___8_8" WN="seg___7_8" available="false" x="8" y="9" capacity="1" length="200" freespeed="6"/>
+
+	  <!--############### ROW 9 ################ -->
+		<segment id="seg___9_0" N="seg___8_0"  NE="seg___8_1"   E="seg___9_1" ES="null" S="null" SW="null" W="null"      WN="null"      available="false" x="9" y="0" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___9_1" N="seg___8_1"  NE="seg___8_2"   E="seg___9_2" ES="null" S="null" SW="null" W="seg___9_0" WN="seg___8_0" available="true" x="9" y="1" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___9_2" N="seg___8_2"  NE="seg___8_3"   E="seg___9_3" ES="null" S="null" SW="null" W="seg___9_1" WN="seg___8_1" available="true" x="9" y="2" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___9_3" N="seg___8_3"  NE="seg___8_4"   E="seg___9_4" ES="null" S="null" SW="null" W="seg___9_2" WN="seg___8_2" available="true" x="9" y="3" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___9_4" N="seg___8_4"  NE="seg___8_5"   E="seg___9_5" ES="null" S="null" SW="null" W="seg___9_3" WN="seg___8_3" available="true" x="9" y="4" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___9_5" N="seg___8_5"  NE="seg___8_6"   E="seg___9_6" ES="null" S="null" SW="null" W="seg___9_4" WN="seg___8_4" available="true" x="9" y="5" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___9_6" N="seg___8_6"  NE="seg___8_7"   E="seg___9_7" ES="null" S="null" SW="null" W="seg___9_5" WN="seg___8_5" available="false" x="9" y="6" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___9_7" N="seg___8_7"  NE="seg___8_8"   E="seg___9_8" ES="null" S="null" SW="null" W="seg___9_6" WN="seg___8_6" available="false" x="9" y="7" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___9_8" N="seg___8_8"  NE="seg___8_9"   E="seg___9_9" ES="null" S="null" SW="null" W="seg___9_7" WN="seg___8_7" available="false" x="9" y="8" capacity="1" length="200" freespeed="6"/>
+		<segment id="seg___9_9" N="seg___8_9"  NE="null"        E="null"      ES="null" S="null" SW="null" W="seg___9_8" WN="seg___8_8" available="false" x="9" y="9" capacity="1" length="200" freespeed="6"/>
+	</segments>
+
+</environment>

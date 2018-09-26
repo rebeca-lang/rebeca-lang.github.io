@@ -65,6 +65,26 @@ title: Projects
   <table>
     <tr>
       <td style="vertical-align:top">
+        <img align="left" width="150px" src="{{ "/assets/projects/ActorFlow/ActorFlow-Logo.png" | absolute_url }}" alt="Tangramob Logo"  style="margin:10px 20px"/>
+      </td>
+      <td>
+        <p class="light">
+          <h5 class="Left">AdaptiveFlow</h5>
+          AdaptiveFlow is an actor-based eulerian framework for track-based flow management.
+          <a href="{{ "/allprojects/ActorFlow" | relative_url }}">Learn more</a>
+        </p>
+      </td>
+    </tr>
+  </table>
+</div>
+</div>
+
+
+<div class="row">
+<div class="col s12 m12">
+  <table>
+    <tr>
+      <td style="vertical-align:top">
         <img align="left" width="150px" src="{{ "/assets/projects/DefaultProject.jpg" | absolute_url }}" alt="PTRebeca"  style="margin:5px 20px"/>
       </td>
       <td>

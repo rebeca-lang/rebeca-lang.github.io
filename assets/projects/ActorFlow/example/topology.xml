@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topology SYSTEM "topology.dtd">
+<topology>
+
+<!-- ====================================================================== -->
+
+	<POIs>
+		<poi id="0" x="1" y="3" type="ParkingStation"/>
+		<poi id="1" x="3" y="3" type="ChargingStation" chargingTime="0.1"/>
+		<poi id="2" x="3" y="1" type="LoadUnloadingPoint" loadTime="0.5"/>
+		<poi id="3" x="8" y="1" type="LoadUnloadingPoint" loadTime="0.5"/>
+		<poi id="4" x="1" y="7" type="LoadUnloadingPoint" loadTime="0.5"/>
+		<poi id="5" x="6" y="7" type="LoadUnloadingPoint" loadTime="0.5"/>
+	</POIs>
+
+</topology>
