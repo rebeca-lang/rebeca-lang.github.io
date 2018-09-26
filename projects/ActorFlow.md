@@ -12,7 +12,7 @@ The command for running the Python script is: python ModelGenerator.py envFile t
 
 <img align="right" width="100%" src="{{ "/assets/projects/ActorFlow/environment.png" | absolute_url }}" alt="ActorFlow Environment" />
 
-Python model generator can be found [ [here] ](/assets/projects/ActorFlow/ModelGenerator.py). Examples of the input files of the system in the figure are: [ [environment.xml] ](/assets/projects/ActorFlow/example/environment.xml), [ [topology.xml] ](/assets/projects/ActorFlow/example/topology.xml), and [ [configuration.xml] ](/assets/projects/ActorFlow/example/configuration.xml).
+Python model generator can be found [here](/assets/projects/ActorFlow/ModelGenerator.py). Examples of the input files of the system in the figure are: [environment.xml](/assets/projects/ActorFlow/example/environment.xml), [topology.xml](/assets/projects/ActorFlow/example/topology.xml), and [configuration.xml](/assets/projects/ActorFlow/example/configuration.xml).
 
 #### Project Members
 * **<u>Marjan Sirjani (Principal Investigator)</u>**
@@ -21,8 +21,10 @@ Python model generator can be found [ [here] ](/assets/projects/ActorFlow/ModelG
 * Ehsan Khamespanah
 * Stephan Baumgart
 
+{% comment %}
 #### Related Publications
 - Giorgio Forcina, Ali Jafari, Ehsan Khamespanah, Stephan Baumgart, Marjan Sirjani: AdaptiveFlow: An Actor-based Eulerian Framework for Track-based Flow Management, Submitted to SAC 2019.
-[comment]: FOCLASA, 2017  [ [pdf] ](/assets/papers/2017/LightweightPreprocessingForAgent-BasedSimulationOfSmartMobilityInitiatives.pdf) [ [report] ](/assets/projects/Tangramob/reports/tech-report.pdf) [ [model] ](/assets/projects/tangramob/case-studies/model-smi1.rebeca)
+FOCLASA, 2017  [ [pdf] ](/assets/papers/2017/LightweightPreprocessingForAgent-BasedSimulationOfSmartMobilityInitiatives.pdf) [ [report] ](/assets/projects/Tangramob/reports/tech-report.pdf) [ [model] ](/assets/projects/tangramob/case-studies/model-smi1.rebeca)
+{% endcomment %}
 
 
