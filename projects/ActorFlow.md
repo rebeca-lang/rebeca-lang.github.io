@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Tangramob
+title: AdaptiveFlow
 permalink: /allprojects/ActorFlow
 
 ---
