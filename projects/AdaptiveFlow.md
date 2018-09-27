@@ -1,7 +1,7 @@
 ---
 layout: page
 title: AdaptiveFlow
-permalink: /allprojects/ActorFlow
+permalink: /allprojects/AdaptiveFlow
 
 ---
 
@@ -10,9 +10,9 @@ AdaptiveFlow is a framework that allows to model and analyze track-based flow ma
 
 The command for running the Python script is: python ModelGenerator.py envFile topFile confFile outFile. In which envFile is the file that contains information about the configuration of the environment to analyze, topFile specifies the position of Point of Interest, confFile contains information about the machines to simulate, outFile is the file that the script will generate containing the model specification. The so generated model can be run with Timed Rebeca Model Checker for further analysis.
 
-<img align="right" width="100%" src="{{ "/assets/projects/ActorFlow/environment.png" | absolute_url }}" alt="ActorFlow Environment" />
+<img align="right" width="100%" src="{{ "/assets/projects/AdaptiveFlow/environment.png" | absolute_url }}" alt="AdaptiveFlow Environment" />
 
-Python model generator can be found [here](/assets/projects/ActorFlow/ModelGenerator.py). Examples of the input files of the system in the figure are: [environment.xml](/assets/projects/ActorFlow/example/environment.xml), [topology.xml](/assets/projects/ActorFlow/example/topology.xml), and [configuration.xml](/assets/projects/ActorFlow/example/configuration.xml).
+Python model generator can be found [here](/assets/projects/AdaptiveFlow/ModelGenerator.py). Examples of the input files of the system in the figure are: [environment.xml](/assets/projects/AdaptiveFlow/example/environment.xml), [topology.xml](/assets/projects/AdaptiveFlow/example/topology.xml), and [configuration.xml](/assets/projects/AdaptiveFlow/example/configuration.xml).
 
 #### Project Members
 * **<u>Marjan Sirjani (Principal Investigator)</u>**
