@@ -6,6 +6,9 @@ redirect_from: "/wiki/pmwiki.php/Rebeca/Publications"
 ---
 
 #### 2018
+- Edward A. Lee and Marjan Sirjani: What-Good-Are-Models?, FACS, 2018. \\
+<a class="link link_pdf" href="/assets/papers/2018/What-Good-Are-Models.pdf">PDF</a>
+
 - Ali Jafari, Jayasoorya Jayanthi Surendran Nair, Stephan Baumgart and Marjan Sirjani: Safe and Efficient Fleet Operation for Autonomous Machines: An Actor-based Approach, ACM SAC, 2018. \\
 <a class="link link_pdf" href="/assets/papers/2018/Safe-and-Efficient-Fleet-Operation-for-Autonomous-Machines-An-Actor-based-Approach.pdf">PDF</a>
 <a class="link link_bibtex" href="https://dblp.uni-trier.de/rec/bibtex/conf/sac/JafariNBS18">BibTeX</a>  
