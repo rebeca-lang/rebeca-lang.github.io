@@ -6,7 +6,7 @@ redirect_from: "/wiki/pmwiki.php/Rebeca/Publications"
 ---
 
 #### 2018
-- Edward A. Lee and Marjan Sirjani: What-Good-Are-Models?, FACS, 2018. \\
+- Edward A. Lee and Marjan Sirjani: What Good Are Models?, Invited Paper in Proc. of Formal Aspects of Component Software (FACS), Pohang, South Korea, October 10-12, 2018, Kyungmin Bae and Peter Csaba Olveczky, Eds., Springer, LNCS 11222. \\
 <a class="link link_pdf" href="/assets/papers/2018/What-Good-Are-Models.pdf">PDF</a>
 
 - Ali Jafari, Jayasoorya Jayanthi Surendran Nair, Stephan Baumgart and Marjan Sirjani: Safe and Efficient Fleet Operation for Autonomous Machines: An Actor-based Approach, ACM SAC, 2018. \\
