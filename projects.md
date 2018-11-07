@@ -3,6 +3,117 @@ layout: page
 title: Projects
 
 ---
+
+
+<div class="row">
+  <div class="col s12 m4">
+    <div class="icon-block">
+      <h2 class="center light-blue-text"><img src="{{ "/assets/projects/Seada/SEADA-Logo.png" | absolute_url }}" alt="SEADA Logo"/></h2>
+      <h5 class="center">SEADA</h5>
+
+      <p class="light">
+          In SEADA (Self-Adaptive Actors) we will use Ptolemy to represent the architecture, and extensions of Rebeca for modeling and verification. Our models@runtime will be coded in an extension of Probabilistic Timed Rebeca, and supporting tools for customized run-time formal verification of these models will be developed.
+          <a href="{{ "/allprojects/Seada" | relative_url }}">Learn more</a>
+      </p>
+    </div>
+  </div>
+
+  <div class="col s12 m4">
+    <div class="icon-block">
+      <h2 class="center light-blue-text"><img src="{{ "/assets/projects/RoboRebeca/RoboRebeca-Logo.png" | absolute_url }}" alt="RoboRebeca Logo"/></h2>
+      <h5 class="center">RoboRebeca</h5>
+      <p class="light">
+        RoboRebeca is a framework which provides facilities for developing safe/correct source codes for robotic applications. In RoboRebeca, models are developed using Rebeca family language and automatically transformed into ROS compatible source codes. This framework is integrated into Afra 3.0. <a href="{{ "/allprojects/roboRebeca" | relative_url }}">Learn more</a>
+      </p>
+    </div>
+  </div>
+
+  <div class="col s12 m4">
+    <div class="icon-block">
+      <h2 class="center light-blue-text"><img src="{{ "/assets/projects/wRebeca/wRebeca-Logo.png" | absolute_url }}" alt="wRebeca Logo"/></h2>
+      <h5 class="center">wRebeca</h5>
+
+      <p class="light">
+          wRebeca is an actor-based modeling language, an extension of Rebeca, proposed for efficient modeling and verification of Mobile Ad Hoc Networks (MANETs). It is supported by the tool, which efficiently generates the state spaces of models and benefits from several reduction techniques.
+          <a href="{{ "/allprojects/wRebeca" | relative_url }}">Learn more</a>
+      </p>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col s12 m4">
+    <div class="icon-block">
+      <h2 class="center light-blue-text"><img src="{{ "/assets/projects/Tangramob/Tangramob-Logo.png" | absolute_url }}" alt="Tangramob Logo"/></h2>
+      <h5 class="center">Tangramob</h5>
+      <p class="light">
+        Tangramob offers an Agent-Based simulation framework (using Timed Rebeca) for assessing the evolution of urban traffic after the introduction of new mobility services. This allows planners and transport companies to evaluate the efficacy of their initiatives with respect to the current urban system. <a href="{{ "/allprojects/Tangramob" | relative_url }}">Learn more</a>        
+      </p>
+    </div>
+  </div>
+
+  <div class="col s12 m4">
+    <div class="icon-block">
+      <h2 class="center light-blue-text"><img src="{{ "/assets/projects/AdaptiveFlow/AdaptiveFlow-Logo.png" | absolute_url }}" alt="Tangramob Logo"/></h2>
+      <h5 class="center">AdaptiveFlow</h5>
+
+      <p class="light">
+          AdaptiveFlow is an actor-based eulerian framework for track-based flow management.
+          <a href="{{ "/allprojects/AdaptiveFlow" | relative_url }}">Learn more</a> 
+      </p>
+    </div>
+  </div>
+
+  <div class="col s12 m4">
+    <div class="icon-block">
+      <h2 class="center light-blue-text"><img src="{{ "/assets/projects/DefaultProject.jpg" | absolute_url }}" alt="PTRebeca"/></h2>
+      <h5 class="center">PTRebeca</h5>
+
+      <p class="light">
+          PTRebeca language is developed for supporting the modeling and verification of real-time systems with probabilistic behaviors. We propose the appropriate syntax and semantics for PTRebeca to be able to model and verify probabilistic properties.
+          <a href="{{ "/allprojects/PTRebeca" | relative_url }}">Learn more</a>
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col s12 m4">
+    <div class="icon-block">
+      <h2 class="center light-blue-text"><img src="{{ "/assets/projects/DefaultProject.jpg" | absolute_url }}" alt="TARO"></h2>
+      <h5 class="center">TARO</h5>
+      <p class="light">
+        In TARO (Timed Asynchronous Reactive Objects in Distributed Systems) project, we proposed an actor-based modeling language, extended with timing constraints and supported by formal verification tools, called Timed Rebeca, for systems whose behavior depends crucially on timing constraints.
+        <a href="{{ "/allprojects/TARO" | relative_url }}">Learn more</a>
+      </p>
+    </div>
+  </div>
+
+  <div class="col s12 m4">
+    <div class="icon-block">
+      <h2 class="center light-blue-text"><img src="{{ "/assets/projects/DefaultProject.jpg" | absolute_url }}" alt="TR2RTMaude"/></h2>
+      <h5 class="center">TRebeca to RTMaude</h5>
+      <p class="light"> 
+          In this project we provide a formal semantics and automatic transformation tool from Timed Rebeca to Real-Time Maude as its executable formal semantics. This way, Timed Rebeca models can be analyzed using RTMaude's reachability analysis tool and timed CTL model checker.
+          <a href="{{ "/allprojects/TR2RTMaude" | relative_url }}">Learn more</a>
+      </p>
+    </div>
+  </div>
+
+  <div class="col s12 m4">
+    <div class="icon-block">
+      <h2 class="center light-blue-text"><img src="{{ "/assets/projects/DefaultProject.jpg" | absolute_url }}" alt="Sysfier"/></h2>
+      <h5 class="center">Sysfier</h5>
+      <p class="light">
+        The goal of Sysfier is to develop an integrated environment for modeling and verifying SystemC designs (HW/SW co-design) by formalizing SystemC semantics and providing model checking tools. The tool Afra 1.0 is developed as SystemC modeling and analysis environment. <a href="{{ "/allprojects/Sysfier" | relative_url }}">Learn more</a>
+      </p>
+    </div>
+  </div>
+</div>
+
+
+{% comment %}
 <div class="row">
 <div class="col s12 m12">
   <table>
@@ -21,6 +132,7 @@ title: Projects
   </table>
 </div>
 </div>
+
 
 <div class="row">
 <div class="col s12 m12">
@@ -155,6 +267,8 @@ title: Projects
   </table>
 </div>
 </div>
+{% endcomment %}
+
 <!-- <div class="row">
 <div class="col s12 m12">
     <p class="light">
