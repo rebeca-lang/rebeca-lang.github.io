@@ -11,7 +11,7 @@ title: Tools
   <table>
     <tr>
       <td style="vertical-align:center; width:120px">
-        <img align="left" width="100px" src="{{ "/assets/tools/Afra/Afra-Logo.png" | absolute_url }}" alt="Afra Logo" style="margin:0px 20px"/>
+        <img align="left" src="{{ "/assets/tools/Afra/Afra-Logo.png" | absolute_url }}" alt="Afra Logo" style="margin:0px 20px"/>
       </td>
       <td>
         <p class="light">
@@ -30,7 +30,7 @@ title: Tools
   <table>
     <tr>
       <td style="vertical-align:top; width:120px">
-        <img align="left" width="100px" src="{{ "/assets/tools/DefaultTool.png" | absolute_url }}" alt="RMC" style="margin:0px 20px"/>
+        <img align="left" src="{{ "/assets/tools/DefaultTool.png" | absolute_url }}" alt="RMC" style="margin:0px 20px"/>
       </td>
       <td>
         <p class="light">
@@ -49,7 +49,7 @@ title: Tools
   <table>
     <tr>
       <td style="vertical-align:top; width:120px">
-        <img align="left" width="100px" src="{{ "/assets/tools/DefaultTool.png" | absolute_url }}" alt="Jacco" style="margin:0px 20px"/>
+        <img align="left" src="{{ "/assets/tools/DefaultTool.png" | absolute_url }}" alt="Jacco" style="margin:0px 20px"/>
       </td>
       <td>
         <p class="light">
@@ -68,7 +68,7 @@ title: Tools
   <table>
     <tr>
       <td style="vertical-align:top; width:120px">
-        <img align="left" width="100px" src="{{ "/assets/tools/DefaultTool.png" | absolute_url }}" alt="ReGen" style="margin:0px 20px"/>
+        <img align="left" src="{{ "/assets/tools/DefaultTool.png" | absolute_url }}" alt="ReGen" style="margin:0px 20px"/>
       </td>
       <td>
         <p class="light">
@@ -86,7 +86,7 @@ title: Tools
   <table>
     <tr>
       <td style="vertical-align:top; width:120px">
-        <img align="left" width="100px" src="{{ "/assets/tools/DefaultTool.png" | absolute_url }}" alt="Statistical Model Checker" style="margin:0px 20px"/>
+        <img align="left" src="{{ "/assets/tools/DefaultTool.png" | absolute_url }}" alt="Statistical Model Checker" style="margin:0px 20px"/>
       </td>
       <td>
         <p class="light">
@@ -104,7 +104,7 @@ title: Tools
   <table>
     <tr>
       <td style="vertical-align:top; width:120px">
-        <img align="left" width="100px" src="{{ "/assets/tools/DefaultTool.png" | absolute_url }}" alt="Rebeca to Erlang" style="margin:0px 20px"/>
+        <img align="left" src="{{ "/assets/tools/DefaultTool.png" | absolute_url }}" alt="Rebeca to Erlang" style="margin:0px 20px"/>
       </td>
       <td>
         <p class="light">
@@ -122,7 +122,7 @@ title: Tools
   <table>
     <tr>
       <td style="vertical-align:top; width:120px">
-        <img align="left" width="100px" src="{{ "/assets/tools/DefaultTool.png" | absolute_url }}" alt="Sarir" style="margin:0px 20px"/>
+        <img align="left" src="{{ "/assets/tools/DefaultTool.png" | absolute_url }}" alt="Sarir" style="margin:0px 20px"/>
       </td>
       <td>
         <p class="light">
@@ -140,7 +140,7 @@ title: Tools
   <table>
     <tr>
       <td style="vertical-align:top; width:120px">
-        <img align="left" width="100px" src="{{ "/assets/tools/DefaultTool.png" | absolute_url }}" alt="Distributed Model Checker" style="margin:0px 20px"/>
+        <img align="left" src="{{ "/assets/tools/DefaultTool.png" | absolute_url }}" alt="Distributed Model Checker" style="margin:0px 20px"/>
       </td>
       <td>
         <p class="light">
@@ -158,7 +158,7 @@ title: Tools
   <table>
     <tr>
       <td style="vertical-align:top; width:120px">
-        <img align="left" width="100px" src="{{ "/assets/tools/DefaultTool.png" | absolute_url }}" alt="Roudabeh" style="margin:0px 20px"/>
+        <img align="left" src="{{ "/assets/tools/DefaultTool.png" | absolute_url }}" alt="Roudabeh" style="margin:0px 20px"/>
       </td>
       <td>
         <p class="light">
@@ -176,7 +176,7 @@ title: Tools
   <table>
     <tr>
       <td style="vertical-align:top; width:120px">
-        <img align="left" width="100px" src="{{ "/assets/tools/DefaultTool.png" | absolute_url }}" alt="ReUML" style="margin:0px 20px"/>
+        <img align="left" src="{{ "/assets/tools/DefaultTool.png" | absolute_url }}" alt="ReUML" style="margin:0px 20px"/>
       </td>
       <td>
         <p class="light">
@@ -194,7 +194,7 @@ title: Tools
   <table>
     <tr>
       <td style="vertical-align:top; width:120px">
-        <img align="left" width="100px" src="{{ "/assets/tools/DefaultTool.png" | absolute_url }}" alt="Rebeca to Promela" style="margin:0px 20px"/>
+        <img align="left" src="{{ "/assets/tools/DefaultTool.png" | absolute_url }}" alt="Rebeca to Promela" style="margin:0px 20px"/>
       </td>
       <td>
         <p class="light">
@@ -212,7 +212,7 @@ title: Tools
   <table>
     <tr>
       <td style="vertical-align:top; width:120px">
-        <img align="left" width="100px" src="{{ "/assets/tools/DefaultTool.png" | absolute_url }}" alt="Rebeca to SMV" style="margin:0px 20px"/>
+        <img align="left" src="{{ "/assets/tools/DefaultTool.png" | absolute_url }}" alt="Rebeca to SMV" style="margin:0px 20px"/>
       </td>
       <td>
         <p class="light">

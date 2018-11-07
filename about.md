@@ -81,7 +81,7 @@ Different approaches are proposed for verifying correctness of these properties.
 				University of Tehran, Tehran, Iran
 			</p>
 			<p class="light">
-				<i class="material-icons">email</i> r.khosravi "at" ut.ac.ir
+				<i class="material-icons">email</i> e.khamespanah "at" ut.ac.ir
 			</p>
 		</div>
 	</div>
