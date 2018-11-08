@@ -63,15 +63,15 @@ def extractNetworkData(root):
     segments = {}
     lengthTot = []
     for segment in root.iter('segment'):
-        segments[segment.get('id')] = {'x' : segment.get('x'), 'y' : segment.get('y'),  
-                                 'length': segment.get('length'), 'freespeed' : segment.get('freespeed'), 
-                                 'capacity': segment.get('capacity'), 'available' : segment.get('available'), 
-                                 'N': segment.get('N'), 'NE' : segment.get('NE'), 
-                                 'E': segment.get('E'), 'ES' : segment.get('ES'),  
-                                 'S': segment.get('S'), 'SW' : segment.get('SW'), 
+        segments[segment.get('id')] = {'x' : segment.get('x'), 'y' : segment.get('y'),
+                                 'length': segment.get('length'), 'freespeed' : segment.get('freespeed'),
+                                 'capacity': segment.get('capacity'), 'available' : segment.get('available'),
+                                 'N': segment.get('N'), 'NE' : segment.get('NE'),
+                                 'E': segment.get('E'), 'ES' : segment.get('ES'),
+                                 'S': segment.get('S'), 'SW' : segment.get('SW'),
                                  'W': segment.get('W'), 'WN' : segment.get('WN')}
         lengthTot.append(int(segment.get('length')))
-        
+
     return segments, int(sum(lengthTot) / float(len(lengthTot)))
 
 
@@ -99,14 +99,14 @@ def extractTopologyData(root, environment):
         if (segment == None):
             print('Error in topology file, position not defined in the environment, id: ', POI.get('id'))
             return
-        
+
         if(POI.get('type') == 'ParkingStation'):
             POIs[POI.get('id')] = { 'x' : x, 'y' : y, 'type' : POI.get('type')}
         elif(POI.get('type') == 'ChargingStation'):
             POIs[POI.get('id')] = {'x' : x, 'y' : y,'type' : POI.get('type'), 'chargingTime' : POI.get('chargingTime')}
         else:
             POIs[POI.get('id')] = {'x' : x, 'y' : y,'type' : POI.get('type'), 'loadTime' : POI.get('loadTime')}
-        
+
     return POIs
 
 
@@ -120,28 +120,28 @@ def extractTopologyData(root, environment):
 #         t = track.text.replace('],[',';').replace('[','').replace(']','')
 #         if(len(t.split(';')) > maxNumOfSteps):
 #             maxNumOfSteps = len(t.split(';'))
-    
+
 #     #print(str(maxNumOfSteps))
 #     tracks = {}
 #     for track in root.iter('track'):
 #         origin = track.get('POIorigin')
 #         destination = track.get('POIdestination')
-        
+
 #         if (origin not in topology or destination not in topology):
 #             print('Error in track definition, origin or destination not in the topology: track ', track.get('id'))
 #             return
-        
+
 #         route = ['-1,-1'] * maxNumOfSteps
 #         t = track.text.replace('],[',';').replace('[','').replace(']','').split(';')
-        
+
 #         for index in range(len(t)):
 #             route[index] = t[index]
-        
+
 #         #print(route)
-        
+
 #         tracks[track.get('id')] = {'POIorigin' : origin, 'POIdestination' : destination,
 #                                    'route' : str(route).replace('[','{').replace(']','}').replace("{'",'{{').replace("'}", '}}').replace("', '",'},{')}
-        
+
 #     return tracks, maxNumOfSteps
 
 
@@ -159,19 +159,19 @@ def extractConfigurationData(root):
                 'obstacle_max_time' : root.find('system').find('obstacle_max_time').get('value'),
                 'obstacle_max_duration' : root.find('system').find('obstacle_max_duration').get('value'),
                 'max_attempts' : root.find('system').find('max_attempts').get('value')}
-    
+
     machines = {}
     for machine in root.iter('machine'):
-        machines[machine.get('id')] = {'type' : machine.get('type'), 
-                                       'leavingTime' : machine.get('leavingTime'), 
-                                       'fuelCapacity' : machine.get('fuelCapacity'), 
+        machines[machine.get('id')] = {'type' : machine.get('type'),
+                                       'leavingTime' : machine.get('leavingTime'),
+                                       'fuelCapacity' : machine.get('fuelCapacity'),
                                        'fuelConsumption' : machine.get('fuelConsumption'),
                                        'speed': machine.get('speed'),
                                        'emission' : machine.get('emission'),
                                        'capacity' : machine.get('capacity'),
                                        'unloadTime': machine.get('unloadTime'),
                                        'tasks' : ('{' + machine.find('tasks').text + '}')}
-    
+
     return  system , machines
 
 
@@ -188,7 +188,7 @@ environment, avg_length = extractNetworkData(root_file['environment'])
 def generateMatrices(environment):
     x = 0
     y = 0
-    
+
     for segment in environment.values():
         if (int(segment['x']) > x):
             x = int(segment['x'])
@@ -196,28 +196,28 @@ def generateMatrices(environment):
             y = int(segment['y'])
     x += 1
     y += 1
-    
+
     rows = x
     columns = y
-    
+
     availabilityMatrix = zeros((x, y), dtype=bool)
     capacityMatrix = zeros((x, y), dtype=int16)
     lengthMatrix = zeros((x, y), dtype=int16)
     speedMatrix = zeros((x, y), dtype=int16)
-    
+
     for identifier, segment in environment.items():
-    
+
         x = int(segment['x'])
         y = int(segment['y'])
-        
+
         #print(x,y,segment['length'])
-        
+
         availabilityMatrix[x][y] = segment['available'] == 'true'
         capacityMatrix[x][y] = int(segment['capacity'])
         lengthMatrix[x][y] = int(segment['length'])
         speedMatrix[x][y] = int(segment['freespeed'])
-    
-    return {'capacityMatrix' : capacityMatrix, 'lengthMatrix' : lengthMatrix, 
+
+    return {'capacityMatrix' : capacityMatrix, 'lengthMatrix' : lengthMatrix,
             'speedMatrix' : speedMatrix, 'availabilityMatrix' : availabilityMatrix}, rows, columns
 
 
@@ -311,10 +311,10 @@ def generateRandomTimesStringForObstacle(numOfEvents, maxTime, maxDuration):
     for i in range(numOfEvents):
         initTime = random.randint(lastTime, lastTime + int(maxTime / numOfEvents))
         lastTime = random.randint(initTime + 1, (initTime + 1) + maxDuration )
-        
+
         changesTimes[i][0] = initTime
         changesTimes[i][1] = lastTime
-        
+
     return str(changesTimes).replace('[','{').replace(']','}').replace(' ',',').replace(',,',',').replace('{,','{').replace(',}','}').replace('\n','').replace(',,',',').replace('{,','{')
 
 CHANGES_TIME = generateRandomTimesStringForObstacle(int(OBSTACLE_OCCURRENCES),int(OBSTACLE_MAX_TIME),int(OBSTACLE_MAX_DURATION))
@@ -339,7 +339,7 @@ print('segments:',numOfSegments,', POIs:',numOfPOIs,', machines:' ,numOfMachine)
 def mapMatrixIntoRebecaString(matrix):
     matrixString = re.sub('\s+',',',str(matrix))
     #print(matrixString)
-    
+
     return matrixString.replace('[,','{').replace('[','{').replace(']','}').replace('},','},\n').lower()
 
 
@@ -364,7 +364,7 @@ def fromMachineToTasksMatrix(machines):
         returnString += machine['tasks'] + ','
         numOfTasks = len(machine['tasks'].split(','))
     returnString += '}'
-        
+
     return returnString.replace('},}','}}').replace('},{','},\n{'), str(numOfTasks)
 
 TASKS_VEHICLES, NUM_OF_TASKS = fromMachineToTasksMatrix(machines)
@@ -397,7 +397,7 @@ def mapEnvironmentCellsOrChannelsInfoIntoString(element, dictionary):
     string = [0] * len(dictionary)
     for identifier, value in dictionary.items():
         string[int(identifier)] = int(value[element])
-    
+
     return str(string).replace('[','{').replace(']','}')
 
 
@@ -408,8 +408,8 @@ def mapMachinesInfoIntoString(element,dictionary):
     string = [''] * len(dictionary)
     for identifier, value in dictionary.items():
         string[int(identifier)] = value[element]
-    
-    return str(string).replace('[','{').replace(']','}').replace("'",'')   
+
+    return str(string).replace('[','{').replace(']','}').replace("'",'')
 
 
 # In[83]:
@@ -454,21 +454,21 @@ def mapPoIsLocationIntoString(topology):
             loadUnloadStations += '{' + x + ',' + y + '}'
             numOfLUS += 1
             loadTime +=  topology[str(i)]['loadTime'] + ', '
-    
+
     IoPs_LOCATION += '}'
     parkingStations += '}'
     chargingStations += '}'
     loadUnloadStations += '}'
     loadTime += '}'
-    
-    a = IoPs_LOCATION.replace('}{','},{') 
-    b = parkingStations.replace('}{','},{') 
-    c = chargingStations.replace('}{','},{') 
-    d = loadUnloadStations.replace('}{','},{') 
-    e = loadTime.replace(', }','}') 
-    
+
+    a = IoPs_LOCATION.replace('}{','},{')
+    b = parkingStations.replace('}{','},{')
+    c = chargingStations.replace('}{','},{')
+    d = loadUnloadStations.replace('}{','},{')
+    e = loadTime.replace(', }','}')
+
     return a , str(numOfPOIs), b, str(numOfPS), c, str(numOfCS), d, str(numOfLUS), e
-        
+
 
 
 # In[85]:
@@ -491,7 +491,7 @@ LOAD_TIME
 #     string = [''] * len(dictionary)
 #     for identifier, track in dictionary.items():
 #         string[int(identifier)] = track['route']
-    
+
 #     return str(string).replace('[','{').replace(']','}').replace("}',",'},\n').replace("'",'')
 
 
@@ -512,20 +512,20 @@ LOAD_TIME
 #     for identifier, poi in PoIs.items():
 #         if (poi['type'] == 'CrossController'):
 #             string += (poi['type'] + ' ' + identifier + '():();' + '\n'
-#                       )   
+#                       )
 #         elif (poi['type'] == 'DecisionStation'):
-#             string += (poi['type'] + ' ' + identifier + '():(' + poi['N'] + ',' + poi['E'] + ',' + poi['S'] + ',' + poi['W'] + ',' + 
+#             string += (poi['type'] + ' ' + identifier + '():(' + poi['N'] + ',' + poi['E'] + ',' + poi['S'] + ',' + poi['W'] + ',' +
 #                       poi['x'] + ',' + poi['y'] + ');' + '\n'
 #                       )
-            
+
 #         elif (poi['type'] != 'PrePoint'):
-#             string += (poi['type'] + ' ' + identifier + '():(' + poi['N'] + ',' + poi['E'] + ',' + poi['S'] + ',' + poi['W'] + ',' + 
+#             string += (poi['type'] + ' ' + identifier + '():(' + poi['N'] + ',' + poi['E'] + ',' + poi['S'] + ',' + poi['W'] + ',' +
 #                       poi['x'] + ',' + poi['y'] + ',' + poi['operationTime'] + ');' + '\n'
 #                       )
 #         else:
 #             string += (poi['type'] + ' ' + identifier + '(' + poi['segments'] + '):(' + poi['x'] + ',' + poi['y'] + ');' + '\n'
 #                       )
-#     return string        
+#     return string
 
 
 # In[90]:
@@ -541,14 +541,14 @@ LOAD_TIME
 def extractMainSegments(environment):
     string = ''
     for identifier, segment in environment.items():
-        string += ('Segment ' + identifier + '():(' +  
+        string += ('Segment ' + identifier + '():(' +
                     segment['N'] + ', \t' + segment['NE'] + ', \t' +
                     segment['E'] + ', \t' + segment['ES'] + ', \t' +
                     segment['S'] + ', \t' + segment['SW'] + ', \t' +
                     segment['W'] + ', \t' + segment['WN'] + ', \t' +
-                    segment['x'] + ', ' + 
+                    segment['x'] + ', ' +
                     segment['y'] + ');' + '\n')
-                      
+
     return string
 MAIN = extractMainSegments(environment)
 # Deprecated
@@ -640,8 +640,8 @@ modelString =('env int RESENDING_PERIOD = ' + system['resending_period'] + '; //
 'env boolean[' + NUM_OF_ROWS + '][' + NUM_OF_COLUMNS + '] MAP_AVAILABILITY= \n' + MAP_AVAILABILITY + ';' + '\n' +
 '' + '\n' +
 '/* Segments ids: map from x,y to segment id*/' + '\n' +
-'/* f(x,y) = (id) = ((x * NUM_OF_ROWS) + y)' + '\n' +
-' * inverse: f(id) = (x,y) =( ((int) x / NUM_OF_ROWS) , x % NUM_OF_ROWS )' + '\n' +
+'/* f(x,y) = (id) = ((x * NUM_OF_COLUMNS) + y)' + '\n' +
+' * inverse: f(id) = (x,y) =( ((int) id / NUM_OF_COLUMNS) , id % NUM_OF_COLUMNS )' + '\n' +
 ' */' + '\n' +
 '' + '\n' +
 'env int NUM_OF_SEGMENTS = ' + NUM_OF_SEGMENTS + ';' + '\n' +
@@ -741,7 +741,7 @@ modelString =('env int RESENDING_PERIOD = ' + system['resending_period'] + '; //
 '                                  boolean isLoaded, double battery, double consumedBattery, int movedMaterial, double co2Emission){' + '\n' +
 '' + '\n' +
 '    /* Check if the current segment is temporarly unavailable*/' + '\n' +
-'    boolean isTheSegmentAvailable = isTheSegmentAvailableNow((coord[0] * NUM_OF_ROWS) + coord[1], now) && MAP_AVAILABILITY[coord[0]][coord[1]];' + '\n' +
+'    boolean isTheSegmentAvailable = isTheSegmentAvailableNow((coord[0] * NUM_OF_COLUMNS) + coord[1], now) && MAP_AVAILABILITY[coord[0]][coord[1]];' + '\n' +
 '' + '\n' +
 '		if (currCapacity > 0 && isTheSegmentAvailable){' + '\n' +
 '			currCapacity--;' + '\n' +
@@ -765,8 +765,8 @@ modelString =('env int RESENDING_PERIOD = ' + system['resending_period'] + '; //
 '       failingSegments[i] = -1;' + '\n' +
 '    }' + '\n' +
 '' + '\n' +
-'  	int nextX = currRoute[trackIndex + 1] == -1 ? -1 : ((int) currRoute[trackIndex + 1] / NUM_OF_ROWS);' + '\n' +
-'  	int nextY = currRoute[trackIndex + 1] == -1 ? -1 : currRoute[trackIndex + 1] % NUM_OF_ROWS;' + '\n' +
+'  	int nextX = currRoute[trackIndex + 1] == -1 ? -1 : ((int) currRoute[trackIndex + 1] / NUM_OF_COLUMNS);' + '\n' +
+'  	int nextY = currRoute[trackIndex + 1] == -1 ? -1 : currRoute[trackIndex + 1] % NUM_OF_COLUMNS;' + '\n' +
 '' + '\n' +
 '    int operatingTime = 0;' + '\n' +
 '' + '\n' +
@@ -848,8 +848,8 @@ modelString =('env int RESENDING_PERIOD = ' + system['resending_period'] + '; //
 '                                                        isLoaded, battery, consumedBattery, movedMaterial, co2Emission) after(1);' + '\n' +
 '    }' + '\n' +
 '    else {' + '\n' +
-'      int nextX = ( (int) currRoute[trackIndex] / NUM_OF_ROWS );' + '\n' +
-'      int nextY = currRoute[trackIndex] % NUM_OF_ROWS;' + '\n' +
+'      int nextX = ( (int) currRoute[trackIndex] / NUM_OF_COLUMNS );' + '\n' +
+'      int nextY = currRoute[trackIndex] % NUM_OF_COLUMNS;' + '\n' +
 '' + '\n' +
 '      assertion(nextX != -1 && nextY != -1, "The next movement is not possible, out of track!");' + '\n' +
 '' + '\n' +
@@ -895,15 +895,15 @@ modelString =('env int RESENDING_PERIOD = ' + system['resending_period'] + '; //
 '' + '\n' +
 '    /*Init all the route with Dijkstra shortest path algorithm : A* */' + '\n' +
 '' + '\n' +
-'    int startVertex = coord[0] * NUM_OF_ROWS + coord[1];' + '\n' +
-'    int destVertex = (IoPs_LOCATION[destination][0] * NUM_OF_ROWS) + IoPs_LOCATION[destination][1];' + '\n' +
+'    int startVertex = coord[0] * NUM_OF_COLUMNS + coord[1];' + '\n' +
+'    int destVertex = (IoPs_LOCATION[destination][0] * NUM_OF_COLUMNS) + IoPs_LOCATION[destination][1];' + '\n' +
 '' + '\n' +
 '    /*************************************************************/' + '\n' +
 '    /* Modify the mapAvailability with the current obstacle */' + '\n' +
 '    boolean[' + NUM_OF_SEGMENTS + '] mapAvailability;' + '\n' +
 '' + '\n' +
 '    for (int i = 0; i <NUM_OF_SEGMENTS; i++){' + '\n' +
-'      mapAvailability[i] = MAP_AVAILABILITY[((int)i / NUM_OF_ROWS)][i % NUM_OF_ROWS];' + '\n' +
+'      mapAvailability[i] = MAP_AVAILABILITY[((int)i / NUM_OF_COLUMNS)][i % NUM_OF_COLUMNS];' + '\n' +
 '    }' + '\n' +
 '' + '\n' +
 '    int[' + NUM_OF_SEGMENTS + '][' + NUM_OF_SEGMENTS + '] adjacencyMatrix;' + '\n' +
@@ -917,8 +917,8 @@ modelString =('env int RESENDING_PERIOD = ' + system['resending_period'] + '; //
 '      for (int t = 0; t < NUM_OF_COLUMNS; t++){' + '\n' +
 '        for (int k = 0; k < NUM_OF_ROWS; k++){' + '\n' +
 '          for (int z = 0; z < NUM_OF_COLUMNS; z++) {' + '\n' +
-'            int i = (h * NUM_OF_ROWS) + t;' + '\n' +
-'            int j = (k * NUM_OF_ROWS) + z;' + '\n' +
+'            int i = (h * NUM_OF_COLUMNS) + t;' + '\n' +
+'            int j = (k * NUM_OF_COLUMNS) + z;' + '\n' +
 '            if( ( (abs(h - k) <= 1) &&  (abs(t - z) <= 1)) && ((abs(h - k) + abs(t - z) != 0)) ){' + '\n' +
 '              if (mapAvailability[i] && mapAvailability[j]){' + '\n' +
 '                adjacencyMatrix[i][j] = 1;' + '\n' +
@@ -944,7 +944,7 @@ modelString =('env int RESENDING_PERIOD = ' + system['resending_period'] + '; //
 '' + '\n' +
 '    for (int row = 0; row < NUM_OF_ROWS; row++){' + '\n' +
 '      for (int column = 0; column < NUM_OF_COLUMNS; column++){' + '\n' +
-'        int vertexIndex =  row * NUM_OF_ROWS + column;' + '\n' +
+'        int vertexIndex =  row * NUM_OF_COLUMNS + column;' + '\n' +
 '        shortestDistances[vertexIndex] = 999999;' + '\n' +
 '        added[vertexIndex] = false;' + '\n' +
 '      }' + '\n' +
@@ -1070,8 +1070,8 @@ modelString =('env int RESENDING_PERIOD = ' + system['resending_period'] + '; //
 '      }' + '\n' +
 '    }' + '\n' +
 '' + '\n' +
-'    int nextX = ( (int) nextVertex / NUM_OF_ROWS );' + '\n' +
-'    int nextY = nextVertex % NUM_OF_ROWS;' + '\n' +
+'    int nextX = ( (int) nextVertex / NUM_OF_COLUMNS );' + '\n' +
+'    int nextY = nextVertex % NUM_OF_COLUMNS;' + '\n' +
 '    assertion(nextX != -1 && nextY != -1, "Segment not valid, wrong nextX and nextY");' + '\n' +
 '    int nextMovement = getNextCardinalMovement(coord, nextX, nextY);' + '\n' +
 '' + '\n' +
@@ -1085,8 +1085,8 @@ modelString =('env int RESENDING_PERIOD = ' + system['resending_period'] + '; //
 '                                  boolean isLoaded, double battery, double consumedBattery, int movedMaterial, double co2Emission){' + '\n' +
 '' + '\n' +
 '    /* Old Choice: Failing segment */' + '\n' +
-'    int nextX = currRoute[trackIndex] == -1 ? -1 : ( (int) currRoute[trackIndex] / NUM_OF_ROWS );' + '\n' +
-'    int nextY = currRoute[trackIndex] == -1 ? -1 : currRoute[trackIndex] % NUM_OF_ROWS;' + '\n' +
+'    int nextX = currRoute[trackIndex] == -1 ? -1 : ( (int) currRoute[trackIndex] / NUM_OF_COLUMNS );' + '\n' +
+'    int nextY = currRoute[trackIndex] == -1 ? -1 : currRoute[trackIndex] % NUM_OF_COLUMNS;' + '\n' +
 '    assertion(nextX != -1 && nextY != -1, "Segment not valid, wrong nextX and nextY, segmentNotFree!");' + '\n' +
 '    int nextMovement = getNextCardinalMovement(coord, nextX, nextY);' + '\n' +
 '' + '\n' +
@@ -1153,7 +1153,7 @@ modelString =('env int RESENDING_PERIOD = ' + system['resending_period'] + '; //
 '  msgsrv changeRouteWithPolicy2(int vehicleId, int taskIndex, int trackIndex, int source, int destination, int[' + MAX_TRACK_LENGTH + '] currRoute, int[' + MAX_TRACK_LENGTH + ']  failingSegments, boolean isLoaded,' + '\n' +
 '                                    double battery, double consumedBattery, int movedMaterial, double co2Emission){' + '\n' +
 '' + '\n' +
-'    int startVertex = coord[0] * NUM_OF_ROWS + coord[1];' + '\n' +
+'    int startVertex = coord[0] * NUM_OF_COLUMNS + coord[1];' + '\n' +
 '    int destVertex = currRoute[trackIndex + 1];' + '\n' +
 '' + '\n' +
 '    /* Modify the mapAvailability with the current obstacle */' + '\n' +
@@ -1161,7 +1161,7 @@ modelString =('env int RESENDING_PERIOD = ' + system['resending_period'] + '; //
 '' + '\n' +
 '    for (int i = 0; i <NUM_OF_SEGMENTS; i++){' + '\n' +
 '      if(i != currRoute[trackIndex] && !isTheSegmentInTheList(i, failingSegments)){' + '\n' +
-'        mapAvailability[i] = MAP_AVAILABILITY[((int)i / NUM_OF_ROWS)][i % NUM_OF_ROWS];' + '\n' +
+'        mapAvailability[i] = MAP_AVAILABILITY[((int)i / NUM_OF_COLUMNS)][i % NUM_OF_COLUMNS];' + '\n' +
 '      }' + '\n' +
 '      else{' + '\n' +
 '        mapAvailability[i] = false;' + '\n' +
@@ -1182,8 +1182,8 @@ modelString =('env int RESENDING_PERIOD = ' + system['resending_period'] + '; //
 '      for (int t = 0; t < NUM_OF_COLUMNS; t++){' + '\n' +
 '        for (int k = 0; k < NUM_OF_ROWS; k++){' + '\n' +
 '          for (int z = 0; z < NUM_OF_COLUMNS; z++) {' + '\n' +
-'            int i = (h * NUM_OF_ROWS) + t;' + '\n' +
-'            int j = (k * NUM_OF_ROWS) + z;' + '\n' +
+'            int i = (h * NUM_OF_COLUMNS) + t;' + '\n' +
+'            int j = (k * NUM_OF_COLUMNS) + z;' + '\n' +
 '            if( ( (abs(h - k) <= 1) &&  (abs(t - z) <= 1)) && ((abs(h - k) + abs(t - z) != 0)) ){' + '\n' +
 '              if (mapAvailability[i] && mapAvailability[j]){' + '\n' +
 '                adjacencyMatrix[i][j] = 1;' + '\n' +
@@ -1209,7 +1209,7 @@ modelString =('env int RESENDING_PERIOD = ' + system['resending_period'] + '; //
 '' + '\n' +
 '    for (int row = 0; row < NUM_OF_ROWS; row++){' + '\n' +
 '      for (int column = 0; column < NUM_OF_COLUMNS; column++){' + '\n' +
-'        int vertexIndex =  row * NUM_OF_ROWS + column;' + '\n' +
+'        int vertexIndex =  row * NUM_OF_COLUMNS + column;' + '\n' +
 '        shortestDistances[vertexIndex] = 999999;' + '\n' +
 '        added[vertexIndex] = false;' + '\n' +
 '      }' + '\n' +
@@ -1334,8 +1334,8 @@ modelString =('env int RESENDING_PERIOD = ' + system['resending_period'] + '; //
 '      }' + '\n' +
 '    }' + '\n' +
 '' + '\n' +
-'    int nextX = ( (int) nextVertex / NUM_OF_ROWS );' + '\n' +
-'    int nextY = nextVertex % NUM_OF_ROWS;' + '\n' +
+'    int nextX = ( (int) nextVertex / NUM_OF_COLUMNS );' + '\n' +
+'    int nextY = nextVertex % NUM_OF_COLUMNS;' + '\n' +
 '    assertion(nextX != -1 && nextY != -1, "Segment not valid, wrong nextX and nextY");' + '\n' +
 '    int nextMovement = getNextCardinalMovement(coord, nextX, nextY);' + '\n' +
 '' + '\n' +
@@ -1351,15 +1351,15 @@ modelString =('env int RESENDING_PERIOD = ' + system['resending_period'] + '; //
 '                                    double battery, double consumedBattery, int movedMaterial, double co2Emission){' + '\n' +
 '    /* 3° Policy: change all the route from the current segment to the final destination */' + '\n' +
 '' + '\n' +
-'    int startVertex = coord[0] * NUM_OF_ROWS + coord[1];' + '\n' +
-'    int destVertex = (IoPs_LOCATION[destination][0] * NUM_OF_ROWS) + IoPs_LOCATION[destination][1];' + '\n' +
+'    int startVertex = coord[0] * NUM_OF_COLUMNS + coord[1];' + '\n' +
+'    int destVertex = (IoPs_LOCATION[destination][0] * NUM_OF_COLUMNS) + IoPs_LOCATION[destination][1];' + '\n' +
 '    /*************************************************************/' + '\n' +
 '    /* Modify the mapAvailability with the current obstacle */' + '\n' +
 '    boolean[' + NUM_OF_SEGMENTS + '] mapAvailability;' + '\n' +
 '' + '\n' +
 '    for (int i = 0; i <NUM_OF_SEGMENTS; i++){' + '\n' +
 '      if(i != currRoute[trackIndex] && !isTheSegmentInTheList(i, failingSegments)){' + '\n' +
-'        mapAvailability[i] = MAP_AVAILABILITY[((int)i / NUM_OF_ROWS)][i % NUM_OF_ROWS];' + '\n' +
+'        mapAvailability[i] = MAP_AVAILABILITY[((int)i / NUM_OF_COLUMNS)][i % NUM_OF_COLUMNS];' + '\n' +
 '      }' + '\n' +
 '      else{' + '\n' +
 '        mapAvailability[i] = false;' + '\n' +
@@ -1377,8 +1377,8 @@ modelString =('env int RESENDING_PERIOD = ' + system['resending_period'] + '; //
 '      for (int t = 0; t < NUM_OF_COLUMNS; t++){' + '\n' +
 '        for (int k = 0; k < NUM_OF_ROWS; k++){' + '\n' +
 '          for (int z = 0; z < NUM_OF_COLUMNS; z++) {' + '\n' +
-'            int i = (h * NUM_OF_ROWS) + t;' + '\n' +
-'            int j = (k * NUM_OF_ROWS) + z;' + '\n' +
+'            int i = (h * NUM_OF_COLUMNS) + t;' + '\n' +
+'            int j = (k * NUM_OF_COLUMNS) + z;' + '\n' +
 '            if( ( (abs(h - k) <= 1) &&  (abs(t - z) <= 1)) && ((abs(h - k) + abs(t - z) != 0)) ){' + '\n' +
 '              if (mapAvailability[i] && mapAvailability[j]){' + '\n' +
 '                adjacencyMatrix[i][j] = 1;' + '\n' +
@@ -1404,7 +1404,7 @@ modelString =('env int RESENDING_PERIOD = ' + system['resending_period'] + '; //
 '' + '\n' +
 '    for (int row = 0; row < NUM_OF_ROWS; row++){' + '\n' +
 '      for (int column = 0; column < NUM_OF_COLUMNS; column++){' + '\n' +
-'        int vertexIndex =  row * NUM_OF_ROWS + column;' + '\n' +
+'        int vertexIndex =  row * NUM_OF_COLUMNS + column;' + '\n' +
 '        shortestDistances[vertexIndex] = 999999;' + '\n' +
 '        added[vertexIndex] = false;' + '\n' +
 '      }' + '\n' +
@@ -1530,8 +1530,8 @@ modelString =('env int RESENDING_PERIOD = ' + system['resending_period'] + '; //
 '      }' + '\n' +
 '    }' + '\n' +
 '' + '\n' +
-'    int nextX = ( (int) nextVertex / NUM_OF_ROWS );' + '\n' +
-'    int nextY = nextVertex % NUM_OF_ROWS;' + '\n' +
+'    int nextX = ( (int) nextVertex / NUM_OF_COLUMNS );' + '\n' +
+'    int nextY = nextVertex % NUM_OF_COLUMNS;' + '\n' +
 '    assertion(nextX != -1 && nextY != -1, "Segment not valid, wrong nextX and nextY");' + '\n' +
 '    int nextMovement = getNextCardinalMovement(coord, nextX, nextY);' + '\n' +
 '' + '\n' +
@@ -1695,4 +1695,3 @@ def createModelFile(fileName, model):
 
 
 createModelFile(modelFileName, modelString)
-
