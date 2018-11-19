@@ -12,6 +12,10 @@ Our toolset fully covers this chain for creating safe ROS codes for the robotic 
 
 #### Case Studies
 * The demo of Volvo Autonomous machines: [ [movie] ](/assets/projects/RoboRebeca/automaticConversionChain.mp4) (by Bahar Salmani). 
+* Traffic Light Model: [ [zip] ](https://github.com/rebeca-lang/rebeca-lang.binaries/raw/master/Traffic%20Light%20Case.zip) (by Bahar Salmani). 
+* Train Controller Model: [ [zip] ](https://github.com/rebeca-lang/rebeca-lang.binaries/raw/master/Train%20Contoller.zip) (by Bahar Salmani). 
+* Kobuki Robot Controller Model: [ [zip] ](https://github.com/rebeca-lang/rebeca-lang.binaries/raw/master/Kobuki%20Case.zip) (by Bahar Salmani). 
+* HXVolvo Model: [ [zip] ](https://github.com/rebeca-lang/rebeca-lang.binaries/raw/master/HXVolvo%20Case.zip) (by Bahar Salmani). 
 
 #### Project Members
 * **<u>Marjan Sirjani (Principal Investigator)</u>**
