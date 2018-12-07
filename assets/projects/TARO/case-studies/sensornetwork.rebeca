@@ -55,10 +55,13 @@ reactiveclass Rescue(7) {
 	}
     
     msgsrv go() {
-        int msgDeadline = (rescueDeadline-netDelay);
+        /*int msgDeadline = (rescueDeadline-netDelay);
         int excessiveDelay = ?(0, 1); // unexpected obstacle might occur during rescue
         delay(excessiveDelay);
         admin.rescueReach() after(netDelay) deadline(msgDeadline);
+        */
+        delay(?(0, 1));
+        admin.rescueReach() after(netDelay) deadline(rescueDeadline - netDelay);
     }
 }
 
