@@ -1,0 +1,164 @@
+physicalclass Tank
+{
+	knownrebecs{}
+	
+	statevars{
+		real amount; 
+		float inFlowCap;
+		float outFlowCap;
+		
+		float inRate;
+		float outRate;
+	}
+	
+	msgsrv initial(foat amount_, float inFlowCap_, float outFlowCap_){
+		amount = amount_;
+		inFlowCap = inFlowCap_;
+		outFlowCap = outFlowCap_;
+		
+		SetMode(NotEmpty);
+	}
+	
+	msgsrv OpenOutput(){
+		outRate = outFlowCap;
+	}
+	
+	msgsrv CloseOutput(){
+		outRate = 0;
+	}
+	
+	msgsrv OpenInput(){
+		inRate = inFlowCap;
+	}
+	
+	msgsrv CloseInput(){
+		inRate = 0;
+	}
+	
+	
+	mode NotEmpty{
+		inv(amount >= 0){
+			amount' = inRate - outRate;
+		}
+		guard(amount == 0){
+			setmode(Empty);
+		}
+	}
+	
+	mode Empty{
+		inv(amount==0){
+			amount' = inRate;
+		}
+		guard(amount>0)
+			setmode(NotEmpty);
+	}
+}
+
+physicalclass Sensor
+{
+	knownrebecs{ 
+		Controller controller;
+		Tank tank;
+	}
+	
+	statevars{
+		real timer;
+	}
+	
+	msgsrv initial(){
+		setmode(Active);
+	}
+	
+	mode Active{
+		inv(timer<=0.05){
+			timer' = 1;
+		}
+		guard(timer==0.05){
+			timer = 0;
+			setmode(Active);
+			controller.setTankAmount(tank.amount);
+		}
+	}
+}
+
+softwareclass Controller
+{
+	knownrebecs { 
+		Tank tank;
+	}
+	
+	statevars {
+		float tankAmount;
+	}
+	
+	msgsrv initial(){
+		tank.OpenOutput();
+	}
+	
+	msgsrv setTankAmount(float amount){
+		tankAmount = amount;
+	}
+	
+	msgsrv control()
+	{
+		if(tankAmount <= 20)
+			tank.OpenInput();
+		
+		if(tankAmount >= 30)
+			tank.CloseInput();
+		
+	}
+}
+
+physicalclass Clock
+{
+	knownrebecs{ 
+		Controller controller;
+	}
+	
+	statevars{
+		real timer;
+	}
+	
+	msgsrv initial(){
+		setmode(Active);
+	}
+	
+	mode Active{
+		inv(timer<=0.1){
+			timer' = 1;
+		}
+		guard(timer==0.1){
+			timer = 0;
+			setmode(Active);
+			controller.control();
+		}
+	}
+}
+
+main 
+{
+	Tank tank ():(25,3,2);	
+	Sensor sensor(@CAN controller,@Wire tank):();
+	Controller controller (@CAN tank):();
+	Clock clock(@Wire controller):();
+
+	
+	CAN{
+		priorities{
+			controller tank.CloseInput 					1
+			controllertank.CloseOutput 				2
+			controllertank.OpenInput 					3
+			controller tank.OpenOutput 				4
+			sensor controller.setTankAmount 		5
+		}
+		delays{
+			controller tank.CloseInput -> 0.01
+			controller tank.CloseOutput -> 0.01
+			controller tank.OpenInput -> 0.01
+			controller tank.OpenOutput -> 0.01
+			sensor controller.setTankAmount -> 0.01
+			
+		}
+	}
+}

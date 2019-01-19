@@ -90,4 +90,22 @@ a.link_bibtex {
 a.link_presentation {
     background:#E99E25;
 }
+
+a.link_download {
+    background-color: rgb(67,132,141);
+}
+a.link_show {
+    background:rgb(199,149,32);
+}
+.highlight {
+    width: 100%;
+    padding: 0;
+    background-color: #F7F7F7;
+    max-height: 450px;
+    overflow-y: auto;
+    border: 1px solid #464646;
+    border-radius: 4;
+    margin-left: 50px;
+}
+
 @import "_syntax";
