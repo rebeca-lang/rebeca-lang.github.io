@@ -1,0 +1,75 @@
+physicalclass Heater
+{
+	knownrebecs{ 
+		Controller controller;
+	}
+	statevars{
+		real temp; 
+		real timer;
+	}
+	
+	msgsrv initial(float temp_){
+		temp = temp_;
+		setmode(On);
+	}
+	
+	mode On{
+		inv(timer<=0.05){
+			timer' = 1;
+			temp' = 4-0.1*temp;
+		}
+		guard(timer==0.05){
+			timer = 0;
+			controller.control(temp);
+		}&
+	}
+	
+	mode Off{
+		inv(timer<=0.05){
+			timer' = 1;
+			temp' = -0.1*temp;
+		}
+		guard(timer==0.05){
+			timer = 0;
+			controller.control(temp);
+		}
+	}
+}
+
+softwareclass Controller
+{
+	knownrebecs { 
+		Heater heater;
+	}
+	statevars {}
+	
+	msgsrv initial(){
+	}
+	
+	msgsrv control(float temp)
+	{
+		if(temp >= 22)
+			heater.SetMode(Off);
+		
+		if(temp <= 18)
+			heater.SetMode(On);
+	}
+}
+
+main 
+{
+	Heater heater (@CAN controller):(20);	
+	Controller controller (@CAN heater):();
+	
+	CAN{
+		priorities{
+			heater controller.control 0
+			controlller heater.SetMode 1
+		}
+		delays{
+			heater controller.control -> 0.01
+			controller heater.SetMode -> 0.01
+			
+		}
+	}
+}

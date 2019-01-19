@@ -13,12 +13,11 @@ In this version, CAN network is defined as network model for communications of t
 <script type="text/javscript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" ></script>
 
 <script type="text/javascript">
-function showit() {
-  var x = document.getElementById("myDIV");
-  if ($("#myDIV").is(":visible")) {
-      $("#myDIV").hide(1000);
+function showit(divID) {
+  if ($(divID).is(":visible")) {
+      $(divID).hide(1000);
   } else {
-      $("#myDIV").show(1000);
+      $(divID).show(1000);
   }
 }
 </script>
@@ -28,9 +27,9 @@ We developed a tool which implements the core rules of Hybrid Rebeca. No parser 
 The output of our tool for a model, is a hybrid automaton in the format of SpaceEx. SpaceEx is a framework for verification hybrid systems. Verification of the model can be done by giving the output file to the SpaceEx tool.
 
 #### Case Studies
-* Water Tank: <a class="link link_show" onclick="showit()">show</a> 
+* Water Tank: <a class="link link_show" onclick="showit('#WaterTank')">show</a> 
 <a class="link link_download" href="/assets/projects/HybridRebeca/case-studies/WaterTank.rebeca">download</a>
-<div id="myDIV">
+<div id="WaterTank" style="display: none;">
 {% highlight java linenos %}
 physicalclass Tank {
     knownrebecs{}
@@ -183,7 +182,297 @@ main {
 }
 {% endhighlight %}
 </div>
+* Vending Machine: <a class="link link_show" onclick="showit('#VendingMachine')">show</a> 
+<a class="link link_download" href="/assets/projects/HybridRebeca/case-studies/VendingMachine.rebeca">download</a>
+<div id="VendingMachine" style="display: none;">
+{% highlight java linenos %}
+physicalclass Heater {
+    knownrebecs {Controller controller;}
+    statevars {real drinkTemp;}
+    
+    msgsrv initial(){
+    }
+    
+    mode On{
+        inv (drinkTemp <= 90) 
+            drinkTemp' = (120 - drinkTemp)/20;
+        guard(drinkTemp == 90){
+            controller.drinkHeated();
+            setmode(Off);
+        }
+    }
+    
+    mode Off{
+        inv (drinkTemp >= 25) 
+            drinkTemp' = drinkTemp - 10;
+        guard(drinkTemp == 25)
+            setmode(none);
+    }
+}
 
+softwareclass Controller {
+    knownrebecs{UserInterface userIn; Heater heater;}
+    statevars {int nCoffee;}
+    
+    msgsrv initial(int nCoffee_){
+        nCoffee = nCoffee_;
+    }
+    
+    msgsrv prepareCoffee(){
+        if(nCoffee<=0)
+            userIn.alertNoCoffee();
+        else
+            heater.setMode(On);        
+    }
+    
+    msgsrv drinkHeated(){
+        nCoffee = nCoffee -1;
+        userIn.deliverCoffee();
+    }
+}
+
+softwareclass UserInterface{
+    knownrebecs{Controller controller}
+    
+    msgsrv initial(int nCoffee_){
+        self.requestCoffee();
+    }
+    
+    msgsrv requestCoffee(){
+        controller.prepareCoffee();
+    }
+    
+    msgsrv deliverCoffee(){
+        delay(1);
+        self.requestCoffee();
+    }
+        
+    msgsrv alertNoCoffee(){
+    }
+}
+
+main {
+    Heater heater(@Wire controller):();
+    Controller controller(@Wire userIn,@Wire heater):();
+    UserInterface userIn(@Wire controller):();    
+    CAN{
+        priorities{
+        }
+        delays{
+        }
+    }
+}
+{% endhighlight %}
+</div>
+* Brake by Wire: <a class="link link_show" onclick="showit('#BrakeByWire')">show</a> 
+<a class="link link_download" href="/assets/projects/HybridRebeca/case-studies/BrakeByWire.rebeca">download</a>
+<div id="BrakeByWire" style="display: none;">
+{% highlight java linenos %}
+physicalclass Wheel{
+    knownrebecs {WCtlr ctlr;}
+    statevars {float trq; real spd; real t;}
+    msgsrv initial(float spd_){
+        spd = spd_;
+        setmode(Rolling);
+    }
+    msgsrv setTrq(float trq_){
+        trq = trq_;    
+    }
+    mode Rolling{
+        inv(t <= 0.05){
+            t' = 1;
+            spd' = -0.1-trq;
+        }
+        guard(t == 0.05){
+            t = 0;
+            ctlr.setWspd(spd);
+            if(spd > 0)
+                setmode(Rolling);
+        }
+    }
+}
+    
+softwareclass WCtlr{
+    knownrebecs {Wheel w; BrakeCtlr bctlr;}
+    statevars {int id; float wspd; float slprt;}
+    msgsrv initial(int id_){
+        id = id_;
+    }
+    msgsrv setWspd(float wspd_){
+        wspd = wspd_;
+        bctlr.setWspd(id,wspd);
+    }
+    msgsrv applyTrq(float reqTrq, float vspd){
+        if(vspd == 0)
+            slprt = 0;
+        else
+            slprt = (vspd - wspd * WRAD)/vspd;
+        if(slprt > 0.2)
+            wheel.setTrq(0);
+        else
+            wheel.setTrq(reqTrq);
+    }
+}
+
+physicalclass Brake{
+    knownrebecs {BrakeCtlr bctlr;}
+    statevars {real bprcnt; real t; float mxprcnt; float r}
+    msgsrv initial(float bprcnt_, float mxprcnt_){
+        bprcnt = bprcnt_;
+        mxprcnt = mxprcnt_;
+        r = 1;
+        setmode(Braking);
+    }
+    mode Braking{
+        inv(t <= 0.05){
+            t' = 1;
+            bprcnt' = r;
+        }
+        guard(t == 0.05){
+            t = 0;
+            bctrl.setBprcnt(bprcnt);
+            if(bprcnt>=mxprcnt)
+                r = 0;
+            setmode(Braking);
+        }
+    }
+}
+
+softwareclass BrakeCtlr{
+    knownrebecs{
+        WCtlr wctlrR;WCtlr wctlrL;}
+    statevars {float wspdR;float wspdL;float bprcnt;float gtrq;float espd;}
+    msgsrv control(){
+        espd = (wspdR + wspdL)/2;
+        gtrq = bprcnt;
+        wctlrR.applyTrq(gtrq, espd);
+        wctlrL.applyTrq(gtrq, espd);
+    }
+    // Setters for wspdR, wspdL and bprcnt
+    ...
+}
+
+physicalclass Clock{
+    knownrebecs {BrakeCtlr bctlr;}
+    statevars {real t;}
+    msgsrv initial(){
+        setmode(Running)
+    }
+    mode Running(){
+        inv(t <= 0.05){
+            t' = 1;
+        }
+        guard(t == 0.05){
+            t = 0;
+            bctlr.control();
+            setmode(Running);
+        }
+    }
+}
+
+main {
+    Wheel wR (@Wire wctlrR):(1);
+    Wheel wL (@Wire wctlrL):(1);
+    WCtlr wctlrR (@Wire wR, @CAN bctlr):(0);
+    WCtlr wctlrL (@Wire wL, @CAN bctlr):(1);
+    BrakeCtlr bctlr (@CAN wctlrR, @CAN wctlrL):();
+    Brake brake(@Wire bctlr):(60,65);
+    Clock clock(@Wire bctlr):();
+    
+    CAN{
+        priorities{
+            bctlr     wctlrR.applyTrq      1;
+            bctlr     wctlrL.applyTrq      2;
+            wctlrR    bctlr.setWspd        3;
+            wctlrL    bctlr.setWspd        4;
+        }
+        delays{
+            bctlr     wctlrR.applyTrq      0.01;
+            bctlr     wctlrL.applyTrq      0.01;
+            wctlrR    bctlr.setWspd        0.01;
+            wctlrL    bctlr.setWspd        0.01;
+        }
+    }
+}
+{% endhighlight %}
+</div>
+* Complex Heater: <a class="link link_show" onclick="showit('#ComplexHeater')">show</a> 
+<a class="link link_download" href="/assets/projects/HybridRebeca/case-studies/ComplexHeater.rebeca">download</a>
+<div id="ComplexHeater" style="display: none;">
+{% highlight java linenos %}
+physicalclass Heater {
+    knownrebecs{ 
+        Controller controller;
+    }
+    statevars{
+        real temp; 
+        real timer;
+    }
+    
+    msgsrv initial(float temp_){
+        temp = temp_;
+        setmode(On);
+    }
+    
+    mode On{
+        inv(timer<=0.05){
+            timer' = 1;
+            temp' = 4-0.1*temp;
+        }
+        guard(timer==0.05){
+            timer = 0;
+            controller.control(temp);
+        }
+    }
+    
+    mode Off{
+        inv(timer<=0.05){
+            timer' = 1;
+            temp' = -0.1*temp;
+        }
+        guard(timer==0.05){
+            timer = 0;
+            controller.control(temp);
+        }
+    }
+}
+
+softwareclass Controller {
+    knownrebecs { 
+        Heater heater;
+    }
+    statevars {}
+    
+    msgsrv initial(){
+    }
+    
+    msgsrv control(float temp)
+    {
+        if(temp >= 22)
+            heater.SetMode(Off);
+        
+        if(temp <= 18)
+            heater.SetMode(On);
+    }
+}
+
+main {
+    Heater heater (@CAN controller):(20);    
+    Controller controller (@CAN heater):();
+    CAN{
+        priorities{
+            heater controller.control 0
+            controlller heater.SetMode 1
+        }
+        delays{
+            heater controller.control -> 0.01
+            controller heater.SetMode -> 0.01
+            
+        }
+    }
+}
+{% endhighlight %}
+</div>
 
 #### Project Members
 * **<u>Marjan Sirjani (Principal Investigator)</u>**
