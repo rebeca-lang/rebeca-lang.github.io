@@ -10,17 +10,15 @@ permalink: /allprojects/HybridRebeca
 Hybrid Rebeca, is an extension of actor-based language Rebeca, to support modeling of cyber-physical systems. In this extension, physical actors are introduced as new computational entities to encapsulate the physical behaviors. To support various means of communication among the entities, network is explicitly modeled as a separate entity from actors. We derive hybrid automata as the basis for analysis of Hybrid Rebeca models.
 In this version, CAN network is defined as network model for communications of the actors. Actors can communicate with each other either through the CAN network or directly by wire.
 
-<script type="text/javscript" src="/js/jquery.min.js" ></script>
-
-<script type="text/javscript" src="/js/jquery.tablesorter.min.js" ></script>  
+<script type="text/javscript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" ></script>
 
 <script type="text/javascript">
 function showit() {
   var x = document.getElementById("myDIV");
-  if (x.style.display === "none") {
-    x.style.display = "block";
+  if ($("#myDIV").is(":visible")) {
+      $("#myDIV").hide(1000);
   } else {
-    x.style.display = "none";
+      $("#myDIV").show(1000);
   }
 }
 </script>
@@ -32,7 +30,7 @@ The output of our tool for a model, is a hybrid automaton in the format of Space
 #### Case Studies
 * Water Tank: <a class="link link_show" onclick="showit()">show</a> 
 <a class="link link_download" href="/assets/projects/HybridRebeca/case-studies/WaterTank.rebeca">download</a>
-<div id="myDIV" style="display:none">
+<div id="myDIV">
 {% highlight java linenos %}
 physicalclass Tank {
     knownrebecs{}
