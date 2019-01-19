@@ -30,12 +30,12 @@ title: Projects
 
   <div class="col s12 m4">
     <div class="icon-block">
-      <h2 class="center light-blue-text"><img src="{{ "/assets/projects/wRebeca/wRebeca-Logo.png" | absolute_url }}" alt="wRebeca Logo"/></h2>
-      <h5 class="center">wRebeca</h5>
+      <h2 class="center light-blue-text"><img src="{{ "/assets/projects/DefaultProject.jpg" | absolute_url }}" alt="wRebeca Logo"/></h2>
+      <h5 class="center">HybridRebeca</h5>
 
       <p class="light">
-          wRebeca is an actor-based modeling language, an extension of Rebeca, proposed for efficient modeling and verification of Mobile Ad Hoc Networks (MANETs). It is supported by the tool, which efficiently generates the state spaces of models and benefits from several reduction techniques.
-          <a href="{{ "/allprojects/wRebeca" | relative_url }}">Learn more</a>
+        Hybrid Rebeca, is an extension of actor-based language Rebeca, to support modeling of cyber-physical systems. In this extension, physical actors are introduced as new computational entities to encapsulate the physical behaviors.
+          <a href="{{ "/allprojects/HybridRebeca" | relative_url }}">Learn more</a>
       </p>
     </div>
   </div>
@@ -67,6 +67,20 @@ title: Projects
 
   <div class="col s12 m4">
     <div class="icon-block">
+      <h2 class="center light-blue-text"><img src="{{ "/assets/projects/wRebeca/wRebeca-Logo.png" | absolute_url }}" alt="wRebeca Logo"/></h2>
+      <h5 class="center">wRebeca</h5>
+
+      <p class="light">
+          wRebeca is an actor-based modeling language, an extension of Rebeca, proposed for efficient modeling and verification of Mobile Ad Hoc Networks (MANETs). It is supported by the tool, which efficiently generates the state spaces of models and benefits from several reduction techniques.
+          <a href="{{ "/allprojects/wRebeca" | relative_url }}">Learn more</a>
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col s12 m4">
+    <div class="icon-block">
       <h2 class="center light-blue-text"><img src="{{ "/assets/projects/DefaultProject.jpg" | absolute_url }}" alt="PTRebeca"/></h2>
       <h5 class="center">PTRebeca</h5>
 
@@ -76,9 +90,6 @@ title: Projects
       </p>
     </div>
   </div>
-</div>
-
-<div class="row">
   <div class="col s12 m4">
     <div class="icon-block">
       <h2 class="center light-blue-text"><img src="{{ "/assets/projects/DefaultProject.jpg" | absolute_url }}" alt="TARO"></h2>
@@ -100,7 +111,9 @@ title: Projects
       </p>
     </div>
   </div>
+</div>
 
+<div class="row">
   <div class="col s12 m4">
     <div class="icon-block">
       <h2 class="center light-blue-text"><img src="{{ "/assets/projects/DefaultProject.jpg" | absolute_url }}" alt="Sysfier"/></h2>

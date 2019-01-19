@@ -23,8 +23,10 @@ function showit(divID) {
 </script>
 
 #### Tools
-We developed a tool which implements the core rules of Hybrid Rebeca. No parser is implemented in the current version of the tool, so the textual models can’t directly be used with the tool and the models must be manually defined by code.
-The output of our tool for a model, is a hybrid automaton in the format of SpaceEx. SpaceEx is a framework for verification hybrid systems. Verification of the model can be done by giving the output file to the SpaceEx tool.
+We developed a tool which implements the core rules of Hybrid Rebeca. No parser is implemented in the current version of the tool, so the Rebeca models can’t directly be used with the tool. Rebeca models must be mapped manually to an intermediate code, and the intermediate code is used by our tool.
+We developed a tool which implements the core rules of Hybrid Rebeca. No parser is implemented in the current version of the tool, so the Rebeca models can’t directly be used with the tool.
+Rebeca models are mapped manually to an intermediate code, and the intermediate code is fed to our tool.
+The output of our tool is a hybrid automaton equivalent to the Hybrid Rebeca model in the format of SpaceEx. SpaceEx is a framework for verificationhybrid systems. Verification of the model can be done by giving the output file to the SpaceEx tool.
 
 #### Case Studies
 * Water Tank: <a class="link link_show" onclick="showit('#WaterTank')">show</a> 
@@ -475,8 +477,8 @@ main {
 </div>
 
 #### Project Members
-* **<u>Marjan Sirjani (Principal Investigator)</u>**
 * **<u>Fatemeh Ghassemi (Principal Investigator)</u>**
+* Marjan Sirjani
 * Iman Jahandideh
 
 #### Related Publications
