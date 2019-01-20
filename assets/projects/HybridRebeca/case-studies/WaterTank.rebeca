@@ -16,7 +16,7 @@ physicalclass Tank
 		inFlowCap = inFlowCap_;
 		outFlowCap = outFlowCap_;
 		
-		SetMode(NotEmpty);
+		setMode(NotEmpty);
 	}
 	
 	msgsrv OpenOutput(){
@@ -146,18 +146,18 @@ main
 	
 	CAN{
 		priorities{
-			controller tank.CloseInput 					1
-			controllertank.CloseOutput 				2
-			controllertank.OpenInput 					3
-			controller tank.OpenOutput 				4
-			sensor controller.setTankAmount 		5
+			controller 	tank.CloseInput 						1
+			controller	tank.CloseOutput 						2
+			controller	tank.OpenInput 						3
+			controller 	tank.OpenOutput 						4
+			sensor 		controller.setTankAmount 		5
 		}
 		delays{
-			controller tank.CloseInput -> 0.01
-			controller tank.CloseOutput -> 0.01
-			controller tank.OpenInput -> 0.01
-			controller tank.OpenOutput -> 0.01
-			sensor controller.setTankAmount -> 0.01
+			controller 	tank.CloseInput  						0.01
+			controller 	tank.CloseOutput  					0.01
+			controller 	tank.OpenInput  						0.01
+			controller 	tank.OpenOutput 						0.01
+			sensor 		controller.setTankAmount  		0.01
 			
 		}
 	}
