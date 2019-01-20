@@ -23,7 +23,6 @@ function showit(divID) {
 </script>
 
 #### Tools
-We developed a tool which implements the core rules of Hybrid Rebeca. No parser is implemented in the current version of the tool, so the Rebeca models can’t directly be used with the tool. Rebeca models must be mapped manually to an intermediate code, and the intermediate code is used by our tool.
 We developed a tool which implements the core rules of Hybrid Rebeca. No parser is implemented in the current version of the tool, so the Rebeca models can’t directly be used with the tool.
 Rebeca models are mapped manually to an intermediate code, and the intermediate code is fed to our tool.
 The output of our tool is a hybrid automaton equivalent to the Hybrid Rebeca model in the format of SpaceEx. SpaceEx is a framework for verificationhybrid systems. Verification of the model can be done by giving the output file to the SpaceEx tool.
@@ -215,9 +214,8 @@ physicalclass Heater {
     }
 }
 
-
 softwareclass Controller {
-    knownrebecs {UserInterface userIn; Heater heater;}
+    knownrebecs{UserInterface userIn; Heater heater;}
     statevars {int nCoffee;}
     
     msgsrv initial(int nCoffee_) {
@@ -228,7 +226,7 @@ softwareclass Controller {
         if(nCoffee<=0)
             userIn.alertNoCoffee();
         else
-            heater.setMode(On);        
+            heater.setMode(On);     
     }
     
     msgsrv drinkHeated() {
@@ -240,7 +238,7 @@ softwareclass Controller {
 softwareclass UserInterface {
     knownrebecs{Controller controller}
     
-    msgsrv initial(int nCoffee_) {
+    msgsrv initial(){
         self.requestCoffee();
     }
     
@@ -259,7 +257,7 @@ softwareclass UserInterface {
 
 main {
     Heater heater(@Wire controller):();
-    Controller controller(@Wire userIn,@Wire heater):();
+    Controller controller(@Wire userIn,@Wire heater):(10);
     UserInterface userIn(@Wire controller):();
     
     CAN {
