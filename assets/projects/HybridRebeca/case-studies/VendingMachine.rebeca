@@ -7,8 +7,9 @@ physicalclass Heater
 	}
 	
 	mode On{
-		inv (drinkTemp <= 90) 
+		inv (drinkTemp <= 90) {
 			drinkTemp' = (120 - drinkTemp)/20;
+		}
 		guard(drinkTemp == 90){
 			controller.drinkHeated();
 			setmode(Off);
@@ -16,10 +17,12 @@ physicalclass Heater
 	}
 	
 	mode Off{
-		inv (drinkTemp >= 25) 
+		inv (drinkTemp >= 25) {
 			drinkTemp' = drinkTemp - 10;
-		guard(drinkTemp == 25)
+		}
+		guard(drinkTemp == 25){
 			setmode(none);
+		}
 	}
 }
 
@@ -52,7 +55,7 @@ softwareclass UserInterface
 {
 	knownrebecs{Controller controller}
 	
-	msgsrv initial(int nCoffee_){
+	msgsrv initial(){
 		self.requestCoffee();
 	}
 	
@@ -71,7 +74,7 @@ softwareclass UserInterface
 
 main {
 	Heater heater(@Wire controller):();
-	Controller controller(@Wire userIn,@Wire heater):();
+	Controller controller(@Wire userIn,@Wire heater):(10);
 	UserInterface userIn(@Wire controller):();
 	
 	CAN{
