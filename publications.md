@@ -6,6 +6,14 @@ redirect_from: "/wiki/pmwiki.php/Rebeca/Publications"
 ---
 
 #### 2018
+- Giorgio Forcina, Ehsan Khamespanah, Ali Jafari, Ali Sedaghatbaf, Stephan Baumgart, Marjan Sirjani: AdaptiveFlow: An Actor-based Eulerian Framework for Track-based Flow Management, Technical Report
+\\
+<a class="link link_pdf" href="/assets/papers/2018/Adaptiveflow-An-Actor-based-Eulerian-Framework-for-Track-based-Flow-Management.pdf">PDF</a>
+
+- Iman Jahandideh, Fatemeh Ghassemi, Marjan Sirjani: Hybrid Rebeca: Modeling and Analyzing of Cyber-Physical Systems, CyPhy, 2018
+\\
+<a class="link link_pdf" href="/assets/papers/2018/Hybrid-Rebeca-Modeling-and-Analyzing-of-Cyber-Physical-System.pdf">PDF</a>
+
 - Edward A. Lee and Marjan Sirjani: What Good Are Models?, Invited Paper in Proc. of Formal Aspects of Component Software (FACS), Pohang, South Korea, October 10-12, 2018, Kyungmin Bae and Peter Csaba Olveczky, Eds., Springer, LNCS 11222. \\
 <a class="link link_pdf" href="/assets/papers/2018/What-Good-Are-Models.pdf">PDF</a>
 
