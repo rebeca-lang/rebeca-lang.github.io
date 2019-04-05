@@ -14,8 +14,8 @@ A Rebeca family model consists of the definition of _reactive classes_ and the i
 #### Artifacts
 ##### Afra 3
 * Version: **3.0.0**
-* Last Updated: **Nov 7, 2018**
-* Size: **58 MB**
+* {: #afraLastUpdateTime } Last Updated: **...**
+* {: #afraLastUpdateSize } Size: **...**
 * Java Version: **10 and 1.8**
 * Download: 
 [ [Windows x64] ](https://github.com/rebeca-lang/org.rebecalang.afra/releases/download/CircleCIRelease/Afra-win32.win32.x86_64.zip) 
@@ -24,6 +24,23 @@ A Rebeca family model consists of the definition of _reactive classes_ and the i
 [ [Linux x32] ](https://github.com/rebeca-lang/org.rebecalang.afra/releases/download/CircleCIRelease/Afra-linux.gtk.x86.tar.gz) 
 [ [Mac OS X] ](https://github.com/rebeca-lang/org.rebecalang.afra/releases/download/CircleCIRelease/Afra-macosx.cocoa.x86_64.tar.gz)
 * Demo: How to work with Afra 3 [ [movie] ](/assets/tools/Afra/Afra-3.0-Demo.mov)
+
+<script type="text/javascript">
+    fetch("https://api.github.com/repos/rebeca-lang/org.rebecalang.afra/releases")
+      .then((resp) => resp.json())
+      .then(function(data) {
+        var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        var dateObject = new Date(data[0].assets[0].updated_at);
+        var dateString = dateObject.getDay() + ' ';
+        dateString += months[dateObject.getMonth()] + ' ';
+        dateString += dateObject.getFullYear();
+        document.getElementById("afraLastUpdateTime").innerHTML = 'Last Updated: <strong>' +dateString + '</strong>';
+        var size = data[0].assets[0].size;
+        document.getElementById("afraLastUpdateSize").innerHTML = 'Size: <strong>' + Number.parseInt(size / (1024 * 1024)) + ' MB</strong>';
+        })
+      .catch(function(error) {
+      });
+</script>
 
 ###### Notes:
 * Windows Users: you have to install [cygwin](http://www.cygwin.com) or [MinGW](http://www.mingw.org) or any other windows port of the g++ compiler before using Afra 3. Make sure that the "bin" directory, which contains "g++.exe", is included in the PATH environment variable.
