@@ -22,8 +22,8 @@ A Rebeca family model consists of the definition of _reactive classes_ and the i
 [ [Windows x32] ](https://github.com/rebeca-lang/org.rebecalang.afra/releases/download/CircleCIRelease/Afra-win32.win32.x86.zip) 
 [ [Linux x64] ](https://github.com/rebeca-lang/org.rebecalang.afra/releases/download/CircleCIRelease/Afra-linux.gtk.x86_64.tar.gz) 
 [ [Linux x32] ](https://github.com/rebeca-lang/org.rebecalang.afra/releases/download/CircleCIRelease/Afra-linux.gtk.x86.tar.gz) 
-[ [Mac OS X] ](https://github.com/rebeca-lang/org.rebecalang.afra/releases/download/CircleCIRelease/Afra-macosx.cocoa.x86_64.tar.gz)
-* Demo: How to work with Afra 3 [ [movie] ](/assets/tools/Afra/Afra-3.0-Demo.mov)
+[ [MacOS X] ](https://github.com/rebeca-lang/org.rebecalang.afra/releases/download/CircleCIRelease/Afra-macosx.cocoa.x86_64.tar.gz)
+* Demo: How to work with Afra 3 [ [video] ](/assets/tools/Afra/Afra-3.0-Demo.mov)
 
 <script type="text/javascript">
     fetch("https://api.github.com/repos/rebeca-lang/org.rebecalang.afra/releases")
