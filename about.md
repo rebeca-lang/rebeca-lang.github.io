@@ -88,6 +88,20 @@ Different approaches are proposed for verifying correctness of these properties.
 	<div class="col s12 m4">
 		<div class="icon-block">
 			<h2 class="center light-blue-text"><i class="material-icons">person</i></h2>
+			<a href=""><h5 class="center">Farnaz Yousefi</h5></a>
+			<p class="light">
+				Master Student,
+				School of Computer Engineering,
+				Sharif University of Technology, Tehran, Iran
+			</p>
+			<p class="light">
+				<i class="material-icons">email</i> faryousefi "at" ce.sharif.edu
+			</p>
+		</div>
+	</div>	
+	<div class="col s12 m4">
+		<div class="icon-block">
+			<h2 class="center light-blue-text"><i class="material-icons">person</i></h2>
 			<a href=""><h5 class="center">Ali Jafari</h5></a>
 			<p class="light">
 				Postdoc Researcher,
@@ -96,21 +110,6 @@ Different approaches are proposed for verifying correctness of these properties.
 			</p>
 			<p class="light">
 				<i class="material-icons">email</i> ali11 "at" ru.is
-			</p>
-		</div>
-	</div>
-
-	<div class="col s12 m4">
-		<div class="icon-block">
-			<h2 class="center light-blue-text"><i class="material-icons">person</i></h2>
-			<a href=""><h5 class="center">Zeynab Sharifi</h5></a>
-			<p class="light">
-				PhD Student,
-				School of Electrical and Computer Engineering,
-				University of Tehran, Tehran, Iran
-			</p>
-			<p class="light">
-				<i class="material-icons">email</i> z.sharifi "at" ut.ac.ir
 			</p>
 		</div>
 	</div>
@@ -262,4 +261,15 @@ Different approaches are proposed for verifying correctness of these properties.
 			</p>
 		</div>
 	</div>
+	<div class="col s12 m4">
+		<div class="icon-block">
+			<h2 class="center light-blue-text"><i class="material-icons">person</i></h2>
+			<a href=""><h5 class="center">Zeynab Sharifi</h5></a>
+			<p class="light">
+				<i class="material-icons">email</i> z.sharifi "at" ut.ac.ir
+			</p>
+		</div>
+	</div>
+
+
 </div>
