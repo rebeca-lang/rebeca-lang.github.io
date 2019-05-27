@@ -8,7 +8,7 @@ redirect_from: "/wiki/pmwiki.php/Rebeca/Publications"
 #### 2019
 - Farnaz Yousefi, Ehsan Khamespanah, Mohammed Gharib, Marjan Sirjani, Ali Movaghar: VeriVANca: An Actor-Based Framework for Formal Verification of Warning Message Dissemination Schemes in VANETs, SPIN, 2019
 \\
-<a class="link link_pdf" href="/assets/papers/2018/VeriVANca-An-Actor-Based-Framework-for-Formal-Verification-of-Warning-Message-Dissemination-Schemes-in-VANETs.pdf">PDF</a>
+<a class="link link_pdf" href="/assets/papers/2019/VeriVANca-An-Actor-Based-Framework-for-Formal-Verification-of-Warning-Message-Dissemination-Schemes-in-VANETs.pdf">PDF</a>
 
 - Marjan Sirjani, Giorgio Forcina, Ali Jafari, Stephan Baumgart, Ehsan Khamespanah, Ali Sedaghatbaf: An Actor-based Design Platform for System of Systems, COMPSAC, 2019, Invited Paper
 \\
