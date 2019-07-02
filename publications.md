@@ -6,6 +6,13 @@ redirect_from: "/wiki/pmwiki.php/Rebeca/Publications"
 ---
 
 #### 2019
+
+- Saeid Dehnavi, Ali Sedaghatbaf, Bahar Salmani, Marjan Sirjani, Mehdi Kargahi, Ehsan Khamespanah: Towards an Actor-based Approach to Design Verified ROS-based Robotic Programs using Rebeca, MobiSPC, 2019
+\\
+<a class="link link_pdf" href="/assets/papers/2019/Towards-an-Actor-based-Approach-to-Design-Verified-ROS-based-Robotic-Programs-using-Rebeca.pdf">PDF</a>
+
+
+
 - Farnaz Yousefi, Ehsan Khamespanah, Mohammed Gharib, Marjan Sirjani, Ali Movaghar: VeriVANca: An Actor-Based Framework for Formal Verification of Warning Message Dissemination Schemes in VANETs, SPIN, 2019
 \\
 <a class="link link_pdf" href="/assets/papers/2019/VeriVANca-An-Actor-Based-Framework-for-Formal-Verification-of-Warning-Message-Dissemination-Schemes-in-VANETs.pdf">PDF</a>
