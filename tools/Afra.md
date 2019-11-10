@@ -31,7 +31,7 @@ A Rebeca family model consists of the definition of _reactive classes_ and the i
       .then(function(data) {
         var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
         var dateObject = new Date(data[0].assets[0].updated_at);
-        var dateString = dateObject.getDay() + ' ';
+        var dateString = dateObject.getDate() + ' ';
         dateString += months[dateObject.getMonth()] + ' ';
         dateString += dateObject.getFullYear();
         document.getElementById("afraLastUpdateTime").innerHTML = 'Last Updated: <strong>' +dateString + '</strong>';
