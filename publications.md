@@ -6,8 +6,7 @@ redirect_from: "/wiki/pmwiki.php/Rebeca/Publications"
 ---
 
 #### 2019
-
--Marjan Sirjani, Luciana Provenzano, Sara Abbaspour Asadollah, Mahshid Helali Moghadam: From Requirements to Verifiable Executable Models Using Rebeca, ASYDE, 2019
+- Marjan Sirjani, Luciana Provenzano, Sara Abbaspour Asadollah, Mahshid Helali Moghadam: From Requirements to Verifiable Executable Models Using Rebeca, ASYDE, 2019
 \\
 <a class="link link_pdf" href="/assets/papers/2019/From-Requirements-to-Verifiable-Executable-Models-Using-Rebeca.pdf">PDF</a>
 
