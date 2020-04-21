@@ -7,15 +7,20 @@ redirect_from: "/wiki/pmwiki.php/Rebeca/Publications"
 
 #### 2019
 
+-Marjan Sirjani, Luciana Provenzano, Sara Abbaspour Asadollah, Mahshid Helali Moghadam: From Requirements to Verifiable Executable Models Using Rebeca, ASYDE, 2019
+\\
+<a class="link link_pdf" href="/assets/papers/2019/From-Requirements-to-Verifiable-Executable-Models-Using-Rebeca.pdf">PDF</a>
+
 - Saeid Dehnavi, Ali Sedaghatbaf, Bahar Salmani, Marjan Sirjani, Mehdi Kargahi, Ehsan Khamespanah: Towards an Actor-based Approach to Design Verified ROS-based Robotic Programs using Rebeca, MobiSPC, 2019
 \\
 <a class="link link_pdf" href="/assets/papers/2019/Towards-an-Actor-based-Approach-to-Design-Verified-ROS-based-Robotic-Programs-using-Rebeca.pdf">PDF</a>
 
 
-
 - Farnaz Yousefi, Ehsan Khamespanah, Mohammed Gharib, Marjan Sirjani, Ali Movaghar: VeriVANca: An Actor-Based Framework for Formal Verification of Warning Message Dissemination Schemes in VANETs, SPIN, 2019
 \\
 <a class="link link_pdf" href="/assets/papers/2019/VeriVANca-An-Actor-Based-Framework-for-Formal-Verification-of-Warning-Message-Dissemination-Schemes-in-VANETs.pdf">PDF</a>
+<a class="link link_bibtex" href="https://dblp.org/rec/bibtex/conf/spin/YousefiKGSM19">BibTeX</a>  
+
 
 - Marjan Sirjani, Giorgio Forcina, Ali Jafari, Stephan Baumgart, Ehsan Khamespanah, Ali Sedaghatbaf: An Actor-based Design Platform for System of Systems, COMPSAC, 2019, Invited Paper
 \\
@@ -29,9 +34,11 @@ redirect_from: "/wiki/pmwiki.php/Rebeca/Publications"
 - Iman Jahandideh, Fatemeh Ghassemi, Marjan Sirjani: Hybrid Rebeca: Modeling and Analyzing of Cyber-Physical Systems, CyPhy, 2018
 \\
 <a class="link link_pdf" href="/assets/papers/2018/Hybrid-Rebeca-Modeling-and-Analyzing-of-Cyber-Physical-System.pdf">PDF</a>
+<a class="link link_bibtex" href="https://dblp.org/rec/bibtex/conf/cyphy/JahandidehGS18">BibTeX</a>  
 
 - Edward A. Lee and Marjan Sirjani: What Good Are Models?, Invited Paper in Proc. of Formal Aspects of Component Software (FACS), Pohang, South Korea, October 10-12, 2018, Kyungmin Bae and Peter Csaba Olveczky, Eds., Springer, LNCS 11222. \\
 <a class="link link_pdf" href="/assets/papers/2018/What-Good-Are-Models.pdf">PDF</a>
+<a class="link link_bibtex" href="https://dblp.org/rec/bibtex/conf/facs2/LeeS18">BibTeX</a>  
 
 - Ali Jafari, Jayasoorya Jayanthi Surendran Nair, Stephan Baumgart and Marjan Sirjani: Safe and Efficient Fleet Operation for Autonomous Machines: An Actor-based Approach, ACM SAC, 2018. \\
 <a class="link link_pdf" href="/assets/papers/2018/Safe-and-Efficient-Fleet-Operation-for-Autonomous-Machines-An-Actor-based-Approach.pdf">PDF</a>
