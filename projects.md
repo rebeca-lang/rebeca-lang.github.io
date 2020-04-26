@@ -8,6 +8,17 @@ title: Projects
 <div class="row">
   <div class="col s12 m4">
     <div class="icon-block">
+      <h2 class="center light-blue-text"><img src="{{ "/assets/projects/CRYSTAL/CRYSTAL-Logo.png" | absolute_url }}" alt="CRYSTAL Logo"/></h2>
+      <h5 class="center">CRYSTAL</h5>
+
+      <p class="light">
+        CRYSTAL mainly focuses on assessing the security aspects of Cyber-Physical Systems. In this project, we use Timed Rebeca and model checker Afra to specify and verify the behavior of CPS components against CPS-related attacks. We analyze architecture of CPS design to recognize where the potential attacks can successfully lead the system to security violation.
+          <a href="{{ "/allprojects/CRYSTAL" | relative_url }}">Learn more</a>
+      </p>
+    </div>
+  </div>
+  <div class="col s12 m4">
+    <div class="icon-block">
       <h2 class="center light-blue-text"><img src="{{ "/assets/projects/Seada/SEADA-Logo.png" | absolute_url }}" alt="SEADA Logo"/></h2>
       <h5 class="center">SEADA</h5>
 
@@ -17,7 +28,6 @@ title: Projects
       </p>
     </div>
   </div>
-
   <div class="col s12 m4">
     <div class="icon-block">
       <h2 class="center light-blue-text"><img src="{{ "/assets/projects/RoboRebeca/RoboRebeca-Logo.png" | absolute_url }}" alt="RoboRebeca Logo"/></h2>
@@ -27,7 +37,10 @@ title: Projects
       </p>
     </div>
   </div>
+</div>
 
+
+<div class="row">
   <div class="col s12 m4">
     <div class="icon-block">
       <h2 class="center light-blue-text"><img src="{{ "/assets/projects/DefaultProject.jpg" | absolute_url }}" alt="wRebeca Logo"/></h2>
@@ -39,10 +52,6 @@ title: Projects
       </p>
     </div>
   </div>
-</div>
-
-
-<div class="row">
   <div class="col s12 m4">
     <div class="icon-block">
       <h2 class="center light-blue-text"><img src="{{ "/assets/projects/Tangramob/Tangramob-Logo.png" | absolute_url }}" alt="Tangramob Logo"/></h2>
@@ -65,6 +74,9 @@ title: Projects
     </div>
   </div>
 
+</div>
+
+<div class="row">
   <div class="col s12 m4">
     <div class="icon-block">
       <h2 class="center light-blue-text"><img src="{{ "/assets/projects/wRebeca/wRebeca-Logo.png" | absolute_url }}" alt="wRebeca Logo"/></h2>
@@ -76,9 +88,6 @@ title: Projects
       </p>
     </div>
   </div>
-</div>
-
-<div class="row">
   <div class="col s12 m4">
     <div class="icon-block">
       <h2 class="center light-blue-text"><img src="{{ "/assets/projects/DefaultProject.jpg" | absolute_url }}" alt="PTRebeca"/></h2>
@@ -101,6 +110,9 @@ title: Projects
     </div>
   </div>
 
+</div>
+
+<div class="row">
   <div class="col s12 m4">
     <div class="icon-block">
       <h2 class="center light-blue-text"><img src="{{ "/assets/projects/DefaultProject.jpg" | absolute_url }}" alt="TR2RTMaude"/></h2>
@@ -111,9 +123,6 @@ title: Projects
       </p>
     </div>
   </div>
-</div>
-
-<div class="row">
   <div class="col s12 m4">
     <div class="icon-block">
       <h2 class="center light-blue-text"><img src="{{ "/assets/projects/DefaultProject.jpg" | absolute_url }}" alt="Sysfier"/></h2>
