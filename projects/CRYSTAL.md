@@ -22,4 +22,4 @@ A model of attack is proposed for both attacks on CPS communication and componen
 * Fereidoun Moradi
 
 #### Related Publications
-- Fereidoun Moradi, Sara Abbaspour Asadollah, Ali Sedaghatbaf, Aida Causevic, Marjan Sirjani, Carolyn Talcott: An Actor-based Approach for Security Analysis of Cyber-Physical Systems, Submitted to ETFA 2020 [ [pdf] ](/assets/papers/2020/An-Actor-based-Approach-for-Security-Analysis-of-Cyber-Physical-Systems.pdf)
+- Fereidoun Moradi, Sara Abbaspour Asadollah, Ali Sedaghatbaf, Aida Causevic, Marjan Sirjani, Carolyn Talcott: An Actor-based Approach for Security Analysis of Cyber-Physical Systems, Submitted to ETFA 2020 <a class="link link_pdf" href="/assets/papers/2020/An-Actor-based-Approach-for-Security-Analysis-of-Cyber-Physical-Systems.pdf">PDF</a>
