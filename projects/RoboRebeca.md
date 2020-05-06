@@ -9,7 +9,7 @@ permalink: /allprojects/RoboRebeca
 RoboRebeca is a framework to develop safe/correct codes for robotic applications. We suggest some modeling patterns to model robotic control systems using TRebeca language and propose an automatic code generation tool for converting Rebeca models to ROS.
 The models can be model checked/ analyzed/verified against desired properties in Afra, and then can be automatically transformed into correct ROS codes right there in Afra 3.0.
 Our toolset fully covers this chain for creating safe ROS codes for the robotic application. 
-More details about this project in provided in this presentation: <a class="link link_presentation" href="/assets/projects/RoboRebeca/RoboRebeca.pptx">pptx</a>
+More details about this project is provided in this presentation: <a class="link link_presentation" href="/assets/projects/RoboRebeca/RoboRebeca.pptx">pptx</a>
 
 
 #### Case Studies
