@@ -14,6 +14,8 @@ The command for running the Python script is: python ModelGenerator.py envFile t
 
 Python model generator can be found [here](/assets/projects/AdaptiveFlow/ModelGenerator.py). Examples of the input files of the system in the figure are: [environment.xml](/assets/projects/AdaptiveFlow/example/environment.xml), [topology.xml](/assets/projects/AdaptiveFlow/example/topology.xml), and [configuration.xml](/assets/projects/AdaptiveFlow/example/configuration.xml).
 
+More details about this project in provided in this presentation: <a class="link link_presentation" href="/assets/projects/AdaptiveFlow/Adaptiveflow.pptx">pptx</a>
+
 #### Project Members
 * **<u>Marjan Sirjani (Principal Investigator)</u>**
 * Giorgio Forcina
