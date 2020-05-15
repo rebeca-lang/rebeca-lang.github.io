@@ -1,0 +1,317 @@
+// Enviornment Variables
+
+env byte TSampling = 100; 
+env int simDuration =21000;	// Duration of the model
+env double a_scale = 10000.0;
+env double t_scale = 1000.0;	//time is considered in seconds for calculating the parameters, but is scaled to mili seconds in the body
+env double v_scale = 100.0;
+env double x_scale = 10.0;
+env double ap1_scale = 10.0;
+env byte minDistance = 60;
+
+
+reactiveclass Leader(20){
+
+		knownrebecs{
+			Follower f1;
+		}
+		
+		statevars{  
+			int vCAM , xCAM, tCAM;		// values sent by the last cam message
+			int a, v, x; 		//a: acc, v: velocity, dx: moved distance, t: the last time inwhich a CAM was sent. 
+			int ap1; 			// our assumption: a = p1 t + p0 ==> ap1 is p1, p0 is initially 0 in real situation.
+			int rcntTime;		// The last time that Acc coeficient was changed
+			int atest, vtest, xtest, aa;
+		}				
+		
+		Leader(int x0, int v0){
+			ap1 = 0;
+			a = 0;
+			x = scaleUp(x0, x_scale);
+			v = scaleUp(v0/3.6, v_scale);
+			
+			// decreasing velocity from 90 to 60
+			self.changeAccCoef(-2 )after(1000);  // a = -2t, avg a = -1 (fr 1000 to 2000)
+			self.changeAccCoef(0 )after(2000); //  a = -1, ap = 0 (fr 2000 to 9400), t = 8400 -1000 - 1000 = 6400 
+			self.changeAccCoef(2)after(8400); //  a = 2t, avg a = -1
+			self.changeAccCoef(0 )after(9400); // a = 0  v = 60 , ter= 10400
+			
+			self.changeAccCoef(2 )after(10400);  // a = -2t, avg a = -1 (fr 1000 to 2000)
+			self.changeAccCoef(0 )after(11400); //  a = -1, ap = 0 (fr 2000 to 9400), t = 8400 -1000 - 1000 = 6400 
+			self.changeAccCoef(-2)after(17400); //  a = 2t, avg a = -1
+			self.changeAccCoef(0 )after(18400); // a = 0  v = 60 , ter= 19400
+			
+			self.doSample(); 
+			self.setSimLength()after(60000);
+			
+		}
+		
+		msgsrv setSimLength(){
+			self.halt();
+		}
+		
+		msgsrv changeAccCoef(double AccC){		// changing the coefficient of acc(ap1) in the the formulla: acc = ap1 t + ap0
+			calculateKinematicParams();	// clculate the params and save them
+			f1.checkDistance(x);
+			ap1 = scaleUp(AccC, ap1_scale); 
+			rcntTime = now;
+		}
+		
+		msgsrv checkDistance(int xf){
+			int A = a;
+			int V = v;
+			int X = x;
+			calculateKinematicParams();
+			double dist = realScale(x - xf, x_scale);
+			assertion(dist > minDistance );
+			a = A;
+			v = V;
+			x = X;
+		}
+		
+		msgsrv doSample (){
+			int A = a;
+			int V = v;
+			int X = x;
+		
+			calculateKinematicParams();	//just calculat the params, do not save them, for the sake of state space reduction
+			if(checkCAMConds() == true){
+				//set The information after sending CAMs
+				vCAM = v;	
+				xCAM = x;	// we only need to know the distance from the last point inwhich a CAM was sent
+				tCAM = now;	// please check
+				
+				//sending a CAM
+				byte d1 = ?(1, 5);	// nondeterminisem cannot be used in a function
+				f1.giveCAM(v, x)after(d1);
+		
+			}
+				
+				a = A;	// we do'nt need to save the value of kinematic parameters here	
+				v = V;
+				x = X;
+			
+				self.doSample() after(TSampling);
+		}
+		
+		void calculateKinematicParams(){			
+			double currTime = realScale(now, t_scale);
+			double dt = currTime - realScale(rcntTime, t_scale);
+			double rcntT = realScale(rcntTime, t_scale);
+			double Ap1 = realScale(ap1, ap1_scale);
+			
+			double a0 = realScale(a, a_scale);
+			double v0 = realScale(v, v_scale);
+			double x0 = realScale(x, x_scale);
+			
+			a = scaleUp((Ap1 * dt) + a0, a_scale);		// a = pt + a0 ==> p = ap1
+			v = scaleUp(Ap1 * power(currTime,2)/2 + (a0* currTime) -
+				((Ap1 * power(rcntT,2))/2 + (a0* rcntT)) + v0, v_scale);		// v = the integration of a in dt = p * (t^2)/2 + a0*t + v0 for rcntT to currT ----( check if c is v0)
+			x = scaleUp((Ap1 * power(currTime,3))/6 + (a0 * power(currTime,2))/2 + (v0 * currTime) -	// x = the integeration of v from t(the recent cam sent time) to currTime
+				((Ap1 * power(rcntT,3))/6 + (a0 * power(rcntT,2))/2 + (v0 * rcntT)) + x0, x_scale);
+				
+			atest = a;
+			vtest = v;
+			xtest = x;	
+		}
+	
+		boolean checkCAMConds(){
+			int T = now - tCAM;
+					
+			if (T>= 1000)	
+				return true;
+			
+			else if(T>=100){
+				if ((realScale(x - xCAM, x_scale) >= 4) || (realScale(v - vCAM, v_scale) >= 0.5)){
+					aa =(int) realScale(x - xCAM, x_scale) * 10;
+					atest = (int)realScale(v - vCAM, v_scale) * 100;
+					return true;
+				}	
+			}
+		 return false;
+		}
+		
+		double power(double p, int q){   // p^q
+			double ans = 1;
+			for (int i = 0; i<q; i++){
+				ans = ans * p;
+			}
+			return ans;
+		}
+		
+		double realScale(int scaledNum, double scalingFactor){
+			double ans = scaledNum/scalingFactor;
+			return ans;
+		}
+		
+		int scaleUp(double realNum, double scalingFactor){
+			int ans = (int)realNum * scalingFactor;
+			return ans;
+		}
+		
+		msgsrv halt(){
+			self.setSimLength();
+		}
+	}
+		
+//================================================================
+		
+	reactiveclass Follower(10){
+		
+		knownrebecs{
+			Leader lead;
+			Follower f;
+		}
+		
+		statevars{
+			int a, v, x; //accelaration, velocity, distance
+			int rcntTime;
+			int xCAM, vCAM, tCAM;
+			byte id;
+		}
+				
+		Follower(byte ID, int x0, int v0){
+			a = 0;
+			v = scaleUp(v0/3.6, v_scale);
+			x = scaleUp(x0, x_scale);
+			id = ID;
+			self.doSample();
+		}
+		
+		boolean checkCAMConds(){
+			int T = now - tCAM;
+					
+			if (T>= 1000)	
+				return true;
+			
+			else if(T>=100){
+				if ((realScale(x - xCAM, x_scale) >= 4) || (realScale(v - vCAM, v_scale) >= 0.5))
+					return true;
+			}
+			else return false;
+		}
+		
+		msgsrv doSample (){
+			int A = a;
+			int V = v;
+			int X = x;
+		
+			calculateKinematicParams();	//just calculat the params, do not save them, for the sake of state space reduction
+			if(checkCAMConds() == true){
+				//set The information after sending CAMs
+				vCAM = v;	
+				xCAM = x;	// we only need to know the distance from the last point inwhich a CAM was sent
+				tCAM = now;	// please check
+				
+				//sending a CAM
+				if (id < 1){
+					byte d1 = ?(1, 3);	// nondeterminism cannot be used in a function
+					f.giveCAM(v, x)after(d1);
+					//assertion(id >2);
+				}
+			}
+			
+		   		a = A;	// we do'nt need to save the value of kinematic parameters here	
+				v = V;
+				x = X;
+			
+				self.doSample() after(TSampling);
+		}	
+		
+		double max(double p, double q){
+			if (p>= q)
+				return p;
+			else return q;	
+		}
+		
+		double power(double p, int q){   // p^q
+			double ans = 1;
+			for (int i = 0; i<q; i++){
+				ans = ans * p;
+			}
+			return ans;
+		}
+		
+		msgsrv checkDistance(int xl){
+			int A = a;
+			int V = v;
+			int X = x;
+			calculateKinematicParams();
+			double dist = realScale(xl - x, x_scale);
+			assertion(dist > minDistance );
+			a = A;
+			v = V;
+			x = X;
+		}
+		
+		msgsrv giveCAM(int vl, int xl){
+			calculateKinematicParams();	// clculate the params and save them
+			lead.checkDistance(x);
+			
+	 		double vLead = realScale(vl, v_scale);	//scaled
+	 		double xLead = realScale(xl, x_scale);	//scaled
+	 		double vSelf = realScale(v, v_scale);	//scaled
+	 		double xSelf = realScale(x, x_scale);	//scaled
+	 		double aSelf = 0;
+		
+			double dv = max ((vSelf - vLead), (vLead - vSelf));
+			double s = xLead - xSelf;
+			// acording to the formulla in the paper
+			double v0 = 120/3.6; //  km/H
+			byte sigma = 4;
+			double maxAcc = 1.4; // max acc
+			byte b = 2; //max deceleration
+			byte s0 = 2; //jam distance 
+			double T = 1.5;
+			double ss = 0;
+			 
+			ss = s0 + max(0, (vSelf * T) + (vSelf* dv)/3.4);// 4.3 = 2* radical(ab)
+			aSelf = maxAcc * (1 - power((vSelf / v0),sigma) - power((ss / s),2));
+			
+			vss = (int)ss*100;
+			vs = (int)xSelf;
+			v1 = (int)xLead ;
+			v2 =(int)(vLead)*100;
+			
+			rcntTime = now;
+			
+			a = scaleUp(aSelf, a_scale);
+			
+		}
+			
+		void calculateKinematicParams(){			
+			double currTime = realScale(now, t_scale);
+			double dt = currTime - realScale(rcntTime, t_scale);
+			double rcntT = realScale(rcntTime, t_scale);
+			
+			double a0 = realScale(a, a_scale);
+			double v0 = realScale(v, v_scale);
+			double x0 = realScale(x, x_scale);
+			
+			// acc is constant
+			v = scaleUp((a0* dt) + v0, v_scale);		// v = the integration of a in dt = p * (t^2)/2 + a0*t + v0 for rcntT to currT ----( check if c is v0)
+			x = scaleUp( (a0 * power(currTime,2))/2 + (v0 * currTime) - ((a0 * power(rcntT,2))/2 + (v0 * rcntT)) + x0, x_scale);	// x = the integeration of v from t(the recent cam sent time) to currTime
+					
+		}
+		
+		double realScale(int scaledNum, double scalingFactor){
+			double ans = scaledNum/scalingFactor;
+			return ans;
+		}
+		
+		int scaleUp(double realNum, double scalingFactor){
+			int ans = (int)realNum * scalingFactor;
+			return ans;
+		}
+		
+				
+	}	
+
+	
+main{
+	Leader L(F1):(215, 90);
+	Follower F1( L, F2):(1, 200, 90);
+	Follower F2( L, F1):(2, 185, 90);
+	Follower F3( L, F2):(3, 90, 90);
+	Follower F4( L, F1):(4, 20, 90);
+}
