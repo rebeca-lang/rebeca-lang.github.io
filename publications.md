@@ -10,6 +10,10 @@ redirect_from: "/wiki/pmwiki.php/Rebeca/Publications"
 \\
 <a class="link link_pdf" href="/assets/papers/2020/Model-Checking-Software-in-Cyberphysical-Systems.pdf">PDF</a>
 
+- Marjan Sirjani, Edward A. Lee, Ehsan Khamespanah: Verification of Cyberphysical Systems, Submitted to MDPI, 2020
+\\
+<a class="link link_pdf" href="/assets/papers/2020/Verification-of-Cyberphysical-Systems.pdf">PDF</a>
+
 #### 2019
 - Marjan Sirjani, Luciana Provenzano, Sara Abbaspour Asadollah, Mahshid Helali Moghadam: From Requirements to Verifiable Executable Models Using Rebeca, ASYDE, 2019
 \\
