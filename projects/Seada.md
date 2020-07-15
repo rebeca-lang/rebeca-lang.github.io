@@ -19,7 +19,7 @@ The actor model serves as the model@runtime in the core of the knowledge-base of
 * The demo of our model@runtime for air traffic control: [ [video] ](http://rebeca.cs.ru.is/files/Movies/SEADA/ATC5.mov) (by Maryam Bagheri). 
 * The demo of our model@runtime for railway systems: [ [video] ](http://rebeca.cs.ru.is/files/Movies/SEADA/TCS1.mov) (by Maryam Bagheri).
 * An example of ATC model: [ [zip] ](http://rebeca.cs.ru.is/files/ATC.zip)
-* Platoon of Multi Vehicles: [ [rebeca] ](/assets/projects/seada/case-studies/PlatoonMultiVehicles.rebeca)
+* Platoon of Multi Vehicles: [ [rebeca] ](/assets/projects/Seada/case-studies/PlatoonMultiVehicles.rebeca)
 
 #### Project Members
 * **<u>Marjan Sirjani (Principal Investigator)</u>**
