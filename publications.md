@@ -6,6 +6,21 @@ redirect_from: "/wiki/pmwiki.php/Rebeca/Publications"
 ---
 
 #### 2020
+
+- Fereidoun Moradi, Sara Abbaspour Asadollah, Ali Sedaghatbaf, AidaCausevic, Marjan Sirjani, and Carolyn Talcott: An Actor-based Approach for Security Analysis of Cyber-Physical Systems, 
+International Conference on Formal Methods for Industrial Critical Systems (FMICS), 2020
+\\
+<a class="link link_pdf" href="/assets/papers/2020/An-Actor-based-Approach-for-Security-Analysis-of-Cyber-Physical-Systems-Conference.pdf">PDF</a>
+
+- Marjan Sirjani, Luciana Provenzano, Sara Abbaspour Asadollah, Mahshid Helali Moghadam and Mehrdad Saadatmand: Towards a Verification-Driven Iterative Development of Cyber-Physical System,
+Submitted to a Journal
+\\
+<a class="link link_pdf" href="/assets/papers/2020/Towards-a-Verification-Driven-Iterative-Development-of-Cyber-Physical-System.pdf">PDF</a>
+
+- Zeinab Sharifi, Ramtin Khosravi, Marjan Sirjani, Ehsan Khamespanah: Towards Formal Analysis of Vehicle Platoons Using Actor Model, IEEE International Conference on Emerging Technologies and Factory Automation (ETFA), 2020
+\\
+<a class="link link_pdf" href="/assets/papers/2020/Towards-Formal-Analysis-of-Vehicle-Platoons-Using-Actor-Model.pdf">PDF</a>
+
 - Marjan Sirjani, Edward A. Lee, Ehsan Khamespanah: Verification of Cyberphysical Systems, Submitted to MDPI, 2020
 \\
 <a class="link link_pdf" href="/assets/papers/2020/Verification-of-Cyberphysical-Systems.pdf">PDF</a>
