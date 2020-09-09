@@ -24,6 +24,7 @@ The actor model serves as the model@runtime in the core of the knowledge-base of
 #### Project Members
 * **<u>Marjan Sirjani (Principal Investigator)</u>**
 * Ehsan Khamespanah
+* Maryam Bagheri
 * Ali Jafari
 * Edward A. Lee
 * Narges Khakpour
