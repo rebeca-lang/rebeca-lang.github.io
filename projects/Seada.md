@@ -18,7 +18,7 @@ The actor model serves as the model@runtime in the core of the knowledge-base of
 #### Case Studies
 * The demo of our model@runtime for air traffic control: [ [video] ](http://rebeca.cs.ru.is/files/Movies/SEADA/ATC5.mov) (by Maryam Bagheri). 
 * The demo of our model@runtime for railway systems: [ [video] ](http://rebeca.cs.ru.is/files/Movies/SEADA/TCS1.mov) (by Maryam Bagheri).
-* An example of ATC model: [ [zip] ](http://rebeca.cs.ru.is/files/ATC.zip)
+* Two examples of the ATC model: [ Model 1 ](/assets/projects/Seada/case-studies/ATC-FACS.zip) [ Model 2 ](/assets/projects/Seada/case-studies/MagImp-TSE.zip)
 * Platoon of Multi Vehicles: [ [rebeca] ](/assets/projects/Seada/case-studies/PlatoonMultiVehicles.rebeca)
 
 #### Project Members
