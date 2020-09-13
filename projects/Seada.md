@@ -27,7 +27,7 @@ We extend the Discrete-Event director of Ptolemy and develop a nondeterministic 
 * Narges Khakpour
 
 #### Related Publications
-- Maryam Bagheri, Marjan Sirjani, Ehsan Khamespanah and Ali Movaghar: Runtime Compositional Verification of Self-adaptive Track-based Traffic Control Systems, Submitted to IEEE Transactions on Software Engineering, Nov 2018 [ [pdf] ](/assets/papers/2018/Runtime-Compositional-Verification-of-Self-adaptive-Systems.pdf)
+- Maryam Bagheri, Marjan Sirjani, Ehsan Khamespanah and Ali Movaghar: Runtime Compositional Verification of Self-adaptive Track-based Traffic Control Systems, Submitted to IEEE Transactions on Software Engineering, Jul 2020 [ [pdf] ](/assets/papers/2020/Runtime_Compositional_Verification_of_Self_adaptive_Track_based_Traffic_Control_Systems.pdf)
 
 - Maryam Bagheri, Marjan Sirjani, Ehsan Khamespanah, Narges Khakpour, Ilge Akkaya, Ali Movaghar and Edward A. Lee: Coordinated Actor Model of Self-adaptive Track-based Traffic Control Systems, Journal of Systems and Software, 2018 [ [pdf] ](/assets/papers/2018/Self-Adaptive-Coordinated-Actors.pdf)
 
