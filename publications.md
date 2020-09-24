@@ -6,6 +6,9 @@ redirect_from: "/wiki/pmwiki.php/Rebeca/Publications"
 ---
 
 #### 2020
+- Giorgio Forcina, Ali Sedaghatbaf, Stephan Baumgart, Ali Jafari, Ehsan Khamespanah, Pavle Mrvaljevic, Marjan Sirjani: Safe Design of Flow Management Systems Using Rebeca, Journal of Information Processing, 2020
+\\
+<a class="link link_pdf" href="/assets/papers/2020/Safe-Design-of-Flow-Management-Systems-Using-Rebeca.pdf">PDF</a>
 
 - Fereidoun Moradi, Sara Abbaspour Asadollah, Ali Sedaghatbaf, AidaCausevic, Marjan Sirjani, and Carolyn Talcott: An Actor-based Approach for Security Analysis of Cyber-Physical Systems, 
 International Conference on Formal Methods for Industrial Critical Systems (FMICS), 2020
