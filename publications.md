@@ -20,7 +20,7 @@ Submitted to a Journal
 \\
 <a class="link link_pdf" href="/assets/papers/2020/Towards-a-Verification-Driven-Iterative-Development-of-Cyber-Physical-System.pdf">PDF</a>
 
-- Farnaz Yousefi, Ehsan Khamespanah, Mohammed Gharib, Marjan Sirjani, Ali Movaghar: VeriVANca: An Actor-Based Framework for Formal Verification of VANET Applications, Software Tools for Technology Transfer, 2020
+- Farnaz Yousefi, Ehsan Khamespanah, Mohammed Gharib, Marjan Sirjani, Ali Movaghar: VeriVANca Framework: Verification of VANETs by Property Based Message Passing of Actors in Rebeca with Inheritance, Software Tools for Technology Transfer, 2020
 \\
 <a class="link link_pdf" href="/assets/papers/2020/VeriVANca-An-Actor-Based-Framework-for-Formal-Verification-of-VANET-Applications.pdf">PDF</a>
 

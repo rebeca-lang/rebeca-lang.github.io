@@ -31,14 +31,27 @@ We extend the Discrete-Event director of Ptolemy and develop a nondeterministic 
 * Narges Khakpour
 * Farnaz Yousefi
 
-#### Related Publications
-- Maryam Bagheri, Marjan Sirjani, Ehsan Khamespanah and Ali Movaghar: Runtime Compositional Verification of Self-adaptive Track-based Traffic Control Systems, Submitted to IEEE Transactions on Software Engineering, Jul 2020 [ [pdf] ](/assets/papers/2020/Runtime_Compositional_Verification_of_Self_adaptive_Track_based_Traffic_Control_Systems.pdf)
+#### Most Related Publications
+- Farnaz Yousefi, Ehsan Khamespanah, Mohammed Gharib, Marjan Sirjani, Ali Movaghar: VeriVANca Framework: Verification of VANETs by Property Based Message Passing of Actors in Rebeca with Inheritance, Software Tools for Technology Transfer, 2020
+\\
+<a class="link link_pdf" href="/assets/papers/2020/VeriVANca-An-Actor-Based-Framework-for-Formal-Verification-of-VANET-Applications.pdf">PDF</a>
 
-- Maryam Bagheri, Marjan Sirjani, Ehsan Khamespanah, Narges Khakpour, Ilge Akkaya, Ali Movaghar and Edward A. Lee: Coordinated Actor Model of Self-adaptive Track-based Traffic Control Systems, Journal of Systems and Software, 2018 [ [pdf] ](/assets/papers/2018/Self-Adaptive-Coordinated-Actors.pdf)
+- Maryam Bagheri, Marjan Sirjani, Ehsan Khamespanah and Ali Movaghar: Runtime Compositional Verification of Self-adaptive Track-based Traffic Control Systems, Submitted to IEEE Transactions on Software Engineering, Jul 2020 
+<a class="link link_pdf" href="/assets/papers/2020/Runtime_Compositional_Verification_of_Self_adaptive_Track_based_Traffic_Control_Systems.pdf">PDF</a>
 
-- Maryam Bagheri, Ehsan Khamespanah, Marjan Sirjani, Ali Movaghar, Edward A. Lee: Runtime Compositional Analysis of Track-based Traffic Control Systems, CRTS, 2016 [ [pdf] ](/assets/papers/2016/RuntimeCompositionalAnalysisofTTCS.pdf)
+- Farnaz Yousefi, Ehsan Khamespanah, Mohammed Gharib, Marjan Sirjani, Ali Movaghar: VeriVANca: An Actor-Based Framework for Formal Verification of Warning Message Dissemination Schemes in VANETs, SPIN, 2019
+\\
+<a class="link link_pdf" href="/assets/papers/2019/VeriVANca-An-Actor-Based-Framework-for-Formal-Verification-of-Warning-Message-Dissemination-Schemes-in-VANETs.pdf">PDF</a>
+<a class="link link_bibtex" href="https://dblp.org/rec/bibtex/conf/spin/YousefiKGSM19">BibTeX</a>
 
-- Maryam Bagheri, Ilge Akkaya, Ehsan Khamespanah, Narges Khakpour, Marjan Sirjani, Ali Movaghar, Edward A. Lee: Coordinated Actors for Reliable Self-Adaptive Systems, FACS, 2016  [ [pdf] ](/assets/papers/2016/CoordinatedActorsforReliableSelfAdaptiveSystems.pdf) [ [bib] ](http://dblp.uni-trier.de/rec/bibtex/conf/facs2/BagheriAKKSML16)
+- Maryam Bagheri, Marjan Sirjani, Ehsan Khamespanah, Narges Khakpour, Ilge Akkaya, Ali Movaghar and Edward A. Lee: Coordinated Actor Model of Self-adaptive Track-based Traffic Control Systems, Journal of Systems and Software, 2018 
+<a class="link link_pdf" href="/assets/papers/2018/Self-Adaptive-Coordinated-Actors.pdf">PDF</a>
 
-- Maryam Bagheri, Ilge Akkaya, Ehsan Khamespanah, Narges Khakpour, Marjan Sirjani, Ali Movaghar, Edward A. Lee: Modeling and Analyzing Air Traffic Control Systems using Ptolemy, Ptolemy Mini-Conference, 2015 [ [pdf] ](/assets/papers/2015/ATC-PtolemyPoster-Final.pdf)
+- Maryam Bagheri, Ehsan Khamespanah, Marjan Sirjani, Ali Movaghar, Edward A. Lee: Runtime Compositional Analysis of Track-based Traffic Control Systems, CRTS, 2016 
+<a class="link link_pdf" href="/assets/papers/2016/RuntimeCompositionalAnalysisofTTCS.pdf">PDF</a>
+
+- Maryam Bagheri, Ilge Akkaya, Ehsan Khamespanah, Narges Khakpour, Marjan Sirjani, Ali Movaghar, Edward A. Lee: Coordinated Actors for Reliable Self-Adaptive Systems, FACS, 2016 
+<a class="link link_pdf" href="/assets/papers/2016/CoordinatedActorsforReliableSelfAdaptiveSystems.pdf">PDF</a> <a class="link link_bibtex" href="http://dblp.uni-trier.de/rec/bibtex/conf/facs2/BagheriAKKSML16">PDF</a>
+
+- Maryam Bagheri, Ilge Akkaya, Ehsan Khamespanah, Narges Khakpour, Marjan Sirjani, Ali Movaghar, Edward A. Lee: Modeling and Analyzing Air Traffic Control Systems using Ptolemy, Ptolemy Mini-Conference, 2015 <a class="link link_pdf" href="/assets/papers/2015/ATC-PtolemyPoster-Final.pdf">PDF</a>
 
