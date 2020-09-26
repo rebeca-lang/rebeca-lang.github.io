@@ -41,7 +41,7 @@ Submitted to a Journal
 \\
 <a class="link link_pdf" href="/assets/papers/2020/Verification-of-Cyberphysical-Systems.pdf">PDF</a>
 
-- Marjan Sirjani, Ehsan Khamespanah, Edward A. Lee: Model Checking Software in Cyberphysical Systems, COMPSAC, 2020
+- Marjan Sirjani, Edward A. Lee, Ehsan Khamespanah: Model Checking Software in Cyberphysical Systems, COMPSAC, 2020
 \\
 <a class="link link_pdf" href="/assets/papers/2020/Model-Checking-Software-in-Cyberphysical-Systems.pdf">PDF</a>
 
