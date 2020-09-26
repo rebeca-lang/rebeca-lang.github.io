@@ -6,6 +6,11 @@ redirect_from: "/wiki/pmwiki.php/Rebeca/Publications"
 ---
 
 #### 2020
+- Shaghayegh Tavassoli, Ramtin Khosravi, Ehsan Khamespanah: Finite Interval-Time Transition System for Real-Time Actors, TTCS, 2020
+\\
+<a class="link link_pdf" href="/assets/papers/2020/Finite-Interval-Time-Transition-System-for-Real-Time-Actors.pdf">PDF</a>
+<a class="link link_bibtex" href="https://dblp.org/rec/conf/ttcs/TavassoliKK20.html?view=bibtex">BibTeX</a>  
+
 - Giorgio Forcina, Ali Sedaghatbaf, Stephan Baumgart, Ali Jafari, Ehsan Khamespanah, Pavle Mrvaljevic, Marjan Sirjani: Safe Design of Flow Management Systems Using Rebeca, Journal of Information Processing, 2020
 \\
 <a class="link link_pdf" href="/assets/papers/2020/Safe-Design-of-Flow-Management-Systems-Using-Rebeca.pdf">PDF</a>
