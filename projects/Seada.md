@@ -33,14 +33,12 @@ We extend the Discrete-Event director of Ptolemy and develop a nondeterministic 
 
 #### Most Related Publications
 - Farnaz Yousefi, Ehsan Khamespanah, Mohammed Gharib, Marjan Sirjani, Ali Movaghar: VeriVANca Framework: Verification of VANETs by Property Based Message Passing of Actors in Rebeca with Inheritance, Software Tools for Technology Transfer, 2020
-\\
 <a class="link link_pdf" href="/assets/papers/2020/VeriVANca-An-Actor-Based-Framework-for-Formal-Verification-of-VANET-Applications.pdf">PDF</a>
 
 - Maryam Bagheri, Marjan Sirjani, Ehsan Khamespanah and Ali Movaghar: Runtime Compositional Verification of Self-adaptive Track-based Traffic Control Systems, Submitted to IEEE Transactions on Software Engineering, Jul 2020 
 <a class="link link_pdf" href="/assets/papers/2020/Runtime_Compositional_Verification_of_Self_adaptive_Track_based_Traffic_Control_Systems.pdf">PDF</a>
 
 - Farnaz Yousefi, Ehsan Khamespanah, Mohammed Gharib, Marjan Sirjani, Ali Movaghar: VeriVANca: An Actor-Based Framework for Formal Verification of Warning Message Dissemination Schemes in VANETs, SPIN, 2019
-\\
 <a class="link link_pdf" href="/assets/papers/2019/VeriVANca-An-Actor-Based-Framework-for-Formal-Verification-of-Warning-Message-Dissemination-Schemes-in-VANETs.pdf">PDF</a>
 <a class="link link_bibtex" href="https://dblp.org/rec/bibtex/conf/spin/YousefiKGSM19">BibTeX</a>
 
