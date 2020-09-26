@@ -6,6 +6,10 @@ redirect_from: "/wiki/pmwiki.php/Rebeca/Publications"
 ---
 
 #### 2020
+- Maryam Bagheri, Edward A. Lee, Eunsuk Kang, Marjan Sirjani, Ehsan Khamespanah, Ali Movaghar: Lightweight Formal Method for Robust Routing in Track-based Traffic Control Systems, MEMCODE, 2020
+\\
+<a class="link link_pdf" href="/assets/papers/2020/Lightweight-Formal-Method-for-Robust-Routing-in-Track-based-Traffic-Control-Systems.pdf">PDF</a>
+
 - Shaghayegh Tavassoli, Ramtin Khosravi, Ehsan Khamespanah: Finite Interval-Time Transition System for Real-Time Actors, TTCS, 2020
 \\
 <a class="link link_pdf" href="/assets/papers/2020/Finite-Interval-Time-Transition-System-for-Real-Time-Actors.pdf">PDF</a>

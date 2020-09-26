@@ -32,6 +32,9 @@ We extend the Discrete-Event director of Ptolemy and develop a nondeterministic 
 * Farnaz Yousefi
 
 #### Most Related Publications
+- Maryam Bagheri, Edward A. Lee, Eunsuk Kang, Marjan Sirjani, Ehsan Khamespanah, Ali Movaghar: Lightweight Formal Method for Robust Routing in Track-based Traffic Control Systems, MEMCODE, 2020
+<a class="link link_pdf" href="/assets/papers/2020/Lightweight-Formal-Method-for-Robust-Routing-in-Track-based-Traffic-Control-Systems.pdf">PDF</a>
+
 - Farnaz Yousefi, Ehsan Khamespanah, Mohammed Gharib, Marjan Sirjani, Ali Movaghar: VeriVANca Framework: Verification of VANETs by Property Based Message Passing of Actors in Rebeca with Inheritance, Software Tools for Technology Transfer, 2020
 <a class="link link_pdf" href="/assets/papers/2020/VeriVANca-An-Actor-Based-Framework-for-Formal-Verification-of-VANET-Applications.pdf">PDF</a>
 
