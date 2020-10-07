@@ -25,7 +25,8 @@ redirect_from: "/wiki/pmwiki.php/Rebeca/Publications"
 <a class="link link_pdf" href="/assets/papers/2020/Safe-Design-of-Flow-Management-Systems-Using-Rebeca.pdf">PDF</a>
 <a class="link link_bibtex" href="https://dblp.org/rec/journals/jip/ForcinaSBJKMS20.html?view=bibtex">BibTeX</a>  
 
-- Pavle Mrvaljevic: Tool Orchestration for Modeling, Verification, and Analysis of Collaborating Autonomous Machines - Master Thesis, Malardalen University, Sweeden (2020).\\
+- Pavle Mrvaljevic: Tool Orchestration for Modeling, Verification, and Analysis of Collaborating Autonomous Machines - Master Thesis, Malardalen University, Sweeden, 2020
+\\
 <a class="link link_pdf" href="/assets/theses/Tool-Orchestration-for-modeling-verification-and-analysis-of-collaborating-autonomous-machines.pdf">PDF</a>
 
 - Fereidoun Moradi, Sara Abbaspour Asadollah, Ali Sedaghatbaf, AidaCausevic, Marjan Sirjani, and Carolyn Talcott: An Actor-based Approach for Security Analysis of Cyber-Physical Systems, 
@@ -63,6 +64,15 @@ Submitted to a Journal
 <a class="link link_bibtex" href="https://dblp.org/rec/conf/compsac/RezaeiKSSM20.html?view=bibtex">BibTeX</a> 
 
 #### 2019
+- Marjan Sirjani, Ehsan Khamespanah, Fatemeh Ghassemi: Reactive Actors: Isolation for Efficient Analysis of Distributed Systems, 23rd IEEE/ACM International Symposium on Distributed Simulation and Real Time Applications (DS-RT), 2019
+\\
+<a class="link link_pdf" href="/assets/papers/2019/Reactive-Actors-Isolation-for-Efficient-Analysis-of-Distributed-Systems.pdf">PDF</a>
+<a class="link link_bibtex" href="https://dblp.org/rec/conf/dsrt/SirjaniKG19.html?view=bibtex">BibTeX</a>  
+
+- Marjan Sirjani, Luciana Provenzano, Sara Abbaspour Asadollah, Mahshid Helali Moghadam: From Requirements to Verifiable Executable Models Using Rebeca, ASYDE, 2019
+\\
+<a class="link link_pdf" href="/assets/papers/2019/From-Requirements-to-Verifiable-Executable-Models-Using-Rebeca.pdf">PDF</a>
+
 - Marjan Sirjani, Luciana Provenzano, Sara Abbaspour Asadollah, Mahshid Helali Moghadam: From Requirements to Verifiable Executable Models Using Rebeca, ASYDE, 2019
 \\
 <a class="link link_pdf" href="/assets/papers/2019/From-Requirements-to-Verifiable-Executable-Models-Using-Rebeca.pdf">PDF</a>
@@ -71,16 +81,16 @@ Submitted to a Journal
 \\
 <a class="link link_pdf" href="/assets/papers/2019/Towards-an-Actor-based-Approach-to-Design-Verified-ROS-based-Robotic-Programs-using-Rebeca.pdf">PDF</a>
 
-
 - Farnaz Yousefi, Ehsan Khamespanah, Mohammed Gharib, Marjan Sirjani, Ali Movaghar: VeriVANca: An Actor-Based Framework for Formal Verification of Warning Message Dissemination Schemes in VANETs, SPIN, 2019
 \\
 <a class="link link_pdf" href="/assets/papers/2019/VeriVANca-An-Actor-Based-Framework-for-Formal-Verification-of-Warning-Message-Dissemination-Schemes-in-VANETs.pdf">PDF</a>
 <a class="link link_bibtex" href="https://dblp.org/rec/bibtex/conf/spin/YousefiKGSM19">BibTeX</a>  
 
 
-- Marjan Sirjani, Giorgio Forcina, Ali Jafari, Stephan Baumgart, Ehsan Khamespanah, Ali Sedaghatbaf: An Actor-based Design Platform for System of Systems, COMPSAC, 2019, Invited Paper
+- Marjan Sirjani, Giorgio Forcina, Ali Jafari, Stephan Baumgart, Ehsan Khamespanah, Ali Sedaghatbaf: An Actor-based Design Platform for System of Systems, IEEE 43th Annual Computers, Software, and Applications Conference (COMPSAC), 2019, Invited Paper
 \\
 <a class="link link_pdf" href="/assets/papers/2019/An-Actor-based-Design-Platform-for-System-of-Systems.pdf">PDF</a>
+<a class="link link_bibtex" href="https://dblp.org/rec/conf/compsac/SirjaniFJBKS19.html?view=bibtex">BibTeX</a>  
 
 #### 2018
 - Giorgio Forcina, Ehsan Khamespanah, Ali Jafari, Ali Sedaghatbaf, Stephan Baumgart, Marjan Sirjani: AdaptiveFlow: An Actor-based Eulerian Framework for Track-based Flow Management, Technical Report
