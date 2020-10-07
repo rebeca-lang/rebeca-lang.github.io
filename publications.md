@@ -10,6 +10,11 @@ redirect_from: "/wiki/pmwiki.php/Rebeca/Publications"
 \\
 <a class="link link_pdf" href="/assets/papers/2020/Lightweight-Formal-Method-for-Robust-Routing-in-Track-based-Traffic-Control-Systems.pdf">PDF</a>
 
+- Mahsa Zarneshan, Fatemeh Ghassemi, Marjan Sirjani: Formal Modeling and Analysis of Medical Systems, 22nd IFIP WG 6.1 International Conference, Coordination Models and Languages (COORDINATION), 2020
+\\
+<a class="link link_pdf" href="/assets/papers/2020/Formal-Modeling-and-Analysis-of-Medical-Systems.pdf">PDF</a>
+<a class="link link_bibtex" href="https://dblp.org/rec/conf/coordination/ZarneshanGS20.html?view=bibtex">BibTeX</a>  
+
 - Shaghayegh Tavassoli, Ramtin Khosravi, Ehsan Khamespanah: Finite Interval-Time Transition System for Real-Time Actors, The Third IFIP International Conference on Topics in Theoretical Computer Science (TTCS), 2020
 \\
 <a class="link link_pdf" href="/assets/papers/2020/Finite-Interval-Time-Transition-System-for-Real-Time-Actors.pdf">PDF</a>
@@ -18,11 +23,16 @@ redirect_from: "/wiki/pmwiki.php/Rebeca/Publications"
 - Giorgio Forcina, Ali Sedaghatbaf, Stephan Baumgart, Ali Jafari, Ehsan Khamespanah, Pavle Mrvaljevic, Marjan Sirjani: Safe Design of Flow Management Systems Using Rebeca, Journal of Information Processing (JIP), 2020
 \\
 <a class="link link_pdf" href="/assets/papers/2020/Safe-Design-of-Flow-Management-Systems-Using-Rebeca.pdf">PDF</a>
+<a class="link link_bibtex" href="https://dblp.org/rec/journals/jip/ForcinaSBJKMS20.html?view=bibtex">BibTeX</a>  
+
+- Pavle Mrvaljevic: Tool Orchestration for Modeling, Verification, and Analysis of Collaborating Autonomous Machines - Master Thesis, Malardalen University, Sweeden (2020).\\
+<a class="link link_pdf" href="/assets/theses/Tool-Orchestration-for-modeling-verification-and-analysis-of-collaborating-autonomous-machines.pdf">PDF</a>
 
 - Fereidoun Moradi, Sara Abbaspour Asadollah, Ali Sedaghatbaf, AidaCausevic, Marjan Sirjani, and Carolyn Talcott: An Actor-based Approach for Security Analysis of Cyber-Physical Systems, 
 25th International Conference on Formal Methods for Industrial Critical Systems (FMICS), 2020
 \\
 <a class="link link_pdf" href="/assets/papers/2020/An-Actor-based-Approach-for-Security-Analysis-of-Cyber-Physical-Systems-Conference.pdf">PDF</a>
+<a class="link link_bibtex" href="https://dblp.org/rec/conf/fmics/MoradiASCST20.html?view=bibtex">BibTeX</a>  
 
 - Marjan Sirjani, Luciana Provenzano, Sara Abbaspour Asadollah, Mahshid Helali Moghadam and Mehrdad Saadatmand: Towards a Verification-Driven Iterative Development of Cyber-Physical System,
 Submitted to a Journal
@@ -32,6 +42,7 @@ Submitted to a Journal
 - Farnaz Yousefi, Ehsan Khamespanah, Mohammed Gharib, Marjan Sirjani, Ali Movaghar: VeriVANca Framework: Verification of VANETs by Property Based Message Passing of Actors in Rebeca with Inheritance, Software Tools for Technology Transfer (STTT), 2020
 \\
 <a class="link link_pdf" href="/assets/papers/2020/VeriVANca-An-Actor-Based-Framework-for-Formal-Verification-of-VANET-Applications.pdf">PDF</a>
+<a class="link link_bibtex" href="https://dblp.org/rec/journals/sttt/YousefiKGSM20.html?view=bibtex">BibTeX</a>  
 
 - Zeinab Sharifi, Ramtin Khosravi, Marjan Sirjani, Ehsan Khamespanah: Towards Formal Analysis of Vehicle Platoons Using Actor Model, 25th IEEE International Conference on Emerging Technologies and Factory Automation (ETFA), 2020
 \\
@@ -44,55 +55,12 @@ Submitted to a Journal
 - Marjan Sirjani, Edward A. Lee, Ehsan Khamespanah: Model Checking Software in Cyberphysical Systems, IEEE 44th Annual Computers, Software, and Applications Conference (COMPSAC), 2020
 \\
 <a class="link link_pdf" href="/assets/papers/2020/Model-Checking-Software-in-Cyberphysical-Systems.pdf">PDF</a>
+<a class="link link_bibtex" href="https://dblp.org/rec/conf/compsac/SirjaniLK20.html?view=bibtex">BibTeX</a>  
 
 - Sajjad Rezaei, Ehsan Khamespanah, Marjan Sirjani, Ali Sedaghatbaf, Siamak Mohammadi: Developing Safe Smart Contracts, IEEE 44th Annual Computers, Software, and Applications Conference (COMPSAC), 2020
 \\
 <a class="link link_pdf" href="/assets/papers/2020/Developing-Safe-Smart-Contracts.pdf">PDF</a>
-
-
-#### 2020
-- Maryam Bagheri, Edward A. Lee, Eunsuk Kang, Marjan Sirjani, Ehsan Khamespanah, Ali Movaghar: Lightweight Formal Method for Robust Routing in Track-based Traffic Control Systems, MEMCODE, 2020
-\\
-<a class="link link_pdf" href="/assets/papers/2020/Lightweight-Formal-Method-for-Robust-Routing-in-Track-based-Traffic-Control-Systems.pdf">PDF</a>
-
-- Shaghayegh Tavassoli, Ramtin Khosravi, Ehsan Khamespanah: Finite Interval-Time Transition System for Real-Time Actors, TTCS, 2020
-\\
-<a class="link link_pdf" href="/assets/papers/2020/Finite-Interval-Time-Transition-System-for-Real-Time-Actors.pdf">PDF</a>
-<a class="link link_bibtex" href="https://dblp.org/rec/conf/ttcs/TavassoliKK20.html?view=bibtex">BibTeX</a>  
-
-- Giorgio Forcina, Ali Sedaghatbaf, Stephan Baumgart, Ali Jafari, Ehsan Khamespanah, Pavle Mrvaljevic, Marjan Sirjani: Safe Design of Flow Management Systems Using Rebeca, Journal of Information Processing, 2020
-\\
-<a class="link link_pdf" href="/assets/papers/2020/Safe-Design-of-Flow-Management-Systems-Using-Rebeca.pdf">PDF</a>
-
-- Fereidoun Moradi, Sara Abbaspour Asadollah, Ali Sedaghatbaf, AidaCausevic, Marjan Sirjani, and Carolyn Talcott: An Actor-based Approach for Security Analysis of Cyber-Physical Systems, 
-International Conference on Formal Methods for Industrial Critical Systems (FMICS), 2020
-\\
-<a class="link link_pdf" href="/assets/papers/2020/An-Actor-based-Approach-for-Security-Analysis-of-Cyber-Physical-Systems-Conference.pdf">PDF</a>
-
-- Marjan Sirjani, Luciana Provenzano, Sara Abbaspour Asadollah, Mahshid Helali Moghadam and Mehrdad Saadatmand: Towards a Verification-Driven Iterative Development of Cyber-Physical System,
-Submitted to a Journal
-\\
-<a class="link link_pdf" href="/assets/papers/2020/Towards-a-Verification-Driven-Iterative-Development-of-Cyber-Physical-System.pdf">PDF</a>
-
-- Farnaz Yousefi, Ehsan Khamespanah, Mohammed Gharib, Marjan Sirjani, Ali Movaghar: VeriVANca Framework: Verification of VANETs by Property Based Message Passing of Actors in Rebeca with Inheritance, Software Tools for Technology Transfer, 2020
-\\
-<a class="link link_pdf" href="/assets/papers/2020/VeriVANca-An-Actor-Based-Framework-for-Formal-Verification-of-VANET-Applications.pdf">PDF</a>
-
-- Zeinab Sharifi, Ramtin Khosravi, Marjan Sirjani, Ehsan Khamespanah: Towards Formal Analysis of Vehicle Platoons Using Actor Model, IEEE International Conference on Emerging Technologies and Factory Automation (ETFA), 2020
-\\
-<a class="link link_pdf" href="/assets/papers/2020/Towards-Formal-Analysis-of-Vehicle-Platoons-Using-Actor-Model.pdf">PDF</a>
-
-- Marjan Sirjani, Edward A. Lee, Ehsan Khamespanah: Verification of Cyberphysical Systems, Submitted to MDPI, 2020
-\\
-<a class="link link_pdf" href="/assets/papers/2020/Verification-of-Cyberphysical-Systems.pdf">PDF</a>
-
-- Marjan Sirjani, Edward A. Lee, Ehsan Khamespanah: Model Checking Software in Cyberphysical Systems, COMPSAC, 2020
-\\
-<a class="link link_pdf" href="/assets/papers/2020/Model-Checking-Software-in-Cyberphysical-Systems.pdf">PDF</a>
-
-- Sajjad Rezaei, Ehsan Khamespanah, Marjan Sirjani, Ali Sedaghatbaf, Siamak Mohammadi: Developing Safe Smart Contracts, COMPSAC, 2020
-\\
-<a class="link link_pdf" href="/assets/papers/2020/Developing-Safe-Smart-Contracts.pdf">PDF</a>
+<a class="link link_bibtex" href="https://dblp.org/rec/conf/compsac/RezaeiKSSM20.html?view=bibtex">BibTeX</a> 
 
 #### 2019
 - Marjan Sirjani, Luciana Provenzano, Sara Abbaspour Asadollah, Mahshid Helali Moghadam: From Requirements to Verifiable Executable Models Using Rebeca, ASYDE, 2019
