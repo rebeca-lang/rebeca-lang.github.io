@@ -29,6 +29,10 @@ redirect_from: "/wiki/pmwiki.php/Rebeca/Publications"
 \\
 <a class="link link_pdf" href="/assets/theses/Tool-Orchestration-for-modeling-verification-and-analysis-of-collaborating-autonomous-machines.pdf">PDF</a>
 
+- Kostiantyn Sharovarskyi: Software for Safe Mobile Robots with ROS 2 and Rebeca - Master Thesis, Malardalen University, Sweeden, 2020
+\\
+<a class="link link_pdf" href="/assets/theses/SOFTWARE-FOR-SAFE-MOBILE-ROBOTS-WITH-ROS2-AND-REBECA.pdf">PDF</a>
+
 - Fereidoun Moradi, Sara Abbaspour Asadollah, Ali Sedaghatbaf, AidaCausevic, Marjan Sirjani, and Carolyn Talcott: An Actor-based Approach for Security Analysis of Cyber-Physical Systems, 
 25th International Conference on Formal Methods for Industrial Critical Systems (FMICS), 2020
 \\
@@ -73,9 +77,9 @@ Submitted to a Journal
 \\
 <a class="link link_pdf" href="/assets/papers/2019/From-Requirements-to-Verifiable-Executable-Models-Using-Rebeca.pdf">PDF</a>
 
-- Marjan Sirjani, Luciana Provenzano, Sara Abbaspour Asadollah, Mahshid Helali Moghadam: From Requirements to Verifiable Executable Models Using Rebeca, ASYDE, 2019
+- Vladimir Djukanovic: Mapping UML Diagrams to the Reactive Object Language (Rebeca) - Master Thesis, Malardalen University, Sweeden, 2019
 \\
-<a class="link link_pdf" href="/assets/papers/2019/From-Requirements-to-Verifiable-Executable-Models-Using-Rebeca.pdf">PDF</a>
+<a class="link link_pdf" href="/assets/theses/Mapping-UML-Diagrams-to-the-Reactive-Object-Language-(Rebeca).pdf">PDF</a>
 
 - Saeid Dehnavi, Ali Sedaghatbaf, Bahar Salmani, Marjan Sirjani, Mehdi Kargahi, Ehsan Khamespanah: Towards an Actor-based Approach to Design Verified ROS-based Robotic Programs using Rebeca, MobiSPC, 2019
 \\
