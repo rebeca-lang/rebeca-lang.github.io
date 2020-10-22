@@ -11,6 +11,7 @@ The models can be model checked/ analyzed/verified against desired properties in
 Our toolset fully covers this chain for creating safe ROS codes for the robotic application. 
 More details about this project is provided in this presentation: <a class="link link_presentation" href="/assets/projects/RoboRebeca/RoboRebeca.pptx">pptx</a>
 
+This work is continued in "<a class="link" href="/assets/theses/SOFTWARE-FOR-SAFE-MOBILE-ROBOTS-WITH-ROS2-AND-REBECA.pdf">Software for Safe Mobile Robots with ROS 2 and Rebeca</a> master thesis. This work focuses on a scenario in which mobile robots move from a starting position to the target position. Models of various ROS 2 components utilised in mobile robots are developed and both single- and multi- robot scenarios are verified.
 
 #### Case Studies
 * The demo of Volvo Autonomous machines: [ [movie] ](/assets/projects/RoboRebeca/automaticConversionChain.mp4) (by Bahar Salmani). 
@@ -18,6 +19,7 @@ More details about this project is provided in this presentation: <a class="link
 * Train Controller Model: [ [zip] ](https://github.com/rebeca-lang/rebeca-lang.binaries/raw/master/Train%20Contoller.zip) (by Bahar Salmani). 
 * Kobuki Robot Controller Model: [ [zip] ](https://github.com/rebeca-lang/rebeca-lang.binaries/raw/master/Kobuki%20Case.zip) (by Bahar Salmani). 
 * HXVolvo Model: [ [zip] ](https://github.com/rebeca-lang/rebeca-lang.binaries/raw/master/HXVolvo%20Case.zip) (by Bahar Salmani). 
+* Rebeca Models, Developed as a part of "Software for Safe Mobile Robots with ROS 2 and Rebeca" Master Thesis: [ [zip] ](/assets/projects/RoboRebeca/MobileRobots.zip) (Kostiantyn Sharovarskyi). 
 
 #### Project Members
 * **<u>Marjan Sirjani (Principal Investigator)</u>**

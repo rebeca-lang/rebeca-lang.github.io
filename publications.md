@@ -96,6 +96,10 @@ Submitted to a Journal
 <a class="link link_pdf" href="/assets/papers/2019/An-Actor-based-Design-Platform-for-System-of-Systems.pdf">PDF</a>
 <a class="link link_bibtex" href="https://dblp.org/rec/conf/compsac/SirjaniFJBKS19.html?view=bibtex">BibTeX</a>  
 
+- Saeid Dehnavi: RoboRebeca: A New Framework to Design Verified ROS-Based Robotic Programs - Master Thesis, Malardalen University, Sweeden, 2019
+\\
+<a class="link link_pdf" href="/assets/theses/ROBOREBECA-A-NEW-FRAMEWORK-TO-DESIGN-VERIFIED-ROS-BASED-ROBOTIC-PROGRAMS.pdf">PDF</a>
+
 #### 2018
 - Giorgio Forcina, Ehsan Khamespanah, Ali Jafari, Ali Sedaghatbaf, Stephan Baumgart, Marjan Sirjani: AdaptiveFlow: An Actor-based Eulerian Framework for Track-based Flow Management, Technical Report
 \\
