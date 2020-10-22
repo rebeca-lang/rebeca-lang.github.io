@@ -12,7 +12,7 @@ The command for running the Python script is: python ModelGenerator.py envFile t
 
 <img align="right" width="50%" src="{{ "/assets/projects/AdaptiveFlow/environment.png" | absolute_url }}" alt="AdaptiveFlow Environment" />
 
-Python model generator can be found [here](/assets/projects/AdaptiveFlow/ModelGenerator.py). Examples of the input files of the system in the figure are: [environment.xml](/assets/projects/AdaptiveFlow/example/environment.xml), [topology.xml](/assets/projects/AdaptiveFlow/example/topology.xml), and [configuration.xml](/assets/projects/AdaptiveFlow/example/configuration.xml).
+Python model generator can be found [here](/assets/projects/AdaptiveFlow/ModelGenerator-v20.py). Examples of the input files of the system in the figure are: [environment.xml](/assets/projects/AdaptiveFlow/example/environment.xml), [topology.xml](/assets/projects/AdaptiveFlow/example/topology.xml), and [configuration.xml](/assets/projects/AdaptiveFlow/example/configuration.xml). An example of a model that violates correctness properties and has a deadlock can be downloaded from [here](/assets/projects/AdaptiveFlow/input-deadlock.zip).
 
 More details about this project is provided in this presentation: <a class="link link_presentation" href="/assets/projects/AdaptiveFlow/Adaptiveflow.pptx">pptx</a>
 
