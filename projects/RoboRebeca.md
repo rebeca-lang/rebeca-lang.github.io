@@ -11,7 +11,7 @@ The models can be model checked/ analyzed/verified against desired properties in
 Our toolset fully covers this chain for creating safe ROS codes for the robotic application. 
 More details about this project is provided in this presentation: <a class="link link_presentation" href="/assets/projects/RoboRebeca/RoboRebeca.pptx">pptx</a>
 
-This work is continued in "<a class="link" href="/assets/theses/SOFTWARE-FOR-SAFE-MOBILE-ROBOTS-WITH-ROS2-AND-REBECA.pdf">Software for Safe Mobile Robots with ROS 2 and Rebeca</a> master thesis. This work focuses on a scenario in which mobile robots move from a starting position to the target position. Models of various ROS 2 components utilised in mobile robots are developed and both single- and multi- robot scenarios are verified.
+This work is continued in "[Software for Safe Mobile Robots with ROS 2 and Rebeca](/assets/theses/SOFTWARE-FOR-SAFE-MOBILE-ROBOTS-WITH-ROS2-AND-REBECA.pdf)" master thesis. This work focuses on a scenario in which mobile robots move from a starting position to the target position. Models of various ROS 2 components utilised in mobile robots are developed and both single- and multi- robot scenarios are verified.
 
 #### Case Studies
 * The demo of Volvo Autonomous machines: [ [movie] ](/assets/projects/RoboRebeca/automaticConversionChain.mp4) (by Bahar Salmani). 
