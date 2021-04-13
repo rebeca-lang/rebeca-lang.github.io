@@ -6,7 +6,7 @@ title: Projects
 
 
 <div class="row">
-  <div class="col s12 m4">
+<!--   <div class="col s12 m4">
     <div class="icon-block">
       <h2 class="center light-blue-text"><img src="{{ "/assets/projects/CRYSTAL/CRYSTAL-Logo.png" | absolute_url }}" alt="CRYSTAL Logo"/></h2>
       <h5 class="center">CRYSTAL</h5>
@@ -17,7 +17,7 @@ title: Projects
       </p>
     </div>
   </div>
-  <div class="col s12 m4">
+ -->  <div class="col s12 m4">
     <div class="icon-block">
       <h2 class="center light-blue-text"><img src="{{ "/assets/projects/Seada/SEADA-Logo.png" | absolute_url }}" alt="SEADA Logo"/></h2>
       <h5 class="center">SEADA</h5>
@@ -36,6 +36,8 @@ title: Projects
         RoboRebeca is a framework which provides facilities for developing safe/correct source codes for robotic applications. In RoboRebeca, models are developed using Rebeca family language and automatically transformed into ROS compatible source codes. This framework is integrated into Afra 3.0. <a href="{{ "/allprojects/RoboRebeca" | relative_url }}">Learn more</a>
       </p>
     </div>
+  </div>
+  <div class="col s12 m4">
   </div>
 </div>
 
