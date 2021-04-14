@@ -16,7 +16,6 @@ A Rebeca family model consists of the definition of _reactive classes_ and the i
 * Version: **3.0.0**
 * {: #afraLastUpdateTime } Last Updated: **...**
 * {: #afraLastUpdateSize } Size: **...**
-* Java Version: **10 and 1.8**
 * Download (Java **10 and 1.8**): 
 [ [Windows x64] ](https://github.com/rebeca-lang/org.rebecalang.afra/releases/download/CircleCIRelease2/Afra-win32.win32.x86_64.zip) 
 [ [Windows x32] ](https://github.com/rebeca-lang/org.rebecalang.afra/releases/download/CircleCIRelease2/Afra-win32.win32.x86.zip) 
