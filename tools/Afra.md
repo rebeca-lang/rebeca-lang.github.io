@@ -45,14 +45,14 @@ A Rebeca family model consists of the definition of _reactive classes_ and the i
       });
 </script>
 
-###### Notes:
-* **Windows Users:** 
+###### **Notes**:
+* Windows Users: 
   + You have to install [cygwin](http://www.cygwin.com) before using Afra 3. 
   + Make sure that the "bin" directory, which contains "g++.exe", is included in the PATH environment variable.
 * Mac Users: 
   + You have to install g++ compiler which comes with Apple's [XCode](https://developer.apple.com/xcode/) tools package.
   + Put Afra.app in the "Applications" folder to prevent permissions conflicts.
-  + In the case encountering this error: "Afra is damaged and can’t be opened. You should move it to the Trash." open consule and use "xattr -cr Afra.app" command to clear the attached attribute which prevents running Afra.
+  + In the case encountering this error: "Afra is damaged and can’t be opened. You should move it to the Trash." open console and use "xattr  -cr  Afra.app" command to clear the file attribute which prevents running Afra.
 
 ##### Afra 2 **[Deprecated]**
 * Version: **2.0.0**
