@@ -16,16 +16,16 @@ A Rebeca family model consists of the definition of _reactive classes_ and the i
 * Version: **3.0.0**
 * {: #afraLastUpdateTime } Last Updated: **...**
 * {: #afraLastUpdateSize } Size: **...**
-* Download (Java **10 and 1.8**): 
+* Download (Java **10 and 1.8**) [Partially Deprecated]: 
 [ [Windows x64] ](https://github.com/rebeca-lang/org.rebecalang.afra/releases/download/CircleCIRelease2/Afra-win32.win32.x86_64.zip) 
 [ [Windows x32] ](https://github.com/rebeca-lang/org.rebecalang.afra/releases/download/CircleCIRelease2/Afra-win32.win32.x86.zip) 
 [ [Linux x64] ](https://github.com/rebeca-lang/org.rebecalang.afra/releases/download/CircleCIRelease2/Afra-linux.gtk.x86_64.tar.gz) 
 [ [Linux x32] ](https://github.com/rebeca-lang/org.rebecalang.afra/releases/download/CircleCIRelease2/Afra-linux.gtk.x86.tar.gz) 
 [ [MacOS X] ](https://github.com/rebeca-lang/org.rebecalang.afra/releases/download/CircleCIRelease2/Afra-macosx.cocoa.x86_64.tar.gz)
 * Download (Java **14**): 
-[ [Windows x64] ](https://github.com/rebeca-lang/org.rebecalang.afra/releases/download/CircleCIRelease/Afra-win32.win32.x86_64.zip) 
-[ [Linux x64] ](https://github.com/rebeca-lang/org.rebecalang.afra/releases/download/CircleCIRelease/Afra-linux.gtk.x86.tar.gz) 
-[ [MacOS X] ](https://github.com/rebeca-lang/org.rebecalang.afra/releases/download/CircleCIRelease/Afra-macosx.cocoa.x86_64.tar.gz)
+[ [Windows x64] ](https://github.com/rebeca-lang/org.rebecalang.afra/releases/download/Afra-3.0/Afra-win32.win32.x86_64.zip) 
+[ [Linux x64] ](https://github.com/rebeca-lang/org.rebecalang.afra/releases/download/Afra-3.0/Afra-linux.gtk.x86.tar.gz) 
+[ [MacOS X] ](https://github.com/rebeca-lang/org.rebecalang.afra/releases/download/Afra-3.0/Afra-macosx.cocoa.x86_64.tar.gz)
 * Demo: How to work with Afra 3 [ [video] ](/assets/tools/Afra/Afra-3.0-Demo.mov)
 
 <script type="text/javascript">
@@ -46,8 +46,13 @@ A Rebeca family model consists of the definition of _reactive classes_ and the i
 </script>
 
 ###### Notes:
-* Windows Users: you have to install [cygwin](http://www.cygwin.com) or [MinGW](http://www.mingw.org) or any other windows port of the g++ compiler before using Afra 3. Make sure that the "bin" directory, which contains "g++.exe", is included in the PATH environment variable.
-* Mac Users: you have to install g++ compiler which comes with Apple's [XCode](https://developer.apple.com/xcode/) tools package. Also, put the downloaded Afra file in the "Applications" folder to prevent permissions conflicts.
+* **Windows Users:** 
+  + You have to install [cygwin](http://www.cygwin.com) before using Afra 3. 
+  + Make sure that the "bin" directory, which contains "g++.exe", is included in the PATH environment variable.
+* Mac Users: 
+  + You have to install g++ compiler which comes with Apple's [XCode](https://developer.apple.com/xcode/) tools package.
+  + Put Afra.app in the "Applications" folder to prevent permissions conflicts.
+  + In the case encountering this error: "Afra is damaged and can’t be opened. You should move it to the Trash." open consule and use "xattr -cr Afra.app" command to clear the attached attribute which prevents running Afra.
 
 ##### Afra 2 **[Deprecated]**
 * Version: **2.0.0**
