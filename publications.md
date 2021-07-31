@@ -6,9 +6,14 @@ redirect_from: "/wiki/pmwiki.php/Rebeca/Publications"
 ---
 
 #### 2021
+- Maryam Bagheri, Marjan Sirjani, Ehsan Khamespanah, Christel Baier, Ali Movaghar, Magnifier: A Compositional Analysis Approach for Autonomous Traffic Control, IEEE Transactions on Software Engineering, 2021
+\\
+<a class="link link_pdf" href="/assets/papers/2021/Magnifier-A-Compositional-Analysis-Approach-for-Autonomous-Traffic-Control.pdf">PDF</a>
+
 - Marjan Sirjani, Luciana Provenzano, Sara Abbaspour Asadollah, Mahshid Helali Moghadam, Mehrdad Saadatmand: Towards a Verification-Driven Iterative Development of Software for Safety-Critical Cyber-Physical Systems, Journal of Internet Services and Applications, 2021
 \\
 <a class="link link_pdf" href="https://link.springer.com/content/pdf/10.1186/s13174-021-00132-z.pdf">PDF</a>
+<a class="link link_bibtex" href="https://dblp.org/rec/journals/jisa/SirjaniPAMS21.html?view=bibtex">BibTeX</a>  
 
 #### 2020
 - Maryam Bagheri, Edward A. Lee, Eunsuk Kang, Marjan Sirjani, Ehsan Khamespanah, Ali Movaghar: Lightweight Formal Method for Robust Routing in Track-based Traffic Control Systems, 18th ACM-IEEE International Conference on Formal Methods and Models for System Design (MEMOCODE), 2020
