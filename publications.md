@@ -6,6 +6,12 @@ redirect_from: "/wiki/pmwiki.php/Rebeca/Publications"
 ---
 
 #### 2021
+- Fereidoun Moradi, Maryam Bagheri, Hanieh Rahmati, Hamed Yazdi, Sara Abbaspour Asadollah, Marjan Sirjani, Monitoring Cyber-Physical Systems using a Tiny Twin to Prevent Cyber-Attacks, SPIN, 2022
+\\
+<a class="link link_pdf" href="/assets/papers/2022/Monitoring-Cyber-Physical-Systems-Using-a-Tiny-Twin-to-Prevent-Cyber-Attacks.pdf">PDF</a>
+
+
+#### 2021
 - Maryam Bagheri, Marjan Sirjani, Ehsan Khamespanah, Christel Baier, Ali Movaghar, Magnifier: A Compositional Analysis Approach for Autonomous Traffic Control, IEEE Transactions on Software Engineering, 2021
 \\
 <a class="link link_pdf" href="/assets/papers/2021/Magnifier-A-Compositional-Analysis-Approach-for-Autonomous-Traffic-Control.pdf">PDF</a>
