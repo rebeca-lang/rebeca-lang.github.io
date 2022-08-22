@@ -5,8 +5,8 @@ redirect_from: "/wiki/pmwiki.php/Rebeca/Publications"
 
 ---
 
-#### 2021
-- Fereidoun Moradi, Maryam Bagheri, Hanieh Rahmati, Hamed Yazdi, Sara Abbaspour Asadollah, Marjan Sirjani, Monitoring Cyber-Physical Systems using a Tiny Twin to Prevent Cyber-Attacks, SPIN, 2022
+#### 2022
+- Fereidoun Moradi, Maryam Bagheri, Hanieh Rahmati, Hamed Yazdi, Sara Abbaspour Asadollah, Marjan Sirjani, Monitoring Cyber-Physical Systems using a Tiny Twin to Prevent Cyber-Attacks, 28th International Symposium on Model Checking of Software (SPIN), 2022
 \\
 <a class="link link_pdf" href="/assets/papers/2022/Monitoring-Cyber-Physical-Systems-Using-a-Tiny-Twin-to-Prevent-Cyber-Attacks.pdf">PDF</a>
 
@@ -49,7 +49,7 @@ redirect_from: "/wiki/pmwiki.php/Rebeca/Publications"
 \\
 <a class="link link_pdf" href="/assets/theses/SOFTWARE-FOR-SAFE-MOBILE-ROBOTS-WITH-ROS2-AND-REBECA.pdf">PDF</a>
 
-- Fereidoun Moradi, Sara Abbaspour Asadollah, Ali Sedaghatbaf, AidaCausevic, Marjan Sirjani, and Carolyn Talcott: An Actor-based Approach for Security Analysis of Cyber-Physical Systems, 
+- Fereidoun Moradi, Sara Abbaspour Asadollah, Ali Sedaghatbaf, Aida Causevic, Marjan Sirjani, and Carolyn Talcott: An Actor-based Approach for Security Analysis of Cyber-Physical Systems, 
 25th International Conference on Formal Methods for Industrial Critical Systems (FMICS), 2020
 \\
 <a class="link link_pdf" href="/assets/papers/2020/An-Actor-based-Approach-for-Security-Analysis-of-Cyber-Physical-Systems-Conference.pdf">PDF</a>
