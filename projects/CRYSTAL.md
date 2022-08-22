@@ -25,5 +25,5 @@ A model of attack is proposed for both attacks on CPS communication and componen
 #### Related Publications
 - Fereidoun Moradi, Sara Abbaspour Asadollah, Ali Sedaghatbaf, Aida Causevic, Marjan Sirjani, Carolyn Talcott: An Actor-based Approach for Security Analysis of Cyber-Physical Systems, FMICs, 2020 <a class="link link_pdf" href="/assets/papers/2020/An-Actor-based-Approach-for-Security-Analysis-of-Cyber-Physical-Systems.pdf">PDF</a>
 
-- - Fereidoun Moradi, Maryam Bagheri, Hanieh Rahmati, Hamed Yazdi, Sara Abbaspour Asadollah, Marjan Sirjani, Monitoring Cyber-Physical Systems using a Tiny Twin to Prevent Cyber-Attacks, 28th International Symposium on Model Checking of Software (SPIN), 2022
+- Fereidoun Moradi, Maryam Bagheri, Hanieh Rahmati, Hamed Yazdi, Sara Abbaspour Asadollah, Marjan Sirjani, Monitoring Cyber-Physical Systems using a Tiny Twin to Prevent Cyber-Attacks, 28th International Symposium on Model Checking of Software (SPIN), 2022
  <a class="link link_pdf" href="/assets/papers/2022/Monitoring-Cyber-Physical-Systems-Using-a-Tiny-Twin-to-Prevent-Cyber-Attacks.pdf">PDF</a>
