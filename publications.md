@@ -137,6 +137,10 @@ Submitted to a Journal
 - Maryam Bagheri, Marjan Sirjani, Ehsan Khamespanah, Narges Khakpour, Ilge Akkaya, Ali Movaghar and Edward A. Lee: Coordinated Actor Model of Self-adaptive Track-based Traffic Control Systems, Journal of Systems and Software, 2018. \\
 <a class="link link_pdf" href="/assets/papers/2018/Self-Adaptive-Coordinated-Actors.pdf">PDF</a>
 
+- Ehsan Khamespanah: Modeling, Verification, and Analysis of Timed Actor-Based Models - PhD Thesis, Reykjavik University, Iceland, 2018
+\\
+<a class="link link_pdf" href="https://opinvisindi.is/bitstream/handle/20.500.11815/1185/PhD-EhsanKhamespanah-2018.pdf?sequence=1&isAllowed=y">PDF</a>
+
 #### 2017
 - Behnaz Yousefi, Fatemeh Ghassemi, and Ramtin Khosravi: Modeling and Efficient Verification of Wireless Ad hoc Networks, volume 29, Issue 6, pp 1051–1086, Formal Aspects of Computing, 2017. \\
 <a class="link link_bibtex" href="http://dblp.uni-trier.de/rec/bibtex/journals/fac/YousefiGK17">BibTeX</a>  
