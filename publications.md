@@ -7,7 +7,7 @@ redirect_from: "/wiki/pmwiki.php/Rebeca/Publications"
 #### 2023
 - Fereidoun Moradi, Sara Abbaspour Asadollah, Bahman Pourvatan, Zahra Moezkarimi, Marjan Sirjani, CRYSTAL Framework: Cybersecurity Assurance for Cyber-Physical Systems, Technical Report, Submitted to NWPT 2023
 \\
-<a class="link link_pdf" href="/assets/papers/2023/CRYSTAL-Framework-Technical-Report.pdf">PDF</a>
+<a class="link link_pdf" href="/assets/papers/2023/CRYSTAL-Framework-Technical-Report.pdf">PDF</a> 
 
 #### 2022
 - Fereidoun Moradi, Maryam Bagheri, Hanieh Rahmati, Hamed Yazdi, Sara Abbaspour Asadollah, Marjan Sirjani, Monitoring Cyber-Physical Systems using a Tiny Twin to Prevent Cyber-Attacks, 28th International Symposium on Model Checking of Software (SPIN), 2022
