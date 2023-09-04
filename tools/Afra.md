@@ -22,10 +22,11 @@ A Rebeca family model consists of the definition of _reactive classes_ and the i
 [ [Linux x64] ](https://github.com/rebeca-lang/org.rebecalang.afra/releases/download/CircleCIRelease2/Afra-linux.gtk.x86_64.tar.gz) 
 [ [Linux x32] ](https://github.com/rebeca-lang/org.rebecalang.afra/releases/download/CircleCIRelease2/Afra-linux.gtk.x86.tar.gz) 
 [ [MacOS X] ](https://github.com/rebeca-lang/org.rebecalang.afra/releases/download/CircleCIRelease2/Afra-macosx.cocoa.x86_64.tar.gz)
-* Download (Java **14** Oracle): 
+* Download (Java **17** Oracle): 
 [ [Windows x64] ](https://github.com/rebeca-lang/org.rebecalang.afra/releases/download/Afra-3.0/Afra-win32.win32.x86_64.zip) 
 [ [Linux x64] ](https://github.com/rebeca-lang/org.rebecalang.afra/releases/download/Afra-3.0/Afra-linux.gtk.x86_64.tar.gz) 
-[ [MacOS X] ](https://github.com/rebeca-lang/org.rebecalang.afra/releases/download/Afra-3.0/Afra-macosx.cocoa.x86_64.tar.gz)
+[ [MacOS x64] ](https://github.com/rebeca-lang/org.rebecalang.afra/releases/download/Afra-3.0/Afra-macosx.cocoa.x86_64.tar.gz)
+[ [MacOS M1-M2] ](https://github.com/rebeca-lang/org.rebecalang.afra/releases/download/Afra-3.0/Afra-macosx.cocoa.aarch64.tar.gz)
 * Demo: How to work with Afra 3 [ [video] ](/assets/tools/Afra/Afra-3.0-Demo.mov)
 
 <script type="text/javascript">
