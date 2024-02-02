@@ -12,9 +12,7 @@ title: Projects
       <h5 class="center">CRYSTAL</h5>
 
       <p class="light">
-        A potential problem that may arise in the domain of distributed control systems is the existence of more than one primary controller in redundancy plans that may lead to inconsistency. An algorithm
-called NRP FD is proposed to solve this issue by prioritizing consistency over availability. In this project, we demonstrate how by using modeling and formal verification, we discovered an issue in
-NRP FD where we may have two primary controllers at the same time. We then provide a solution to mitigate the identified issue, thereby enhancing the robustness and reliability of such systems.
+        CRYSTAL mainly focuses on assessing the security aspects of Cyber-Physical Systems. In this project, we use Timed Rebeca and model checker Afra to specify and verify the behavior of CPS components against CPS-related attacks. We analyze architecture of CPS design to recognize where the potential attacks can successfully lead the system to security violation.
           <a href="{{ "/allprojects/CRYSTAL" | relative_url }}">Learn more</a>
       </p>
     </div>
@@ -26,8 +24,8 @@ NRP FD where we may have two primary controllers at the same time. We then provi
       <h5 class="center">Distributed Controllers</h5>
 
       <p class="light">
-        CRYSTAL mainly focuses on assessing the security aspects of Cyber-Physical Systems. In this project, we use Timed Rebeca and model checker Afra to specify and verify the behavior of CPS components against CPS-related attacks. We analyze architecture of CPS design to recognize where the potential attacks can successfully lead the system to security violation.
-          <a href="{{ "/allprojects/CRYSTAL" | relative_url }}">Learn more</a>
+        A potential problem that may arise in the domain of distributed control systems is the existence of more than one primary controller in redundancy plans that may lead to inconsistency. An algorithm called NRP FD is proposed to solve this issue by prioritizing consistency over availability. In this project, we demonstrate how by using modeling and formal verification, we discovered an issue in NRP FD where we may have two primary controllers at the same time. We then provide a solution to mitigate the identified issue, thereby enhancing the robustness and reliability of such systems.
+          <a href="{{ "/allprojects/DistributedControllers" | relative_url }}">Learn more</a>
       </p>
     </div>
   </div>
