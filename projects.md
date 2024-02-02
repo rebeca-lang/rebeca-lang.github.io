@@ -17,17 +17,16 @@ title: Projects
       </p>
     </div>
   </div>
-  <div class="col s12 m4">
+<div class="col s12 m4">
     <div class="icon-block">
-      <h2 class="center light-blue-text"><img src="{{ "/assets/projects/Seada/SEADA-Logo.png" | absolute_url }}" alt="SEADA Logo"/></h2>
-      <h5 class="center">SEADA</h5>
-
+      <h2 class="center light-blue-text"><img src="{{ "/assets/projects/DefaultProject.jpg" | absolute_url }}" alt="CRYSTAL Logo"/></h2>
+      <h5 class="center">Consistency of Distributed Controllers</h5>
       <p class="light">
-          In SEADA (Self-Adaptive Actors) we will use Ptolemy to represent the architecture, and extensions of Rebeca for modeling and verification. Our models@runtime will be coded in an extension of Probabilistic Timed Rebeca, and supporting tools for customized run-time formal verification of these models will be developed.
-          <a href="{{ "/allprojects/Seada" | relative_url }}">Learn more</a>
+         In distributed control systems, multiple primary controllers in redundancy plans can lead to inconsistency. In this project we model and formally verify the NRP FD algorithm. We identify an issue and propose a solution to enhance the robustness and reliability of such systems. <a href="{{ "/allprojects/DistributedControllers" | relative_url }}">Learn more</a>
       </p>
     </div>
   </div>
+  
   <div class="col s12 m4">
     <div class="icon-block">
       <h2 class="center light-blue-text"><img src="{{ "/assets/projects/RoboRebeca/RoboRebeca-Logo.png" | absolute_url }}" alt="RoboRebeca Logo"/></h2>
@@ -135,16 +134,19 @@ title: Projects
     </div>
   </div>
 
+
 <div class="col s12 m4">
     <div class="icon-block">
-      <h2 class="center light-blue-text"><img src="{{ "/assets/projects/DefaultProject.jpg" | absolute_url }}" alt="CRYSTAL Logo"/></h2>
-      <h5 class="center">Distributed Controllers</h5>
+      <h2 class="center light-blue-text"><img src="{{ "/assets/projects/Seada/SEADA-Logo.png" | absolute_url }}" alt="SEADA Logo"/></h2>
+      <h5 class="center">SEADA</h5>
+
       <p class="light">
-         In distributed control systems, multiple primary controllers in redundancy plans can lead to inconsistency. In this project we model and formally verify the NRP FD algorithm. We identify an issue and propose a solution to enhance the robustness and reliability of such systems. <a href="{{ "/allprojects/DistributedControllers" | relative_url }}">Learn more</a>
+          In SEADA (Self-Adaptive Actors) we will use Ptolemy to represent the architecture, and extensions of Rebeca for modeling and verification. Our models@runtime will be coded in an extension of Probabilistic Timed Rebeca, and supporting tools for customized run-time formal verification of these models will be developed.
+          <a href="{{ "/allprojects/Seada" | relative_url }}">Learn more</a>
       </p>
     </div>
   </div>
-  
+
  
 </div>
 
