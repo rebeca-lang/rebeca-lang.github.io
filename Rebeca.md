@@ -41,7 +41,7 @@ To illustrate how models can be developed in Rebeca family language, we provided
 	    WSAN Applications (TCTL) <a href="{{ "/assets/projects/TARO/case-studies/tinyos-prop.zip" | relative_url }}">[zip]</a><br/>
 	    Hadoop Yarn Schedule (TCTL) <a href="{{ "/assets/projects/TARO/case-studies/yarn-prop.zip" | relative_url }}">[zip]</a><br/>
 	    Autonomous Vehicles <a href="{{ "/assets/projects/TARO/case-studies/AutonomousVehicles.rebeca" | relative_url }}">[Rebeca model]</a><br/>
-	    Consistency of Distributed Controllers <a href="{{ "/allprojects/DistributedControllers" | relative_url }}">Description and models</a><br/>
+	    Consistency of Distributed Controllers <a href="{{ "/allprojects/DistributedControllers" | relative_url }}">[Description and Rebeca models]</a><br/>
 	</p>
   </div>
 </div>
