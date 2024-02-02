@@ -140,7 +140,7 @@ title: Projects
       <h2 class="center light-blue-text"><img src="{{ "/assets/projects/DefaultProject.jpg" | absolute_url }}" alt="CRYSTAL Logo"/></h2>
       <h5 class="center">Distributed Controllers</h5>
       <p class="light">
-         A potential problem that may arise in the domain of distributed control systems is the existence of more than one primary controller in redundancy plans which may lead to inconsistency. In this project, we model and formally verify the state-of-the-art algorithm -NRP FD- and discover an issue. We then provide a solution to mitigate the identified issue, thereby enhancing the robustness and reliability of such systems. <a href="{{ "/allprojects/DistributedControllers" | relative_url }}">Learn more</a>
+         In distributed control systems, multiple primary controllers in redundancy plans can lead to inconsistency. This project models and formally verifies the NRP FD algorithm, identifying an issue, and proposes a solution to enhance the robustness and reliability of such systems. <a href="{{ "/allprojects/DistributedControllers" | relative_url }}">Learn more</a>
       </p>
     </div>
   </div>
