@@ -16,12 +16,36 @@ It's worth noting that this project is undertaken in collaboration with ABB Indu
 
 #### Case Studies
 * NRP FD algorithm: [ [NRP FD] ](/assets/projects/DistributedControllers/NRPFD.zip)
-  
-  To create a situation where a violation would occur in NRP FD, you can for example set the switchA1failtime and switchB1failtime variables to 2500.
-  (env int switchA1failtime = 2500; env int switchB1failtime = 2500;) to simulate simultaneous failures on both networks. This situation would not cause any violation in the leasing NRP FD algorithm.
-  
-
+ 
 * The extended version: [ [Leasing NRP FD] ](/assets/projects/DistributedControllers/LeasingNRPFD.zip)
+
+
+We have modeled failures in three scenarios. These situations lead to violations in NRP FD but would not cause any violation in the leasing NRP FD algorithm.
+
+1. Failures on every event. In this scenario, the following commands should be left uncommented at the beginning of each message server for DCNs and switches, simulating the possibility of their failure (minor modifications also required, e.g. uncomment else and its corresponding "}" for each). 
+
+      //Possible failure for a DCN:
+  
+      // if(?(true,false)) nodeFail();
+
+      //Possible failure for a Switch:
+
+      //if(?(true,false)) switchFail();
+
+2. Failures that occur at specific times. To create a situation where a violation would occur in NRP FD, you can for example set the switchA1failtime and switchB1failtime variables to 2500 to simulate simultaneous failures on both networks. 
+
+   env int switchA1failtime = 2500;
+   
+   env int switchB1failtime = 2500;
+
+4. Transient failures. To activate the mechanism we have added to our model to simulate a transient failure, uncomment the following two lines:
+
+    // attacker=1; (in  msgsrv ping_timed_out)
+
+    // attacker++; (in msgsrv runMe)
+
+  
+  
 
 #### Project Members
 * **<u>Marjan Sirjani (Principal Investigator)</u>**
