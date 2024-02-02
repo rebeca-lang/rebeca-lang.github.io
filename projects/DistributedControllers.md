@@ -16,6 +16,10 @@ It's worth noting that this project is undertaken in collaboration with ABB Indu
 
 #### Case Studies
 * NRP FD algorithm: [ [NRP FD] ](/assets/projects/DistributedControllers/NRPFD.zip)
+  
+  To create a situation where a violation would occur in NRP FD, you can for example set the switchA1failtime and switchB1failtime variables to 2500.
+  (env int switchA1failtime = 2500; env int switchB1failtime = 2500;) to simulate simultaneous failures on both networks. This situation would not cause any violation in the leasing NRP FD algorithm.
+  
 
 * The extended version: [ [Leasing NRP FD] ](/assets/projects/DistributedControllers/LeasingNRPFD.zip)
 
