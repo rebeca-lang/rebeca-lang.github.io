@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Distributed Controllers
+title: Consistency of Distributed Controllers
 permalink: /allprojects/DistributedControllers
 
 ---
