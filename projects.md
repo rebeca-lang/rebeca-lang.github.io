@@ -17,19 +17,6 @@ title: Projects
       </p>
     </div>
   </div>
-
-<div class="col s12 m4">
-    <div class="icon-block">
-      <h2 class="center light-blue-text"><img src="{{ "/assets/projects/DefaultProject.jpg" | absolute_url }}" alt="CRYSTAL Logo"/></h2>
-      <h5 class="center">Distributed Controllers</h5>
-
-      <p class="light">
-        A potential problem that may arise in the domain of distributed control systems is the existence of more than one primary controller in redundancy plans that may lead to inconsistency. An algorithm called NRP FD is proposed to solve this issue by prioritizing consistency over availability. In this project, we demonstrate how by using modeling and formal verification, we discovered an issue in NRP FD where we may have two primary controllers at the same time. We then provide a solution to mitigate the identified issue, thereby enhancing the robustness and reliability of such systems.
-          <a href="{{ "/allprojects/DistributedControllers" | relative_url }}">Learn more</a>
-      </p>
-    </div>
-  </div>
-  
   <div class="col s12 m4">
     <div class="icon-block">
       <h2 class="center light-blue-text"><img src="{{ "/assets/projects/Seada/SEADA-Logo.png" | absolute_url }}" alt="SEADA Logo"/></h2>
@@ -147,6 +134,20 @@ title: Projects
       </p>
     </div>
   </div>
+
+<div class="col s12 m4">
+    <div class="icon-block">
+      <h2 class="center light-blue-text"><img src="{{ "/assets/projects/DefaultProject.jpg" | absolute_url }}" alt="CRYSTAL Logo"/></h2>
+      <h5 class="center">Distributed Controllers</h5>
+
+      <p class="light">
+        A potential problem that may arise in the domain of distributed control systems is the existence of more than one primary controller in redundancy plans that may lead to inconsistency. An algorithm called NRP FD is proposed to solve this issue by prioritizing consistency over availability. In this project, we demonstrate how by using modeling and formal verification, we discovered an issue in NRP FD where we may have two primary controllers at the same time. We then provide a solution to mitigate the identified issue, thereby enhancing the robustness and reliability of such systems.
+          <a href="{{ "/allprojects/DistributedControllers" | relative_url }}">Learn more</a>
+      </p>
+    </div>
+  </div>
+  
+ 
 </div>
 
 
