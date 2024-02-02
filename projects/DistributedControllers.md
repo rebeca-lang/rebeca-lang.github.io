@@ -15,12 +15,9 @@ We have discovered an issue in where we may have two primary controllers at the 
 It's worth noting that this project is undertaken in collaboration with ABB Industrial Automation, Process Control Platform, in Västerås, Sweden.
 
 #### Case Studies
-*[ NRP FD ](https://itrust.sutd.edu.sg/testbeds/secure-water-treatment-swat/) Code: 
-<a class="link link_download" href="https://github.com/fereidoun-moradi/SWaT-Rebeca-Model">download</a>
+* [ [NRP FD] ](/assets/projects/DistributedControllers/NRPFD.zip)
 
-*[ Leasing NRP FD ] Code: 
-<a class="link link_download" href="https://github.com/fereidoun-moradi/SWaT-Rebeca-Model">download</a>
-
+* [ [Leasing NRP FD] ](/assets/projects/DistributedControllers/LeasingNRPFD.zip)
 
 #### Project Members
 * **<u>Marjan Sirjani (Principal Investigator)</u>**
