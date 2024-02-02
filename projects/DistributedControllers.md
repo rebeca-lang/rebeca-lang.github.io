@@ -10,14 +10,14 @@ A potential problem that may arise in the domain of distributed control systems 
 In this project, we modeled and formally verified NRP FD using Timed Rebeca and its model checker Afra. 
 For model checking, we consider the regular system behaviour, and scenarios where we have failures of Distributed Control Nodes (DCN) and switches. We examine all the possible failure combinations of DCNs and switches at the start of handling an event and also at specific points in time and perform model checking to provide a comprehensive analysis.
 
-We have discovered an issue in where we may have two primary controllers at the same time. We then provide a solution to mitigate the identified issue, thereby enhancing the robustness and reliability of such systems. 
+We have discovered an issue in where we may have two primary controllers at the same time. We then provide a solution called Leasing NRP FD to mitigate the identified issue, thereby enhancing the robustness and reliability of such systems. 
 
 It's worth noting that this project is undertaken in collaboration with ABB Industrial Automation, Process Control Platform, in Västerås, Sweden.
 
 #### Case Studies
-* [ [NRP FD] ](/assets/projects/DistributedControllers/NRPFD.zip)
+* NRP FD algorithm: [ [NRP FD] ](/assets/projects/DistributedControllers/NRPFD.zip)
 
-* [ [Leasing NRP FD] ](/assets/projects/DistributedControllers/LeasingNRPFD.zip)
+* The extended version: [ [Leasing NRP FD] ](/assets/projects/DistributedControllers/LeasingNRPFD.zip)
 
 #### Project Members
 * **<u>Marjan Sirjani (Principal Investigator)</u>**
