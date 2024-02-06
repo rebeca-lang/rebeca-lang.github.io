@@ -19,7 +19,7 @@ title: Projects
   </div>
 <div class="col s12 m4">
     <div class="icon-block">
-      <h2 class="center light-blue-text"><img src="{{ "/assets/projects/DistributedControllers/nrpTop.pdf" | absolute_url }}" alt="Consistency of Distributed Controllers"/></h2>
+      <h2 class="center light-blue-text"><img src="{{ "/assets/projects/DistributedControllers/nrpTop70.jpg" | absolute_url }}" alt="Consistency of Distributed Controllers"/></h2>
       <h5 class="center">Consistency of Distributed Controllers</h5>
       <p class="light">
          In distributed control systems, multiple primary controllers in redundancy plans can lead to inconsistency. In this project we model and formally verify the NRP FD algorithm. We identify an issue and propose a solution to enhance the robustness and reliability of such systems. <a href="{{ "/allprojects/DistributedControllers" | relative_url }}">Learn more</a>
