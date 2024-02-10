@@ -19,10 +19,14 @@ It's worth noting that this project is undertaken in collaboration with ABB Indu
  
 * The extended version: [ [Leasing NRP FD] ](/assets/projects/DistributedControllers/LeasingNRPFD.zip)
 
+We consider a homogeneous multi-controller system with two controllers, DCN1 and DCN2, the primary and backup controllers. The Primary is unique in the system; it interacts with the I/O devices. The backup is waiting and will become the primary if the primary fails. Two controllers must communicate and are connected via a network by passing messages through switches: the primary and the backup use two independent networks to have a more reliable and robust system. The backup has to know if the primary is present and functioning. The primary sends a HeartBeat message periodically to the backup over the two networks. Each controller has one switch per network as an NRP candidate, so each controller has a set of NRP candidates. The primary has one of the NRP candidates as its NRP. 
 
-We have modeled failures in three scenarios. These situations lead to violations in NRP FD but would not cause any violation in the leasing NRP FD algorithm.
+NRPs are introduced to help the backup ensure the primary is available. If several heartbeats are missed, the backup assumes that either the primary is down, or the network is disconnected. The backup pings the NRP, and if it receives an acknowledgement, it knows that the network is not disconnected and concludes that the primary is down. The primary also pings its NRP  before sending each heartbeat to ensure it always has an active NRP.
+In our example, the first network includes three switches SwitchA1, SwitchA2, and SwitchA3, and the second network includes  SwitchB1, SwitchB2, and SwitchB3. The NRP candidate set for the primary is {SwitchA1, SwitchB1} and for the back up is {SwitchA3, SwitchB3}; SwitchA1 is the NRP. 
 
-1. Failures on every event. In this scenario, the following commands should be left uncommented at the beginning of each message server for DCNs and switches, simulating the possibility of their failure (minor modifications also required, e.g. uncomment else and its corresponding "}" for each). 
+We have modeled failures in three scenarios. These situations lead to violations in NRP FD but would not cause any violation in the leasing NRP FD algorithm. For each, the corresponding code in which the failure is modeled is available. Note that the property file is similar to the NRP FD. 
+
+1. Failures on every event. In this scenario, the following commands are placed at the beginning of each message server for DCNs and switches, simulating the possibility of their failure. <!---(minor modifications also required, e.g. uncomment else and its corresponding "}" for each).--> 
 
       //Possible failure for a DCN:
   
@@ -32,19 +36,19 @@ We have modeled failures in three scenarios. These situations lead to violations
 
       //if(?(true,false)) switchFail();
 
-2. Failures that occur at specific times. To create a situation where a violation would occur in NRP FD, you can for example set the switchA1failtime and switchB1failtime variables to 2500 to simulate simultaneous failures on both networks. 
+     * [ [NRP FD algorithm + failures on every event] ](/assets/projects/DistributedControllers/NRPFD-C2-FailuresonEachEvent.rebeca)
+
+3. Failures that occur at specific times. To create a situation where a violation would occur in NRP FD, one can for example set the switchA1failtime and switchB1failtime variables to 2500 to simulate simultaneous failures on both networks. 
 
    env int switchA1failtime = 2500;
    
    env int switchB1failtime = 2500;
 
-4. Transient failures. To activate the mechanism we have added to our model to simulate a transient failure, uncomment the following two lines:
+   * [ [NRP FD algorithm + simultaneous failures] ](/assets/projects/DistributedControllers/NRPFD-C7-switchA1andswitchB1FailsSimultaneouslyAtTime2500.rebeca)
 
-    // attacker=1; (in  msgsrv ping_timed_out)
+5. Transient failures. These failures could happen if, for instance, an attacker intentionally drops the heartbeats beyond the maximum allowed misses (max_missed_heartbeats) on both networks.
 
-    // attacker++; (in msgsrv runMe)
-
-  
+    * [ [NRP FD algorithm + transient failures] ](/assets/projects/DistributedControllers/NRPFD-C8-TransientError.rebeca)
   
 
 #### Project Members
