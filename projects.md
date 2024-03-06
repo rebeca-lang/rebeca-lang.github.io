@@ -30,7 +30,7 @@ title: Projects
   <div class="col s12 m4">
     <div class="icon-block">
       <h2 class="center light-blue-text"><img src="{{ "/assets/projects/RoboRebeca/RoboRebeca-Logo.png" | absolute_url }}" alt="RoboRebeca Logo"/></h2>
-      <h5 class="center">RoboRebeca</h5>
+      <h5 class="center">RoboRebeca: Dependble ROS application</h5>
       <p class="light">
         RoboRebeca is a framework which provides facilities for developing safe/correct source codes for robotic applications. In RoboRebeca, models are developed using Rebeca family language and automatically transformed into ROS compatible source codes. This framework is integrated into Afra 3.0. <a href="{{ "/allprojects/RoboRebeca" | relative_url }}">Learn more</a>
       </p>
