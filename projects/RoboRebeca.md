@@ -1,6 +1,6 @@
 ---
 layout: page
-title: RoboRebeca: Dependble ROS application
+title: RoboRebeca
 permalink: /allprojects/RoboRebeca
 
 ---
