@@ -41,3 +41,8 @@ ROS2 is an increasingly popular middleware framework for developing robotic appl
 * **<u>Marjan Sirjani (Principal Investigator)</u>**
 * Hong Hiep Trinh
 
+{% comment %}
+#### Related Publications
+- Giorgio Forcina, Ali Jafari, Ehsan Khamespanah, Stephan Baumgart, Marjan Sirjani: AdaptiveFlow: An Actor-based Eulerian Framework for Track-based Flow Management, Submitted to SAC 2019.
+FOCLASA, 2017  [ [pdf] ](/assets/papers/2017/LightweightPreprocessingForAgent-BasedSimulationOfSmartMobilityInitiatives.pdf) [ [report] ](/assets/projects/Tangramob/reports/tech-report.pdf) [ [model] ](/assets/projects/tangramob/case-studies/model-smi1.rebeca)
+{% endcomment %}
