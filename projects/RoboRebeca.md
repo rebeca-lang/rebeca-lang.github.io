@@ -4,7 +4,7 @@ title: RoboRebeca
 permalink: /allprojects/RoboRebeca
 
 ---
-## \textcolor{red}{Project 1}
+## <span style="color:red;">Project 1 </span>
 
 #### Problem Description 
 RoboRebeca is a framework to develop safe/correct codes for robotic applications. We suggest some modeling patterns to model robotic control systems using TRebeca language and propose an automatic code generation tool for converting Rebeca models to ROS.
