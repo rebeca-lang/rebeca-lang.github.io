@@ -4,7 +4,7 @@ title: RoboRebeca
 permalink: /allprojects/RoboRebeca
 
 ---
-### Project 1: Automatic translation of Rebeca models to ROS, Advantages and Challenges
+#### Project 1: Automatic translation of Rebeca models to ROS, Advantages and Challenges
 #### Problem Description 
 ROS2 is an increasingly popular middleware framework for developing robotic applications. A ROS2 application basically is composed of nodes that run concurrently and can be deployed distributedly. ROS2 nodes communicate with each other through asynchronous interfaces; they reside in memory and wait to respond events that circulate around the system during the interactions between the robot(s) and the environment. Rebeca is an actor-based language for modelling asynchronous, concurrent applications. Timed Rebeca added timing features to Rebeca to deal with timing requirements of real-time systems. The similarities in the concurrency and message-based asynchronous interactions of reactive nodes justify the relevance of using Timed Rebeca to assist the development and verification of ROS2 applications. Model-based development and model checking allow quicker prototyping and earlier detection of system errors without the requirement of developing the entire real system. However, there are challenges in bridging the gaps between continuous behaviours in a real robotic system and discrete behaviours in a model, between complex computations in a robotic system and the inequivalent programming facilities in a modelling language. There have been previous attempts in mapping Rebeca to ROS, however they could not be put into practice due to over-simplifications or improper modelling approaches. This thesis addresses the problem from a more systematic perspective and has been successful in modelling a realistic multiple autonomous mobile robots system, creating corresponding ROS2 demonstration code, showing the synchronization between the model and the program to prove the values of the model in driving development and automatic verification of correctness properties (freedom of deadlocks, collisions, and congestions). Stability of model checking results confirms design problems that are not always detected by simulation. The modelling principles, modelling and implementing techniques that are invented and summarized in this work can be reused for many other cases.
 
@@ -20,7 +20,7 @@ ROS2 is an increasingly popular middleware framework for developing robotic appl
 
 
 
-### Project 2: An automatic code generation tool for converting Rebeca models to ROS
+#### Project 2: An automatic code generation tool for converting Rebeca models to ROS
 #### Problem Description 
 RoboRebeca is a framework to develop safe/correct codes for robotic applications. We suggest some modeling patterns to model robotic control systems using TRebeca language and propose an automatic code generation tool for converting Rebeca models to ROS.
 The models can be model checked/ analyzed/verified against desired properties in Afra, and then can be automatically transformed into correct ROS codes right there in Afra 3.0.
