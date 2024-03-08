@@ -15,8 +15,11 @@ ROS2 is an increasingly popular middleware framework for developing robotic appl
 
 
 #### Project Members
-* **<u>Marjan Sirjani (Principal Investigator)</u>**
 * Hong Hiep Trinh
+* Antonio Cicchetti
+* Federico Ciccozzi
+* Fereidoun Moradi
+* Marjan Sirjani
 
 
 
@@ -38,10 +41,10 @@ This work is continued in "[Software for Safe Mobile Robots with ROS 2 and Rebec
 * Rebeca Models, Developed as a part of "Software for Safe Mobile Robots with ROS 2 and Rebeca" Master Thesis: [ [zip] ](/assets/projects/RoboRebeca/MobileRobots.zip) (Kostiantyn Sharovarskyi). 
 
 #### Project Members
-* **<u>Marjan Sirjani (Principal Investigator)</u>**
 * Bahar Salmani
 * Giorgio Forcina
 * Ehsan Khamespanah
+* Marjan Sirjani
 <!--  {% comment %}
 #### Related Publications
 - Giorgio Forcina, Ali Jafari, Ehsan Khamespanah, Stephan Baumgart, Marjan Sirjani: AdaptiveFlow: An Actor-based Eulerian Framework for Track-based Flow Management, Submitted to SAC 2019.
