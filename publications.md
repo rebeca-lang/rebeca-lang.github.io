@@ -4,6 +4,14 @@ title: Publications
 redirect_from: "/wiki/pmwiki.php/Rebeca/Publications"
 
 ---
+
+#### 2024
+- Fereidoun Moradi, Bahman Pourvatan, Sara Abbaspour Asadollah, Marjan Sirjani:
+Tiny Twins for detecting cyber-attacks at runtime using concise Rebeca time transition system. J. Parallel Distributed Comput. 184: 104780 (2024)
+\\
+<a class="link link_pdf" href="/assets/papers/2024/TinyTwin-JournalofParallelandDistributedComputing.pdf">PDF</a>
+
+
 #### 2023
 - Fereidoun Moradi, Sara Abbaspour Asadollah, Bahman Pourvatan, Zahra Moezkarimi, Marjan Sirjani, CRYSTAL Framework: Cybersecurity Assurance for Cyber-Physical Systems, Technical Report, Submitted to NWPT 2023
 \\
