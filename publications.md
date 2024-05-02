@@ -11,6 +11,17 @@ Tiny Twins for detecting cyber-attacks at runtime using concise Rebeca time tran
 \\
 <a class="link link_pdf" href="/assets/papers/2024/TinyTwin-JournalofParallelandDistributedComputing.pdf">PDF</a>
 
+- Ramtin Khosravi, Ehsan Khamespanah, Fatemeh Ghassemi, Marjan Sirjani:
+Actors Upgraded for Variability, Adaptability, and Determinism. Active Object Languages: Current Research Trends 2024: 226-260
+\\
+<a class="link link_pdf" href="/assets/papers/2024/ActorsUpgraded.pdf">PDF</a>
+
+- Bjarne Johansson, Bahman Pourvatan, Zahra Moezkarimi, Alessandro Papadopoulos, Marjan Sirjani:
+Formal Verification of Consistency for Systems with Redundant Controllers. CoRR abs/2403.18917 (2024)
+\\
+<a class="link link_pdf" href="/assets/papers/2024/RedundantControllers.pdf">PDF</a>
+
+
 
 #### 2023
 - Fereidoun Moradi, Sara Abbaspour Asadollah, Bahman Pourvatan, Zahra Moezkarimi, Marjan Sirjani, CRYSTAL Framework: Cybersecurity Assurance for Cyber-Physical Systems, Technical Report, Submitted to NWPT 2023
