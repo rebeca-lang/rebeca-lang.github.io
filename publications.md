@@ -70,7 +70,31 @@ Formal Verification of Consistency for Systems with Redundant Controllers. CoRR 
 - Marjan Sirjani, Luciana Provenzano, Sara Abbaspour Asadollah, Mahshid Helali Moghadam, Mehrdad Saadatmand: Towards a Verification-Driven Iterative Development of Software for Safety-Critical Cyber-Physical Systems, Journal of Internet Services and Applications, 2021
 \\
 <a class="link link_pdf" href="https://link.springer.com/content/pdf/10.1186/s13174-021-00132-z.pdf">PDF</a>
-<a class="link link_bibtex" href="https://dblp.org/rec/journals/jisa/SirjaniPAMS21.html?view=bibtex">BibTeX</a>  
+<a class="link link_bibtex" href="https://dblp.org/rec/journals/jisa/SirjaniPAMS21.html?view=bibtex">BibTeX</a>
+
+- Iman Jahandideh, Fatemeh Ghassemi, Marjan Sirjani: An actor-based framework for asynchronous event-based cyber-physical systems. Softw. Syst. Model. 20(3): 641-665 (2021)
+\\
+<a class="link link_pdf" href="/assets/papers/2021/AnActor-basedFrameworkforAsynchronousEvent-basedCPS.pdf">PDF</a>
+
+
+- Maryam Bagheri, Marjan Sirjani, Ehsan Khamespanah, Hossein Hojjat, Ali Movaghar: Partial Order Reduction for Timed Actors. VSTTE 2021: 43-60
+\\
+<a class="link link_pdf" href="/assets/papers/2021/PartialOrderReductionforTimedActors.pdf">PDF</a>
+
+- Robert Heinrich, Erwan Bousse, Sandro Koch, Arend Rensink, Elvinia Riccobene, Daniel Ratiu, Marjan Sirjani: Integration and Orchestration of Analysis Tools. Composing Model-Based Analysis Tools 2021: 71-95
+\\
+<a class="link link_pdf" href="/assets/papers/2021/IntegrationandOrchestrationofAnalysisTools.pdf">PDF</a>
+
+
+- Ehsan Khamespanah, Pavle Mrvaljevic, Anas Fattouh, Marjan Sirjani: Using Afra in Different Domains by Tool Orchestration. Composing Model-Based Analysis Tools 2021: 283-299
+\\
+<a class="link link_pdf" href="/assets/papers/2021/UsingAfrainDifferentDomainsbyToolOrchestration.pdf">PDF</a>
+
+
+
+
+
+
 
 #### 2020
 - Maryam Bagheri, Edward A. Lee, Eunsuk Kang, Marjan Sirjani, Ehsan Khamespanah, Ali Movaghar: Lightweight Formal Method for Robust Routing in Track-based Traffic Control Systems, 18th ACM-IEEE International Conference on Formal Methods and Models for System Design (MEMOCODE), 2020
