@@ -41,9 +41,25 @@ Formal Verification of Consistency for Systems with Redundant Controllers. CoRR 
 <a class="link link_pdf" href="/assets/papers/2023/CRYSTAL-Framework-Technical-Report.pdf">PDF</a> 
 
 #### 2022
+- Mahsa Zarneshan, Fatemeh Ghassemi, Ehsan Khamespanah, Marjan Sirjani, John Hatcliff: Specification and Verification of Timing Properties in Interoperable Medical Systems. Log. Methods Comput. Sci. 18(2) (2022)
+\\
+<a class="link link_pdf" href="/assets/papers/2022/TimingPropertiesinInteroperableMedicalSystems.pdf">PDF</a>
+
 - Fereidoun Moradi, Maryam Bagheri, Hanieh Rahmati, Hamed Yazdi, Sara Abbaspour Asadollah, Marjan Sirjani, Monitoring Cyber-Physical Systems using a Tiny Twin to Prevent Cyber-Attacks, 28th International Symposium on Model Checking of Software (SPIN), 2022
 \\
 <a class="link link_pdf" href="/assets/papers/2022/Monitoring-Cyber-Physical-Systems-Using-a-Tiny-Twin-to-Prevent-Cyber-Attacks.pdf">PDF</a>
+
+- Maryam Bagheri, Marjan Sirjani, Ehsan Khamespanah, Christel Baier, Ali Movaghar: Magnifier: A Compositional Analysis Approach for Autonomous Traffic Control. IEEE Trans. Software Eng. 48(8): 2732-2747 (2022)
+\\
+<a class="link link_pdf" href="/assets/papers/2022/Magnifier_A_Compositional_Analysis_Approach_for_Autonomous_Traffic_Control.pdf">PDF</a>
+
+- Ehsan Khamespanah, Morteza Mohaqeqi, Mohammad Ashjaei, Marjan Sirjani: Schedulability Analysis of WSAN Applications: Outperformance of a Model Checking Approach. ETFA 2022: 1-8
+\\
+<a class="link link_pdf" href="/assets/papers/2022/Schedulability_Analysis_of_WSAN_Applications_Outperformance_of_a_Model_Checking_Approach.pdf">PDF</a>
+
+
+
+
 
 
 #### 2021
