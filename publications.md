@@ -24,6 +24,18 @@ Formal Verification of Consistency for Systems with Redundant Controllers. CoRR 
 
 
 #### 2023
+- Fatemeh Ghassemi, Marjan Sirjani, Ehsan Khamespanah, Mahrokh Mirani, Hossein Hojjat: Transparent Actor Model. FormaliSE 2023: 97-107
+\\
+<a class="link link_pdf" href="/assets/papers/2023/TransparentActorModel.pdf">PDF</a>
+
+- Ehsan Khamespanah, Marjan Sirjani, Ramtin Khosravi: Afra: An Eclipse-Based Tool with Extensible Architecture for Modeling and Model Checking of Rebeca Family Models. FSEN 2023: 72-87
+\\
+<a class="link link_pdf" href="/assets/papers/2023/Afra.pdf">PDF</a>
+
+- Elmira Ebrahimi, Ehsan Khamespanah, Marjan Sirjani, Siamak Mohammadi: Model Checking of Hyperledger Fabric Smart Contracts. ETFA 2023: 1-8
+\\
+<a class="link link_pdf" href="/assets/papers/2023/Model_Checking_of_Hyperledger_Fabric_Smart_Contracts.pdf">PDF</a>
+
 - Fereidoun Moradi, Sara Abbaspour Asadollah, Bahman Pourvatan, Zahra Moezkarimi, Marjan Sirjani, CRYSTAL Framework: Cybersecurity Assurance for Cyber-Physical Systems, Technical Report, Submitted to NWPT 2023
 \\
 <a class="link link_pdf" href="/assets/papers/2023/CRYSTAL-Framework-Technical-Report.pdf">PDF</a> 
