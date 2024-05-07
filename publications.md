@@ -19,47 +19,56 @@ Tiny Twins for detecting cyber-attacks at runtime using concise Rebeca time tran
 Actors Upgraded for Variability, Adaptability, and Determinism. Active Object Languages: Current Research Trends 2024: 226-260
 \\
 <a class="link link_pdf" href="/assets/papers/2024/ActorsUpgraded.pdf">PDF</a>
+<a class="link link_bibtex" href="https://dblp.org/rec/books/sp/24/KhosraviKGS24.html?view=bibtex">BibTeX</a>
 
 - Bjarne Johansson, Bahman Pourvatan, Zahra Moezkarimi, Alessandro Papadopoulos, Marjan Sirjani:
 Formal Verification of Consistency for Systems with Redundant Controllers. CoRR abs/2403.18917 (2024)
 \\
 <a class="link link_pdf" href="/assets/papers/2024/RedundantControllers.pdf">PDF</a>
-
+<a class="link link_bibtex" href="">BibTeX</a>
 
 
 #### 2023
 - Fatemeh Ghassemi, Marjan Sirjani, Ehsan Khamespanah, Mahrokh Mirani, Hossein Hojjat: Transparent Actor Model. FormaliSE 2023: 97-107
 \\
 <a class="link link_pdf" href="/assets/papers/2023/TransparentActorModel.pdf">PDF</a>
+<a class="link link_bibtex" href="">BibTeX</a>
 
 - Ehsan Khamespanah, Marjan Sirjani, Ramtin Khosravi: Afra: An Eclipse-Based Tool with Extensible Architecture for Modeling and Model Checking of Rebeca Family Models. FSEN 2023: 72-87
 \\
 <a class="link link_pdf" href="/assets/papers/2023/Afra.pdf">PDF</a>
+<a class="link link_bibtex" href="">BibTeX</a>
 
 - Elmira Ebrahimi, Ehsan Khamespanah, Marjan Sirjani, Siamak Mohammadi: Model Checking of Hyperledger Fabric Smart Contracts. ETFA 2023: 1-8
 \\
 <a class="link link_pdf" href="/assets/papers/2023/Model_Checking_of_Hyperledger_Fabric_Smart_Contracts.pdf">PDF</a>
+<a class="link link_bibtex" href="">BibTeX</a>
 
 - Fereidoun Moradi, Sara Abbaspour Asadollah, Bahman Pourvatan, Zahra Moezkarimi, Marjan Sirjani, CRYSTAL Framework: Cybersecurity Assurance for Cyber-Physical Systems, Technical Report, Submitted to NWPT 2023
 \\
-<a class="link link_pdf" href="/assets/papers/2023/CRYSTAL-Framework-Technical-Report.pdf">PDF</a> 
+<a class="link link_pdf" href="/assets/papers/2023/CRYSTAL-Framework-Technical-Report.pdf">PDF</a>
+<a class="link link_bibtex" href="">BibTeX</a>
 
 #### 2022
 - Mahsa Zarneshan, Fatemeh Ghassemi, Ehsan Khamespanah, Marjan Sirjani, John Hatcliff: Specification and Verification of Timing Properties in Interoperable Medical Systems. Log. Methods Comput. Sci. 18(2) (2022)
 \\
 <a class="link link_pdf" href="/assets/papers/2022/TimingPropertiesinInteroperableMedicalSystems.pdf">PDF</a>
+<a class="link link_bibtex" href="">BibTeX</a>
 
 - Fereidoun Moradi, Maryam Bagheri, Hanieh Rahmati, Hamed Yazdi, Sara Abbaspour Asadollah, Marjan Sirjani, Monitoring Cyber-Physical Systems using a Tiny Twin to Prevent Cyber-Attacks, 28th International Symposium on Model Checking of Software (SPIN), 2022
 \\
 <a class="link link_pdf" href="/assets/papers/2022/Monitoring-Cyber-Physical-Systems-Using-a-Tiny-Twin-to-Prevent-Cyber-Attacks.pdf">PDF</a>
+<a class="link link_bibtex" href="">BibTeX</a>
 
 - Maryam Bagheri, Marjan Sirjani, Ehsan Khamespanah, Christel Baier, Ali Movaghar: Magnifier: A Compositional Analysis Approach for Autonomous Traffic Control. IEEE Trans. Software Eng. 48(8): 2732-2747 (2022)
 \\
 <a class="link link_pdf" href="/assets/papers/2022/Magnifier_A_Compositional_Analysis_Approach_for_Autonomous_Traffic_Control.pdf">PDF</a>
+<a class="link link_bibtex" href="">BibTeX</a>
 
 - Ehsan Khamespanah, Morteza Mohaqeqi, Mohammad Ashjaei, Marjan Sirjani: Schedulability Analysis of WSAN Applications: Outperformance of a Model Checking Approach. ETFA 2022: 1-8
 \\
 <a class="link link_pdf" href="/assets/papers/2022/Schedulability_Analysis_of_WSAN_Applications_Outperformance_of_a_Model_Checking_Approach.pdf">PDF</a>
+<a class="link link_bibtex" href="">BibTeX</a>
 
 
 
@@ -70,6 +79,7 @@ Formal Verification of Consistency for Systems with Redundant Controllers. CoRR 
 - Maryam Bagheri, Marjan Sirjani, Ehsan Khamespanah, Christel Baier, Ali Movaghar, Magnifier: A Compositional Analysis Approach for Autonomous Traffic Control, IEEE Transactions on Software Engineering, 2021
 \\
 <a class="link link_pdf" href="/assets/papers/2021/Magnifier-A-Compositional-Analysis-Approach-for-Autonomous-Traffic-Control.pdf">PDF</a>
+<a class="link link_bibtex" href="">BibTeX</a>
 
 - Marjan Sirjani, Luciana Provenzano, Sara Abbaspour Asadollah, Mahshid Helali Moghadam, Mehrdad Saadatmand: Towards a Verification-Driven Iterative Development of Software for Safety-Critical Cyber-Physical Systems, Journal of Internet Services and Applications, 2021
 \\
@@ -79,20 +89,24 @@ Formal Verification of Consistency for Systems with Redundant Controllers. CoRR 
 - Iman Jahandideh, Fatemeh Ghassemi, Marjan Sirjani: An actor-based framework for asynchronous event-based cyber-physical systems. Softw. Syst. Model. 20(3): 641-665 (2021)
 \\
 <a class="link link_pdf" href="/assets/papers/2021/AnActor-basedFrameworkforAsynchronousEvent-basedCPS.pdf">PDF</a>
+<a class="link link_bibtex" href="">BibTeX</a>
 
 
 - Maryam Bagheri, Marjan Sirjani, Ehsan Khamespanah, Hossein Hojjat, Ali Movaghar: Partial Order Reduction for Timed Actors. VSTTE 2021: 43-60
 \\
 <a class="link link_pdf" href="/assets/papers/2021/PartialOrderReductionforTimedActors.pdf">PDF</a>
+<a class="link link_bibtex" href="">BibTeX</a>
 
 - Robert Heinrich, Erwan Bousse, Sandro Koch, Arend Rensink, Elvinia Riccobene, Daniel Ratiu, Marjan Sirjani: Integration and Orchestration of Analysis Tools. Composing Model-Based Analysis Tools 2021: 71-95
 \\
 <a class="link link_pdf" href="/assets/papers/2021/IntegrationandOrchestrationofAnalysisTools.pdf">PDF</a>
+<a class="link link_bibtex" href="">BibTeX</a>
 
 
 - Ehsan Khamespanah, Pavle Mrvaljevic, Anas Fattouh, Marjan Sirjani: Using Afra in Different Domains by Tool Orchestration. Composing Model-Based Analysis Tools 2021: 283-299
 \\
 <a class="link link_pdf" href="/assets/papers/2021/UsingAfrainDifferentDomainsbyToolOrchestration.pdf">PDF</a>
+<a class="link link_bibtex" href="">BibTeX</a>
 
 
 
