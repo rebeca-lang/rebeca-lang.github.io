@@ -10,6 +10,10 @@ redirect_from: "/wiki/pmwiki.php/Rebeca/Publications"
 Tiny Twins for detecting cyber-attacks at runtime using concise Rebeca time transition system. J. Parallel Distributed Comput. 184: 104780 (2024)
 \\
 <a class="link link_pdf" href="/assets/papers/2024/TinyTwin-JournalofParallelandDistributedComputing.pdf">PDF</a>
+<a class="link link_bibtex" href="https://dblp.org/rec/journals/jpdc/MoradiPAS24.html?view=bibtex">BibTeX</a>
+
+
+
 
 - Ramtin Khosravi, Ehsan Khamespanah, Fatemeh Ghassemi, Marjan Sirjani:
 Actors Upgraded for Variability, Adaptability, and Determinism. Active Object Languages: Current Research Trends 2024: 226-260
