@@ -33,6 +33,9 @@ Formal Verification of Consistency for Systems with Redundant Controllers. CoRR 
 <a class="link link_pdf" href="/assets/papers/2024/RedundantControllers.pdf">PDF</a>
 <a class="link link_bibtex" href="https://dblp.org/rec/journals/corr/abs-2403-18917.html?view=bibtex">BibTeX</a>
 
+- Rong Gu, Zahra Moezkarimi, Marjan Sirjani: Guess and Then Check: Controller Synthesis for Safe and Secure Cyber-Physical Systems. In: Castiglioni, V., Francalanza, A. (eds) Formal Techniques for Distributed Objects, Components, and Systems. FORTE 2024. Lecture Notes in Computer Science, vol 14678. Springer, Cham. 
+\\
+<a class="link link_pdf" href="/assets/papers/2024/GuessandThenCheck.pdf">PDF</a>
 
 #### 2023
 - Fatemeh Ghassemi, Marjan Sirjani, Ehsan Khamespanah, Mahrokh Mirani, Hossein Hojjat: Transparent Actor Model. FormaliSE 2023: 97-107
