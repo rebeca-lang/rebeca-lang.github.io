@@ -37,6 +37,14 @@ Formal Verification of Consistency for Systems with Redundant Controllers. CoRR 
 \\
 <a class="link link_pdf" href="/assets/papers/2024/GuessandThenCheck.pdf">PDF</a>
 
+
+- Fereidoun Moradi: Automated Vulnerability Discovery and Attack Detection Framework for Cyber-Physical Systems - PhD Thesis, Malardalen University, Sweden, 2024
+\\
+<a class="link link_pdf" href="/assets/theses/AutomatedVulnerabilityDiscoveryandAttackDetectionFrameworkforCyber-PhysicalSystems.pdf">PDF</a>
+
+- Stefan Marksteiner: Model-Driven Security Test Case Generation Using Threat Modeling and Automata Learning - PhD Thesis, Malardalen University, Sweden, 2024 
+
+
 #### 2023
 - Fatemeh Ghassemi, Marjan Sirjani, Ehsan Khamespanah, Mahrokh Mirani, Hossein Hojjat: Transparent Actor Model. FormaliSE 2023: 97-107
 \\
