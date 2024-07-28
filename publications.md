@@ -57,6 +57,7 @@ Formal Verification of Consistency for Systems with Redundant Controllers. CoRR 
 \\
 <a class="link link_pdf" href="/assets/papers/2023/CRYSTAL-Framework-Technical-Report.pdf">PDF</a>
 
+- Hiep Hong Trinh: Model-Based Development & Verification of ROS2 Robotic Applications Using Timed Rebeca - Master Thesis, Malardalen University, Sweden, 2023 
 
 #### 2022
 - Mahsa Zarneshan, Fatemeh Ghassemi, Ehsan Khamespanah, Marjan Sirjani, John Hatcliff: Specification and Verification of Timing Properties in Interoperable Medical Systems. Log. Methods Comput. Sci. 18(2) (2022)
@@ -79,7 +80,7 @@ Formal Verification of Consistency for Systems with Redundant Controllers. CoRR 
 <a class="link link_pdf" href="/assets/papers/2022/Schedulability_Analysis_of_WSAN_Applications_Outperformance_of_a_Model_Checking_Approach.pdf">PDF</a>
 <a class="link link_bibtex" href="https://dblp.org/rec/conf/etfa/KhamespanahMAS22.html?view=bibtex">BibTeX</a>
 
-
+- Ermia Hassanpour: Using Safety Analysis Techniques To Derive Safety Properties For Formal Verification Of Safety-Critical Systems - Master Thesis, Malardalen University, Sweden, 2022 
 
 
 
@@ -139,11 +140,11 @@ Formal Verification of Consistency for Systems with Redundant Controllers. CoRR 
 <a class="link link_pdf" href="/assets/papers/2020/Safe-Design-of-Flow-Management-Systems-Using-Rebeca.pdf">PDF</a>
 <a class="link link_bibtex" href="https://dblp.org/rec/journals/jip/ForcinaSBJKMS20.html?view=bibtex">BibTeX</a>  
 
-- Pavle Mrvaljevic: Tool Orchestration for Modeling, Verification, and Analysis of Collaborating Autonomous Machines - Master Thesis, Malardalen University, Sweeden, 2020
+- Pavle Mrvaljevic: Tool Orchestration for Modeling, Verification, and Analysis of Collaborating Autonomous Machines - Master Thesis, Malardalen University, Sweden, 2020
 \\
 <a class="link link_pdf" href="/assets/theses/Tool-Orchestration-for-modeling-verification-and-analysis-of-collaborating-autonomous-machines.pdf">PDF</a>
 
-- Kostiantyn Sharovarskyi: Software for Safe Mobile Robots with ROS 2 and Rebeca - Master Thesis, Malardalen University, Sweeden, 2020
+- Kostiantyn Sharovarskyi: Software for Safe Mobile Robots with ROS 2 and Rebeca - Master Thesis, Malardalen University, Sweden, 2020
 \\
 <a class="link link_pdf" href="/assets/theses/SOFTWARE-FOR-SAFE-MOBILE-ROBOTS-WITH-ROS2-AND-REBECA.pdf">PDF</a>
 
@@ -191,7 +192,7 @@ Submitted to a Journal
 \\
 <a class="link link_pdf" href="/assets/papers/2019/From-Requirements-to-Verifiable-Executable-Models-Using-Rebeca.pdf">PDF</a>
 
-- Vladimir Djukanovic: Mapping UML Diagrams to the Reactive Object Language (Rebeca) - Master Thesis, Malardalen University, Sweeden, 2019
+- Vladimir Djukanovic: Mapping UML Diagrams to the Reactive Object Language (Rebeca) - Master Thesis, Malardalen University, Sweden, 2019
 \\
 <a class="link link_pdf" href="/assets/theses/Mapping-UML-Diagrams-to-the-Reactive-Object-Language-(Rebeca).pdf">PDF</a>
 
@@ -210,7 +211,7 @@ Submitted to a Journal
 <a class="link link_pdf" href="/assets/papers/2019/An-Actor-based-Design-Platform-for-System-of-Systems.pdf">PDF</a>
 <a class="link link_bibtex" href="https://dblp.org/rec/conf/compsac/SirjaniFJBKS19.html?view=bibtex">BibTeX</a>  
 
-- Saeid Dehnavi: RoboRebeca: A New Framework to Design Verified ROS-Based Robotic Programs - Master Thesis, Malardalen University, Sweeden, 2019
+- Saeid Dehnavi: RoboRebeca: A New Framework to Design Verified ROS-Based Robotic Programs - Master Thesis, Malardalen University, Sweden, 2019
 \\
 <a class="link link_pdf" href="/assets/theses/ROBOREBECA-A-NEW-FRAMEWORK-TO-DESIGN-VERIFIED-ROS-BASED-ROBOTIC-PROGRAMS.pdf">PDF</a>
 
