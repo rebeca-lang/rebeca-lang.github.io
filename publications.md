@@ -88,7 +88,7 @@ Formal Verification of Consistency for Systems with Redundant Controllers. CoRR 
 <a class="link link_pdf" href="/assets/papers/2022/Schedulability_Analysis_of_WSAN_Applications_Outperformance_of_a_Model_Checking_Approach.pdf">PDF</a>
 <a class="link link_bibtex" href="https://dblp.org/rec/conf/etfa/KhamespanahMAS22.html?view=bibtex">BibTeX</a>
 
-- Ermia Hassanpour: Using Safety Analysis Techniques To Derive Safety Properties For Formal Verification Of Safety-Critical Systems - Master Thesis, Malardalen University, Sweden, 2022
+- Ermia Hassanpour: Using Safety Analysis Techniques to Derive Safety Properties for Formal Verification of Safety-Critical Systems - Master Thesis, Malardalen University, Sweden, 2022
 \\
 <a class="link link_pdf" href="/assets/theses/UsingSafetyAnalysisTechniquestoDeriveSafetyPropertiesforFormalVerificationofSafety-CriticalSystems.pdf">PDF</a>
 
