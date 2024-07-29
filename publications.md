@@ -65,7 +65,11 @@ Formal Verification of Consistency for Systems with Redundant Controllers. CoRR 
 \\
 <a class="link link_pdf" href="/assets/papers/2023/CRYSTAL-Framework-Technical-Report.pdf">PDF</a>
 
-- Hiep Hong Trinh: Model-Based Development & Verification of ROS2 Robotic Applications Using Timed Rebeca - Master Thesis, Malardalen University, Sweden, 2023 
+- Hiep Hong Trinh: Model-Based Development & Verification of ROS2 Robotic Applications Using Timed Rebeca - Master Thesis, Malardalen University, Sweden, 2023
+\\
+<a class="link link_pdf" href="/assets/theses/Model-BasedDevelopmentVerificationofROS2RoboticApplicationsUsingTimedRebeca.pdf">PDF</a>
+
+
 
 #### 2022
 - Mahsa Zarneshan, Fatemeh Ghassemi, Ehsan Khamespanah, Marjan Sirjani, John Hatcliff: Specification and Verification of Timing Properties in Interoperable Medical Systems. Log. Methods Comput. Sci. 18(2) (2022)
