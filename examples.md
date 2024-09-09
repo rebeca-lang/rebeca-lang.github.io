@@ -15,15 +15,15 @@ To illustrate how models can be developed in Rebeca family language, we provided
     <h2 class="center light-blue-text"><i class="material-icons"></i></h2>
     <h5 class="center">Rebeca<br/><br/></h5>
     <p class="light">
-	    <a href="{{ "/projects/CoreRebecaExamples/DiningPhilosophers" | relative_url }}">Dining Philosophers</a> <br/>
-	    <a href="{{ "/projects/CoreRebecaExamples/TrainController" | relative_url }}">Train Controller</a><br/>
-	    <a href="{{ "/projects/CoreRebecaExamples/CSMACD" | relative_url }}">CSMA-CD</a>
-	    <a href="{{ "/projects/CoreRebecaExamples/LeaderElection" | relative_url }}">Leader Election</a><br/>
-	    <a href="{{ "/projects/CoreRebecaExamples/CommitProblem" | relative_url }}">Commit Problem</a><br/>
-	    <a href="{{ "/projects/CoreRebecaExamples/SenderReceiver" | relative_url }}">Sender Receiver</a><br/>
-	    <a href="{{ "/projects/CoreRebecaExamples/ProducerConsumer" | relative_url }}">Producer Consumer</a><br/>
-	    <a href="{{ "/projects/CoreRebecaExamples/SpanningTreeProtocol" | relative_url }}">Spanning Tree Protocol</a><br/>
-        <a href="{{ "/projects/CoreRebecaExamples/MicroServiceArchitecture" | relative_url }}">[Micro Service Architecture]</a><br/>
+	    <a href="{{ "/allprojects/CoreRebecaExamples/DiningPhilosophers" | relative_url }}">Dining Philosophers</a> <br/>
+	    <a href="{{ "/allprojects/CoreRebecaExamples/TrainController" | relative_url }}">Train Controller</a><br/>
+	    <a href="{{ "/allprojects/CoreRebecaExamples/CSMACD" | relative_url }}">CSMA-CD</a>
+	    <a href="{{ "/allprojects/CoreRebecaExamples/LeaderElection" | relative_url }}">Leader Election</a><br/>
+	    <a href="{{ "/allprojects/CoreRebecaExamples/CommitProblem" | relative_url }}">Commit Problem</a><br/>
+	    <a href="{{ "/allprojects/CoreRebecaExamples/SenderReceiver" | relative_url }}">Sender Receiver</a><br/>
+	    <a href="{{ "/allprojects/CoreRebecaExamples/ProducerConsumer" | relative_url }}">Producer Consumer</a><br/>
+	    <a href="{{ "/allprojects/CoreRebecaExamples/SpanningTreeProtocol" | relative_url }}">Spanning Tree Protocol</a><br/>
+        <a href="{{ "/allprojects/CoreRebecaExamples/MicroServiceArchitecture" | relative_url }}">[Micro Service Architecture]</a><br/>
 	</p>
   </div>
 </div>

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Spanning Tree Protocol
-permalink: /projects/CoreRebecaExamples/SpanningTreeProtocol
+permalink: /allprojects/CoreRebecaExamples/SpanningTreeProtocol
 
 ---
 
@@ -14,4 +14,4 @@ Perlman R., "An Algorithm for Distributed Computation of a Spanning Tree in an E
 1. Compositional model (Best Port) pack.
 
 #### Related Files
-* The specification of the model [ [zip] ](/assets/projects/Sysfier/case-studies/Spanning-Tree-Protocol-Best-Port.zip)
+* The specification of the model [ [zip] ](/assets/projects/CoreRebeca/case-studies/Spanning-Tree-Protocol-Best-Port.zip)

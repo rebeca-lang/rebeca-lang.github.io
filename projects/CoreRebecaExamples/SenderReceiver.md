@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Sender Receiver
-permalink: /projects/CoreRebecaExamples/SenderReceiver
+permalink: /allprojects/CoreRebecaExamples/SenderReceiver
 
 ---
 
@@ -15,4 +15,4 @@ Consider the above system, where a SENDER and a RECEIVER want to communicate ove
 
 
 #### Related Files
-* The specification of the model [ [zip] ](/assets/projects/Sysfier/case-studies/Sender-Receiver.zip)
+* The specification of the model [ [zip] ](/assets/projects/CoreRebeca/case-studies/Sender-Receiver.zip)

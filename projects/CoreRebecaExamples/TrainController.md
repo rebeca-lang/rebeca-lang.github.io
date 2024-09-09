@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Train Controller
-permalink: /projects/CoreRebecaExamples/TrainController
+permalink: /allprojects/CoreRebecaExamples/TrainController
 
 ---
 
@@ -26,4 +26,4 @@ There are two controllers on two sides of a Bridge. Trains arrive at Left side f
 There are many trains in each side of the bridge. Trains arrive unpredictably and the controller has to manage them in such a way that only one train passes the bridge at a time. Each train declares its arrival to the controller and the controller lets the train enter the bridge if there is no train on the bridge. If the bridge is full the arriving train is put in a queue. The waiting trains will be service according to their position in the queue. Each train should faithfully declare its departure to the controller.
 
 #### Related Files
-* The specification of the model [ [zip] ](/assets/projects/Sysfier/case-studies/Train-Controller-Two-Trains.zip)
+* The specification of the model [ [zip] ](/assets/projects/CoreRebeca/case-studies/Train-Controller-Two-Trains.zip)

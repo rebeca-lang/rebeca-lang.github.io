@@ -1,7 +1,7 @@
 ---
 layout: page
 title: CSMA-CD
-permalink: /projects/CoreRebecaExamples/CSMACD
+permalink: /allprojects/CoreRebecaExamples/CSMACD
 
 ---
 
@@ -54,4 +54,4 @@ In this model, MAC sends messages to Medium and Medium sometimes (non-determinis
 There exist other problem too, which is again due to the nature of the algorithm being synchronous. In the last version we have incorrectly checked the collision occurrence in the transfer state (refer to the code and the state chart please) but since the message from Medium will be placed after the transfer message in the MAC's queue, this results in a fault behavior. Next we are going to correct this. 
 
 #### Related Files
-* The specification of the model [ [zip] ](/assets/projects/Sysfier/case-studies/CSMA-CD.zip)
+* The specification of the model [ [zip] ](/assets/projects/CoreRebeca/case-studies/CSMA-CD.zip)

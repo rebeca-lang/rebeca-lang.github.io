@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Leader Election
-permalink: /projects/CoreRebecaExamples/LeaderElection
+permalink: /allprojects/CoreRebecaExamples/LeaderElection
 
 ---
 
@@ -20,5 +20,5 @@ The algorithm terminates when a node receives its sent messages from both sides 
 This algorithm is declared in a directed ring in which the nodes are unaware of the number of the other nodes in the ring. First, each node sends its leader ID – which is equal to its own ID at the beginning – to its right neighbor, and receives a leader ID from its left neighbor. If the received lead ID is greater than its own leader ID, it will substitute its leader ID with the new ID and declares this change to its right neighbor. If the received leader ID is less than a node’s leader ID, it will be ignored. In case the received leader ID is equal to the node’s leader ID, the node will be considered as the real leader, and the algorithm terminates.
 
 #### Related Files
-* Rebeca Model for HS Algorithm [ [zip] ](/assets/projects/Sysfier/case-studies/Leader-Election-HS.zip)
-* Rebeca Model for LCR Algorithm [ [zip] ](/assets/projects/Sysfier/case-studies/Leader-Election-LCR.zip)
+* Rebeca Model for HS Algorithm [ [zip] ](/assets/projects/CoreRebeca/case-studies/Leader-Election-HS.zip)
+* Rebeca Model for LCR Algorithm [ [zip] ](/assets/projects/CoreRebeca/case-studies/Leader-Election-LCR.zip)

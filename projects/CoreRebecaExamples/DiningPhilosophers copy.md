@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Dining Philosophers
-permalink: /projects/CoreRebecaExamples/DiningPhilosophers
+permalink: /allprojects/CoreRebecaExamples/DiningPhilosophers
 
 ---
 
@@ -17,4 +17,4 @@ There are some philosophers sitting at a round table. Between each adjacent pair
 **Deadlock:** Deadlock does not occur.
 
 #### Related Files
-* The specification of the model [ [zip] ](/assets/projects/Sysfier/case-studies/Dining-Philosophers.zip)
+* The specification of the model [ [zip] ](/assets/projects/CoreRebeca/case-studies/Dining-Philosophers.zip)
