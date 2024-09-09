@@ -23,7 +23,7 @@ To illustrate how models can be developed in Rebeca family language, we provided
 	    <a href="{{ "/allprojects/CoreRebecaExamples/SenderReceiver" | relative_url }}">Sender Receiver</a><br/>
 	    <a href="{{ "/allprojects/CoreRebecaExamples/ProducerConsumer" | relative_url }}">Producer Consumer</a><br/>
 	    <a href="{{ "/allprojects/CoreRebecaExamples/SpanningTreeProtocol" | relative_url }}">Spanning Tree Protocol</a><br/>
-        <a href="{{ "/allprojects/CoreRebecaExamples/MicroServiceArchitecture" | relative_url }}">[Micro Service Architecture]</a><br/>
+        <a href="{{ "/allprojects/CoreRebecaExamples/MicroService" | relative_url }}">Micro Service Architecture</a><br/>
 	</p>
   </div>
 </div>
