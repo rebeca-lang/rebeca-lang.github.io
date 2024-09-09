@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Leader Election
-permalink: /allprojects/SysfierExamples/LeaderElection
+permalink: /projects/CoreRebecaExamples/LeaderElection
 
 ---
 

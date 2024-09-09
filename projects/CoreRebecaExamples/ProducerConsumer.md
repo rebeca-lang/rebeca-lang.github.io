@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Producer Consumer
-permalink: /allprojects/SysfierExamples/ProducerConsumer
+permalink: /projects/CoreRebecaExamples/ProducerConsumer
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Train Controller
-permalink: /allprojects/SysfierExamples/TrainController
+permalink: /projects/CoreRebecaExamples/TrainController
 
 ---
 

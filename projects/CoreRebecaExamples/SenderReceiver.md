@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Sender Receiver
-permalink: /allprojects/SysfierExamples/SenderReceiver
+permalink: /projects/CoreRebecaExamples/SenderReceiver
 
 ---
 

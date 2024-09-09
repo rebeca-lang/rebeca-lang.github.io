@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Spanning Tree Protocol
-permalink: /allprojects/SysfierExamples/SpanningTreeProtocol
+permalink: /projects/CoreRebecaExamples/SpanningTreeProtocol
 
 ---
 

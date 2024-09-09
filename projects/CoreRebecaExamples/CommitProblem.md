@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Commit Problem
-permalink: /allprojects/SysfierExamples/CommitProblem
+permalink: /projects/CoreRebecaExamples/CommitProblem
 
 ---
 

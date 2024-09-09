@@ -1,7 +1,7 @@
 ---
 layout: page
 title: CSMA-CD
-permalink: /allprojects/SysfierExamples/CSMACD
+permalink: /projects/CoreRebecaExamples/CSMACD
 
 ---
 

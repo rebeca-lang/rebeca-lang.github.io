@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Dining Philosophers
-permalink: /allprojects/SysfierExamples/DiningPhilosophers
+permalink: /projects/CoreRebecaExamples/DiningPhilosophers
 
 ---
 
