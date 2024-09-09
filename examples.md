@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Rebeca
+title: Examples
 
 ---
 #### Overview

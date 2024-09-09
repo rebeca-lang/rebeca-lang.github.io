@@ -11,16 +11,6 @@ The goal of Sysfier is to develop an integrated environment for modeling and ver
 #### Tools
 * Integrated Development and Analysis Environment [Afra](/alltools/Afra).
 
-#### Case Studies
-* [Dining Philosophers](/allprojects/SysfierExamples/DiningPhilosophers)
-* [Train Controller](/allprojects/SysfierExamples/TrainController)
-* [CSMA-CD](/allprojects/SysfierExamples/CSMACD)
-* [Leader Election](/allprojects/SysfierExamples/LeaderElection)
-* [Commit Problem](/allprojects/SysfierExamples/CommitProblem)
-* [Sender Receiver](/allprojects/SysfierExamples/SenderReceiver)
-* [Producer Consumer](/allprojects/SysfierExamples/ProducerConsumer)
-* [Spanning Tree Protocol](/allprojects/SysfierExamples/SpanningTreeProtocol)
-
 #### Project Members
 * **<u>Marjan Sirjani (Principal Investigator)</u>**
 * Niloofar Razavi

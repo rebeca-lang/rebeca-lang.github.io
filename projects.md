@@ -135,21 +135,29 @@ title: Projects
   </div>
 
 
-<div class="col s12 m4">
+  <div class="col s12 m4">
     <div class="icon-block">
       <h2 class="center light-blue-text"><img src="{{ "/assets/projects/Seada/SEADA-Logo.png" | absolute_url }}" alt="SEADA Logo"/></h2>
       <h5 class="center">SEADA</h5>
-
       <p class="light">
           In SEADA (Self-Adaptive Actors) we will use Ptolemy to represent the architecture, and extensions of Rebeca for modeling and verification. Our models@runtime will be coded in an extension of Probabilistic Timed Rebeca, and supporting tools for customized run-time formal verification of these models will be developed.
           <a href="{{ "/allprojects/Seada" | relative_url }}">Learn more</a>
       </p>
     </div>
   </div>
-
- 
 </div>
-
+<div class="row">
+  <div class="col s12 m4">
+    <div class="icon-block">
+      <h2 class="center light-blue-text"><img src="{{ "/assets/projects/DefaultProject.jpg" | absolute_url }}" alt="Core Rebeca"/></h2>
+      <h5 class="center">Core Rebeca</h5>
+      <p class="light"> 
+          In this project we provide a formal semantics and model checking toolset for Rebeca modeling language. Rebeca is an actor-based language for modeling concurrent and reactive systems with asynchronous message passing.
+          <a href="{{ "/allprojects/CoreRebeca" | relative_url }}">Learn more</a>
+      </p>
+    </div>
+  </div>
+</div>
 
 {% comment %}
 <div class="row">
