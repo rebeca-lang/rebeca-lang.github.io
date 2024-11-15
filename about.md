@@ -28,7 +28,7 @@ Different approaches are proposed for verifying correctness of these properties.
 	<div class="col s12 m4">
 		<div class="icon-block">
 			<h2 class="center light-blue-text"><i class="material-icons">person</i></h2>
-			<a href="http://www.ru.is/faculty/marjan/"><h5 class="center">Marjan Sirjani</h5></a>
+			<a href="/assets/documents/SirjaniCV2024.pdf"><h5 class="center">Marjan Sirjani</h5></a>
 			<p class="light">
 				Professor,
 				School of Computer Science,
