@@ -57,6 +57,8 @@ In this version, we use Timed Rebeca to quantify simultaneous failures in distri
 
 NRP FD algorithm with timing analysis: [ [NRP FD] ](/assets/projects/DistributedControllers/NRPFD-TimingAnalysis-GulFest.zip)
 
+NRP FD algorithm with timing analysis, with full comments: [ [NRP FD] ](/assets/projects/DistributedControllers/NRPFD-TimingAnalysis-GulFest-WithFullComment.zip)
+
 #### Project Members
 * **<u>Marjan Sirjani (Principal Investigator)</u>**
 * Bahman Pourvatan
