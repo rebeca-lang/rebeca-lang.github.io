@@ -14,6 +14,8 @@ We have discovered an issue in where we may have two primary controllers at the 
 
 It's worth noting that this project is undertaken in collaboration with ABB Industrial Automation, Process Control Platform, in Västerås, Sweden.
 
+
+## MARS@ETAPS 2024 Version 
 #### Case Studies
 * NRP FD algorithm: [ [NRP FD] ](/assets/projects/DistributedControllers/NRPFD.zip)
  
@@ -50,7 +52,8 @@ We have modeled failures in three scenarios. These situations lead to violations
 
     * [ [NRP FD algorithm + transient failures] ](/assets/projects/DistributedControllers/NRPFD-C8-TransientError.rebeca)
   
-
+## Gul's Fest 2025 Version 
+NRP FD algorithm with timing analysis: [ [NRP FD] ](/assets/projects/DistributedControllers/NRPFD-TimingAnalysis-GulFest.zip)
 #### Project Members
 * **<u>Marjan Sirjani (Principal Investigator)</u>**
 * Bahman Pourvatan
