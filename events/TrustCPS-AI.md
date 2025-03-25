@@ -3,7 +3,11 @@
 <meta http-equiv="refresh" content="0; URL=https://HCC2023.github.io/{{ https://zmoez.github.io/HCC2023.github.io/ }}">
 <meta http-equiv="refresh" content="0; URL=https://HCC2023.github.io">
 -->
+---
+layout: page
+title: About
 
+---
 
 
 ![Image](tr.jpeg)
