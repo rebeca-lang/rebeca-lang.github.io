@@ -16,7 +16,7 @@ title: Events
       <td>
         <p class="light">
           <h5 class="Left">TrustCPS-AI</h5>
-          Workshop on Trustworthy AI-enabled Cyber-Physical Systems<a href="{{ "/allevents/TrustCPS-AI" | relative_url }}">Learn more</a>
+          Workshop on Trustworthy AI-enabled Cyber-Physical Systems <a href="{{ "/events/TrustCPS-AI" | relative_url }}">Learn more</a>
         </p>
       </td>
     </tr>
