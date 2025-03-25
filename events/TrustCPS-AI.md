@@ -85,7 +85,11 @@ As AI systems become integral to cyber-physical systems, ensuring their dependab
 The EU AI Act represents a significant legal framework with extraterritorial reach. This presentation will start with an overview of the AI Act and how it relates to CPS, followed by an in-depth analysis of its high-risk requirements from a software engineering perspective. Drawing on our recent study findings, we will identify the most challenging requirements as perceived by industry practitioners and elucidate the underlying reasons. Furthermore, we will assess the Act’s potential industry impacts, highlighting both positive and negative side effects.  
 
 ### Bio  
-*No bio provided.*  
+Matthias Wagner is a PhD candidate at Lund University, currently halfway through his research within the Software Engineering Research Group at the Department of Computer Science. His work focuses on the requirements set out by the EU AI Act, with a broader focus on continuous quality assurance and machine learning pipelines across a system's lifecycle.
+
+Prior to his PhD, Matthias gained professional experience in IT consulting. He holds a bachelor's and master's degrees in Business Informatics from TU Wien (Vienna University of Technology).
+
+ 
 
 
 ## Shiva Sander Tavallaey  
