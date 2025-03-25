@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: Workshop on Trustworthy AI-enabled Cyber-Physical Systems
 
 ---
 
@@ -9,21 +9,13 @@ title: About
 
 
 
-<!--
-# HCC2023
-
-**Workshop on Human Centric Cybersecurity HCC2023**
-
-**[Mälardalen University](https://www.mdu.se/en/malardalen-university), Västerås, Sweden**
-
-**August 24th, 2023**
--->
+ 
 
 ## About
 TODO: Description here !
 
 ## Invited Speakers
-<!-- FIXME Check the links -->
+ 
 
 **[Edward Lee](https://www2.eecs.berkeley.edu/Faculty/Homepages/lee.html), UC Berkeley, USA**
 
