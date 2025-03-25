@@ -5,7 +5,7 @@ title: Workshop on Trustworthy AI-enabled Cyber-Physical Systems
 ---
 
 
-![Image](tr.jpeg)
+![Image](mdu.jpeg)
 
 
 
