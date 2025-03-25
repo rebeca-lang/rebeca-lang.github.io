@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Workshop on Trustworthy AI-enabled Cyber-Physical Systems
+title: Workshop on Trustworthy AI-enabled Cyber-Physical Systems,
 
 ---
 
