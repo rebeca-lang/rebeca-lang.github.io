@@ -7,7 +7,7 @@ title: Workshop on Trustworthy AI-enabled Cyber-Physical Systems,
 
 ![Image](mdu.jpeg)
 
-
+<img src="mdu.jpeg" alt="mdu" width="100%">
 
  
 
