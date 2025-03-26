@@ -11,7 +11,10 @@ title: Workshop on Trustworthy AI-enabled Cyber-Physical Systems
  
 
 ## About
-TODO: Description here !
+**TrustCPS-AI** is a workshop on *Trustworthy AI-enabled Cyber-Physical Systems*, addressing the challenges of integrating AI into CPS in a dependable, explainable, and certifiable manner. It provides a platform for discussing formal methods, runtime assurance, regulation-aware design, and the engineering of trustworthy AI components in domains like automotive, avionics, and industrial automation.
+
+The workshop features invited talks by Edward A. Lee (UC Berkeley) on the trade-off between certainty and intelligence; Pierluigi Nuzzo (UC Berkeley) on assume-guarantee contracts for autonomy; Hazem Torfah (Chalmers) on learning and monitoring operational design domains; Shiva Sander Tavallaey (ABB/KTH) on balancing innovation and reliability in industrial AI systems; Claire Pagetti (ONERA) on certifiable ML in airborne systems; Matthias Wagner (Lund) on the impact of the EU AI Act; and Marjan Sirjani (MDU) on runtime guardrails for AI-based CPS.
+
 
 ## Invited Speakers
  
@@ -170,7 +173,7 @@ Please note that this is a hybrid event and you can also follow online, but a re
 ## Organizers
 [Marjan Sirjani](http://www.es.mdu.se/staff/3242-Marjan_Sirjani)
 
-CPS Analysis Group at MDU
+[Cyber-Physical Systems Analysis at MDU](https://www.es.mdu.se/research-groups/55-Cyber_Physical_Systems_Analysis)
 
 Web admin and local organization: [Maghsood Salimi](https://www.es.mdu.se/staff/4117-Maghsood_Salimi)
 
