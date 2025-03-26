@@ -142,7 +142,7 @@ In this talk, I will introduce our approach to design-time assurance for autonom
 
  
 ##### **Schedule**
-
+--- 
 **09:00 - 10:00** &nbsp; &nbsp; **Edward Lee:** Certainty or Intelligence: Pick One!
 
 **10:00 - 10:15** &nbsp; &nbsp; **Break**  
@@ -168,7 +168,7 @@ In this talk, I will introduce our approach to design-time assurance for autonom
 
 
 ##### **Place**
-
+--- 
 **Alpha** conference room, First floor of U building, MDU, Västerås. 
 
 Please note that this is a hybrid event and you can also follow online, but a reliable connection is not guaranteed.
@@ -177,6 +177,7 @@ Please note that this is a hybrid event and you can also follow online, but a re
 **Zoom:** TODO- put link
 
 ##### **Organizers**
+--- 
 [Marjan Sirjani](http://www.es.mdu.se/staff/3242-Marjan_Sirjani)
 
 [Cyber-Physical Systems Analysis at MDU](https://www.es.mdu.se/research-groups/55-Cyber_Physical_Systems_Analysis)
@@ -188,9 +189,11 @@ Web admin and local organization: [Maghsood Salimi](https://www.es.mdu.se/staff/
 
 
 ##### **Acknowledgement**
+--- 
 Thanks to the MDU TSS initiative for providing the budget and support.
 
 ##### **Contact Info**
+--- 
 Marjan Sirjani
 
 Email: marjan.sirjani@mdu.se
