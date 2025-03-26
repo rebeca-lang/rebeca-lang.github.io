@@ -10,13 +10,13 @@ title: Workshop on Trustworthy AI-enabled Cyber-Physical Systems
 
  
 
-## About
+### About
 **TrustCPS-AI** is a workshop on *Trustworthy AI-enabled Cyber-Physical Systems*, addressing the challenges of integrating AI into CPS in a dependable, explainable, and certifiable manner. It provides a platform for discussing formal methods, runtime assurance, regulation-aware design, and the engineering of trustworthy AI components in domains like automotive, avionics, and industrial automation.
 
 The workshop features invited talks by Edward A. Lee (UC Berkeley) on the trade-off between certainty and intelligence; Pierluigi Nuzzo (UC Berkeley) on assume-guarantee contracts for autonomy; Hazem Torfah (Chalmers) on learning and monitoring operational design domains; Shiva Sander Tavallaey (ABB/KTH) on balancing innovation and reliability in industrial AI systems; Claire Pagetti (ONERA) on certifiable ML in airborne systems; Matthias Wagner (Lund) on the impact of the EU AI Act; and Marjan Sirjani (MDU) on runtime guardrails for AI-based CPS.
 
 
-## Invited Speakers
+### Invited Speakers
  
 
 **[Edward Lee](https://www2.eecs.berkeley.edu/Faculty/Homepages/lee.html), UC Berkeley, USA**
@@ -36,20 +36,20 @@ The workshop features invited talks by Edward A. Lee (UC Berkeley) on the trade-
 
 
 
-## Invited Talks
+### Invited Talks
 
 
 
-## Edward A. Lee  
+### Edward A. Lee  
 ---
-### Title: Certainty or Intelligence: Pick One!  
+#### Title: Certainty or Intelligence: Pick One!  
 
-### Abstract  
+#### Abstract  
 Cyber-physical systems are systems that integrate software and networking with physical components that sense and actuate in the physical world. Traditionally, to make them trustworthy, engineers strive to make their behaviors predictable, repeatable, and provably safe. While security is essential to achieving these objectives, it is by no means sufficient. Many technical challenges arise with sporadic connectivity, real-time behaviors, and handling of inevitable faults.  
 
 While the integration of machine-learning-based AI systems holds promise of being able to help deal with many of the security and other challenges, they simultaneously make behaviors less predictable and repeatable. In this talk, I postulate that the certainty that is traditionally achieved with rigorous engineering methods may be fundamentally incompatible with integrating intelligence into our systems. The question then becomes, how do we get the advantages of intelligence with acceptable risk?  
 
-### Bio  
+#### Bio  
 Edward A. Lee is Professor of the Graduate School and Distinguished Professor Emeritus in Electrical Engineering and Computer Sciences (EECS) at the University of California at Berkeley, where he has been on the faculty since 1986. He is the author of seven books, some with several editions, including two for a general audience, and hundreds of papers and technical reports.  
 
 Lee has delivered more than 200 keynote and other invited talks at venues worldwide and has graduated 40 PhD students. His research group studies cyber-physical systems, which integrate physical dynamics with software and networks. His focus is on the use of deterministic models as a central part of the engineering toolkit for such systems. He is the director of iCyPhy, the Berkeley Industrial Cyber-Physical Systems Research Center.  
