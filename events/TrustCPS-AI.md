@@ -62,7 +62,6 @@ From 2005-2008, he served as Chair of the EE Division and then Chair of the EECS
 He received his BS degree in 1979 from Yale University, with a double major in Computer Science and Engineering and Applied Science, an SM degree in EECS from MIT in 1981, and a Ph.D. in EECS from UC Berkeley in 1986. From 1979 to 1982, he was a member of technical staff at Bell Labs in Holmdel, New Jersey, in the Advanced Data Communications Laboratory.  
 
 He is a co-founder of BDTI, Inc., where he is currently a Senior Technical Advisor, and has consulted for a number of other companies. He is a Fellow of the IEEE, was an NSF Presidential Young Investigator, won the 1997 Frederick Emmons Terman Award for Engineering Education, received the 2016 Outstanding Technical Achievement and Leadership Award from the IEEE Technical Committee on Real-Time Systems (TCRTS), the 2018 Berkeley Citation, the 2019 IEEE Technical Committee on Cyber-Physical Systems (TCCPS) Technical Achievement Award, the 2022 European Design and Automation Association (EDAA) Achievement Award, the 2022 ACM SIGBED Technical Achievement Award, and an Honorary Doctorate in Computer Science from the Technical University of Vienna.  
-
 <br>
 
 ##### **<span style="color: crimson;">Hazem Torfah</span>**  
@@ -76,7 +75,6 @@ This talk introduces a novel safety assurance approach for autonomous systems ba
 
 ##### **Bio**  
 *No bio provided.*  
-
 <br>
 
 ##### **<span style="color: crimson;">Marjan Sirjani</span>**  
@@ -87,7 +85,7 @@ This talk introduces a novel safety assurance approach for autonomous systems ba
 As AI systems become integral to cyber-physical systems, ensuring their dependable behavior has never been more critical. Although developed by scientists and engineers, AI components may behave differently from traditional engineered artifacts. After facing challenges in explaining AI behavior, we are shifting our focus toward shielding AI components using guardrails to ensure system dependability. In this talk, we present a range of projects we have worked on aimed at safeguarding AI-enabled cyber-physical systems from AI misbehavior. Our efforts include techniques such as digital twins, property-based testing, mutation testing, and runtime monitoring. The presentation is based on the work of Zahra Moezkarimi, Masoud Ebrahimi, Khashayar Etemadi Someoliayi, Kristina Lundqvist and Kaj Hänninen.
 
 ##### **Bio**  
-Marjan Sirjani is a Professor at Mälardalen University, and the leader of Cyber-Physical Systems Analysis research group. Her main research interest is applying formal methods in Software Engineering. She works on modeling and verification of concurrent, distributed, timed, and self-adaptive systems. Marjan and her research group are pioneers in building model checking tools, compositional verification theories, and state-space reduction techniques for actor-based models. She has been working on analyzing actors since 2001 using the modeling language Rebeca (http://www.rebeca-lang.org). Her research is now focused on safety and security assurance and performance evaluation of cyber-physical and autonomous systems. Marjan has been the PC member and PC chair of several international conferences including SEFM, iFM, Coordination, FM, FMICS, SAC, FSEN, and DATE. She is an editor of the journal of Science of Computer Programming. 
+Marjan Sirjani is a Professor at Mälardalen University, and the leader of Cyber-Physical Systems Analysis research group. Her main research interest is applying formal methods in Software Engineering. She works on modeling and verification of concurrent, distributed, timed, and self-adaptive systems. Marjan and her research group are pioneers in building model checking tools, compositional verification theories, and state-space reduction techniques for actor-based models. She has been working on analyzing actors since 2001 using the modeling language Rebeca (http://www.rebeca-lang.org). Her research is now focused on safety and security assurance and performance evaluation of cyber-physical and autonomous systems. Marjan has been the PC member and PC chair of several international conferences including SEFM, iFM, Coordination, FM, FMICS, SAC, FSEN, and DATE. She is an editor of the journal of Science of Computer Programming.  
 <br>
 
 ##### **<span style="color: crimson;">Matthias Wagner</span>**  
@@ -100,10 +98,8 @@ The EU AI Act represents a significant legal framework with extraterritorial rea
 ##### **Bio**  
 Matthias Wagner is a PhD candidate at Lund University, currently halfway through his research within the Software Engineering Research Group at the Department of Computer Science. His work focuses on the requirements set out by the EU AI Act, with a broader focus on continuous quality assurance and machine learning pipelines across a system's lifecycle.
 
-Prior to his PhD, Matthias gained professional experience in IT consulting. He holds a bachelor's and master's degrees in Business Informatics from TU Wien (Vienna University of Technology).
-
- <br>
-
+Prior to his PhD, Matthias gained professional experience in IT consulting. He holds a bachelor's and master's degrees in Business Informatics from TU Wien (Vienna University of Technology).  
+<br>
 
 ##### **<span style="color: crimson;">Shiva Sander Tavallaey</span>**  
 ---
