@@ -44,6 +44,31 @@ The workshop features invited talks by Edward A. Lee (UC Berkeley) on the trade-
 
 <br>
 
+##### **Schedule**
+--- 
+**09:00 - 10:00** &nbsp; &nbsp; **Edward Lee:** Certainty or Intelligence: Pick One!
+
+**10:00 - 10:15** &nbsp; &nbsp; **Break**  
+
+**10:15 - 11:00** &nbsp; &nbsp; **Hazem Torfah:** Learning and Monitoring the Operational Design Domain for AI-Based Autonomy
+
+**11:00 - 12:00** &nbsp; &nbsp; **Marjan Sirjani and team:** Guardians of the AI-enabled Cyber-Physical Systems  
+
+**12:00 - 13:00** &nbsp; &nbsp; **Lunch Break***  
+
+**13:00 - 13:40** &nbsp; &nbsp; **Matthias Wagner:** The EU AI Act in Light of CPS: Assessing the Challenges and Impact of the Act’s Requirements on Industry
+
+**13:40 - 14:10** &nbsp; &nbsp; **Shiva Sander Tavallaey:** Trustworthy AI in Industrial Contexts: Balancing Innovation and Reliability
+
+**14:10 - 15:00** &nbsp; &nbsp; **Panel**  
+
+**15:00 - 15:15** &nbsp; &nbsp; **Break**  
+
+**15:15 - 16:00** &nbsp; &nbsp; **Claire Pagetti (Online):** Formal verification and certified machine learning and Airbus  
+
+**16:00 - 17:00** &nbsp; &nbsp; **Pierluigi Nuzzo (Online):** Assume-Guarantee Contracts for Trustworthy Autonomous Cyber-Physical Systems  
+
+<br>
 
 ##### **Invited Talks**
 ---
@@ -151,31 +176,7 @@ In this talk, I will introduce our approach to design-time assurance for autonom
 *No bio provided.*  
 
 <br> 
-##### **Schedule**
---- 
-**09:00 - 10:00** &nbsp; &nbsp; **Edward Lee:** Certainty or Intelligence: Pick One!
 
-**10:00 - 10:15** &nbsp; &nbsp; **Break**  
-
-**10:15 - 11:00** &nbsp; &nbsp; **Hazem Torfah:** Learning and Monitoring the Operational Design Domain for AI-Based Autonomy
-
-**11:00 - 12:00** &nbsp; &nbsp; **Marjan Sirjani and team:** Runtime monitoring and shielding AI-enabled CPS  
-
-**12:00 - 13:00** &nbsp; &nbsp; **Lunch Break***  
-
-**13:00 - 13:40** &nbsp; &nbsp; **Matthias Wagner:** The EU AI Act in Light of CPS: Assessing the Challenges and Impact of the Act’s Requirements on Industry
-
-**13:40 - 14:10** &nbsp; &nbsp; **Shiva Sander Tavallaey:** Trustworthy AI in Industrial Contexts: Balancing Innovation and Reliability
-
-**14:10 - 15:00** &nbsp; &nbsp; **Panel**  
-
-**15:00 - 15:15** &nbsp; &nbsp; **Break**  
-
-**15:15 - 16:00** &nbsp; &nbsp; **Claire Pagetti (Online):** Formal verification and certified machine learning and Airbus  
-
-**16:00 - 17:00** &nbsp; &nbsp; **Pierluigi Nuzzo (Online):** Formal verification and AI in CPS  
-
-<br>
 
 ##### **Place**
 --- 
