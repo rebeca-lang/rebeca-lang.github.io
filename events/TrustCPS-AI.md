@@ -36,20 +36,20 @@ The workshop features invited talks by Edward A. Lee (UC Berkeley) on the trade-
 
 
 
-### Invited Talks
+#### Invited Talks
 
 
 
-### Edward A. Lee  
+##### Edward A. Lee  
 ---
-#### Title: Certainty or Intelligence: Pick One!  
+##### Title: Certainty or Intelligence: Pick One!  
 
-##### Abstract  
+###### Abstract  
 Cyber-physical systems are systems that integrate software and networking with physical components that sense and actuate in the physical world. Traditionally, to make them trustworthy, engineers strive to make their behaviors predictable, repeatable, and provably safe. While security is essential to achieving these objectives, it is by no means sufficient. Many technical challenges arise with sporadic connectivity, real-time behaviors, and handling of inevitable faults.  
 
 While the integration of machine-learning-based AI systems holds promise of being able to help deal with many of the security and other challenges, they simultaneously make behaviors less predictable and repeatable. In this talk, I postulate that the certainty that is traditionally achieved with rigorous engineering methods may be fundamentally incompatible with integrating intelligence into our systems. The question then becomes, how do we get the advantages of intelligence with acceptable risk?  
 
-##### Bio  
+###### Bio  
 Edward A. Lee is Professor of the Graduate School and Distinguished Professor Emeritus in Electrical Engineering and Computer Sciences (EECS) at the University of California at Berkeley, where he has been on the faculty since 1986. He is the author of seven books, some with several editions, including two for a general audience, and hundreds of papers and technical reports.  
 
 Lee has delivered more than 200 keynote and other invited talks at venues worldwide and has graduated 40 PhD students. His research group studies cyber-physical systems, which integrate physical dynamics with software and networks. His focus is on the use of deterministic models as a central part of the engineering toolkit for such systems. He is the director of iCyPhy, the Berkeley Industrial Cyber-Physical Systems Research Center.  
@@ -62,6 +62,7 @@ He is a co-founder of BDTI, Inc., where he is currently a Senior Technical Advis
 
 
 ## Hazem Torfah  
+---
 ### Title: Learning and Monitoring the Operational Design Domain for AI-Based Autonomy  
 
 ### Abstract  
@@ -73,6 +74,7 @@ This talk introduces a novel safety assurance approach for autonomous systems ba
 *No bio provided.*  
 
 ## Marjan Sirjani  
+---
 ### Title: Guardians of the AI-enabled Cyber-Physical Systems
 
 ### Abstract  
@@ -83,6 +85,7 @@ Marjan Sirjani is a Professor at Mälardalen University, and the leader of Cyber
 
 
 ## Matthias Wagner  
+---
 ### Title: The EU AI Act in Light of CPS: Assessing the Challenges and Impact of the Act’s Requirements on Industry
 
 ### Abstract  
@@ -97,6 +100,7 @@ Prior to his PhD, Matthias gained professional experience in IT consulting. He h
 
 
 ## Shiva Sander Tavallaey  
+---
 ### Title: Trustworthy AI in Industrial Contexts: Balancing Innovation and Reliability  
 
 ### Abstract  
@@ -115,6 +119,7 @@ By synthesizing theoretical insights with practical industrial applications, the
 
 
 ##  Claire Pagetti 
+---
 ### Title: Formal verification and certified machine learning and Airbus    
 
 ### Abstract  
@@ -124,6 +129,7 @@ Machine learning applications have been gaining considerable attention in the fi
 Claire Pagetti is a senior research scientist at ONERA. She holds a research chair in the ANITI cluster on “Embeddability and safety assurance of ML-based systems under certification”. Her fields of interest concern the safe implementation of safety critical applications on avionic platforms. She has contributed to several industrial, European and French projects that lead to several publications and industrial developments.
 
 ##  Pierluigi Nuzzo
+---
 ### Title: Assume-Guarantee Contracts for Trustworthy Autonomous Cyber-Physical Systems
 
 ### Abstract  
