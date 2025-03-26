@@ -38,6 +38,7 @@ TODO: Description here !
 
 
 ## Edward A. Lee  
+---
 ### Title: Certainty or Intelligence: Pick One!  
 
 ### Abstract  
