@@ -169,7 +169,9 @@ Please note that this is a hybrid event and you can also follow online, but a re
 
 ## Organizers
 [Marjan Sirjani](http://www.es.mdu.se/staff/3242-Marjan_Sirjani)
+
 CPS Analysis Group at MDU
+
 Web admin and local organization: [Maghsood Salimi](https://www.es.mdu.se/staff/4117-Maghsood_Salimi)
 
 
