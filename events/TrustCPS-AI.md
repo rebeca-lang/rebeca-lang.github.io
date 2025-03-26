@@ -40,7 +40,7 @@ The workshop features invited talks by Edward A. Lee (UC Berkeley) on the trade-
 ---
 
 
-##### **Edward A. Lee**  
+##### **<span style="color: crimson;">Edward A. Lee</span>**  
 ---
 ##### **Title: Certainty or Intelligence: Pick One!**
 
@@ -73,6 +73,7 @@ This talk introduces a novel safety assurance approach for autonomous systems ba
 ##### **Bio**  
 *No bio provided.*  
 
+<br>
 ##### **Marjan Sirjani**  
 ---
 ##### **Title: Guardians of the AI-enabled Cyber-Physical Systems**
@@ -82,7 +83,7 @@ As AI systems become integral to cyber-physical systems, ensuring their dependab
 
 ##### **Bio**  
 Marjan Sirjani is a Professor at Mälardalen University, and the leader of Cyber-Physical Systems Analysis research group. Her main research interest is applying formal methods in Software Engineering. She works on modeling and verification of concurrent, distributed, timed, and self-adaptive systems. Marjan and her research group are pioneers in building model checking tools, compositional verification theories, and state-space reduction techniques for actor-based models. She has been working on analyzing actors since 2001 using the modeling language Rebeca (http://www.rebeca-lang.org). Her research is now focused on safety and security assurance and performance evaluation of cyber-physical and autonomous systems. Marjan has been the PC member and PC chair of several international conferences including SEFM, iFM, Coordination, FM, FMICS, SAC, FSEN, and DATE. She is an editor of the journal of Science of Computer Programming. 
-
+<br>
 
 ##### **Matthias Wagner**  
 ---
@@ -96,7 +97,7 @@ Matthias Wagner is a PhD candidate at Lund University, currently halfway through
 
 Prior to his PhD, Matthias gained professional experience in IT consulting. He holds a bachelor's and master's degrees in Business Informatics from TU Wien (Vienna University of Technology).
 
- 
+ <br>
 
 
 ##### **Shiva Sander Tavallaey**  
@@ -116,7 +117,7 @@ By synthesizing theoretical insights with practical industrial applications, the
 
 ##### **Bio**  
 *No bio provided.*  
-
+<br>
 
 ##### **Claire Pagetti** 
 ---
@@ -127,6 +128,7 @@ Machine learning applications have been gaining considerable attention in the fi
 
 ##### **Bio**  
 Claire Pagetti is a senior research scientist at ONERA. She holds a research chair in the ANITI cluster on “Embeddability and safety assurance of ML-based systems under certification”. Her fields of interest concern the safe implementation of safety critical applications on avionic platforms. She has contributed to several industrial, European and French projects that lead to several publications and industrial developments.
+<br>
 
 ##### **Pierluigi Nuzzo**
 ---
@@ -140,7 +142,7 @@ In this talk, I will introduce our approach to design-time assurance for autonom
 ##### **Bio**  
 *No bio provided.*  
 
- 
+<br> 
 ##### **Schedule**
 --- 
 **09:00 - 10:00** &nbsp; &nbsp; **Edward Lee:** Certainty or Intelligence: Pick One!
@@ -165,7 +167,7 @@ In this talk, I will introduce our approach to design-time assurance for autonom
 
 **16:00 - 17:00** &nbsp; &nbsp; **Pierluigi Nuzzo (Online):** Formal verification and AI in CPS  
 
-
+<br>
 
 ##### **Place**
 --- 
@@ -175,6 +177,8 @@ Please note that this is a hybrid event and you can also follow online, but a re
 
 ##### **Online**
 **Zoom:** TODO- put link
+
+<br>
 
 ##### **Organizers**
 --- 
@@ -187,11 +191,12 @@ Web admin and local organization: [Maghsood Salimi](https://www.es.mdu.se/staff/
 
 
 
-
+<br>
 ##### **Acknowledgement**
 --- 
 Thanks to the MDU TSS initiative for providing the budget and support.
 
+<br>
 ##### **Contact Info**
 --- 
 Marjan Sirjani
