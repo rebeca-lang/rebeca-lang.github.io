@@ -17,7 +17,7 @@ The workshop features invited talks by Edward A. Lee (UC Berkeley) on the trade-
 
 
 #### Invited Speakers
- 
+--- 
 
 **[Edward Lee](https://www2.eecs.berkeley.edu/Faculty/Homepages/lee.html), UC Berkeley, USA**
 
@@ -37,10 +37,10 @@ The workshop features invited talks by Edward A. Lee (UC Berkeley) on the trade-
 
 
 #### Invited Talks
+---
 
 
-
-##### Edward A. Lee  
+##### **Edward A. Lee**  
 ---
 ##### Title: Certainty or Intelligence: Pick One!  
 
