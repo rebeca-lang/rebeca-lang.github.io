@@ -17,6 +17,13 @@ The workshop features invited talks by Edward A. Lee (UC Berkeley) on the trade-
 
 <br>
 
+##### **Place and Date**
+**Wednesday May 21, 2025**
+
+**Mälardalen University, Västerås, Sweden**
+
+<br>
+
 ##### **Invited Speakers**
 --- 
 
