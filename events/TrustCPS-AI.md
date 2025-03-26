@@ -63,6 +63,7 @@ He received his BS degree in 1979 from Yale University, with a double major in C
 
 He is a co-founder of BDTI, Inc., where he is currently a Senior Technical Advisor, and has consulted for a number of other companies. He is a Fellow of the IEEE, was an NSF Presidential Young Investigator, won the 1997 Frederick Emmons Terman Award for Engineering Education, received the 2016 Outstanding Technical Achievement and Leadership Award from the IEEE Technical Committee on Real-Time Systems (TCRTS), the 2018 Berkeley Citation, the 2019 IEEE Technical Committee on Cyber-Physical Systems (TCCPS) Technical Achievement Award, the 2022 European Design and Automation Association (EDAA) Achievement Award, the 2022 ACM SIGBED Technical Achievement Award, and an Honorary Doctorate in Computer Science from the Technical University of Vienna.  
 
+<br>
 
 ##### **Hazem Torfah**  
 ---
