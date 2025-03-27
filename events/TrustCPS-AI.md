@@ -106,7 +106,7 @@ The deployment of autonomous systems in complex environments has increased signi
 This talk introduces a novel safety assurance approach for autonomous systems based on runtime verification. Runtime verification involves extracting information from a system at runtime and evaluating it to determine whether an execution satisfies or violates a given (safety) property. We will present recent advancements in runtime verification methods for capturing operational design domains (ODD), the conditions under which a system or its components are designed to operate safely. We will introduce a formalization for monitorable ODDs and discuss challenges in learning monitors for ODDs in noisy and unpredictable environments.  
 
 ##### **Bio**  
-*No bio provided.*  
+Hazem Torfah is a Tenure-Track Assistant Professor at Chalmers University of Technology in Gothenburg, Sweden, where he leads the Safe and Trustworthy Autonomous Reasoning Lab. His research interests include the formal specification, verification, and synthesis of learning-enabled cyber-physical systems, with a focus on quantitative methods for verification and runtime assurance. Before joining Chalmers, he was a postdoctoral researcher in the EECS Department at UC Berkeley. He earned his Ph.D. in Computer Science from Saarland University, Germany, in December 2019. His doctoral thesis was recognized with Saarland University’s Dr.-Edward-Martin Dissertation Award. Hazem’s research is supported by the Wallenberg AI, Autonomous Systems, and Software Program (WASP).  
 <br>
 
 ##### **<span style="color: crimson;">Marjan Sirjani</span>**  
@@ -147,7 +147,8 @@ The presentation will address three major dimensions of AI trustworthiness:
 By synthesizing theoretical insights with practical industrial applications, the talk will provide a proposal for developing AI technologies that are not just innovative, but also reliable and responsible.  
 
 ##### **Bio**  
-*No bio provided.*  
+Dr. Shiva Sander Tavallaey is a Senior Principal Scientist in applied analytics and AI-Lead for ABB Sweden. Her academic credentials include a Master of Science in Mechanical Engineering from Chalmers University of Technology (CTH) and a PhD in Sound and Vibration/Technical Acoustics from the Royal Institute of Technology (KTH) in Sweden.
+Since joining ABB Corporate Research in Västerås, Sweden in January 2001, Dr. Tavallaey has served in both management and specialist roles. Her expertise has been recognized in academia as well, and since 2015, she has held an adjunct professorship at KTH's Division of Engineering Mechanics within the Marcus Wallenberg Laboratory for Sound and Vibration.  
 <br>
 
 ##### **<span style="color: crimson;">Claire Pagetti</span>** 
