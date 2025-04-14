@@ -17,7 +17,7 @@ The workshop features invited talks by Edward A. Lee (UC Berkeley) on the trade-
 
 <br>
 
-##### **Place and Date**
+##### **Date and Place**
 **Wednesday May 21, 2025**
 
 **Mälardalen University, Västerås, Sweden**
@@ -69,6 +69,8 @@ The workshop features invited talks by Edward A. Lee (UC Berkeley) on the trade-
 **16:00 - 17:00** &nbsp; &nbsp; **Pierluigi Nuzzo (Online):** Assume-Guarantee Contracts for Trustworthy Autonomous Cyber-Physical Systems  
 
 <br>
+
+* Lunch will not be provided by the workshop, we will have lunch at the Rosenhill restaurant at MDU. Welcome to join and pay yourself. 🙂
 
 ##### **Invited Talks**
 ---
