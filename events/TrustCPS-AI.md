@@ -25,7 +25,7 @@ The workshop features invited talks by Edward A. Lee (UC Berkeley) on the trade-
 <br>
 
 ##### **Registration**
-**We kindly ask you to register via the following link:**
+**We kindly ask you to register via the following link:**  
 **[link to registration](https://forms.gle/9sS46HLt1d7FA4fg9)**
 
 
