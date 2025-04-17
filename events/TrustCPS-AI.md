@@ -216,7 +216,7 @@ Web admin and local organization: [Maghsood Salimi](https://www.es.mdu.se/staff/
 ##### **Acknowledgement**
 --- 
 Grateful to the MDU TSS initiative for providing the budget and support.  
-Thanks to Software Center for additional assistance.  <img src="logo SC.jpg" alt="mdu" width="100">
+Thanks to Software Center for additional assistance.  <img src="logo SC.jpg" alt="mdu" width="130">
 
 
 <br>
