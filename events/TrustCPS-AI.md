@@ -29,7 +29,7 @@ The workshop features invited talks by Edward A. Lee (UC Berkeley) on the trade-
 <br>
 
 ##### **Registration**
-**We kindly ask you to register via the following link:**  
+**We kindly ask you to register via the following link(The registration is free):**  
 **[link to registration](https://forms.gle/9sS46HLt1d7FA4fg9)**
 
 <br>  
@@ -194,7 +194,6 @@ Pierluigi Nuzzo is an Associate Professor in the Department of Electrical Engine
 --- 
 **Alpha** conference room, First floor of U building, MDU, Västerås. 
 
---- Please note that this is a hybrid event and you can also follow online, but a reliable connection is not guaranteed.
 
 
 <br>
