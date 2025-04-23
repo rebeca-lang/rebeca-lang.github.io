@@ -8,13 +8,13 @@ title: Workshop on Trustworthy AI-enabled Cyber-Physical Systems
 
 <table>
   <tr>
-    <td colspan="2">
+    <td colspan="2" style="padding: 0;">
       <img src="mdu.jpeg" alt="mdu" width="100%">
     </td>
   </tr>
   <tr>
-    <td><a href="https://link1.com">Link 1</a></td>
-    <td><a href="https://link2.com">Link 2</a></td>
+    <td style="padding-top: 0px;"><a href="https://link1.com">Link 1</a></td>
+    <td style="padding-top: 0px;"><a href="https://link2.com">Link 2</a></td>
   </tr>
 </table>
 
