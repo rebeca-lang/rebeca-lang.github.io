@@ -9,7 +9,7 @@ title: Workshop on Trustworthy AI-enabled Cyber-Physical Systems
 <table>
   <tr>
     <td colspan="2" style="padding: 0;">
-      <img src="mdu.jpeg" alt="mdu" width="100%">
+      <img src="mdu.jpg" alt="mdu" width="100%">
     </td>
   </tr>
   <tr>
