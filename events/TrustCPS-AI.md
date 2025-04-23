@@ -6,7 +6,22 @@ title: Workshop on Trustworthy AI-enabled Cyber-Physical Systems
 
 
 
-<img src="mdu.jpeg" alt="mdu" width="100%">
+
+
+<div style="position: relative; display: inline-block;">
+  <img src="mdu.jpeg" alt="mdu" width="100%">
+  
+  <a href="https://first-link.com" 
+     style="position: absolute; top: 20%; left: 10%; color: white; background: rgba(0,0,0,0.5); padding: 5px; text-decoration: none;">
+    MDU TSS
+  </a>
+
+  <a href="https://second-link.com" 
+     style="position: absolute; top: 40%; left: 10%; color: white; background: rgba(0,0,0,0.5); padding: 5px; text-decoration: none;">
+    Software Center
+  </a>
+</div>
+
 
  
 
