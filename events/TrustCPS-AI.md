@@ -7,14 +7,14 @@ title: Workshop on Trustworthy AI-enabled Cyber-Physical Systems
 
 
 <table>
-  <tr>
+  <tr style="padding-top: 0px;">
     <td colspan="2" style="padding: 0;">
       <img src="mdu.jpg" alt="mdu" width="100%">
     </td>
   </tr>
-  <tr>
-    <td style="padding-top: -10px; text-align: center;"><a href="https://sites.mdu.se/tss/">https://sites.mdu.se/tss</a></td>
-    <td style="padding-top: -10px; text-align: center;"><a href="https://www.software-center.se/">https://www.software-center.se</a></td>
+  <tr style="padding-top: 0px;">
+    <td style="padding-top: 0px; text-align: center;"><a href="https://sites.mdu.se/tss/">https://sites.mdu.se/tss</a></td>
+    <td style="padding-top: 0px; text-align: center;"><a href="https://www.software-center.se/">https://www.software-center.se</a></td>
   </tr>
 </table>
 
