@@ -13,8 +13,8 @@ title: Workshop on Trustworthy AI-enabled Cyber-Physical Systems
     </td>
   </tr>
   <tr>
-    <td style="padding-top: -1px; text-align: center;"><a href="https://sites.mdu.se/tss/">https://sites.mdu.se/tss</a></td>
-    <td style="padding-top: -1px; text-align: center;"><a href="https://www.software-center.se/">https://www.software-center.se</a></td>
+    <td style="padding-top: -10px; text-align: center;"><a href="https://sites.mdu.se/tss/">https://sites.mdu.se/tss</a></td>
+    <td style="padding-top: -10px; text-align: center;"><a href="https://www.software-center.se/">https://www.software-center.se</a></td>
   </tr>
 </table>
 
