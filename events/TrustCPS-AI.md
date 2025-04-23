@@ -13,8 +13,8 @@ title: Workshop on Trustworthy AI-enabled Cyber-Physical Systems
     </td>
   </tr>
   <tr>
-    <td style="padding-top: 0px;"><a href="https://link1.com">Link 1</a></td>
-    <td style="padding-top: 0px;"><a href="https://link2.com">Link 2</a></td>
+    <td style="padding-top: 0px;"><a href="https://sites.mdu.se/tss/">https://sites.mdu.se/tss/</a></td>
+    <td style="padding-top: 0px;"><a href="https://link2.com">Link 12</a></td>
   </tr>
 </table>
 
