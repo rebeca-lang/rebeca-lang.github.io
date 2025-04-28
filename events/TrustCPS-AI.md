@@ -36,7 +36,7 @@ The workshop features invited talks by Edward A. Lee (UC Berkeley) on the trade-
 ##### **Date and Place**
 **Wednesday May 21, 2025**
 
-**Alfa, Mälardalen University, Västerås, Sweden**  
+**Omega, Mälardalen University, Västerås, Sweden**  
 
 ---
 
@@ -206,7 +206,7 @@ Pierluigi Nuzzo is an Associate Professor in the Department of Electrical Engine
 
 ##### **Place**
 --- 
-**Alpha** conference room, First floor of U building, MDU, Västerås. 
+**Omega** conference room, First floor of U building, MDU, Västerås. 
 
 
 
