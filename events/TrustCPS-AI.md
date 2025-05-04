@@ -77,7 +77,7 @@ The workshop features invited talks by Edward A. Lee (UC Berkeley) on the trade-
 
 **10:15 - 11:00** &nbsp; &nbsp; **Hazem Torfah:** Learning and Monitoring the Operational Design Domain for AI-Based Autonomy
 
-**11:00 - 12:00** &nbsp; &nbsp; **Marjan Sirjani and team:** Guardians of the AI-enabled Cyber-Physical Systems  
+**11:00 - 12:00** &nbsp; &nbsp; **Marjan Sirjani and the team:** Guardians of the AI-enabled Cyber-Physical Systems  
 
 **12:00 - 13:00** &nbsp; &nbsp; **Lunch Break***  
 
