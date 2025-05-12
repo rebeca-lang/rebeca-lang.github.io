@@ -52,6 +52,9 @@ The workshop features invited talks by Edward A. Lee (UC Berkeley) on the trade-
 ##### **Invited Speakers**
 --- 
 
+![](trustcps-ai2.JPG)
+
+
 **[Edward A. Lee](https://www2.eecs.berkeley.edu/Faculty/Homepages/lee.html), UC Berkeley, USA**
 
 **[Hazem Torfah](https://www.chalmers.se/en/persons/hazemto/), Chalmers University of Technology, Sweden**
