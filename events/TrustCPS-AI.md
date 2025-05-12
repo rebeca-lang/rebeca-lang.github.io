@@ -52,7 +52,8 @@ The workshop features invited talks by Edward A. Lee (UC Berkeley) on the trade-
 ##### **Invited Speakers**
 --- 
 
-![](trustcps-ai2.JPG)
+<img src="trustcps-ai2.JPG" style="width: 100%;" />
+
 
 
 **[Edward A. Lee](https://www2.eecs.berkeley.edu/Faculty/Homepages/lee.html), UC Berkeley, USA**
