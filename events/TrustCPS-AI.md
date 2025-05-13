@@ -93,7 +93,7 @@ The workshop features invited talks by Edward A. Lee (UC Berkeley) on the trade-
 
 **15:00 - 15:15** &nbsp; &nbsp; **Break**  
 
-**15:15 - 16:00** &nbsp; &nbsp; **Claire Pagetti (Online):** Certification of machine learning based system - contribution of formal verification  
+**15:15 - 16:00** &nbsp; &nbsp; **Claire Pagetti (Online):** Certification of Machine Learning Based System - contribution of Formal Verification  
 
 **16:00 - 17:00** &nbsp; &nbsp; **Pierluigi Nuzzo (Online):** Assume-Guarantee Contracts for Trustworthy Autonomous Cyber-Physical Systems  
 
