@@ -40,7 +40,7 @@ The workshop features invited talks by Edward A. Lee (UC Berkeley) on the trade-
 
 <br>
 
-**For online participation, a Zoom link will be provided.**
+##### **For online participation, a Zoom link will be provided.**
 
 ---
 
