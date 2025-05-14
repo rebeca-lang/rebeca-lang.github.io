@@ -37,6 +37,7 @@ The workshop features invited talks by Edward A. Lee (UC Berkeley) on the trade-
 **Wednesday May 21, 2025**
 
 **Omega, Mälardalen University, Västerås, Sweden**  
+Zoom link will be provied.
 
 ---
 
