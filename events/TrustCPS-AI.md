@@ -38,7 +38,7 @@ The workshop features invited talks by Edward A. Lee (UC Berkeley) on the trade-
 
 **Omega, Mälardalen University, Västerås, Sweden**  
 
-** Zoom link for online participants: [https://mdu-se.zoom.us/j/69385371593](https://mdu-se.zoom.us/j/69385371593)**
+**Zoom link for online participants: [https://mdu-se.zoom.us/j/69385371593](https://mdu-se.zoom.us/j/69385371593)**
 
 
 ##### **For online participation, a Zoom link will be provided.**
