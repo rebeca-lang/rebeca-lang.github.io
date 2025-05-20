@@ -212,7 +212,7 @@ Pierluigi Nuzzo is an Associate Professor in the Department of Electrical Engine
 
 ##### **Place**
 --- 
-**Omega** conference room, First floor of U building, MDU, Västerås. 
+**Omega** conference room, First floor of R building, MDU, Västerås. 
 
 
 
