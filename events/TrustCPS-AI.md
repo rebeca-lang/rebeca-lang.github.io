@@ -36,7 +36,7 @@ The workshop features invited talks by Edward A. Lee (UC Berkeley) on the trade-
 ##### **Date and Place**
 **Wednesday May 21, 2025**
 
-**Omega, Mälardalen University, Västerås, Sweden**  
+**Mälardalen University, Västerås, Sweden, Room Omega**  
 
 *Zoom link for online participants: [https://mdu-se.zoom.us/j/69385371593](https://mdu-se.zoom.us/j/69385371593)*
 
@@ -91,7 +91,7 @@ The workshop features invited talks by Edward A. Lee (UC Berkeley) on the trade-
 
 **13:40 - 14:10** &nbsp; &nbsp; **Shiva Sander Tavallaey:** Trustworthy AI in Industrial Contexts: Balancing Innovation and Reliability
 
-**14:10 - 15:00** &nbsp; &nbsp; **Panel**  
+**14:10 - 15:00** &nbsp; &nbsp; **Panel: The panel is on the topic of "Uncertainty and AI" and will include the in-person speakers from the workshop.**  
 
 **15:00 - 15:15** &nbsp; &nbsp; **Break**  
 
