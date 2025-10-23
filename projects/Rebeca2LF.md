@@ -4,7 +4,7 @@ title: Rebeca2LF
 permalink: /allprojects/Rebeca2LF
 
 ---
-#### ReLico: Timed Rebeca to Lingua Franca
+#### Timed Rebeca to Lingua Franca
 #### Problem Description 
 Timed Rebeca and Lingua Franca both target cyber-physical systems but use different execution models. Timed Rebeca allows nondeterminism, where multiple events can occur at the same logical time in any order. This flexibility supports thorough verification but makes it difficult to create executable implementations. Lingua Franca requires deterministic execution through a precedence mechanism, which ensures consistent behavior.​
 
