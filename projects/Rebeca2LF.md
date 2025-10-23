@@ -1,6 +1,6 @@
 ---
 layout: page
-title: ReLico: Timed Rebeca to Lingua Franca
+title: "ReLico: Timed Rebeca to Lingua Franca"
 permalink: /allprojects/ReLico
 
 ---
