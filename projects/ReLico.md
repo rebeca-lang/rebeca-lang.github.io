@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Rebeca2LF
-permalink: /allprojects/Rebeca2LF
+title: "ReLico: Timed Rebeca to Lingua Franca"
+permalink: /allprojects/ReLico
 
 ---
 #### ReLico: Timed Rebeca to Lingua Franca
