@@ -29,7 +29,7 @@ title: Projects
   <div class="col s12 m4">
     <div class="icon-block">
       <h2 class="center light-blue-text"><img src="{{ "/assets/projects/DefaultProject.jpg" | absolute_url }}" alt="TARO">
-        <!-- <img src="{{ "/assets/projects/Rebeca2LF/Rebeca2LF-Logo.png" | absolute_url }}" alt="Rebeca2LF Logo"/> -->
+        <img src="{{ "/assets/projects/Rebeca2LF/Rebeca2LF-Logo.png" | absolute_url }}" alt="Rebeca2LF Logo"/>
       </h2>
       <h5 class="center">Rebeca2LF</h5>
       <p class="light">
