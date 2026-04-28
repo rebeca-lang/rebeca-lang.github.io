@@ -156,4 +156,28 @@ title: Projects
       </p>
     </div>
   </div>
+
+<div class="col s12 m4">
+    <div class="icon-block">
+      <h2 class="center light-blue-text"><img src="{{ "/assets/projects/DistributedControllers/nrpTop50.jpg" | absolute_url }}" alt="Legata to Rebeca"/></h2>
+      <h5 class="center">Legata to Rebeca</h5>
+      <p class="light">
+         The project translates maritime regulations in Legata into formal correctness properties in Rebeca to enable verification of autonomous vessel safety under COLREG rules. It shows LLMs can assist this transformation but are not fully reliable, so human validation is still required. <a href="{{ "/allprojects/LegatatoRebeca" | relative_url }}">Learn more</a>
+      </p>
+    </div>
+  </div>    
+</div>
+
+<div class="row">
+
+   <div class="col s12 m4">
+    <div class="icon-block">
+      <h2 class="center light-blue-text"><img src="{{ "/assets/projects/DistributedControllers/nrpTop50.jpg" | absolute_url }}" alt="RebecAI"/></h2>
+      <h5 class="center">RebecAI</h5>
+      <p class="light">
+         RebecAI integrates AI, especially large language models, with formal verification in the Rebeca framework to help generate and analyze correctness properties. It shows that AI can speed up the transformation from specifications to formal models, but human validation is still necessary to ensure reliability and correctness.  <a href="{{ "/allprojects/RebecAI" | relative_url }}">Learn more</a>
+      </p>
+    </div>
+  </div> 
+
 </div>
