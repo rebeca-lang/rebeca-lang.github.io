@@ -159,7 +159,7 @@ title: Projects
 
 <div class="col s12 m4">
     <div class="icon-block">
-      <h2 class="center light-blue-text"><img src="{{ "/assets/projects/LegatatoRebeca/Legata2Rebeca-20k.jpg" | absolute_url }}" alt="Legata to Rebeca"/></h2>
+      <h2 class="center light-blue-text"><img src="{{ "/assets/projects/Legata2Rebeca/Legata2Rebeca-20k.jpg" | absolute_url }}" alt="Legata to Rebeca"/></h2>
       <h5 class="center">Legata to Rebeca</h5>
       <p class="light">
          The project translates maritime regulations in Legata into formal correctness properties in Rebeca to enable verification of autonomous vessel safety under COLREG rules. It shows LLMs can assist this transformation but are not fully reliable, so human validation is still required. <a href="{{ "/allprojects/LegatatoRebeca" | relative_url }}">Learn more</a>
