@@ -13,8 +13,9 @@ The results show that transforming Legata clauses into Rebeca correctness proper
 
 #### Implementation and cource code
 The implementation and source code related to this project are available at the link provided below, where all relevant materials, models, and transformation scripts can be accessed for further exploration and replication of the results.
- 
-**<u> LINK </u>**
+
+
+**<u> [ Implementation and cource code ](https://github.com/rebeca-lang/Legata-Rebeca-Thesis) </u>**
 
 Note that this is a fork of LINK.
 
