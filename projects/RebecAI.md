@@ -15,7 +15,7 @@ RebecAI is a multi-agent orchestration system that leverages large language mode
 
 The implementation and source code for this project are available at the link below. All relevant materials, models, and transformation scripts can be accessed for further exploration and replication of the results.
 
-**[ Implementation and cource code ](https://github.com/rebeca-lang/research-RebecAI)**
+**[ Implementation and source code ](https://github.com/rebeca-lang/research-RebecAI)**
  
 Note that this is a fork of the original repository [RebecAI](https://github.com/3brahimi/RebecAI) and is released under the MIT License.
 
