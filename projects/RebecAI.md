@@ -17,8 +17,7 @@ The implementation and source code for this project are available at the link be
 
 [ Implementation and cource code ](https://github.com/rebeca-lang/research-RebecAI)
  
-Note that this is a fork of [](https://github.com/3brahimi/RebecAI) and is under the MIT License.
-
+Note that this is a fork of the original repository [RebecAI](https://github.com/3brahimi/RebecAI) and is released under the MIT License.
 
 #### Paper  
 Relevant paper can be found [ here ](). 
