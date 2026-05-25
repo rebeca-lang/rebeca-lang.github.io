@@ -172,7 +172,7 @@ title: Projects
 
    <div class="col s12 m4">
     <div class="icon-block">
-      <h2 class="center light-blue-text"><img src="{{ "/assets/projects/RebecAI/RebecAI-20k.jpg" | absolute_url }}" alt="RebecAI"/></h2>
+      <h2 class="center light-blue-text"><img src="{{ "/assets/projects/DefaultProject.jpg" | absolute_url }}" alt="RebecAI"/></h2>
       <h5 class="center">RebecAI</h5>
       <p class="light">
          RebecAI is a multi-agent orchestration system that leverages large language models alongside formal methods to transform maritime safety rules expressed in Legata/COLREG formal specifications into verifiable Rebeca actor models. It automates model checking workflows using the Rebeca Model Checker (RMC), enabling systematic verification of system properties automated reporting of verification outcomes. <a href="{{ "/allprojects/RebecAI" | relative_url }}">Learn more</a>
