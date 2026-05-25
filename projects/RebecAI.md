@@ -25,5 +25,4 @@ Relevant paper can be found [ here ]().
 
 
 ### Project Members
-* **<u>Marjan Sirjani (Supervisor)</u>**
 * Masoud Ebrahimi
