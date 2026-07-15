@@ -11,7 +11,7 @@ title: Events
   <ul class="browser-default">
     <li>
       <p class="light">
-        <h5 class="Left"><a href="{{ "/events/ASSURE_HumanCenteredTechnology_FirstTalk/FirstTalkWeb.html" | relative_url }}">First Interdisciplinary Perspectives on Human-Centered Technology (September, 2026)</a></h5>
+        <h5 class="Left"><a href="{{ "/events/ASSURE_HumanCenteredTechnology_FirstTalk/FirstTalkWeb_.html" | relative_url }}">First Interdisciplinary Perspectives on Human-Centered Technology (September, 2026)</a></h5>
         A lunchtime talk series bringing together researchers and practitioners from computer science, social science, philosophy, and design to explore the role of technology in society.
       </p>
     </li>
