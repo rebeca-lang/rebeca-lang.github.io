@@ -1,0 +1,1640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1st Talk | Interdisciplinary Perspectives on Human-Centered Technology</title>
+    
+    <!-- Google tag (gtag.js) - Google Analytics Setup -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-blue: #0d7a8f;
+            --accent-orange: #f5a623;
+            --accent-pink: #e91e63;
+            --text-dark: #1a1a1a;
+            --text-muted: #666666;
+            --bg-light: #f5f7fa;
+            --white: #ffffff;
+            --border: #e0e0e0;
+            --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+            --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.12);
+            --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            color: var(--text-dark);
+            line-height: 1.6;
+            background-color: var(--white);
+        }
+
+        a {
+            color: var(--primary-blue);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--accent-orange);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* ===== HEADER & NAVIGATION ===== */
+        header {
+            background: var(--white);
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .header-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-right: 2rem;
+        }
+
+        .logo-img {
+            height: 70px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .header-title {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+        }
+
+        .talk-number {
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--accent-orange);
+        }
+
+        .header-title h1 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--primary-blue);
+            line-height: 1.2;
+            white-space: nowrap;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2.5rem;
+            align-items: center;
+            flex-wrap: nowrap;
+        }
+
+        nav a {
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            transition: all 0.3s ease;
+            position: relative;
+            letter-spacing: 0.3px;
+            white-space: nowrap;
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2.5px;
+            background: var(--accent-orange);
+            transition: width 0.3s ease;
+        }
+
+        nav a:hover {
+            color: var(--primary-blue);
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        /* ===== DROPDOWN MENU NAVIGATION ===== */
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: var(--white);
+            min-width: 220px;
+            box-shadow: var(--shadow-md);
+            padding: 0.5rem 0;
+            margin-top: 0.5rem;
+            list-style: none;
+            z-index: 1000;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+        }
+
+        .dropdown-menu li {
+            width: 100%;
+        }
+
+        .dropdown-menu li a {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--text-dark);
+            padding: 0.6rem 1.2rem;
+            display: block;
+            text-align: left;
+            white-space: nowrap;
+        }
+
+        .dropdown-menu li a:hover {
+            background-color: var(--bg-light);
+            color: var(--primary-blue);
+        }
+
+        .dropdown-menu li a::after {
+            display: none;
+        }
+
+        .active-event {
+            font-weight: 700;
+            color: var(--primary-blue) !important;
+            border-left: 3px solid var(--accent-orange);
+            padding-left: calc(1.2rem - 3px) !important;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+        /* ===== HERO SECTION ===== */
+        .hero {
+            background: linear-gradient(135deg, rgba(10, 35, 60, 0.8) 0%, rgba(13, 60, 85, 0.85) 100%), url('background.webp') center/cover no-repeat;
+            color: var(--white);
+            padding: 5rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .hero-text h2 {
+            font-size: 0.95rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 1rem;
+            opacity: 0.95;
+            color: var(--accent-orange);
+        }
+
+        .hero-text h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-text p {
+            font-size: 1.15rem;
+            line-height: 1.7;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 0.9rem 2rem;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .btn-primary {
+            background: var(--accent-orange);
+            color: var(--white);
+        }
+
+        .btn-primary:hover {
+            background: #e09a1f;
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .btn-secondary {
+            background: var(--white);
+            color: var(--primary-blue);
+            border: 2px solid var(--white);
+        }
+
+        .btn-secondary:hover {
+            background: transparent;
+            color: var(--white);
+        }
+
+        /* ===== NATIVE INFO PANEL CARD ===== */
+        .info-panel-card {
+            background: var(--white);
+            border-radius: 24px;
+            padding: 2rem;
+            box-shadow: var(--shadow-lg);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5rem;
+            max-width: 440px;
+            margin: 0 auto;
+        }
+
+        .info-panel-illustration {
+            width: auto;
+            max-height: 140px;
+            object-fit: contain;
+        }
+
+        .info-panel-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            width: 100%;
+        }
+
+        .info-box {
+            border-radius: 16px;
+            padding: 1.25rem 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            text-align: left;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .info-box:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .info-box-label {
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .info-box-value {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: #2c3e50;
+            line-height: 1.5;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .info-box-value br {
+            display: block;
+            content: "";
+            margin-top: 0;
+        }
+
+        .box-format {
+            background-color: #f0f9fa;
+            border: 1px solid #d1edf0;
+        }
+        .box-format .info-box-label { color: #0d7a8f; }
+
+        .box-when {
+            background-color: #fff9f0;
+            border: 1px solid #ffe8cc;
+        }
+        .box-when .info-box-label { color: #f5a623; }
+
+        .box-audience {
+            background-color: #fff0f5;
+            border: 1px solid #ffd1dc;
+        }
+        .box-audience .info-box-label { color: #e91e63; }
+
+        .box-setting {
+            background-color: #f1f3f5;
+            border: 1px solid #e2e6ea;
+        }
+        .box-setting .info-box-label { color: #616e7c; }
+
+        /* ===== ABOUT SECTION ===== */
+        section {
+            padding: 5rem 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .section-header-left {
+            text-align: left;
+            margin-bottom: 1.5rem;
+        }
+
+        .section-badge {
+            display: inline-block;
+            background: var(--accent-orange);
+            color: var(--white);
+            padding: 0.9rem 2.2rem;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 0.5rem;
+            box-shadow: 0 4px 15px rgba(245, 166, 35, 0.35);
+        }
+
+        .section-badge-left {
+            display: inline-block;
+            background: var(--accent-orange);
+            color: var(--white);
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+            box-shadow: 0 2px 10px rgba(245, 166, 35, 0.2);
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 0rem;
+            color: var(--text-dark);
+        }
+
+        .section-subtitle {
+            font-size: 1.15rem;
+            color: var(--text-muted);
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.7;
+            display: none;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .about-card {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 2.5rem;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .about-card:hover {
+            border-color: var(--accent-orange);
+            box-shadow: var(--shadow-md);
+            transform: translateY(-5px);
+        }
+
+        .about-card-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .about-card h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+            color: var(--primary-blue);
+        }
+
+        .about-card p {
+            color: var(--text-muted);
+            line-height: 1.7;
+        }
+
+        /* ===== COMPACT SCHEDULE SECTION ===== */
+        .schedule-container {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            margin-top: 0.5rem;
+        }
+
+        .schedule-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .schedule-table thead {
+            background: var(--primary-blue);
+            color: var(--white);
+        }
+
+        .schedule-table th {
+            padding: 0.75rem 1rem;
+            text-align: left;
+            font-weight: 700;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .schedule-table td {
+            padding: 0.5rem 1rem;
+            border-bottom: 1px solid var(--border);
+            vertical-align: middle;
+        }
+
+        .schedule-table tbody tr:hover {
+            background: var(--bg-light);
+        }
+
+        .schedule-time {
+            font-weight: 700;
+            color: var(--accent-orange);
+            white-space: nowrap;
+            width: 120px;
+        }
+
+        .schedule-session-info {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .schedule-speaker {
+            font-weight: 600;
+            color: var(--primary-blue);
+            white-space: nowrap;
+        }
+
+        .schedule-separator {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .schedule-title {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        /* ===== ZOOM SECTION ===== */
+        .zoom-section {
+            background: linear-gradient(135deg, #1a3a5c 0%, #2c5a7a 100%);
+            color: var(--white);
+            border-radius: 12px;
+            padding: 2.5rem 2rem;
+            text-align: center;
+            margin: 2rem auto 0 auto;
+            max-width: 750px;
+            box-shadow: var(--shadow-md);
+        }
+
+        .zoom-header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .zoom-icon-wrapper {
+            width: 56px;
+            height: 56px;
+            border-radius: 14px;
+            background: rgba(255, 255, 255, 0.15);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid rgba(255, 255, 255, 0.25);
+            flex-shrink: 0;
+        }
+
+        .zoom-icon-wrapper svg {
+            width: 32px;
+            height: 32px;
+            fill: white;
+        }
+
+        .zoom-section h3 {
+            font-size: 1.6rem;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        .zoom-section p {
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+            opacity: 0.95;
+            max-width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            white-space: nowrap;
+        }
+
+        .zoom-link-box {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .zoom-link-input .btn {
+            padding: 0.9rem 3rem;
+            font-size: 1rem;
+            border-radius: 8px;
+            background: var(--accent-orange);
+            color: var(--white);
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-block;
+            width: 100%;
+            box-shadow: 0 4px 15px rgba(245, 166, 35, 0.3);
+        }
+
+        .zoom-link-input .btn:hover {
+            background: #e09a1f;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 25px rgba(245, 166, 35, 0.4);
+        }
+
+        /* ===== SPEAKERS SECTION ===== */
+        #speakers {
+            background: var(--bg-light);
+        }
+
+        .speakers-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2.5rem;
+            margin-top: 1rem;
+        }
+
+        .speaker-card {
+            background: var(--white);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .speaker-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .speaker-card:active {
+            transform: scale(0.97);
+            transition: transform 0.1s ease;
+        }
+
+        .speaker-image {
+            width: 100%;
+            height: 280px;
+            background: linear-gradient(135deg, var(--primary-blue), var(--accent-orange));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .speaker-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .speaker-image.viola img {
+            object-position: center 20%;
+        }
+
+        .speaker-image.edward img {
+            object-position: center 15%;
+        }
+
+        .speaker-image.lynda img {
+            object-position: center 25%;
+        }
+
+        .speaker-image.abraham img {
+            object-position: center 30%;
+        }
+
+        .speaker-image.carlo img {
+            object-position: center 20%;
+        }
+
+        .speaker-image.barbara img {
+            object-position: center 15%;
+        }
+
+        .speaker-image.placeholder {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--accent-orange) 100%);
+            color: var(--white);
+            font-size: 3rem;
+        }
+
+        .speaker-info {
+            padding: 1.75rem;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .speaker-name {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: var(--text-dark);
+        }
+
+        .speaker-affiliation {
+            font-size: 0.9rem;
+            color: var(--accent-orange);
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .speaker-talk {
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .speaker-abstract {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            line-height: 1.7;
+            background: var(--bg-light);
+            padding: 1rem;
+            border-radius: 8px;
+            border-left: 3px solid var(--accent-orange);
+            text-align: left;
+            flex: 1;
+        }
+
+        .abstract-label {
+            font-weight: 700;
+            color: var(--primary-blue);
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        /* ===== FUTURE SPEAKERS LIST VIEW ===== */
+        .future-speakers-section {
+            background: var(--white);
+            padding: 4rem 0;
+            border-top: 1px solid var(--border);
+        }
+
+        .future-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+            margin-top: 1.5rem;
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .future-item {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            background: var(--bg-light);
+            padding: 1.25rem 1.5rem;
+            border-radius: 10px;
+            border-left: 4px solid var(--primary-blue);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .future-item:hover {
+            transform: translateX(4px);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .future-img-placeholder {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #0d7a8f, #f5a623);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            color: var(--white);
+            flex-shrink: 0;
+            overflow: hidden;
+        }
+
+        .future-img-placeholder img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .future-img-placeholder.viola-future img {
+            object-position: center 20%;
+        }
+
+        .future-img-placeholder.edward-future img {
+            object-position: center 15%;
+        }
+
+        .future-img-placeholder.lynda-future img {
+            object-position: center 25%;
+        }
+
+        .future-img-placeholder.carlo-future img {
+            object-position: center 20%;
+        }
+
+        .future-img-placeholder.julia-future img {
+            object-position: center 30%;
+        }
+
+        .future-img-placeholder.abraham-future img {
+            object-position: center 30%;
+        }
+
+        .future-img-placeholder.susan-future img {
+            object-position: center 30%;
+        }
+
+        .future-img-placeholder.letizia-future img {
+            object-position: center 25%;
+        }
+
+        .future-img-placeholder.barbara-future img {
+            object-position: center 15%;
+        }
+
+        .future-img-placeholder.bukelwa-future img {
+            object-position: center 25%;
+        }
+
+        .future-details {
+            flex: 1;
+            display: grid;
+            grid-template-columns: 1fr 1.2fr 1.8fr;
+            gap: 0.3rem;
+            align-items: center;
+        }
+
+        .future-name {
+            font-weight: 700;
+            color: var(--text-dark);
+            font-size: 1.05rem;
+            white-space: nowrap;
+        }
+
+        .future-affiliation-text {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--accent-orange);
+            text-align: left;
+            white-space: nowrap;
+        }
+
+        .future-talk-title {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            font-style: italic;
+            line-height: 1.4;
+            text-align: left;
+            white-space: nowrap;
+        }
+
+        /* ===== ORGANIZERS SECTION ===== */
+        .organizers-section {
+            background: var(--bg-light);
+            padding: 3rem 2rem;
+            border-radius: 12px;
+            margin: 3rem 0;
+        }
+
+        .organizers-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: var(--accent-orange);
+        }
+
+        .organizers-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .organizer-item {
+            background: var(--white);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--accent-orange);
+            display: flex;
+            align-items: center;
+            gap: 1.2rem;
+        }
+
+        .organizer-image {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 3px solid var(--accent-orange);
+            flex-shrink: 0;
+        }
+
+        .organizer-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .organizer-info {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            text-align: left;
+            flex: 1;
+        }
+
+        .organizer-name {
+            font-weight: 700;
+            color: var(--text-dark);
+            font-size: 1.1rem;
+        }
+
+        .organizer-role {
+            font-size: 0.8rem;
+            color: var(--accent-orange);
+            font-weight: 600;
+            margin-top: 0.1rem;
+        }
+
+        .organizer-affiliation {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            line-height: 1.4;
+            margin-top: 0.3rem;
+        }
+
+        .organizer-contact {
+            font-size: 0.8rem;
+            color: var(--accent-orange);
+            margin-top: 0.3rem;
+        }
+
+        .organizer-contact a {
+            color: var(--accent-orange);
+            text-decoration: none;
+        }
+
+        .organizer-contact a:hover {
+            color: var(--primary-blue);
+            text-decoration: underline;
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background: var(--text-dark);
+            color: var(--white);
+            padding: 2.5rem 0;
+            font-size: 0.9rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+
+        .footer-left {
+            color: #999;
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 992px) {
+            .hero-content {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+                text-align: center;
+            }
+            .hero-cta {
+                justify-content: center;
+            }
+            .future-details {
+                grid-template-columns: 1fr;
+                gap: 0.25rem;
+            }
+            .future-affiliation-text {
+                text-align: left;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header-wrapper {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            nav ul {
+                gap: 1.2rem;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            nav a {
+                font-size: 0.9rem;
+                white-space: nowrap;
+            }
+
+            .header-title h1 {
+                white-space: normal;
+            }
+
+            .logo-section {
+                margin-right: 0;
+            }
+
+            .hero-text h1 {
+                font-size: 2.2rem;
+            }
+
+            .section-title {
+                font-size: 1.8rem;
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .speakers-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .schedule-table th,
+            .schedule-table td {
+                padding: 0.5rem 0.75rem;
+            }
+
+            .schedule-session-info {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.1rem;
+            }
+
+            .schedule-separator {
+                display: none;
+            }
+
+            .info-panel-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .future-item {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.75rem;
+            }
+
+            .future-details {
+                grid-template-columns: 1fr;
+                gap: 0.25rem;
+            }
+
+            .future-name {
+                white-space: normal;
+            }
+
+            .future-affiliation-text {
+                white-space: normal;
+            }
+
+            .future-talk-title {
+                white-space: normal;
+            }
+
+            .footer-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .organizer-item {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .organizer-info {
+                align-items: center;
+                text-align: center;
+            }
+
+            .organizers-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .section-badge {
+                font-size: 0.95rem;
+                padding: 0.7rem 1.5rem;
+            }
+
+            .zoom-section p {
+                white-space: normal;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="container">
+        <div class="header-wrapper">
+            <div class="logo-section">
+                <img src="Logo5.jpg" alt="Talk Series Logo" class="logo-img">
+                <div class="header-title">
+                    <span class="talk-number">1st Talk</span>
+                    <h1>Human-Centered Technology</h1>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#schedule">Event Details</a></li>
+                    <li><a href="#speakers">Current Speakers</a></li>
+                    <li><a href="#future-speakers">Future Speakers</a></li>
+                    <li><a href="#organizers">Organizers</a></li>
+                    
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">History ▾</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="active-event">Current Event (Talk #1)</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h2>Welcome to the First Talk</h2>
+                <h1>Interdisciplinary Perspectives on Human-Centered Technology</h1>
+                <p>A lunchtime talk series bringing together researchers and practitioners from computer science, social science, philosophy, and design to explore the role of technology in society.</p>
+                <div class="hero-cta">
+                    <a href="#schedule" class="btn btn-primary">View Schedule</a>
+                    <a href="#speakers" class="btn btn-secondary">Meet Speakers</a>
+                </div>
+            </div>
+            
+            <!-- INFO PANEL CARD -->
+            <div class="info-panel-card">
+                <img src="Logo5.jpg" alt="Human Centered Technology Logo" class="info-panel-illustration">
+                <div class="info-panel-grid">
+                    <div class="info-box box-format">
+                        <span class="info-box-label">Format</span>
+                        <span class="info-box-value">60 minutes<br>Online</span>
+                    </div>
+                    <div class="info-box box-when">
+                        <span class="info-box-label">When</span>
+                        <span class="info-box-value">Monday, September 07, 2026<br>Lunch Time (12:00-13:00 CET)</span>
+                    </div>
+                    <div class="info-box box-audience">
+                        <span class="info-box-label">Audience</span>
+                        <span class="info-box-value">Researchers & Practitioners</span>
+                    </div>
+                    <div class="info-box box-setting">
+                        <span class="info-box-label">Setting</span>
+                        <span class="info-box-value">Global Community</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section id="about" style="background: var(--bg-light); padding: 5rem 0;">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge">About This Series</span>
+            <h2 class="section-title" style="display: none;">About the Series</h2>
+            <p class="section-subtitle">Technology shapes how we work, interact, and make decisions, yet it is often designed within disciplinary silos. This series creates a space for dialogue across fields and for deeper reflection on responsibility, values, and societal impact.</p>
+        </div>
+        <div class="about-grid">
+            <div class="about-card">
+                <div class="about-card-icon">🎓</div>
+                <h3>Learn Across Disciplines</h3>
+                <p>Hear from scholars working in computer science, philosophy, organizational research, and society.</p>
+            </div>
+            <div class="about-card">
+                <div class="about-card-icon">💬</div>
+                <h3>Join the Discussion</h3>
+                <p>Each session combines a talk with open discussion designed to surface different perspectives.</p>
+            </div>
+            <div class="about-card">
+                <div class="about-card-icon">🤝</div>
+                <h3>Build Community</h3>
+                <p>Meet others interested in human-centered approaches to systems, AI, and digital transformation.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SCHEDULE SECTION -->
+<section id="schedule">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge">Event Details</span>
+            <h2 class="section-title" style="display: none;">Schedule</h2>
+            <p class="section-subtitle">Join us online via Zoom for this inaugural talk series.</p>
+        </div>
+
+        <div class="schedule-container">
+            <table class="schedule-table">
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Session</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="schedule-time">12:00 - 12:10</td>
+                        <td>
+                            <div class="schedule-session-info">
+                                <span class="schedule-speaker">Viola Schiaffonati</span>
+                                <span class="schedule-separator">•</span>
+                                <span class="schedule-title">Can AI Explain Its Decisions? Limits of Explanation in Real Systems</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="schedule-time">12:10 - 12:20</td>
+                        <td>
+                            <div class="schedule-session-info">
+                                <span class="schedule-speaker">Edward A. Lee</span>
+                                <span class="schedule-separator">•</span>
+                                <span class="schedule-title">What Is Computer Science Responsible For?</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="schedule-time">12:20 - 12:30</td>
+                        <td>
+                            <div class="schedule-session-info">
+                                <span class="schedule-speaker">Lynda Hardman</span>
+                                <span class="schedule-separator">•</span>
+                                <span class="schedule-title">What Does Human-Centered AI Actually Mean?</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="schedule-time">12:30 - 12:40</td>
+                        <td>
+                            <div class="schedule-session-info">
+                                <span class="schedule-speaker">Abraham Bernstein</span>
+                                <span class="schedule-separator">•</span>
+                                <span class="schedule-title">Digital Society and Collective Intelligence</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="schedule-time">12:40 - 12:50</td>
+                        <td>
+                            <div class="schedule-session-info">
+                                <span class="schedule-speaker">Carlo Ghezzi</span>
+                                <span class="schedule-separator">•</span>
+                                <span class="schedule-title">Software Systems as Societal Infrastructure</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="schedule-time">12:50 - 13:00</td>
+                        <td>
+                            <div class="schedule-session-info">
+                                <span class="schedule-speaker">Barbara Steffen</span>
+                                <span class="schedule-separator">•</span>
+                                <span class="schedule-title">Why AI Projects Fail in Organizations</span>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- ZOOM SECTION -->
+        <div class="zoom-section">
+            <div class="zoom-header">
+                <div class="zoom-icon-wrapper">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M4.585 5.907c-.452 0-.813.361-.813.813v10.56c0 .452.361.813.813.813h10.56c.452 0 .813-.361.813-.813V6.72a.813.813 0 0 0-.813-.813H4.585zm12.637 2.455l3.89-2.833A.525.525 0 0 1 22 5.95v12.1a.525.525 0 0 1-.888.42l-3.89-2.832a.523.523 0 0 1-.222-.42v-6.44a.524.524 0 0 1 .222-.416z"/>
+                    </svg>
+                </div>
+                <h3>Join Online via Zoom</h3>
+            </div>
+            <p>The talk will be hosted virtually via Zoom. Click below to join the live session.</p>
+            <div class="zoom-link-box">
+                <div class="zoom-link-input">
+                    <a href="#" class="btn btn-primary" id="zoomJoinBtn">Join Now</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- CURRENT SPEAKERS SECTION -->
+<section id="speakers">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge">Current Presenters</span>
+            <h2 class="section-title" style="display: none;">Current Speakers</h2>
+            <p class="section-subtitle">Active subject experts delivering presentations and technical briefs during our live blocks.</p>
+        </div>
+        <div class="speakers-grid">
+            <!-- Speaker 1 - Viola Schiaffonati -->
+            <div class="speaker-card" onclick="window.open('https://www.deib.polimi.it/eng/people/details/70304', '_blank')">
+                <div class="speaker-image viola">
+                    <img src="https://www.deib.polimi.it/allegati/peopledeib/70304/foto.jpg" alt="Viola Schiaffonati">
+                </div>
+                <div class="speaker-info">
+                    <div class="speaker-name">Viola Schiaffonati</div>
+                    <div class="speaker-affiliation">Politecnico di Milano</div>
+                    <div class="speaker-talk">Can AI Explain Its Decisions? Limits of Explanation in Real Systems</div>
+                    <div class="speaker-abstract">
+                        <span class="abstract-label">Summary</span>
+                        <p>This text should be updated later. This text should be updated later. This text should be updated later. This text should be updated later. This text should be updated later. This text should be updated later. This text should be updated later. This text should be updated later.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Speaker 2 - Edward A. Lee -->
+            <div class="speaker-card" onclick="window.open('https://www2.eecs.berkeley.edu/Faculty/Homepages/lee.html', '_blank')">
+                <div class="speaker-image edward">
+                    <img src="https://www2.eecs.berkeley.edu/Faculty/Photos/Homepages/lee.jpg" alt="Edward A. Lee">
+                </div>
+                <div class="speaker-info">
+                    <div class="speaker-name">Edward A. Lee</div>
+                    <div class="speaker-affiliation">UC Berkeley</div>
+                    <div class="speaker-talk">What Is Computer Science Responsible For?</div>
+                    <div class="speaker-abstract">
+                        <span class="abstract-label">Summary</span>
+                        <p>This text should be updated later. This text should be updated later. This text should be updated later. This text should be updated later. This text should be updated later. This text should be updated later. This text should be updated later. This text should be updated later.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Speaker 3 - Lynda Hardman -->
+            <div class="speaker-card" onclick="window.open('https://www.uu.nl/staff/LHardman', '_blank')">
+                <div class="speaker-image lynda">
+                    <img src="https://www.uu.nl/medewerkers/RestApi/Public/GetImage?Employee=26264&t=" alt="Lynda Hardman">
+                </div>
+                <div class="speaker-info">
+                    <div class="speaker-name">Lynda Hardman</div>
+                    <div class="speaker-affiliation">CWI / Utrecht University</div>
+                    <div class="speaker-talk">What Does Human-Centered AI Actually Mean?</div>
+                    <div class="speaker-abstract">
+                        <span class="abstract-label">Summary</span>
+                        <p>This text should be updated later. This text should be updated later. This text should be updated later. This text should be updated later. This text should be updated later. This text should be updated later. This text should be updated later. This text should be updated later.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Speaker 4 - Abraham Bernstein -->
+            <div class="speaker-card" onclick="window.open('https://www.ifi.uzh.ch/en/ddis/people/bernstein.html', '_blank')">
+                <div class="speaker-image abraham">
+                    <img src="https://www.ifi.uzh.ch/contacts/ifi/DDIS/abernstein/photo/abernstein.jpeg.jpeg" alt="Abraham Bernstein">
+                </div>
+                <div class="speaker-info">
+                    <div class="speaker-name">Abraham Bernstein</div>
+                    <div class="speaker-affiliation">University of Zurich</div>
+                    <div class="speaker-talk">Digital Society and Collective Intelligence</div>
+                    <div class="speaker-abstract">
+                        <span class="abstract-label">Summary</span>
+                        <p>This text should be updated later. This text should be updated later. This text should be updated later. This text should be updated later. This text should be updated later. This text should be updated later. This text should be updated later. This text should be updated later.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Speaker 5 - Carlo Ghezzi -->
+            <div class="speaker-card" onclick="window.open('https://www.deib.polimi.it/eng/people/details/528646', '_blank')">
+                <div class="speaker-image carlo">
+                    <img src="https://www.deib.polimi.it/allegati/peopledeib/528646/foto.jpg" alt="Carlo Ghezzi">
+                </div>
+                <div class="speaker-info">
+                    <div class="speaker-name">Carlo Ghezzi</div>
+                    <div class="speaker-affiliation">Politecnico di Milano</div>
+                    <div class="speaker-talk">Software Systems as Societal Infrastructure</div>
+                    <div class="speaker-abstract">
+                        <span class="abstract-label">Summary</span>
+                        <p>This text should be updated later. This text should be updated later. This text should be updated later. This text should be updated later. This text should be updated later. This text should be updated later. This text should be updated later. This text should be updated later.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Speaker 6 - Barbara Steffen -->
+            <div class="speaker-card">
+                <div class="speaker-image barbara">
+                    <img src="https://www.uni-potsdam.de/fileadmin/_processed_/8/f/csm_Barbara_6a6b0fcc27.webp" alt="Barbara Steffen">
+                </div>
+                <div class="speaker-info">
+                    <div class="speaker-name">Barbara Steffen</div>
+                    <div class="speaker-affiliation">University of Potsdam</div>
+                    <div class="speaker-talk">Why AI Projects Fail in Organizations</div>
+                    <div class="speaker-abstract">
+                        <span class="abstract-label">Summary</span>
+                        <p>This text should be updated later. This text should be updated later. This text should be updated later. This text should be updated later. This text should be updated later. This text should be updated later. This text should be updated later. This text should be updated later.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FUTURE SPEAKERS SECTION -->
+<section id="future-speakers" class="future-speakers-section">
+    <div class="container">
+        <div class="section-header-left">
+            <span class="section-badge-left">Future Speakers</span>
+            <h2 class="section-title" style="display: none;">Future Speakers</h2>
+            <p class="section-subtitle" style="display: none;">The series brings together perspectives from systems engineering, AI, philosophy, sociotechnical studies, software engineering, and global contexts.</p>
+        </div>
+        
+        <div class="future-list">
+            <!-- Future Speaker 1 - Viola Schiaffonati -->
+            <div class="future-item">
+                <div class="future-img-placeholder viola-future">
+                    <img src="https://www.deib.polimi.it/allegati/peopledeib/70304/foto.jpg" alt="Viola Schiaffonati">
+                </div>
+                <div class="future-details">
+                    <div class="future-name">Viola Schiaffonati</div>
+                    <div class="future-affiliation-text">Politecnico di Milano</div>
+                    <div class="future-talk-title">Can AI Explain Its Decisions? Limits of Explanation in Real Systems</div>
+                </div>
+            </div>
+
+            <!-- Future Speaker 2 - Edward A. Lee -->
+            <div class="future-item">
+                <div class="future-img-placeholder edward-future">
+                    <img src="https://www2.eecs.berkeley.edu/Faculty/Photos/Homepages/lee.jpg" alt="Edward A. Lee">
+                </div>
+                <div class="future-details">
+                    <div class="future-name">Edward A. Lee</div>
+                    <div class="future-affiliation-text">UC Berkeley</div>
+                    <div class="future-talk-title">What Is Computer Science Responsible For?</div>
+                </div>
+            </div>
+
+            <!-- Future Speaker 3 - Lynda Hardman -->
+            <div class="future-item">
+                <div class="future-img-placeholder lynda-future">
+                    <img src="https://www.uu.nl/medewerkers/RestApi/Public/GetImage?Employee=26264&t=" alt="Lynda Hardman">
+                </div>
+                <div class="future-details">
+                    <div class="future-name">Lynda Hardman</div>
+                    <div class="future-affiliation-text">CWI / Utrecht University</div>
+                    <div class="future-talk-title">What Does Human-Centered AI Actually Mean?</div>
+                </div>
+            </div>
+
+            <!-- Future Speaker 4 - Carlo Ghezzi -->
+            <div class="future-item">
+                <div class="future-img-placeholder carlo-future">
+                    <img src="https://www.deib.polimi.it/allegati/peopledeib/528646/foto.jpg" alt="Carlo Ghezzi">
+                </div>
+                <div class="future-details">
+                    <div class="future-name">Carlo Ghezzi</div>
+                    <div class="future-affiliation-text">Politecnico di Milano</div>
+                    <div class="future-talk-title">Software Systems as Societal Infrastructure</div>
+                </div>
+            </div>
+
+            <!-- Future Speaker 5 - Julia Neidhardt -->
+            <div class="future-item">
+                <div class="future-img-placeholder julia-future">
+                    <img src="https://informatics.tuwien.ac.at/people/julia-neidhardt/picture/head-2x.webp" alt="Julia Neidhardt">
+                </div>
+                <div class="future-details">
+                    <div class="future-name">Julia Neidhardt</div>
+                    <div class="future-affiliation-text">TU Wien</div>
+                    <div class="future-talk-title">Who Controls Personalization? Human Agency in Recommender Systems</div>
+                </div>
+            </div>
+
+            <!-- Future Speaker 6 - Abraham Bernstein -->
+            <div class="future-item">
+                <div class="future-img-placeholder abraham-future">
+                    <img src="https://www.ifi.uzh.ch/contacts/ifi/DDIS/abernstein/photo/abernstein.jpeg.jpeg" alt="Abraham Bernstein">
+                </div>
+                <div class="future-details">
+                    <div class="future-name">Abraham Bernstein</div>
+                    <div class="future-affiliation-text">University of Zurich</div>
+                    <div class="future-talk-title">Digital Society and Collective Intelligence: Opportunities and Risks</div>
+                </div>
+            </div>
+
+            <!-- Future Speaker 7 - Susan Winter -->
+            <div class="future-item">
+                <div class="future-img-placeholder susan-future">
+                    <img src="https://faculty.umd.edu/sites/default/files/styles/person_card_square/public/2026-02/SusanWinter.jpg?itok=xrBeK_xa" alt="Susan Winter">
+                </div>
+                <div class="future-details">
+                    <div class="future-name">Susan Winter</div>
+                    <div class="future-affiliation-text">University of Maryland</div>
+                    <div class="future-talk-title">Human-Centered Technology in Organizations: Myth vs Reality</div>
+                </div>
+            </div>
+
+            <!-- Future Speaker 8 - Letizia Jaccheri -->
+            <div class="future-item">
+                <div class="future-img-placeholder letizia-future">
+                    <img src="https://backends.it.ntnu.no/user-profile-service/rest/files/532f1452-5c6d-325b-aa26-c5956f1d14b9" alt="Letizia Jaccheri">
+                </div>
+                <div class="future-details">
+                    <div class="future-name">Letizia Jaccheri</div>
+                    <div class="future-affiliation-text">NTNU</div>
+                    <div class="future-talk-title">Inclusive Software Engineering: Who Are We Designing For?</div>
+                </div>
+            </div>
+
+            <!-- Future Speaker 9 - Barbara Steffen -->
+            <div class="future-item">
+                <div class="future-img-placeholder barbara-future">
+                    <img src="https://www.uni-potsdam.de/fileadmin/_processed_/8/f/csm_Barbara_6a6b0fcc27.webp" alt="Barbara Steffen">
+                </div>
+                <div class="future-details">
+                    <div class="future-name">Barbara Steffen</div>
+                    <div class="future-affiliation-text">University of Potsdam</div>
+                    <div class="future-talk-title">Why AI Projects Fail in Organizations</div>
+                </div>
+            </div>
+
+            <!-- Future Speaker 10 - Bukelwa Ngoqo -->
+            <div class="future-item">
+                <div class="future-img-placeholder bukelwa-future">
+                    <img src="https://soit.mandela.ac.za/soit-n/media/Store/Images/Staff%202026/Picture13.png" alt="Bukelwa Ngoqo">
+                </div>
+                <div class="future-details">
+                    <div class="future-name">Bukelwa Ngoqo</div>
+                    <div class="future-affiliation-text">Rhodes University</div>
+                    <div class="future-talk-title">Human-Centered Technology in the Global South</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ORGANIZERS SECTION -->
+<section id="organizers">
+    <div class="container">
+        <div class="organizers-section">
+            <h3 class="organizers-title">Organizing Committee</h3>
+            <div class="organizers-grid">
+                <div class="organizer-item">
+                    <div class="organizer-image">
+                        <img src="https://www.es.mdu.se/img/staff/3242-staff.jpg?time=1784033582" alt="Marjan Sirjani">
+                    </div>
+                    <div class="organizer-info">
+                        <div class="organizer-name">Marjan Sirjani</div>
+                        <div class="organizer-role">Lead Organizer</div>
+                        <div class="organizer-affiliation">Professor<br>Department of Computer Science & Engineering<br>Mälardalen University</div>
+                        <div class="organizer-contact"><a href="mailto:marjan.sirjani@mdu.se">marjan.sirjani@mdu.se</a></div>
+                    </div>
+                </div>
+                <div class="organizer-item">
+                    <div class="organizer-image">
+                        <img src="https://www.es.mdu.se/img/staff/413-staff.jpg?time=1784033556" alt="Sara Abbaspour">
+                    </div>
+                    <div class="organizer-info">
+                        <div class="organizer-name">Sara Abbaspour</div>
+                        <div class="organizer-role">Co-Organizer</div>
+                        <div class="organizer-affiliation">PhD in Computer Science and Engineering<br>Researcher and Senior Lecturer<br>Mälardalen University</div>
+                        <div class="organizer-contact"><a href="mailto:sara.abbaspour@mdu.se">sara.abbaspour@mdu.se</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-left">
+                <p>&copy; 2026 1st Talk | Interdisciplinary Perspectives on Human-Centered Technology</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- JavaScript to handle Zoom link reveal -->
+<script>
+    document.getElementById('zoomJoinBtn').addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        const zoomLink = 'https://mdu-se.zoom.us/j/3392552557';
+        
+        window.open(zoomLink, '_blank');
+        
+        this.textContent = '✅ Joined';
+        this.style.background = '#4CAF50';
+        
+        setTimeout(() => {
+            this.textContent = 'Join Now';
+            this.style.background = '';
+        }, 3000);
+    });
+</script>
+
+</body>
+</html>
