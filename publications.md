@@ -7,16 +7,22 @@ redirect_from: "/wiki/pmwiki.php/Rebeca/Publications"
 
 #### 2026
 
+- Marjan Sirjani, Taming the Power of Nondeterminism, Draft, 2026
+\\
+<a class="link link_pdf" href="/assets/papers/2024/CRYSTAL.pdf">PDF</a>
+
 - Marjan Sirjani, Edward A. Lee, Zahra Moezkarimi, Bahman Pourvatan, Bjarne Johansson, Stefan Marksteiner, Alessandro V. Papadopoulos: Actors for Timing Analysis of Distributed Redundant Controllers. Concurrent Programming, Open Systems and Formal Methods 2026: 189-214
 
 
 #### 2025
 
 - Edward A. Lee, Mohammad Reza Mousavi, Carolyn L. Talcott: Rebeca for Actor Analysis in Action - Essays Dedicated to Marjan Sirjani on the Occasion of Her 60th Birthday. Lecture Notes in Computer Science 15560, Springer 2025, ISBN 978-3-031-85133-9
+\\
+<a class="link link_bibtex" href="https://link.springer.com/book/10.1007/978-3-031-85134-6">BibTeX</a>
 
 - Shaokai Lin, Edward A. Lee: Verify Engineering Models, Not Scientific Models. Rebeca for Actor Analysis in Action 2025: 195-211
 
-- 	Stefan Marksteiner, Mikael Sjödin: Black-Box Protocol Testing Using Rebeca and Automata Learning. Rebeca for Actor Analysis in Action 2025: 212-235
+- Stefan Marksteiner, Mikael Sjödin: Black-Box Protocol Testing Using Rebeca and Automata Learning. Rebeca for Actor Analysis in Action 2025: 212-235
 
 - Fatemeh Ghassemi, Saeed Zhiany, Nesa Abbasi, Ali Hodaei, Ali Ataollahi, József Kovács, Erika Ábrahám, Marjan Sirjani:
 Reachability analysis of Hybrid Rebeca models. J. Syst. Archit. 167: 103493 (2025)
