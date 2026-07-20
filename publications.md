@@ -5,6 +5,29 @@ redirect_from: "/wiki/pmwiki.php/Rebeca/Publications"
 
 ---
 
+#### 2025
+
+- Fatemeh Ghassemi, Saeed Zhiany, Nesa Abbasi, Ali Hodaei, Ali Ataollahi, József Kovács, Erika Ábrahám, Marjan Sirjani:
+Reachability analysis of Hybrid Rebeca models. J. Syst. Archit. 167: 103493 (2025)
+
+- Ali Mehrani, Fatemeh Ghassemi, Marjan Sirjani, Farhad Arbab:
+Efficient Join Order for Constraint Automata Through LLM-Generated Heuristics. Principles of Formal Quantitative Analysis 2025: 342-359
+
+-	Carlo Ghezzi, Masoud Ebrahimi, Damir Isovic, Marjan Sirjani: Breaking Disciplinary Silos: The Case of Software Engineering. DIGHUM 2025: 421-435
+
+- Zahra Moezkarimi, Kevin Eriksson, Albin Alm Johansson, Alessio Bucaioni, Marjan Sirjani:
+Harnessing ChatGPT for Model Transformation in Software Architecture: From UML State Diagrams to Rebeca Models for Formal Verification. ICSA Companion 2025: 387-396
+
+- Khashayar Etemadi, Marjan Sirjani, Mahshid Helali Moghadam, Per Erik Strandberg, Paul Pettersson:
+LLM-Based Property-Based Test Generation for Guardrailing Cyber-Physical Systems. AISoLA 2025: 18-46
+
+- Stefan Marksteiner, Mikael Sjödin, Marjan Sirjani: Learn, Check, Test - Security Testing Using Automata Learning and Model Checking. CoRR abs/2509.22215 (2025)
+
+- Hiep Hong Trinh, Marjan Sirjani, Federico Ciccozzi, Abu Naser Masud, Mikael Sjödin: Modelling and Model-Checking a ROS2 Multi-Robot System using Timed Rebeca. CoRR abs/2511.15227 (2025)
+
+- Hiep Hong Trinh, Federico Ciccozzi, Abu Naser Masud, Marjan Sirjani, Mikael Sjödin: M, Toolchain and Language for Reusable Model Compilation. CoRR abs/2511.15257 (2025)
+
+
 #### 2024
 
 - Fereidoun Moradi, Sara Abbaspour Asadollah, Bahman Pourvatan, Zahra Moezkarimi, Marjan Sirjani: CRYSTAL Framework: Cybersecurity Assurance for Cyber-Physical Systems. Journal of Logical and Algebraic Methods in Programming. 139: 100965 (2024)
