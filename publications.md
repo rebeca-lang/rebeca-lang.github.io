@@ -45,6 +45,12 @@ Formal Verification of Consistency for Systems with Redundant Controllers. CoRR 
 <a class="link link_pdf" href="https://www.es.mdu.se/pdf_publications/6933.pdf">PDF</a>
 
 
+- Saeed Zhiany, Fatemeh Ghassemi, Nesa Abbasimoghadam, Ali Hodaei, Ali Ataollahi, József Kovács, Erika Ábrahám, Marjan Sirjani:
+Hybrid Rebeca Revisited. CoRR abs/2411.03160 (2024)
+\\
+<a class="link link_pdf" href="https://arxiv.org/pdf/2411.03160">PDF</a>
+
+
 #### 2023
 - Fatemeh Ghassemi, Marjan Sirjani, Ehsan Khamespanah, Mahrokh Mirani, Hossein Hojjat: Transparent Actor Model. FormaliSE 2023: 97-107
 \\
