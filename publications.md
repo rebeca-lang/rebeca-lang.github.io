@@ -40,7 +40,9 @@ Formal Verification of Consistency for Systems with Redundant Controllers. CoRR 
 \\
 <a class="link link_pdf" href="/assets/theses/AutomatedVulnerabilityDiscoveryandAttackDetectionFrameworkforCyber-PhysicalSystems.pdf">PDF</a>
 
-- Stefan Marksteiner: Model-Driven Security Test Case Generation Using Threat Modeling and Automata Learning - PhD Thesis, Malardalen University, Sweden, 2024 
+- Stefan Marksteiner: Model-Driven Security Test Case Generation Using Threat Modeling and Automata Learning - Licentiate Thesis, Malardalen University, Sweden, 2024
+  \\
+<a class="link link_pdf" href="https://www.es.mdu.se/pdf_publications/6933.pdf">PDF</a>
 
 
 #### 2023
