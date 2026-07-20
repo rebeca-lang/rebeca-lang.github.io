@@ -9,7 +9,7 @@ redirect_from: "/wiki/pmwiki.php/Rebeca/Publications"
 
 - Marjan Sirjani, Taming the Power of Nondeterminism, Draft, 2026
 \\
-<a class="link link_pdf" href="/assets/papers/2024/CRYSTAL.pdf">PDF</a>
+<a class="link link_pdf" href="https://github.com/rebeca-lang/rebeca-lang.github.io/blob/master/assets/papers/2026/TamingNonDeterminismJuly2026.pdf">PDF</a>
 
 - Marjan Sirjani, Edward A. Lee, Zahra Moezkarimi, Bahman Pourvatan, Bjarne Johansson, Stefan Marksteiner, Alessandro V. Papadopoulos: Actors for Timing Analysis of Distributed Redundant Controllers. Concurrent Programming, Open Systems and Formal Methods 2026: 189-214
 
