@@ -536,34 +536,34 @@
 
         /* --- SCHEDULE --- */
         .talk-title {
-    font-weight: 700;
-    font-size: 1.08rem;
-    margin: 0.35rem 0 0.2rem;
-    color: var(--text);
-}
+            font-weight: 700;
+            font-size: 1.08rem;
+            margin: 0.35rem 0 0.2rem;
+            color: var(--text);
+        }
 
-.talk-details {
-    margin-top: 0.6rem;
-}
+        .talk-details {
+            margin-top: 0.6rem;
+        }
 
-.talk-details summary {
-    color: var(--blue);
-    font-weight: 600;
-    font-size: 0.92rem;
-    cursor: pointer;
-}
+        .talk-details summary {
+            color: var(--blue);
+            font-weight: 600;
+            font-size: 0.92rem;
+            cursor: pointer;
+        }
 
-.talk-details summary:hover {
-    text-decoration: underline;
-}
+        .talk-details summary:hover {
+            text-decoration: underline;
+        }
 
-.talk-details p {
-    margin: 0.7rem 0 0;
-    color: var(--muted);
-    font-size: 0.95rem;
-    line-height: 1.6;
-    max-width: 100%;
-}
+        .talk-details p {
+            margin: 0.7rem 0 0;
+            color: var(--muted);
+            font-size: 0.95rem;
+            line-height: 1.6;
+            max-width: 100%;
+        }
         .schedule {
             display: grid;
             gap: 1rem;
@@ -640,11 +640,11 @@
         .session-info { flex: 1; }
 
         .session-title {
-    font-weight: 700;
-    margin-bottom: 0.1rem;
-    font-size: 1.18rem;
-    transition: var(--transition);
-}
+            font-weight: 700;
+            margin-bottom: 0.1rem;
+            font-size: 1.18rem;
+            transition: var(--transition);
+        }
 
         .session-title a {
             cursor: pointer;
@@ -666,6 +666,32 @@
         }
 
         .session-clickable { display: contents; cursor: default; }
+
+        .details-group {
+            display: flex;
+            gap: 1.2rem;
+            flex-wrap: wrap;
+            margin-top: 0.4rem;
+        }
+
+        .details-group summary {
+            color: var(--blue);
+            font-weight: 600;
+            font-size: 0.92rem;
+            cursor: pointer;
+        }
+
+        .details-group summary:hover {
+            text-decoration: underline;
+        }
+
+        .details-group details p {
+            margin: 0.7rem 0 0;
+            color: var(--muted);
+            font-size: 0.95rem;
+            line-height: 1.6;
+            max-width: 100%;
+        }
 
         /* ZOOM SECTION */
         .zoom-section {
@@ -932,6 +958,7 @@
             .contact-person { min-width: unset; text-align: left; }
             .contact-person .affiliation { justify-content: flex-start; }
             .session-date { white-space: normal; }
+            .details-group { gap: 0.8rem; }
         }
 
         @media (max-width: 640px) {
@@ -953,6 +980,7 @@
             .card-icon { width: 44px; height: 44px; font-size: 1.4rem; }
             .contact-card { padding: 1.25rem; gap: 0.25rem; }
             .session-date { white-space: normal; }
+            .details-group { gap: 0.6rem; }
         }
     </style>
 </head>
@@ -1101,17 +1129,17 @@
                         </div>
                     </article>
 
-        <!-- Mohammad Reza Mousavi -->
-            <article class="speaker-card">
-                <a href="https://www.kcl.ac.uk/people/mohammad-reza-mousavi" target="_blank" rel="noopener">
-                    <img class="speaker-avatar" src="https://www.kcl.ac.uk/newimages/person-profile/2022a/mohammad-mousavi.xd8e01112.jpg?w=223&h=298&crop=160,160,28,22&f=webp" alt="Mohammad Reza Mousavi" loading="lazy" />
-                </a>
-            <div class="speaker-info">
-                <strong><a href="https://www.kcl.ac.uk/people/mohammad-reza-mousavi" target="_blank" rel="noopener">Mohammad Reza Mousavi</a></strong>
-                <span class="affiliation-badge">Professor of Software Engineering, King's College London</span>
-            </div>
-            </article>
-                    
+                    <!-- Mohammad Reza Mousavi -->
+                    <article class="speaker-card">
+                        <a href="https://www.kcl.ac.uk/people/mohammad-reza-mousavi" target="_blank" rel="noopener">
+                            <img class="speaker-avatar" src="https://www.kcl.ac.uk/newimages/person-profile/2022a/mohammad-mousavi.xd8e01112.jpg?w=223&h=298&crop=160,160,28,22&f=webp" alt="Mohammad Reza Mousavi" loading="lazy" />
+                        </a>
+                        <div class="speaker-info">
+                            <strong><a href="https://www.kcl.ac.uk/people/mohammad-reza-mousavi" target="_blank" rel="noopener">Mohammad Reza Mousavi</a></strong>
+                            <span class="affiliation-badge">Professor of Software Engineering, King's College London</span>
+                        </div>
+                    </article>
+
                     <!-- Barbara Steffen -->
                     <article class="speaker-card">
                         <img class="speaker-avatar" src="https://www.uni-potsdam.de/fileadmin/_processed_/8/f/csm_Barbara_6a6b0fcc27.webp" alt="Barbara Steffen" loading="lazy" />
@@ -1132,53 +1160,46 @@
                 </div>
                 <div class="schedule">
                     <!-- Viola Schiaffonati -->
-<article class="session">
-    <div class="session-date">Oct. 6, 2026</div>
-    <div class="session-content">
-        <a href="https://www.deib.polimi.it/eng/people/details/70304"
-           target="_blank" rel="noopener" class="session-clickable">
-            <img class="session-avatar"
-                 src="https://www.deib.polimi.it/allegati/peopledeib/70304/foto.jpg"
-                 alt="Viola Schiaffonati"
-                 loading="lazy" />
-        </a>
-
-        <div class="session-info">
-            <div class="session-title">
-                <a href="https://www.deib.polimi.it/eng/people/details/70304"
-                   target="_blank" rel="noopener">
-                    Viola Schiaffonati
-                </a>
-            </div>
-
-            <div class="talk-title">
-                AI-related risks: A philosophical analysis
-            </div>
-
-            <div class="session-meta">
-                Zoom Meeting, 12:00 to 13:00 CEST
-            </div>
-
-            <details class="talk-details">
-                <summary>Read abstract</summary>
-                <p>
-                    Risks connected with AI systems are now a recurrent topic in public and
-                    academic debates. In this talk I will offer a philosophical analysis of
-                    such risks with the aim of providing a comprehensive and general framework
-                    to think about AI-related risks. First, by building upon the existing
-                    literature on natural disaster risk analysis, I will present a
-                    multi-component analysis of risk and discuss its benefits in terms not
-                    only of conceptual clarification but also of possible mitigation. Second,
-                    by adopting a multi-hazard and multi-risk framework, I will analyze
-                    AI-related risks as potentially emerging from the combination of the risks
-                    related to the different elements of the AI system and its context of use.
-                    This talk will provide a concrete example of the vital role of philosophical
-                    analysis for human-centered AI technologies.
-                </p>
-            </details>
-        </div>
-    </div>
-</article>
+                    <article class="session">
+                        <div class="session-date">Oct. 6, 2026</div>
+                        <div class="session-content">
+                            <a href="https://www.deib.polimi.it/eng/people/details/70304" target="_blank" rel="noopener" class="session-clickable">
+                                <img class="session-avatar" src="https://www.deib.polimi.it/allegati/peopledeib/70304/foto.jpg" alt="Viola Schiaffonati" loading="lazy" />
+                            </a>
+                            <div class="session-info">
+                                <div class="session-title">
+                                    <a href="https://www.deib.polimi.it/eng/people/details/70304" target="_blank" rel="noopener">Viola Schiaffonati</a>
+                                </div>
+                                <div class="talk-title">AI-related risks: A philosophical analysis</div>
+                                <div class="session-meta">Zoom Meeting, 12:00 to 13:00 CEST</div>
+                                <div class="details-group">
+                                    <details class="talk-details">
+                                        <summary>Read abstract</summary>
+                                        <p>
+                                            Risks connected with AI systems are now a recurrent topic in public and
+                                            academic debates. In this talk I will offer a philosophical analysis of
+                                            such risks with the aim of providing a comprehensive and general framework
+                                            to think about AI-related risks. First, by building upon the existing
+                                            literature on natural disaster risk analysis, I will present a
+                                            multi-component analysis of risk and discuss its benefits in terms not
+                                            only of conceptual clarification but also of possible mitigation. Second,
+                                            by adopting a multi-hazard and multi-risk framework, I will analyze
+                                            AI-related risks as potentially emerging from the combination of the risks
+                                            related to the different elements of the AI system and its context of use.
+                                            This talk will provide a concrete example of the vital role of philosophical
+                                            analysis for human-centered AI technologies.
+                                        </p>
+                                    </details>
+                                    <details class="talk-details">
+                                        <summary>Bio</summary>
+                                        <p>
+                                            Viola Schiaffonati is Full Professor of Logic and Philosophy of Science at the Department of Electronics, Information and Bioengineering of Politecnico di Milano. Viola Schiaffonati's research interests lie at the intersection of philosophy of science and technology and computer engineering. Her current research focuses on the following themes: the epistemological and ethical aspects of AI, ML, robotics and digital technologies; the investigation on the nature and role of experiments in computer engineering; the role of simulations in robotics.
+                                        </p>
+                                    </details>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
 
                     <!-- Edward A. Lee -->
                     <article class="session">
@@ -1198,7 +1219,7 @@
 
                     <!-- Lynda Hardman -->
                     <article class="session">
-                        <div class="session-date">TBA</div>
+                        <div class="session-date">Jan. 19, 2027</div>
                         <div class="session-content">
                             <a href="https://www.cwi.nl/en/people/lynda-hardman/" target="_blank" rel="noopener" class="session-clickable">
                                 <img class="session-avatar" src="https://www.uu.nl/medewerkers/RestApi/Public/GetImage?Employee=26264&t=" alt="Lynda Hardman" loading="lazy" />
@@ -1228,21 +1249,36 @@
                         </div>
                     </article>
 
-                        <!-- Mohammad Reza Mousavi -->
+                    <!-- Mohammad Reza Mousavi -->
                     <article class="session">
-                            <div class="session-date">TBA</div>
-                            <div class="session-content">
-                                <a href="https://www.kcl.ac.uk/people/mohammad-reza-mousavi" target="_blank" rel="noopener" class="session-clickable">
-                                    <img class="session-avatar" src="https://www.kcl.ac.uk/newimages/person-profile/2022a/mohammad-mousavi.xd8e01112.jpg?w=223&h=298&crop=160,160,28,22&f=webp" alt="Mohammad Reza Mousavi" loading="lazy" />
-                                </a>
-                                <div class="session-info">
-                                    <div class="session-title">
-                                        <a href="https://www.kcl.ac.uk/people/mohammad-reza-mousavi" target="_blank" rel="noopener">Mohammad Reza Mousavi</a>
-                                    </div>
-                                    <div class="session-meta">Zoom Meeting, 12:00 to 13:00 CEST</div>
+                        <div class="session-date">TBA</div>
+                        <div class="session-content">
+                            <a href="https://www.kcl.ac.uk/people/mohammad-reza-mousavi" target="_blank" rel="noopener" class="session-clickable">
+                                <img class="session-avatar" src="https://www.kcl.ac.uk/newimages/person-profile/2022a/mohammad-mousavi.xd8e01112.jpg?w=223&h=298&crop=160,160,28,22&f=webp" alt="Mohammad Reza Mousavi" loading="lazy" />
+                            </a>
+                            <div class="session-info">
+                                <div class="session-title">
+                                    <a href="https://www.kcl.ac.uk/people/mohammad-reza-mousavi" target="_blank" rel="noopener">Mohammad Reza Mousavi</a>
                                 </div>
+                                <div class="talk-title">Kaspar Causally Explains</div>
+                                <div class="session-meta">Zoom Meeting, 12:00 to 13:00 CEST</div>
+                                <details class="talk-details">
+                                    <summary>Read abstract</summary>
+                                    <p>
+                                        The Kaspar robot has been used with great success to work as an education and social mediator with children with autism spectrum disorder. Enabling the robot to automatically generate causal explanations is key to enrich the interaction scenarios for children and promote trust in the robot. In our research, we analysed the human-robot interactions in which causal explanations can contribute substantially to the child's understanding of Visual Perspective Taking (VPT). The results helped us identify multiple interaction categories that benefit from causal explanation (Sarda et al. 2022). Subsequently, we developed a theory of causal explanation to be embedded in Kaspar and built a causal model and an analysis method to calculate causal explanations. We implemented our method to automatically generate causal explanations spoken by Kaspar (Araujo et al. 2022). We validated our explanations for user satisfaction and brought the robot to a school. The results revealed that children improved their VPT abilities significantly when the robot provided causal explanations (Sarda et al. 2023).
+                                    </p>
+                                    <p style="margin-top: 0.5rem; font-size: 0.9rem; color: var(--muted);">
+                                        <strong>References:</strong><br>
+                                        (Holthaus et al. 2026) P. Holthaus, G. Lakatos, M.S. Gou, S. Moros, L.J. Wood, B. Robins, H. Araujo, Ch.A.E. deGraft-Hanson, M.R. Mousavi, and F. Amirabdollahian. Kaspar Explains: An Educational Platform Using Causal Explanations to Support Children with Autism with Visual Perspective Taking. International Journal of Social Robotics. Springer, 2026.<br><br>
+                                        (Sarda et al. 2023) M. Sarda Gou, G. Lakatos, P. Holthaus, B. Robins, S. Moros, L. Jai Wood, H. Araujo, C. A. E. deGraft-Hanson, M. R. Mousavi, F. Amirabdollahian. Kaspar Explains: The Effect of Causal Explanations on Visual Perspective Taking Skills in Children with Autism Spectrum Disorder. Proceedings of the 32nd IEEE International Conference on Robot and Human Interactive Communication (RO-MAN 2023), IEEE, 2023.<br><br>
+                                        (Araujo et al. 2023) H. Araujo, P. Holthaus, M. Sarda Gou, G. Lakatos, G. Galizia, L. Wood, B. Robins, M.R. Mousavi, and F. Amirabdollahian. Kaspar Causally Explains, Proceedings of the 14th International Conference on Social Robotics, Lecture Notes in Computer Science, Springer, 2022.<br><br>
+                                        (Sarda et al. 2022) M. Sarda Gou, G. Lakatos, P. Holthaus, L. Jai Wood, M.R. Mousavi, B. Robins, and F. Amirabdollahian. Towards understanding causality – a retrospective study of using explanations in interactions between a humanoid robot and autistic children. Proceedings of the 31st IEEE International Conference on Robot & Human Interactive Communication (RO-MAN 2022), IEEE, 2022.
+                                    </p>
+                                </details>
                             </div>
-                        </article>
+                        </div>
+                    </article>
+
                     <!-- Barbara Steffen -->
                     <article class="session">
                         <div class="session-date">TBA</div>
