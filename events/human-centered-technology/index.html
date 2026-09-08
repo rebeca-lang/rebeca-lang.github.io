@@ -571,7 +571,7 @@
 
         .session {
             display: grid;
-            grid-template-columns: 80px 1fr;
+            grid-template-columns: 110px 1fr;
             gap: 1rem;
             align-items: center;
             padding: 0.8rem 1.1rem;
@@ -605,7 +605,7 @@
 
         .session-date {
             font-weight: 700;
-            font-size: 0.9rem;
+            font-size: 0.95rem;
             color: var(--muted);
             transition: var(--transition);
             white-space: nowrap;
@@ -933,6 +933,10 @@
 
         .footer-row:hover { color: var(--text); }
 
+        .no-wrap {
+            white-space: nowrap;
+        }
+
         @media (max-width: 920px) {
             .hero-grid, .section-head, .session { grid-template-columns: 1fr; }
             .grid-3, .speakers-grid, .mini-meta { grid-template-columns: 1fr; }
@@ -1027,7 +1031,7 @@
                     <p>
                         Through talks and discussion, the series focuses on systems, society, AI, inclusion, and human agency.<br>
                        <div style="margin-top: 12px; font-size: 0.85em;">
-                          Initiated and organised by Marjan Sirjani, Department of Computer Science and Engineering IDD, MDU. Sessions are held through Mälardalen University’s Zoom platform <a href="https://www.mdu.se/" target="_blank" rel="noopener noreferrer" style="color: #0066cc; text-decoration: underline;">Mälardalen University (MDU)</a>.
+                          Initiated and organised by Marjan Sirjani, Department of Computer Science and Engineering IDD, MDU. Sessions are held through Mälardalen University’s Zoom platform <a href="https://www.mdu.se/" target="_blank" rel="noopener noreferrer" style="color: #0066cc; text-decoration: underline;" class="no-wrap">Mälardalen University (MDU)</a>.
                     </div>
                 </div>
                 <aside class="hero-card">
