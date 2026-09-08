@@ -465,7 +465,6 @@
 
         .speaker-card:hover::before { opacity: 1; }
 
-        /* First List: Rounded rectangle avatars */
         .speaker-avatar {
             flex-shrink: 0;
             width: 70px;
@@ -512,7 +511,6 @@
             color: var(--blue);
         }
 
-        /* Affiliation badge */
         .affiliation-badge {
             display: inline-block;
             background: rgba(22, 104, 208, 0.08);
@@ -564,6 +562,7 @@
             line-height: 1.6;
             max-width: 100%;
         }
+
         .schedule {
             display: grid;
             gap: 1rem;
@@ -571,7 +570,7 @@
 
         .session {
             display: grid;
-            grid-template-columns: 80px 1fr;
+            grid-template-columns: 110px 1fr;
             gap: 1rem;
             align-items: center;
             padding: 0.8rem 1.1rem;
@@ -605,7 +604,7 @@
 
         .session-date {
             font-weight: 700;
-            font-size: 0.9rem;
+            font-size: 0.82rem;
             color: var(--muted);
             transition: var(--transition);
             white-space: nowrap;
@@ -619,7 +618,6 @@
             gap: 1rem;
         }
 
-        /* Second List: Circular avatars */
         .session-avatar {
             flex-shrink: 0;
             width: 50px;
@@ -1280,7 +1278,7 @@
 
                     <!-- Barbara Steffen -->
                     <article class="session">
-                        <div class="session-date" style="white-space: nowrap;">Feb. 16, 2027</div>
+                        <div class="session-date">Feb. 16, 2027</div>
                         <div class="session-content">
                             <span class="session-clickable">
                                 <img class="session-avatar" src="https://www.uni-potsdam.de/fileadmin/_processed_/8/f/csm_Barbara_6a6b0fcc27.webp" alt="Barbara Steffen" loading="lazy" />
@@ -1294,7 +1292,7 @@
 
                     <!-- Carlo Ghezzi -->
                     <article class="session">
-                        <div class="session-date" style="white-space: nowrap;">March 2, 2027</div>
+                        <div class="session-date">March 2, 2027</div>
                         <div class="session-content">
                             <a href="https://www.deib.polimi.it/eng/people/details/528646" target="_blank" rel="noopener" class="session-clickable">
                                 <img class="session-avatar" src="https://www.deib.polimi.it/allegati/peopledeib/528646/foto.jpg" alt="Carlo Ghezzi" loading="lazy" />
