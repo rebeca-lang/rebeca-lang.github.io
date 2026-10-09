@@ -634,15 +634,65 @@
 
         .session:hover::before { opacity: 1; }
 
+        /* Past session styling */
+        .session.is-past {
+            opacity: 0.55;
+            filter: grayscale(0.4);
+        }
+        .session.is-past:hover {
+            opacity: 0.9;
+            filter: grayscale(0);
+        }
+
+        /* Next session highlight */
+        .session.is-next {
+            border-color: var(--blue);
+            box-shadow: 0 0 0 2px rgba(22, 104, 208, 0.12), var(--shadow);
+            overflow: visible;
+        }
+        .session.is-next::after {
+            content: "NEXT";
+            position: absolute;
+            top: -9px;
+            right: 16px;
+            background: linear-gradient(135deg, var(--blue), var(--purple));
+            color: #fff;
+            font-size: 0.68rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            padding: 3px 10px;
+            border-radius: 999px;
+            box-shadow: 0 2px 6px rgba(22, 104, 208, 0.35);
+        }
+
         .session-date {
             font-weight: 700;
             font-size: 0.95rem;
             color: var(--muted);
             transition: var(--transition);
             white-space: nowrap;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.15rem;
+        }
+
+        .session-date .past-tag {
+            display: inline-block;
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--red);
+            background: rgba(178, 74, 84, 0.08);
+            border: 1px solid rgba(178, 74, 84, 0.2);
+            padding: 1px 8px;
+            border-radius: 999px;
+            line-height: 1.4;
         }
 
         .session:hover .session-date { color: var(--blue); }
+        .session:hover .session-date .past-tag { color: var(--red); }
 
         .session-content {
             display: flex;
@@ -1246,8 +1296,11 @@
                 </div>
                 <div class="schedule">
                     <!-- Viola Schiaffonati -->
-                    <article class="session">
-                        <div class="session-date">Oct. 6, 2026</div>
+                    <article class="session is-past">
+                        <div class="session-date">
+                            Oct. 6, 2026
+                            <span class="past-tag">Past</span>
+                        </div>
                         <div class="session-content">
                             <a href="https://www.deib.polimi.it/eng/people/details/70304" target="_blank" rel="noopener" class="session-clickable">
                                 <img class="session-avatar" src="https://www.deib.polimi.it/allegati/peopledeib/70304/foto.jpg" alt="Viola Schiaffonati" loading="lazy" />
@@ -1288,7 +1341,7 @@
                     </article>
 
                     <!-- Edward A. Lee -->
-                    <article class="session">
+                    <article class="session is-next">
                         <div class="session-date">Dec. 1, 2026</div>
                         <div class="session-content">
                             <a href="https://vcresearch.berkeley.edu/faculty/edward-lee" target="_blank" rel="noopener" class="session-clickable">
